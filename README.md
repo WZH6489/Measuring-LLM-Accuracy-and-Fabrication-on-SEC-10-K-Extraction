@@ -1,4 +1,4 @@
-# FilingCheck: Measuring LLM Accuracy and Fabrication on SEC 10-K Extraction
+# Measuring LLM Accuracy and Fabrication on SEC 10-K Extraction
 
 CMPT 218 Final Project, Simon Fraser University (Fall 2026)
 
