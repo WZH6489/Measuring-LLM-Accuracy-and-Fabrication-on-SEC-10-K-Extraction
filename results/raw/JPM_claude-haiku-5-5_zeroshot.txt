@@ -1,0 +1,28 @@
+```json
+{
+  "revenue": {
+    "value": 182447000000,
+    "unit": "USD",
+    "period": "Fiscal year ended December 31, 2025",
+    "quote": "Total net revenue 182,447 177,556 158,104"
+  },
+  "net_income": {
+    "value": 57048000000,
+    "unit": "USD",
+    "period": "Fiscal year ended December 31, 2025",
+    "quote": "Net income $ 57,048 $ 58,471 $ 49,552"
+  },
+  "operating_income": {
+    "value": 72595000000,
+    "unit": "USD",
+    "period": "Fiscal year ended December 31, 2025",
+    "quote": "Income before income tax expense 72,595 75,081 61,612"
+  },
+  "total_assets": {
+    "value": 4424900000000,
+    "unit": "USD",
+    "period": "As of December 31, 2025",
+    "quote": "Total assets (a) $ 4,424,900 $ 4,002,814"
+  }
+}
+```

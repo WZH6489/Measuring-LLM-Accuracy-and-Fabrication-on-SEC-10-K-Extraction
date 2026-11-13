@@ -1,0 +1,28 @@
+```json
+{
+  "revenue": {
+    "value": 331839000000,
+    "unit": "USD",
+    "period": "Fiscal year ended June 30, 2026",
+    "quote": "Total revenue 331,839"
+  },
+  "net_income": {
+    "value": 133749000000,
+    "unit": "USD",
+    "period": "Fiscal year ended June 30, 2026",
+    "quote": "Net income $ 133,749 $ 101,832 $ 88,136"
+  },
+  "operating_income": {
+    "value": 155237000000,
+    "unit": "USD",
+    "period": "Fiscal year ended June 30, 2026",
+    "quote": "Operating income 155,237 128,528 109,433"
+  },
+  "total_assets": {
+    "value": 758376000000,
+    "unit": "USD",
+    "period": "As of June 30, 2026",
+    "quote": "Total assets $ 758,376 $ 619,003"
+  }
+}
+```

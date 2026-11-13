@@ -1,0 +1,28 @@
+```json
+{
+  "revenue": {
+    "value": 47941000000,
+    "unit": "USD",
+    "period": "Year ended December 31, 2025",
+    "quote": "Net Operating Revenues $ 47,941 $ 47,061 $ 45,754"
+  },
+  "net_income": {
+    "value": 13107000000,
+    "unit": "USD",
+    "period": "Year ended December 31, 2025",
+    "quote": "Net Income Attributable to Shareowners of The Coca-Cola Company $ 13,107 $ 10,631 $ 10,714"
+  },
+  "operating_income": {
+    "value": 13762000000,
+    "unit": "USD",
+    "period": "Year ended December 31, 2025",
+    "quote": "Operating Income 13,762 9,992 11,311"
+  },
+  "total_assets": {
+    "value": 104816000000,
+    "unit": "USD",
+    "period": "As of December 31, 2025",
+    "quote": "Total Assets $ 104,816 $ 100,549"
+  }
+}
+```
