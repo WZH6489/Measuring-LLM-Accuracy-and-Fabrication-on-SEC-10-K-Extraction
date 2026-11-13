@@ -1,0 +1,22 @@
+```json
+{
+  "revenue": {
+    "value": 478834000000,
+    "unit": "USD",
+    "period": "FY2026 (year ended September 26, 2026)",
+    "quote": "Total net sales 478,834"
+  },
+  "net_income": {
+    "value": 132175000000,
+    "unit": "USD",
+    "period": "FY2026 (year ended September 26, 2026)",
+    "quote": "Net income $ 132,175"
+  },
+  "operating_income": {
+    "value": 158063000000,
+    "unit": "USD",
+    "period": "FY2026 (year ended September 26, 2026)",
+    "quote": "Operating income 158,063"
+  }
+}
+```
