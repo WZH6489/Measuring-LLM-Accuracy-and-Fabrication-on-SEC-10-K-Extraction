@@ -1,0 +1,13 @@
+{
+ "ticker": "CAT",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 1,
+ "ts": "2026-11-19T21:56:30+00:00",
+ "prompt_sha": "d91cd450d1f8",
+ "prompt_chars": 496,
+ "in_tokens": 169,
+ "out_tokens": 1003,
+ "cost_usd": 0.000518,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 65000000000,\n    \"unit\": \"USD (unverified estimate)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 6700000000,\n    \"unit\": \"USD (unverified estimate)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 10500000000,\n    \"unit\": \"USD (unverified estimate)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 82000000000,\n    \"unit\": \"USD (unverified estimate)\",\n    \"period\": \"As of 2025-12-31\",\n    \"quote\": null\n  }\n}\n```"
+}

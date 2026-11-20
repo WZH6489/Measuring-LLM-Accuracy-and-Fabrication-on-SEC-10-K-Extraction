@@ -1,0 +1,13 @@
+{
+ "ticker": "META",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 1,
+ "ts": "2026-11-19T22:03:45+00:00",
+ "prompt_sha": "5f22fcf921cb",
+ "prompt_chars": 43941,
+ "in_tokens": 22703,
+ "out_tokens": 500,
+ "cost_usd": 0.00252,
+ "raw": "{\n \"revenue\": {\n  \"value\": 200966000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Revenue\\n$\\n200,966\"\n },\n \"net_income\": {\n  \"value\": 60458000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Net income\\n$\\n60,458\"\n },\n \"operating_income\": {\n  \"value\": 83276000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Income from operations\\n83,276\"\n },\n \"total_assets\": {\n  \"value\": 366021000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total assets\\n$\\n366,021\"\n }\n}"
+}

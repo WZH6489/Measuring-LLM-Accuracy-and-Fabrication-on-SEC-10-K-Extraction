@@ -1,0 +1,13 @@
+{
+ "ticker": "AEP",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 1,
+ "ts": "2026-11-19T22:02:58+00:00",
+ "prompt_sha": "97326ae89d5d",
+ "prompt_chars": 18952,
+ "in_tokens": 9850,
+ "out_tokens": 757,
+ "cost_usd": 0.001363,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (year ended December 31, 2025)\",\n    \"quote\": \"Not present in the provided passages.\"\n  },\n  \"net_income\": {\n    \"value\": 3696000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (year ended December 31, 2025)\",\n    \"quote\": \"Net Income $ 3,696 $ 2,976 $ 2,213\"\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (year ended December 31, 2025)\",\n    \"quote\": \"Not present in the provided passages.\"\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"December 31, 2025\",\n    \"quote\": \"Not present in the provided passages.\"\n  }\n}\n```"
+}

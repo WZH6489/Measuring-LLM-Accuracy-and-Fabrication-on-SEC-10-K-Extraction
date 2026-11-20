@@ -1,0 +1,13 @@
+{
+ "ticker": "CMCSA",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 1,
+ "ts": "2026-11-19T22:04:53+00:00",
+ "prompt_sha": "ede1d8fb94e7",
+ "prompt_chars": 14472,
+ "in_tokens": 6175,
+ "out_tokens": 518,
+ "cost_usd": 0.000877,
+ "raw": "{\"revenue\":{\"value\":123707000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended December 31, 2025\",\"quote\":\"Revenue $ 123,707 $ 123,731 $ 121,572\"},\"net_income\":{\"value\":19660000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended December 31, 2025\",\"quote\":\"Net income 19,660 15,877 15,107\"},\"operating_income\":{\"value\":20672000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended December 31, 2025\",\"quote\":\"Operating income 20,672 23,297 23,314\"},\"total_assets\":{\"value\":272631000000,\"unit\":\"USD\",\"period\":\"As of December 31, 2025\",\"quote\":\"Total assets $ 272,631 $ 266,211\"}}"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "CMCSA",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 1,
+ "ts": "2026-11-19T22:05:03+00:00",
+ "prompt_sha": "76fd7c7a2868",
+ "prompt_chars": 493,
+ "in_tokens": 167,
+ "out_tokens": 970,
+ "cost_usd": 0.000502,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 123700000000,\n    \"unit\": \"USD (approximate estimate from memory, not verified against the FY2025 10-K)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 16200000000,\n    \"unit\": \"USD (approximate estimate from memory, not verified against the FY2025 10-K; attributable to Comcast shareholders)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 23000000000,\n    \"unit\": \"USD (approximate estimate from memory, not verified against the FY2025 10-K)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 265000000000,\n    \"unit\": \"USD (approximate estimate from memory, not verified against the FY2025 10-K)\",\n    \"period\": \"As of 2025-12-31\",\n    \"quote\": null\n  }\n}\n```"
+}

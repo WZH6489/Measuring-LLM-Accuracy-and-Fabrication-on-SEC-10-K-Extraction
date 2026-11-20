@@ -1,0 +1,5137 @@
+# AAPL / C
+
+You are extracting numbers from the financial statements of a 10-K filing.
+Return JSON only, no other text, with these keys: revenue, net_income, operating_income, total_assets.
+For each key give an object with: value (a number in full US dollars, applying any scale stated in the table header such as "in millions"), unit, period (the fiscal period it covers), and quote (a verbatim quote from the text that contains the number).
+Use the most recent fiscal year only.
+
+Here are worked examples from other companies' filings, showing the expected output. Your filing follows them.
+
+### Example 1
+CONSOLIDATED STATEMENTS OF OPERATIONS
+​
+Years Ended January 31, 2026, February 1, 2025 and February 3, 2024
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+2025
+  ​ ​ ​
+2024
+  ​ ​ ​
+2023
+​
+(In millions, except per share amounts)
+  ​ ​ ​
+(52 weeks)
+​
+(52 weeks)
+​
+(53 weeks)
+Sales
+​
+​
+$
+147,642
+​
+$
+147,123
+​
+$
+150,039
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Operating expenses
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Merchandise costs, including advertising, warehousing, and transportation, excluding items shown separately below
+​
+​
+113,240
+​
+113,720
+​
+116,675
+​
+Operating, general and administrative
+​
+​
+28,308
+​
+25,431
+​
+26,252
+​
+Rent
+​
+​
+872
+​
+877
+​
+891
+​
+Depreciation and amortization
+​
+​
+3,332
+​
+3,246
+​
+3,125
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Operating profit
+​
+​
+1,890
+​
+3,849
+​
+3,096
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Other income (expense)
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Net interest expense (see Note 5)
+​
+​
+ (
+639
+)
+​
+ (
+450
+)
+​
+ (
+441
+)
+​
+Non-service component of company-sponsored pension plan (expense) benefits
+​
+​
+​
+ (
+10
+)
+​
+​
+12
+​
+​
+30
+​
+(Loss) gain on investments
+​
+​
+​
+ (
+41
+)
+​
+​
+ (
+148
+)
+​
+​
+151
+​
+Gain on the sale of business
+​
+​
+​
+ —
+​
+​
+79
+​
+​
+ —
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Net earnings before income tax expense
+​
+​
+1,200
+​
+3,342
+​
+2,836
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Income tax expense
+​
+​
+176
+​
+670
+​
+667
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Net earnings including noncontrolling interests
+​
+​
+1,024
+​
+2,672
+​
+2,169
+​
+Net income attributable to noncontrolling interests
+​
+​
+8
+​
+7
+​
+5
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Net earnings attributable to The Kroger Co.
+​
+​
+$
+1,016
+​
+$
+2,665
+​
+$
+2,164
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Net earnings attributable to The Kroger Co. per basic common share
+​
+​
+$
+1.55
+​
+$
+3.70
+​
+$
+2.99
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Average number of common shares used in basic calculation
+​
+​
+652
+​
+715
+​
+718
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Net earnings attributable to The Kroger Co. per diluted common share
+​
+​
+$
+1.54
+​
+$
+3.67
+​
+$
+2.96
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Average number of common shares used in diluted calculation
+​
+​
+655
+​
+720
+​
+725
+​
+​
+​
+The accompanying notes are an integral part of the consolidated financial statements.
+​
+55
+THE KROGER CO.
+CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME
+​
+Years Ended January 31, 2026, February 1, 2025 and February 3, 2024
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+2025
+​
+2024
+  ​ ​ ​
+2023
+​
+(In millions)
+(52 weeks)
+​
+(52 weeks)
+​
+(53 weeks)
+Net earnings including noncontrolling interests
+​
+$
+1,024
+​
+$
+2,672
+​
+$
+2,169
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Other comprehensive income (loss)
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Change in pension and other postretirement defined benefit plans, net of income tax
+(1)
+​
+​
+ (
+25
+)
+​
+​
+ (
+37
+)
+​
+​
+ (
+46
+)
+​
+Unrealized gains and losses on cash flow hedging activities, net of income tax
+(2)
+​
+3
+​
+ (
+103
+)
+​
+183
+​
+Amortization of unrealized gains and losses on cash flow hedging activities, net of income tax
+(3)
+​
+​
+8
+​
+​
+8
+​
+​
+6
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Total other comprehensive (loss) income
+​
+ (
+14
+)
+​
+ (
+132
+)
+​
+143
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Comprehensive income
+​
+1,010
+​
+2,540
+​
+2,312
+​
+Comprehensive income attributable to noncontrolling interests
+​
+8
+​
+7
+​
+5
+​
+Comprehensive income attributable to The Kroger Co. 
+​
+$
+1,002
+​
+$
+2,533
+​
+$
+2,307
+​
+​
+(1)
+Amount is net of tax benefit of 
+$(
+7
+)
+ in 2025, 
+$(
+11
+)
+ in 2024 and 
+$(
+14
+)
+ in 2023.
+(2)
+Amount is net of tax (benefit) expense of 
+$(
+31
+)
+ in 2024 and 
+$
+56
+ in 2023.
+(3)
+Amount is net of tax expense of 
+$
+2
+ in 2025, 
+$
+1
+ in 2024 and 
+$
+2
+ in 2023.
+​
+The accompanying notes are an integral part of the consolidated financial statements.
+​
+56
+THE KROGER CO.
+CONSOLIDATED STATEMENTS OF CASH FLOWS
+​
+Years Ended January 31, 2026, February 1, 2025 and February 3, 2024
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+2025
+  ​ ​ ​
+2024
+  ​ ​ ​
+2023
+​
+(In millions)
+ (52 weeks)
+​
+(52 weeks)
+​
+(53 weeks)
+Cash Flows from Operating Activities:
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Net earnings including noncontrolling interests 
+​
+$
+1,024
+​
+$
+2,672
+​
+$
+2,169
+​
+Adjustments to reconcile net earnings including noncontrolling interests to net cash provided by operating activities:
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Depreciation and amortization
+​
+3,332
+​
+3,246
+​
+3,125
+​
+Fulfillment network impairment and related charges
+​
+​
+2,497
+​
+​
+ —
+​
+​
+ —
+​
+Asset impairment and store closure charges
+​
+​
+187
+​
+​
+98
+​
+​
+69
+​
+Operating lease asset amortization
+​
+​
+588
+​
+​
+603
+​
+​
+625
+​
+LIFO charge
+​
+157
+​
+95
+​
+113
+​
+Share-based employee compensation
+​
+157
+​
+175
+​
+172
+​
+Deferred income taxes
+​
+ (
+330
+)
+​
+ (
+102
+)
+​
+ (
+155
+)
+​
+Gain on sale of business
+​
+​
+ —
+​
+​
+ (
+79
+)
+​
+​
+ —
+​
+Gain on sale of assets
+​
+​
+ (
+13
+)
+​
+​
+ (
+70
+)
+​
+​
+ (
+56
+)
+​
+Loss on investments
+​
+​
+41
+​
+​
+148
+​
+​
+ (
+151
+)
+​
+Other
+​
+1
+​
+20
+​
+69
+​
+Changes in operating assets and liabilities:
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Store deposits in-transit
+​
+68
+​
+ (
+97
+)
+​
+ (
+88
+)
+​
+Receivables
+​
+113
+​
+ (
+288
+)
+​
+14
+​
+Inventories
+​
+ (
+86
+)
+​
+ (
+144
+)
+​
+342
+​
+Prepaid and other current assets
+​
+8
+​
+ (
+166
+)
+​
+72
+​
+Accounts payable
+​
+388
+​
+253
+​
+545
+​
+Accrued expenses
+​
+165
+​
+107
+​
+ (
+222
+)
+​
+Income taxes receivable and payable
+​
+ (
+115
+)
+​
+​
+76
+​
+​
+68
+​
+Operating lease liabilities
+​
+​
+ (
+529
+)
+​
+​
+ (
+609
+)
+​
+​
+ (
+695
+)
+​
+Other
+​
+ (
+342
+)
+​
+ (
+144
+)
+​
+772
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Net cash provided by operating activities
+​
+7,311
+​
+5,794
+​
+6,788
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Cash Flows from Investing Activities:
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Payments for property and equipment, including payments for lease buyouts
+​
+ (
+3,855
+)
+​
+ (
+4,017
+)
+​
+ (
+3,904
+)
+​
+Proceeds from sale of assets
+​
+76
+​
+​
+377
+​
+​
+101
+​
+Net proceeds from sale of business
+​
+​
+52
+​
+​
+464
+​
+​
+ —
+​
+Other
+​
+ (
+187
+)
+​
+ (
+52
+)
+​
+53
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Net cash used by investing activities
+​
+ (
+3,914
+)
+​
+ (
+3,228
+)
+​
+ (
+3,750
+)
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Cash Flows from Financing Activities:
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Proceeds from issuance of long-term debt
+​
+43
+​
+10,502
+​
+15
+​
+Payments on long-term debt including obligations under finance leases
+​
+ (
+540
+)
+​
+​
+ (
+4,883
+)
+​
+​
+ (
+1,301
+)
+​
+Dividends paid
+​
+​
+ (
+885
+)
+​
+​
+ (
+883
+)
+​
+​
+ (
+796
+)
+​
+Financing fees paid
+​
+​
+ —
+​
+​
+ (
+116
+)
+​
+​
+ —
+​
+Proceeds from issuance of capital stock
+​
+​
+182
+​
+127
+​
+50
+​
+Treasury stock purchases
+​
+ (
+2,699
+)
+​
+ (
+4,156
+)
+​
+ (
+62
+)
+​
+Unsettled accelerated share repurchases
+​
+ —
+​
+ (
+1,000
+)
+​
+ —
+​
+Other
+​
+​
+ (
+123
+)
+​
+ (
+81
+)
+​
+ (
+76
+)
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Net cash used by financing activities
+​
+ (
+4,022
+)
+​
+ (
+490
+)
+​
+ (
+2,170
+)
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Net (decrease) increase in cash and temporary cash investments
+​
+ (
+625
+)
+​
+2,076
+​
+868
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Cash and temporary cash investments:
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Beginning of year
+​
+3,959
+​
+1,883
+​
+1,015
+​
+End of year
+​
+$
+3,334
+​
+$
+3,959
+​
+$
+1,883
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Reconciliation of capital investments:
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Payments for property and equipment, including payments for lease buyouts
+​
+$
+ (
+3,855
+)
+​
+$
+ (
+4,017
+)
+​
+$
+ (
+3,904
+)
+​
+Payments for lease buyouts
+​
+​
+33
+​
+51
+​
+ —
+​
+Changes in construction-in-progress payables
+​
+ (
+40
+)
+​
+343
+​
+344
+​
+Total capital investments, excluding lease buyouts
+​
+
+
+CONSOLIDATED BALANCE SHEETS
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+  ​ ​ ​
+January 31,
+  ​ ​ ​
+February 1,
+(In millions, except par amounts)
+​
+2026
+​
+2025
+ASSETS 
+​
+​
+​
+​
+​
+​
+​
+Current assets 
+​
+​
+​
+​
+​
+​
+​
+Cash and temporary cash investments 
+​
+$
+3,334
+​
+$
+3,959
+​
+Store deposits in-transit 
+​
+1,244
+​
+1,312
+​
+Receivables 
+​
+2,192
+​
+2,195
+​
+FIFO inventory 
+​
+9,445
+​
+9,442
+​
+LIFO reserve 
+​
+ (
+2,553
+)
+​
+ (
+2,404
+)
+​
+Prepaid and other current assets 
+​
+​
+843
+​
+​
+769
+​
+Total current assets 
+​
+14,505
+​
+15,273
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Property, plant and equipment, net 
+​
+24,260
+​
+25,703
+​
+Operating lease assets
+​
+​
+6,682
+​
+​
+6,839
+​
+Intangibles, net
+​
+808
+​
+834
+​
+Goodwill 
+​
+2,595
+​
+2,674
+​
+Other assets 
+​
+1,103
+​
+1,293
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Total Assets 
+​
+$
+49,953
+​
+$
+52,616
+​
+​
+​
+​
+​
+​
+​
+​
+​
+LIABILITIES 
+​
+​
+​
+​
+​
+​
+​
+Current liabilities 
+​
+​
+​
+​
+​
+​
+​
+Current portion of long-term debt including obligations under finance leases
+​
+$
+1,802
+​
+$
+272
+​
+Current portion of operating lease liabilities
+​
+​
+665
+​
+​
+599
+​
+Accounts payable 
+​
+10,488
+​
+10,124
+​
+Accrued salaries and wages 
+​
+1,267
+​
+1,330
+​
+Other current liabilities 
+​
+3,886
+​
+3,615
+​
+Total current liabilities 
+​
+18,108
+​
+15,940
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Long-term debt including obligations under finance leases
+​
+​
+15,764
+​
+​
+17,633
+​
+Noncurrent operating lease liabilities
+​
+​
+6,461
+​
+​
+6,578
+​
+Deferred income taxes 
+​
+1,094
+​
+1,417
+​
+Pension and postretirement benefit obligations
+​
+421
+​
+387
+​
+Other long-term liabilities 
+​
+2,169
+​
+2,380
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Total Liabilities 
+​
+44,017
+​
+44,335
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Commitments and contingencies (see Note 12)
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+SHAREOWNERS’ EQUITY 
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Preferred shares, $
+100
+ par per share, 
+5
+ shares authorized and unissued 
+​
+​
+ —
+​
+​
+ —
+​
+Common shares, $
+1
+ par per share, 
+2,000
+ shares authorized; 
+1,918
+ shares issued in 2025 and 2024
+​
+1,918
+​
+1,918
+​
+Additional paid-in capital 
+​
+3,907
+​
+3,087
+​
+Accumulated other comprehensive loss 
+​
+ (
+635
+)
+​
+ (
+621
+)
+​
+Accumulated earnings 
+​
+28,850
+​
+28,724
+​
+Common shares in treasury, at cost, 
+1,303
+ shares in 2025 and 
+1,258
+ shares in 2024
+​
+ (
+28,113
+)
+​
+ (
+24,823
+)
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Total Shareowners’ Equity - The Kroger Co.
+​
+5,927
+​
+8,285
+​
+Noncontrolling interests 
+​
+9
+​
+ (
+4
+)
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Total Equity 
+​
+5,936
+​
+8,281
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Total Liabilities and Equity 
+​
+$
+49,953
+​
+$
+52,616
+​
+​
+​
+The accompanying notes are an integral part of the consolidated financial statements.
+​
+54
+THE KROGER CO.
+CONSOLIDATED STATEMENTS OF OPERATIONS
+​
+Years Ended January 31, 2026, February 1, 2025 and February 3, 2024
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+2025
+  ​ ​ ​
+2024
+  ​ ​ ​
+2023
+​
+(In millions, except per share amounts)
+  ​ ​ ​
+(52 weeks)
+​
+(52 weeks)
+​
+(53 weeks)
+Sales
+​
+​
+$
+147,642
+​
+$
+147,123
+​
+$
+150,039
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Operating expenses
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Merchandise costs, including advertising, warehousing, and transportation, excluding items shown separately below
+​
+​
+113,240
+​
+113,720
+​
+116,675
+​
+Operating, general and administrative
+​
+​
+28,308
+​
+25,431
+​
+26,252
+​
+Rent
+​
+​
+872
+​
+877
+​
+891
+​
+Depreciation and amortization
+​
+​
+3,332
+​
+3,246
+​
+3,125
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Operating profit
+​
+​
+1,890
+​
+3,849
+​
+3,096
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Other income (expense)
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Net interest expense (see Note 5)
+​
+​
+ (
+639
+)
+​
+ (
+450
+)
+​
+ (
+441
+)
+​
+Non-service component of company-sponsored pension plan (expense) benefits
+​
+​
+​
+ (
+10
+)
+​
+​
+12
+​
+​
+30
+​
+(Loss) gain on investments
+​
+​
+​
+ (
+41
+)
+​
+​
+ (
+148
+)
+​
+​
+151
+​
+Gain on the sale of business
+​
+​
+​
+ —
+​
+​
+79
+​
+​
+ —
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Net earnings before income tax expense
+​
+​
+1,200
+​
+3,342
+​
+2,836
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Income tax expense
+​
+​
+176
+​
+670
+​
+667
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Net earnings including noncontrolling interests
+​
+​
+1,024
+​
+2,672
+​
+2,169
+​
+Net income attributable to noncontrolling interests
+​
+​
+8
+​
+7
+​
+5
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Net earnings attributable to The Kroger Co.
+​
+​
+$
+1,016
+​
+$
+2,665
+​
+$
+2,164
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Net earnings attributable to The Kroger Co. per basic common share
+​
+​
+$
+1.55
+​
+$
+3.70
+​
+$
+2.99
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Average number of common shares used in basic calculation
+​
+​
+652
+​
+715
+​
+718
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Net earnings attributable to The Kroger Co. per diluted common share
+​
+​
+$
+1.54
+​
+$
+3.67
+​
+$
+2.96
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Average number of common shares used in diluted calculation
+​
+​
+655
+​
+720
+​
+725
+​
+​
+​
+The accompanying notes are an integral part of the consolidated financial statements.
+​
+55
+THE KROGER CO.
+CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME
+​
+Years Ended January 31, 2026, February 1, 2025 and February 3, 2024
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+2025
+​
+2024
+  ​ ​ ​
+2023
+​
+(In millions)
+(52 weeks)
+​
+(52 weeks)
+​
+(53 weeks)
+Net earnings including noncontrolling interests
+​
+$
+1,024
+​
+$
+2,672
+​
+$
+2,169
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Other comprehensive income (loss)
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Change in pension and other postretirement defined benefit plans, net of income tax
+(1)
+​
+​
+ (
+25
+)
+​
+​
+ (
+37
+)
+​
+​
+ (
+46
+)
+​
+Unrealized gains and losses on cash flow hedging activities, net of income tax
+(2)
+​
+3
+​
+ (
+103
+)
+​
+183
+​
+Amortization of unrealized gains and losses on cash flow hedging activities, net of income tax
+(3)
+​
+​
+8
+​
+​
+8
+​
+​
+6
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Total other comprehensive (loss) income
+​
+ (
+14
+)
+​
+ (
+132
+)
+​
+143
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Comprehensive income
+​
+1,010
+​
+2,540
+​
+2,312
+​
+Comprehensive income attributable to noncontrolling interests
+​
+8
+​
+7
+​
+5
+​
+Comprehensive income attributable to The Kroger Co. 
+​
+$
+1,002
+​
+$
+2,533
+​
+$
+2,307
+​
+​
+(1)
+Amount is net of tax benefit of 
+$(
+7
+)
+ in 2025, 
+$(
+11
+)
+ in 2024 and 
+$(
+14
+)
+ in 2023.
+(2)
+Amount is net of tax (benefit) expense of 
+$(
+31
+)
+ in 2024 and 
+$
+56
+ in 2023.
+(3)
+Amount is net of tax expense of 
+$
+2
+ in 2025, 
+$
+1
+ in 2024 and 
+$
+2
+ in 2023.
+​
+The accompanying notes are an integral part of the consolidated financial statements.
+​
+56
+THE KROGER CO.
+CONSOLIDATED STATEMENTS OF CASH FLOWS
+​
+Years Ended January 31, 2026, February 1, 2025 and February 3, 2024
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+2025
+  ​ ​ ​
+2024
+  ​ ​ ​
+2023
+​
+(In millions)
+ (52 weeks)
+​
+(52 weeks)
+​
+(53 weeks)
+Cash Flows from Operating Activities:
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Net earnings including noncontrolling interests 
+​
+$
+1,024
+​
+$
+2,672
+​
+$
+2,169
+​
+Adjustments to reconcile net earnings including noncontrolling interests to net cash provided by operating activities:
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Depreciation and amortization
+​
+3,332
+​
+3,246
+​
+3,125
+​
+Fulfillment network impairment and related charges
+​
+​
+2,497
+​
+​
+ —
+​
+​
+ —
+​
+Asset impairment and store closure charges
+​
+​
+187
+​
+​
+98
+​
+​
+69
+​
+Operating lease asset amortization
+​
+​
+588
+​
+​
+603
+​
+​
+625
+​
+LIFO charge
+​
+157
+​
+95
+​
+113
+​
+Share-based employee compensation
+​
+157
+​
+175
+​
+172
+​
+Deferred income taxes
+​
+ (
+330
+)
+​
+ (
+102
+)
+​
+ (
+155
+)
+​
+Gain on sale of business
+​
+​
+ —
+​
+​
+ (
+79
+)
+​
+​
+ —
+​
+G
+
+Expected output for example 1:
+{
+ "revenue": {
+  "value": 147642000000,
+  "unit": "USD",
+  "period": "fiscal year ended 2026-01-31",
+  "quote": "Sales\n\u200b\n\u200b\n$\n147,642"
+ },
+ "net_income": {
+  "value": 1016000000,
+  "unit": "USD",
+  "period": "fiscal year ended 2026-01-31",
+  "quote": "Net earnings attributable to The Kroger Co.\n\u200b\n\u200b\n$\n1,016"
+ },
+ "operating_income": {
+  "value": 1890000000,
+  "unit": "USD",
+  "period": "fiscal year ended 2026-01-31",
+  "quote": "Operating profit\n\u200b\n\u200b\n1,890"
+ },
+ "total_assets": {
+  "value": 49953000000,
+  "unit": "USD",
+  "period": "fiscal year ended 2026-01-31",
+  "quote": "Total Assets\u00a0\n\u200b\n$\n49,953"
+ }
+}
+
+### Example 2
+Consolidated Statements of Earnings
+(In millions, except per share and percentage data)
+Fiscal Years Ended
+January 30, 2026
+January 31, 2025
+February 2, 2024
+Current Earnings
+Amount
+% Sales
+Amount
+% Sales
+Amount
+% Sales
+Net sales
+$
+86,286
+100.00
+%
+$
+83,674
+100.00
+%
+$
+86,377
+100.00
+%
+Cost of sales
+57,401
+66.52
+55,797
+66.68
+57,533
+66.61
+Gross margin
+28,885
+33.48
+27,877
+33.32
+28,844
+33.39
+Expenses:
+Selling, general and administrative
+16,791
+19.46
+15,682
+18.74
+15,570
+18.02
+Depreciation and amortization
+1,941
+2.25
+1,729
+2.07
+1,717
+1.99
+Operating income
+10,153
+11.77
+10,466
+12.51
+11,557
+13.38
+Interest – net
+1,406
+1.63
+1,313
+1.57
+1,382
+1.60
+Pre-tax earnings
+8,747
+10.14
+9,153
+10.94
+10,175
+11.78
+Income tax provision
+2,093
+2.43
+2,196
+2.63
+2,449
+2.83
+Net earnings
+$
+6,654
+7.71
+%
+$
+6,957
+8.31
+%
+$
+7,726
+8.95
+%
+Basic earnings per common share
+$
+11.87
+$
+12.25
+$
+13.23
+Diluted earnings per common share
+$
+11.85
+$
+12.23
+$
+13.20
+Lowe’s Companies, Inc.
+Consolidated Statements of Comprehensive Income
+(In millions, except percentage data)
+Fiscal Years Ended
+January 30, 2026
+January 31, 2025
+February 2, 2024
+Amount
+% Sales
+Amount
+% Sales
+Amount
+% Sales
+Net earnings
+$
+6,654
+7.71
+%
+$
+6,957
+8.31
+%
+$
+7,726
+8.95
+%
+Foreign currency translation adjustments – net of tax
+—
+—
+—
+—
+5
+0.01
+Cash flow hedges – net of tax
+(
+17
+)
+(
+0.02
+)
+(
+13
+)
+(
+0.02
+)
+(
+14
+)
+(
+0.02
+)
+Other
+—
+—
+1
+0.01
+2
+—
+Other comprehensive loss
+(
+17
+)
+(
+0.02
+)
+(
+12
+)
+(
+0.01
+)
+(
+7
+)
+(
+0.01
+)
+Comprehensive income
+$
+6,637
+7.69
+%
+$
+6,945
+8.30
+%
+$
+7,719
+8.94
+%
+See accompanying notes to consolidated financial statements.
+38
+Table of Contents
+Lowe’s Companies, Inc.
+Consolidated Balance Sheets
+(In millions, except par value)
+January 30, 2026
+January 31, 2025
+Assets
+Current assets:
+Cash and cash equivalents
+$
+982
+$
+1,761
+Short-term investments
+370
+372
+Receivables - net
+1,090
+94
+Merchandise inventory - net
+17,300
+17,409
+Other current assets
+1,213
+722
+Total current assets
+20,955
+20,358
+Property, less accumulated depreciation
+18,362
+17,649
+Operating lease right-of-use assets
+4,303
+3,738
+Long-term investments
+319
+277
+Deferred income taxes - net
+—
+244
+Goodwill
+3,945
+311
+Intangible assets - net
+5,908
+277
+Other assets
+352
+248
+Total assets
+$
+54,144
+$
+43,102
+Liabilities and shareholders’ deficit
+Current liabilities:
+Current maturities of long-term debt
+$
+2,431
+$
+2,586
+Current operating lease liabilities
+713
+563
+Accounts payable
+9,762
+9,290
+Accrued compensation and employee benefits
+1,285
+1,008
+Deferred revenue
+1,477
+1,358
+Other current liabilities
+3,795
+3,952
+Total current liabilities
+19,463
+18,757
+Long-term debt, excluding current maturities
+37,490
+32,901
+Noncurrent operating lease liabilities
+4,043
+3,628
+Deferred income taxes - net
+1,039
+—
+Deferred revenue - Lowe’s protection plans
+1,262
+1,268
+Other liabilities
+764
+779
+Total liabilities
+64,061
+57,333
+Commitments and contingencies
+Shareholders’ deficit:
+Preferred stock – $
+5
+ par value: Authorized – 
+5.0
+ million shares; Issued and outstanding – 
+none
+—
+—
+Common stock – $
+0.50
+ par value: Authorized – 
+5.6
+ billion shares; Issued and outstanding – 
+561
+ million and 
+560
+ million, respectively
+281
+280
+Capital in excess of par value
+370
+—
+Accumulated deficit
+(
+10,839
+)
+(
+14,799
+)
+Accumulated other comprehensive income
+271
+288
+Total shareholders’ deficit
+(
+9,917
+)
+(
+14,231
+)
+Total liabilities and shareholders’ deficit
+$
+54,144
+$
+43,102
+See accompanying notes to consolidated financial statements.
+39
+Table of Contents
+Lowe’s Companies, Inc.
+Consolidated Statements of Shareholders’ Deficit
+(In millions, except per share data)
+Common Stock
+Capital in Excess
+of Par Value
+Accumulated Deficit
+Accumulated Other Comprehensive
+(Loss)/Income
+Total
+Shares
+Amount
+Balance February 3, 2023
+601
+$
+301
+$
+—
+$
+(
+14,862
+)
+$
+307
+$
+(
+14,254
+)
+Net earnings
+— 
+— 
+— 
+7,726
+— 
+7,726
+Other comprehensive loss
+— 
+— 
+— 
+— 
+(
+7
+)
+(
+7
+)
+Cash dividends declared, $
+4.35
+ per share
+— 
+— 
+— 
+(
+2,531
+)
+— 
+(
+2,531
+)
+Share-based payment expense
+— 
+— 
+209
+— 
+— 
+209
+Repurchases of common stock
+(
+30
+)
+(
+15
+)
+(
+349
+)
+(
+5,970
+)
+— 
+(
+6,334
+)
+Issuance of common stock under share-based payment plans
+3
+1
+140
+— 
+— 
+141
+Balance February 2, 2024
+574
+$
+287
+$
+—
+$
+(
+15,637
+)
+$
+300
+$
+(
+15,050
+)
+Net earnings
+— 
+— 
+— 
+6,957
+— 
+6,957
+Other comprehensive loss
+— 
+— 
+— 
+— 
+(
+12
+)
+(
+12
+)
+Cash dividends declared, $
+4.55
+ per share
+— 
+— 
+— 
+(
+2,578
+)
+— 
+(
+2,578
+)
+Share-based payment expense
+— 
+— 
+222
+— 
+— 
+222
+Repurchases of common stock
+(
+16
+)
+(
+8
+)
+(
+380
+)
+(
+3,541
+)
+— 
+(
+3,929
+)
+Issuance of common stock under share-based payment plans
+2
+1
+158
+— 
+— 
+159
+Balance January 31, 2025
+560
+$
+280
+$
+—
+$
+(
+14,799
+)
+$
+288
+$
+(
+14,231
+)
+Net earnings
+— 
+— 
+— 
+6,654
+— 
+6,654
+Other comprehensive loss
+— 
+— 
+— 
+— 
+(
+17
+)
+(
+17
+)
+Cash dividends declared, $
+4.75
+ per share
+— 
+— 
+— 
+(
+2,664
+)
+— 
+(
+2,664
+)
+Share-based payment expense
+— 
+— 
+247
+— 
+— 
+247
+Repurchases of common stock
+— 
+— 
+(
+45
+)
+(
+30
+)
+— 
+(
+75
+)
+Issuance of common stock under share-based payment plans
+1
+1
+148
+— 
+— 
+149
+Other
+— 
+— 
+20
+— 
+— 
+20
+Balance January 30, 2026
+561
+$
+281
+$
+370
+$
+(
+10,839
+)
+$
+271
+$
+(
+9,917
+)
+See accompanying notes to consolidated financial statements.
+40
+Table of Contents
+Lowe’s Companies, Inc.
+Consolidated Statements of Cash Flows
+(In millions)
+Fiscal Years Ended
+January 30, 2026
+January 31, 2025
+February 2, 2024
+Cash flows from operating activities:
+Net earnings
+$
+6,654
+$
+6,957
+$
+7,726
+Adjustments to reconcile net earnings to net cash provided by operating activities:
+Depreciation and amortization
+2,194
+1,972
+1,923
+Noncash lease expense
+572
+520
+499
+Deferred income taxes
+256
+9
+6
+Asset impairment and loss on property - net
+53
+5
+83
+Gain on sale of business
+—
+(
+177
+)
+(
+79
+)
+Share-based payment expense
+247
+221
+210
+Changes in operating assets and liabilities:
+Merchandise inventory – net
+703
+(
+514
+)
+1,637
+Other operating assets
+(
+243
+)
+93
+182
+Accounts payable
+73
+633
+(
+1,820
+)
+Other operating liabilities
+(
+645
+)
+(
+94
+)
+(
+2,227
+)
+Net cash provided by operating activities
+9,864
+9,625
+8,140
+Cash flows from investing activities:
+Purchases of investments
+(
+1,693
+)
+(
+1,286
+)
+(
+1,785
+)
+Proceeds from sale/maturity of investments
+1,658
+1,204
+1,722
+Capital expenditures
+(
+2,213
+)
+(
+1,927
+)
+(
+1,964
+)
+Proceeds from sale of property and other long-term assets
+82
+105
+53
+Acquisition of businesses - net
+(
+10,088
+)
+—
+—
+Proceeds from sale of business
+—
+177
+100
+Other – net
+(
+10
+)
+(
+11
+)
+(
+27
+)
+Net cash used in investing activities
+(
+12,264
+)
+(
+1,738
+)
+(
+1,901
+)
+Cash flows from financing activities:
+Net change in commercial paper
+—
+—
+(
+499
+)
+Net proceeds from issuance of debt
+6,974
+—
+2,983
+Repayment of debt
+(
+2,587
+)
+(
+545
+)
+(
+601
+)
+Proceeds from issuance of common stock under share-based payment plans
+149
+159
+141
+Cash dividend payments
+(
+2,636
+)
+(
+2,566
+)
+(
+2,531
+)
+Repurchases of common stock
+(
+211
+)
+(
+4,053
+)
+(
+6,138
+)
+Other – net
+(
+68
+)
+(
+42
+)
+(
+21
+)
+Net cash provided by/(used in) financing activities
+1,621
+(
+7,047
+)
+(
+6,666
+)
+Net (decrease)/increase in cash and cash equivalents
+(
+779
+)
+840
+(
+427
+)
+Cash and cash equivalents, beginni
+
+Consolidated Balance Sheets
+(In millions, except par value)
+January 30, 2026
+January 31, 2025
+Assets
+Current assets:
+Cash and cash equivalents
+$
+982
+$
+1,761
+Short-term investments
+370
+372
+Receivables - net
+1,090
+94
+Merchandise inventory - net
+17,300
+17,409
+Other current assets
+1,213
+722
+Total current assets
+20,955
+20,358
+Property, less accumulated depreciation
+18,362
+17,649
+Operating lease right-of-use assets
+4,303
+3,738
+Long-term investments
+319
+277
+Deferred income taxes - net
+—
+244
+Goodwill
+3,945
+311
+Intangible assets - net
+5,908
+277
+Other assets
+352
+248
+Total assets
+$
+54,144
+$
+43,102
+Liabilities and shareholders’ deficit
+Current liabilities:
+Current maturities of long-term debt
+$
+2,431
+$
+2,586
+Current operating lease liabilities
+713
+563
+Accounts payable
+9,762
+9,290
+Accrued compensation and employee benefits
+1,285
+1,008
+Deferred revenue
+1,477
+1,358
+Other current liabilities
+3,795
+3,952
+Total current liabilities
+19,463
+18,757
+Long-term debt, excluding current maturities
+37,490
+32,901
+Noncurrent operating lease liabilities
+4,043
+3,628
+Deferred income taxes - net
+1,039
+—
+Deferred revenue - Lowe’s protection plans
+1,262
+1,268
+Other liabilities
+764
+779
+Total liabilities
+64,061
+57,333
+Commitments and contingencies
+Shareholders’ deficit:
+Preferred stock – $
+5
+ par value: Authorized – 
+5.0
+ million shares; Issued and outstanding – 
+none
+—
+—
+Common stock – $
+0.50
+ par value: Authorized – 
+5.6
+ billion shares; Issued and outstanding – 
+561
+ million and 
+560
+ million, respectively
+281
+280
+Capital in excess of par value
+370
+—
+Accumulated deficit
+(
+10,839
+)
+(
+14,799
+)
+Accumulated other comprehensive income
+271
+288
+Total shareholders’ deficit
+(
+9,917
+)
+(
+14,231
+)
+Total liabilities and shareholders’ deficit
+$
+54,144
+$
+43,102
+See accompanying notes to consolidated financial statements.
+39
+Table of Contents
+Lowe’s Companies, Inc.
+Consolidated Statements of Shareholders’ Deficit
+(In millions, except per share data)
+Common Stock
+Capital in Excess
+of Par Value
+Accumulated Deficit
+Accumulated Other Comprehensive
+(Loss)/Income
+Total
+Shares
+Amount
+Balance February 3, 2023
+601
+$
+301
+$
+—
+$
+(
+14,862
+)
+$
+307
+$
+(
+14,254
+)
+Net earnings
+— 
+— 
+— 
+7,726
+— 
+7,726
+Other comprehensive loss
+— 
+— 
+— 
+— 
+(
+7
+)
+(
+7
+)
+Cash dividends declared, $
+4.35
+ per share
+— 
+— 
+— 
+(
+2,531
+)
+— 
+(
+2,531
+)
+Share-based payment expense
+— 
+— 
+209
+— 
+— 
+209
+Repurchases of common stock
+(
+30
+)
+(
+15
+)
+(
+349
+)
+(
+5,970
+)
+— 
+(
+6,334
+)
+Issuance of common stock under share-based payment plans
+3
+1
+140
+— 
+— 
+141
+Balance February 2, 2024
+574
+$
+287
+$
+—
+$
+(
+15,637
+)
+$
+300
+$
+(
+15,050
+)
+Net earnings
+— 
+— 
+— 
+6,957
+— 
+6,957
+Other comprehensive loss
+— 
+— 
+— 
+— 
+(
+12
+)
+(
+12
+)
+Cash dividends declared, $
+4.55
+ per share
+— 
+— 
+— 
+(
+2,578
+)
+— 
+(
+2,578
+)
+Share-based payment expense
+— 
+— 
+222
+— 
+— 
+222
+Repurchases of common stock
+(
+16
+)
+(
+8
+)
+(
+380
+)
+(
+3,541
+)
+— 
+(
+3,929
+)
+Issuance of common stock under share-based payment plans
+2
+1
+158
+— 
+— 
+159
+Balance January 31, 2025
+560
+$
+280
+$
+—
+$
+(
+14,799
+)
+$
+288
+$
+(
+14,231
+)
+Net earnings
+— 
+— 
+— 
+6,654
+— 
+6,654
+Other comprehensive loss
+— 
+— 
+— 
+— 
+(
+17
+)
+(
+17
+)
+Cash dividends declared, $
+4.75
+ per share
+— 
+— 
+— 
+(
+2,664
+)
+— 
+(
+2,664
+)
+Share-based payment expense
+— 
+— 
+247
+— 
+— 
+247
+Repurchases of common stock
+— 
+— 
+(
+45
+)
+(
+30
+)
+— 
+(
+75
+)
+Issuance of common stock under share-based payment plans
+1
+1
+148
+— 
+— 
+149
+Other
+— 
+— 
+20
+— 
+— 
+20
+Balance January 30, 2026
+561
+$
+281
+$
+370
+$
+(
+10,839
+)
+$
+271
+$
+(
+9,917
+)
+See accompanying notes to consolidated financial statements.
+40
+Table of Contents
+Lowe’s Companies, Inc.
+Consolidated Statements of Cash Flows
+(In millions)
+Fiscal Years Ended
+January 30, 2026
+January 31, 2025
+February 2, 2024
+Cash flows from operating activities:
+Net earnings
+$
+6,654
+$
+6,957
+$
+7,726
+Adjustments to reconcile net earnings to net cash provided by operating activities:
+Depreciation and amortization
+2,194
+1,972
+1,923
+Noncash lease expense
+572
+520
+499
+Deferred income taxes
+256
+9
+6
+Asset impairment and loss on property - net
+53
+5
+83
+Gain on sale of business
+—
+(
+177
+)
+(
+79
+)
+Share-based payment expense
+247
+221
+210
+Changes in operating assets and liabilities:
+Merchandise inventory – net
+703
+(
+514
+)
+1,637
+Other operating assets
+(
+243
+)
+93
+182
+Accounts payable
+73
+633
+(
+1,820
+)
+Other operating liabilities
+(
+645
+)
+(
+94
+)
+(
+2,227
+)
+Net cash provided by operating activities
+9,864
+9,625
+8,140
+Cash flows from investing activities:
+Purchases of investments
+(
+1,693
+)
+(
+1,286
+)
+(
+1,785
+)
+Proceeds from sale/maturity of investments
+1,658
+1,204
+1,722
+Capital expenditures
+(
+2,213
+)
+(
+1,927
+)
+(
+1,964
+)
+Proceeds from sale of property and other long-term assets
+82
+105
+53
+Acquisition of businesses - net
+(
+10,088
+)
+—
+—
+Proceeds from sale of business
+—
+177
+100
+Other – net
+(
+10
+)
+(
+11
+)
+(
+27
+)
+Net cash used in investing activities
+(
+12,264
+)
+(
+1,738
+)
+(
+1,901
+)
+Cash flows from financing activities:
+Net change in commercial paper
+—
+—
+(
+499
+)
+Net proceeds from issuance of debt
+6,974
+—
+2,983
+Repayment of debt
+(
+2,587
+)
+(
+545
+)
+(
+601
+)
+Proceeds from issuance of common stock under share-based payment plans
+149
+159
+141
+Cash dividend payments
+(
+2,636
+)
+(
+2,566
+)
+(
+2,531
+)
+Repurchases of common stock
+(
+211
+)
+(
+4,053
+)
+(
+6,138
+)
+Other – net
+(
+68
+)
+(
+42
+)
+(
+21
+)
+Net cash provided by/(used in) financing activities
+1,621
+(
+7,047
+)
+(
+6,666
+)
+Net (decrease)/increase in cash and cash equivalents
+(
+779
+)
+840
+(
+427
+)
+Cash and cash equivalents, beginning of year
+1,761
+921
+1,348
+Cash and cash equivalents, end of year
+$
+982
+$
+1,761
+$
+921
+See accompanying notes to consolidated financial statements.
+41
+Table of Contents
+NOTES TO CONSOLIDATED FINANCIAL STATEMENTS
+YEARS ENDED JANUARY 30, 2026, JANUARY 31, 2025, AND FEBRUARY 2, 2024 
+NOTE 1: 
+Summary of Significant Accounting Policies
+Lowe’s Companies, Inc. and subsidiaries (the Company) is the world’s second-largest home improvement retailer and operated 
+1,759
+ stores and outlets in the United States as of January 30, 2026.  In addition, Lowe’s operates over 
+540
+ branch locations in the United States and Canada, which include our current year acquisitions of Foundation Building Materials (FBM) and Artisan Design Group (ADG).  See 
+Note 2
+ for information on these acquisitions.    
+Below are those accounting policies considered by the Company to be significant.
+Fiscal Year -
+ The Company’s fiscal year ends on the Friday nearest the end of January.  Each of the fiscal years presented 
+contained 52 weeks. 
+ All references herein for the years 2025, 2024, and 2023 represent the fiscal years ended January 30, 2026, January 31, 2025, and February 2, 2024, respectively.
+Principles of Consolidation
+ - The consolidated financial statements include the accounts of the Company and its wholly-owned or controlled subsidiaries.  The Company consolidates the financial results of FBM and ADG on a one-month lag due to differences in reporting calendars.  All intercompany accounts and transactions have been eliminated.
+Foreign Currency
+ - Gains and losses from foreign currency transactions are included in 
+
+Expected output for example 2:
+{
+ "revenue": {
+  "value": 86286000000,
+  "unit": "USD",
+  "period": "fiscal year ended 2026-01-30",
+  "quote": "Net sales\n$\n86,286"
+ },
+ "net_income": {
+  "value": 6654000000,
+  "unit": "USD",
+  "period": "fiscal year ended 2026-01-30",
+  "quote": "Net earnings\n$\n6,654"
+ },
+ "operating_income": {
+  "value": 10153000000,
+  "unit": "USD",
+  "period": "fiscal year ended 2026-01-30",
+  "quote": "Operating income\n10,153"
+ },
+ "total_assets": {
+  "value": 54144000000,
+  "unit": "USD",
+  "period": "fiscal year ended 2026-01-30",
+  "quote": "Total assets\n$\n54,144"
+ }
+}
+
+### Your filing
+CONSOLIDATED STATEMENTS OF OPERATIONS
+(In millions, except number of shares, which are reflected in thousands, and per-share amounts)
+Years Ended
+September 26,
+2026
+September 27,
+2025
+September 28,
+2024
+Net sales:
+   Products
+$
+355,533
+$
+307,003
+$
+294,866
+   Services
+123,301
+109,158
+96,169
+Total net sales
+478,834
+416,161
+391,035
+Cost of sales:
+   Products
+215,874
+194,116
+185,233
+   Services
+29,358
+26,844
+25,119
+Total cost of sales
+245,232
+220,960
+210,352
+Gross margin
+233,602
+195,201
+180,683
+Operating expenses:
+Research and development
+45,765
+34,550
+31,370
+Selling, general and administrative
+29,774
+27,601
+26,097
+Total operating expenses
+75,539
+62,151
+57,467
+Operating income
+158,063
+133,050
+123,216
+Other income/(expense), net
+1,174
+(
+321
+)
+269
+Income before provision for income taxes
+159,237
+132,729
+123,485
+Provision for income taxes
+27,062
+20,719
+29,749
+Net income
+$
+132,175
+$
+112,010
+$
+93,736
+Earnings per share:
+Basic
+$
+9.01
+$
+7.49
+$
+6.11
+Diluted
+$
+8.98
+$
+7.46
+$
+6.08
+Shares used in computing earnings per share:
+Basic
+14,661,935
+14,948,500
+15,343,783
+Diluted
+14,720,306
+15,004,697
+15,408,095
+See accompanying Notes to Consolidated Financial Statements.
+Apple Inc. | 2026 Form 10-K | 32
+Apple Inc.
+CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME
+(In millions)
+Years Ended
+September 26,
+2026
+September 27,
+2025
+September 28,
+2024
+Net income
+$
+132,175
+$
+112,010
+$
+93,736
+Other comprehensive income/(loss):
+Change in foreign currency translation, net of tax
+12
+(
+267
+)
+395
+Change in unrealized gains/losses on derivative instruments, net of tax:
+Change in fair value of derivative instruments
+539
+849
+(
+832
+)
+Adjustment for net (gains)/losses realized and included in net income
+5
+(
+212
+)
+(
+1,337
+)
+Total change in unrealized gains/losses on derivative instruments
+544
+637
+(
+2,169
+)
+Change in unrealized gains/losses on marketable debt securities, net of tax:
+Change in fair value of marketable debt securities
+(
+1,464
+)
+817
+5,850
+Adjustment for net (gains)/losses realized and included in net income
+57
+414
+204
+Total change in unrealized gains/losses on marketable debt securities
+(
+1,407
+)
+1,231
+6,054
+Total other comprehensive income/(loss)
+(
+851
+)
+1,601
+4,280
+Total comprehensive income
+$
+131,324
+$
+113,611
+$
+98,016
+See accompanying Notes to Consolidated Financial Statements.
+Apple Inc. | 2026 Form 10-K | 33
+Apple Inc.
+CONSOLIDATED BALANCE SHEETS
+(In millions, except number of shares, which are reflected in thousands, and par value)
+September 26,
+2026
+September 27,
+2025
+ASSETS:
+Current assets:
+Cash and cash equivalents
+$
+36,305
+$
+35,934
+Marketable securities
+20,417
+18,763
+Accounts receivable, net
+43,817
+39,777
+Vendor non-trade receivables
+39,896
+33,180
+Inventories
+14,541
+5,718
+Other current assets
+18,881
+14,585
+Total current assets
+173,857
+147,957
+Non-current assets:
+Marketable securities
+80,213
+77,723
+Property, plant and equipment, net
+52,084
+49,834
+Intangible assets, net
+20,278
+11,093
+Other non-current assets
+78,116
+72,634
+Total non-current assets
+230,691
+211,284
+Total assets
+$
+404,548
+$
+359,241
+LIABILITIES AND SHAREHOLDERS’ EQUITY:
+Current liabilities:
+Accounts payable
+$
+82,252
+$
+69,860
+Other current liabilities
+66,124
+66,387
+Deferred revenue
+9,636
+9,055
+Commercial paper
+1,997
+7,979
+Term debt
+9,906
+12,350
+Total current liabilities
+169,915
+165,631
+Non-current liabilities:
+Term debt
+68,208
+78,328
+Other non-current liabilities
+54,332
+41,549
+Total non-current liabilities
+122,540
+119,877
+Total liabilities
+292,455
+285,508
+Commitments and contingencies
+Shareholders’ equity:
+Common stock and additional paid-in capital, $
+0.00001
+ par value: 
+50,400,000
+ shares authorized; 
+14,532,259
+ and 
+14,773,260
+ shares issued and outstanding, respectively
+104,815
+93,568
+Retained earnings/(Accumulated deficit)
+13,700
+(
+14,264
+)
+Accumulated other comprehensive loss
+(
+6,422
+)
+(
+5,571
+)
+Total shareholders’ equity
+112,093
+73,733
+Total liabilities and shareholders’ equity
+$
+404,548
+$
+359,241
+See accompanying Notes to Consolidated Financial Statements.
+Apple Inc. | 2026 Form 10-K | 34
+Apple Inc.
+CONSOLIDATED STATEMENTS OF SHAREHOLDERS’ EQUITY
+(In millions, except per-share amounts)
+Years Ended
+September 26,
+2026
+September 27,
+2025
+September 28,
+2024
+Total shareholders’ equity, beginning balances
+$
+73,733
+$
+56,950
+$
+62,146
+Common stock and additional paid-in capital:
+Beginning balances
+93,568
+83,276
+73,812
+Common stock issued
+1,603
+1,498
+1,423
+Common stock withheld related to net share settlement of equity awards
+(
+4,918
+)
+(
+4,452
+)
+(
+3,993
+)
+Share-based compensation
+14,562
+13,246
+12,034
+Ending balances
+104,815
+93,568
+83,276
+Retained earnings/(Accumulated deficit):
+Beginning balances
+(
+14,264
+)
+(
+19,154
+)
+(
+214
+)
+Net income
+132,175
+112,010
+93,736
+Dividends and dividend equivalents declared
+(
+15,704
+)
+(
+15,413
+)
+(
+15,218
+)
+Common stock withheld related to net share settlement of equity awards
+(
+2,022
+)
+(
+1,655
+)
+(
+1,612
+)
+Common stock repurchased
+(
+86,485
+)
+(
+90,052
+)
+(
+95,846
+)
+Ending balances
+13,700
+(
+14,264
+)
+(
+19,154
+)
+Accumulated other comprehensive loss:
+Beginning balances
+(
+5,571
+)
+(
+7,172
+)
+(
+11,452
+)
+Other comprehensive income/(loss)
+(
+851
+)
+1,601
+4,280
+Ending balances
+(
+6,422
+)
+(
+5,571
+)
+(
+7,172
+)
+Total shareholders’ equity, ending balances
+$
+112,093
+$
+73,733
+$
+56,950
+Dividends and dividend equivalents declared per share or RSU
+$
+1.06
+$
+1.02
+$
+0.98
+See accompanying Notes to Consolidated Financial Statements.
+Apple Inc. | 2026 Form 10-K | 35
+Apple Inc.
+CONSOLIDATED STATEMENTS OF CASH FLOWS
+(In millions)
+Years Ended
+September 26,
+2026
+September 27,
+2025
+September 28,
+2024
+Cash, cash equivalents, and restricted cash and cash equivalents, beginning balances
+$
+35,934
+$
+29,943
+$
+30,737
+Operating activities:
+Net income
+132,175
+112,010
+93,736
+Adjustments to reconcile net income to cash generated by operating activities:
+Depreciation and amortization
+13,423
+11,698
+11,445
+Share-based compensation expense
+13,789
+12,863
+11,688
+Other
+568
+(
+89
+)
+(
+2,266
+)
+Changes in operating assets and liabilities:
+Accounts receivable, net
+(
+3,994
+)
+(
+6,682
+)
+(
+3,788
+)
+Vendor non-trade receivables
+(
+6,716
+)
+(
+347
+)
+(
+1,356
+)
+Inventories
+(
+8,905
+)
+1,400
+(
+1,046
+)
+Other current and non-current assets
+(
+21,117
+)
+(
+9,197
+)
+(
+11,731
+)
+Accounts payable
+12,171
+902
+6,020
+Other current and non-current liabilities
+13,703
+(
+11,076
+)
+15,552
+Cash generated by operating activities
+145,097
+111,482
+118,254
+Investing activities:
+Purchases of marketable securities
+(
+54,945
+)
+(
+24,407
+)
+(
+48,656
+)
+Proceeds from maturities of marketable securities
+34,815
+40,907
+51,211
+Proceeds from sales of marketable securities
+14,280
+12,890
+11,135
+Payments for acquisition of property, plant and equipment
+(
+9,041
+)
+(
+12,715
+)
+(
+9,447
+)
+Other
+(
+2,389
+)
+(
+1,480
+)
+(
+1,308
+)
+Cash generated by/(used in) investing activities
+(
+17,280
+)
+15,195
+2,935
+Financing activities:
+Payments for taxes related to net share settlement of equity awards
+(
+6,793
+)
+(
+5,960
+)
+(
+5,441
+)
+Payments for dividends and dividend equivalents
+(
+15,721
+)
+(
+15,421
+)
+(
+15,234
+)
+Repurchases of common stock
+(
+86,
+
+CONSOLIDATED BALANCE SHEETS
+(In millions, except number of shares, which are reflected in thousands, and par value)
+September 26,
+2026
+September 27,
+2025
+ASSETS:
+Current assets:
+Cash and cash equivalents
+$
+36,305
+$
+35,934
+Marketable securities
+20,417
+18,763
+Accounts receivable, net
+43,817
+39,777
+Vendor non-trade receivables
+39,896
+33,180
+Inventories
+14,541
+5,718
+Other current assets
+18,881
+14,585
+Total current assets
+173,857
+147,957
+Non-current assets:
+Marketable securities
+80,213
+77,723
+Property, plant and equipment, net
+52,084
+49,834
+Intangible assets, net
+20,278
+11,093
+Other non-current assets
+78,116
+72,634
+Total non-current assets
+230,691
+211,284
+Total assets
+$
+404,548
+$
+359,241
+LIABILITIES AND SHAREHOLDERS’ EQUITY:
+Current liabilities:
+Accounts payable
+$
+82,252
+$
+69,860
+Other current liabilities
+66,124
+66,387
+Deferred revenue
+9,636
+9,055
+Commercial paper
+1,997
+7,979
+Term debt
+9,906
+12,350
+Total current liabilities
+169,915
+165,631
+Non-current liabilities:
+Term debt
+68,208
+78,328
+Other non-current liabilities
+54,332
+41,549
+Total non-current liabilities
+122,540
+119,877
+Total liabilities
+292,455
+285,508
+Commitments and contingencies
+Shareholders’ equity:
+Common stock and additional paid-in capital, $
+0.00001
+ par value: 
+50,400,000
+ shares authorized; 
+14,532,259
+ and 
+14,773,260
+ shares issued and outstanding, respectively
+104,815
+93,568
+Retained earnings/(Accumulated deficit)
+13,700
+(
+14,264
+)
+Accumulated other comprehensive loss
+(
+6,422
+)
+(
+5,571
+)
+Total shareholders’ equity
+112,093
+73,733
+Total liabilities and shareholders’ equity
+$
+404,548
+$
+359,241
+See accompanying Notes to Consolidated Financial Statements.
+Apple Inc. | 2026 Form 10-K | 34
+Apple Inc.
+CONSOLIDATED STATEMENTS OF SHAREHOLDERS’ EQUITY
+(In millions, except per-share amounts)
+Years Ended
+September 26,
+2026
+September 27,
+2025
+September 28,
+2024
+Total shareholders’ equity, beginning balances
+$
+73,733
+$
+56,950
+$
+62,146
+Common stock and additional paid-in capital:
+Beginning balances
+93,568
+83,276
+73,812
+Common stock issued
+1,603
+1,498
+1,423
+Common stock withheld related to net share settlement of equity awards
+(
+4,918
+)
+(
+4,452
+)
+(
+3,993
+)
+Share-based compensation
+14,562
+13,246
+12,034
+Ending balances
+104,815
+93,568
+83,276
+Retained earnings/(Accumulated deficit):
+Beginning balances
+(
+14,264
+)
+(
+19,154
+)
+(
+214
+)
+Net income
+132,175
+112,010
+93,736
+Dividends and dividend equivalents declared
+(
+15,704
+)
+(
+15,413
+)
+(
+15,218
+)
+Common stock withheld related to net share settlement of equity awards
+(
+2,022
+)
+(
+1,655
+)
+(
+1,612
+)
+Common stock repurchased
+(
+86,485
+)
+(
+90,052
+)
+(
+95,846
+)
+Ending balances
+13,700
+(
+14,264
+)
+(
+19,154
+)
+Accumulated other comprehensive loss:
+Beginning balances
+(
+5,571
+)
+(
+7,172
+)
+(
+11,452
+)
+Other comprehensive income/(loss)
+(
+851
+)
+1,601
+4,280
+Ending balances
+(
+6,422
+)
+(
+5,571
+)
+(
+7,172
+)
+Total shareholders’ equity, ending balances
+$
+112,093
+$
+73,733
+$
+56,950
+Dividends and dividend equivalents declared per share or RSU
+$
+1.06
+$
+1.02
+$
+0.98
+See accompanying Notes to Consolidated Financial Statements.
+Apple Inc. | 2026 Form 10-K | 35
+Apple Inc.
+CONSOLIDATED STATEMENTS OF CASH FLOWS
+(In millions)
+Years Ended
+September 26,
+2026
+September 27,
+2025
+September 28,
+2024
+Cash, cash equivalents, and restricted cash and cash equivalents, beginning balances
+$
+35,934
+$
+29,943
+$
+30,737
+Operating activities:
+Net income
+132,175
+112,010
+93,736
+Adjustments to reconcile net income to cash generated by operating activities:
+Depreciation and amortization
+13,423
+11,698
+11,445
+Share-based compensation expense
+13,789
+12,863
+11,688
+Other
+568
+(
+89
+)
+(
+2,266
+)
+Changes in operating assets and liabilities:
+Accounts receivable, net
+(
+3,994
+)
+(
+6,682
+)
+(
+3,788
+)
+Vendor non-trade receivables
+(
+6,716
+)
+(
+347
+)
+(
+1,356
+)
+Inventories
+(
+8,905
+)
+1,400
+(
+1,046
+)
+Other current and non-current assets
+(
+21,117
+)
+(
+9,197
+)
+(
+11,731
+)
+Accounts payable
+12,171
+902
+6,020
+Other current and non-current liabilities
+13,703
+(
+11,076
+)
+15,552
+Cash generated by operating activities
+145,097
+111,482
+118,254
+Investing activities:
+Purchases of marketable securities
+(
+54,945
+)
+(
+24,407
+)
+(
+48,656
+)
+Proceeds from maturities of marketable securities
+34,815
+40,907
+51,211
+Proceeds from sales of marketable securities
+14,280
+12,890
+11,135
+Payments for acquisition of property, plant and equipment
+(
+9,041
+)
+(
+12,715
+)
+(
+9,447
+)
+Other
+(
+2,389
+)
+(
+1,480
+)
+(
+1,308
+)
+Cash generated by/(used in) investing activities
+(
+17,280
+)
+15,195
+2,935
+Financing activities:
+Payments for taxes related to net share settlement of equity awards
+(
+6,793
+)
+(
+5,960
+)
+(
+5,441
+)
+Payments for dividends and dividend equivalents
+(
+15,721
+)
+(
+15,421
+)
+(
+15,234
+)
+Repurchases of common stock
+(
+86,390
+)
+(
+90,711
+)
+(
+94,949
+)
+Proceeds from issuance of term debt, net
+—
+4,481
+—
+Repayments of term debt
+(
+12,396
+)
+(
+10,932
+)
+(
+9,958
+)
+Proceeds from/(Repayments of) commercial paper, net
+(
+5,911
+)
+(
+2,032
+)
+3,960
+Other
+(
+235
+)
+(
+111
+)
+(
+361
+)
+Cash used in financing activities
+(
+127,446
+)
+(
+120,686
+)
+(
+121,983
+)
+Increase/(Decrease) in cash, cash equivalents, and restricted cash and cash equivalents
+371
+5,991
+(
+794
+)
+Cash, cash equivalents, and restricted cash and cash equivalents, ending balances
+$
+36,305
+$
+35,934
+$
+29,943
+See accompanying Notes to Consolidated Financial Statements.
+Apple Inc. | 2026 Form 10-K | 36
+Apple Inc.
+Notes to Consolidated Financial Statements
+Note 1 – 
+Summary of Significant Accounting Policies
+Basis of Presentation and Preparation
+The consolidated financial statements include the accounts of Apple Inc. and its wholly owned subsidiaries. The preparation of these consolidated financial statements and accompanying notes in conformity with GAAP requires the use of management estimates. Certain prior period amounts in the consolidated financial statements and accompanying notes have been reclassified to conform to the current period’s presentation.
+The Company’s fiscal year is the 52- or 53-week period that ends on the last Saturday of September. An additional week is included in the first fiscal quarter every five or six years to realign the Company’s fiscal quarters with calendar quarters. The Company’s fiscal years 2026, 2025 and 2024 spanned 52 weeks each. Unless otherwise stated, references to particular years, quarters, months and periods refer to the Company’s fiscal years ended in September and the associated quarters, months and periods of those fiscal years.
+Recently Adopted Accounting Pronouncements
+Income Taxes
+Beginning with the 2026 annual reporting period, the Company adopted the FASB’s ASU No. 2023-09, 
+Income Taxes (Topic 740): Improvements to Income Tax Disclosures 
+(“ASU 2023-09”), which requires the Company to disclose specified additional information in its income tax rate reconciliation and provide additional information for reconciling items that meet a quantitative threshold. ASU 2023-09 also requires the Company to disaggregate its income taxes paid disclosure by federal, state and local, and foreign taxes, with further disaggregation required for s

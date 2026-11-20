@@ -1,0 +1,13 @@
+{
+ "ticker": "PG",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 1,
+ "ts": "2026-11-19T21:53:19+00:00",
+ "prompt_sha": "7d99645e2e49",
+ "prompt_chars": 504,
+ "in_tokens": 176,
+ "out_tokens": 239,
+ "cost_usd": 0.000137,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

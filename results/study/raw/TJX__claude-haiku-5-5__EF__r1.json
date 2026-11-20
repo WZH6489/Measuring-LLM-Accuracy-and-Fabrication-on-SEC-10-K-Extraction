@@ -1,0 +1,13 @@
+{
+ "ticker": "TJX",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 1,
+ "ts": "2026-11-19T21:56:23+00:00",
+ "prompt_sha": "8990c2c032eb",
+ "prompt_chars": 507,
+ "in_tokens": 178,
+ "out_tokens": 419,
+ "cost_usd": 0.000227,
+ "raw": "{\"revenue\": null, \"net_income\": null, \"operating_income\": null, \"total_assets\": null}"
+}

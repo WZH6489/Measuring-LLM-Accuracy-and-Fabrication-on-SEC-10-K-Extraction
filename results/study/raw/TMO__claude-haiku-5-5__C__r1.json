@@ -1,0 +1,13 @@
+{
+ "ticker": "TMO",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 1,
+ "ts": "2026-11-19T21:51:15+00:00",
+ "prompt_sha": "48ca5af10d57",
+ "prompt_chars": 43941,
+ "in_tokens": 22654,
+ "out_tokens": 535,
+ "cost_usd": 0.002533,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 44556000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": \"Total revenues\\n44,556\\n42,879\\n42,857\"\n  },\n  \"net_income\": {\n    \"value\": 6704000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": \"Net income attributable to Thermo Fisher Scientific Inc.\\n$\\n6,704\\n$\\n6,335\\n$\\n5,995\"\n  },\n  \"operating_income\": {\n    \"value\": 7746000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": \"Operating income\\n7,746\\n7,337\\n6,859\"\n  },\n  \"total_assets\": {\n    \"value\": 110343000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": \"Total assets\\n$\\n110,343\\n$\\n97,321\"\n  }\n}\n```"
+}

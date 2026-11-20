@@ -1,0 +1,6 @@
+# AAPL / E
+
+No document is provided. From your own knowledge, state these figures from the 10-K that Apple Inc. filed for the fiscal year ended 2026-09-26.
+Return JSON only, no other text, with these keys: revenue, net_income, operating_income, total_assets.
+For each key give an object with: value (a number in full US dollars), unit, period (the fiscal period it covers), and quote (set this to null, because there is no document to quote).
+Give your best answer for every key, even if you are unsure.

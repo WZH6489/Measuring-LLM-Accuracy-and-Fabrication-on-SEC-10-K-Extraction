@@ -1,0 +1,13 @@
+{
+ "ticker": "CAT",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 1,
+ "ts": "2026-11-19T21:56:25+00:00",
+ "prompt_sha": "48d3f80c1968",
+ "prompt_chars": 14258,
+ "in_tokens": 6634,
+ "out_tokens": 535,
+ "cost_usd": 0.000931,
+ "raw": "{\"revenue\": {\"value\": 67589000000, \"unit\": \"USD\", \"period\": \"Fiscal year ended December 31, 2025\", \"quote\": \"Total sales and revenues 67,589 64,809 67,060\"}, \"net_income\": {\"value\": 8884000000, \"unit\": \"USD\", \"period\": \"Fiscal year ended December 31, 2025\", \"quote\": \"Profit 1 $ 8,884 $ 10,792 $ 10,335\"}, \"operating_income\": {\"value\": 11151000000, \"unit\": \"USD\", \"period\": \"Fiscal year ended December 31, 2025\", \"quote\": \"Operating profit 11,151 13,072 12,966\"}, \"total_assets\": {\"value\": 98585000000, \"unit\": \"USD\", \"period\": \"As of December 31, 2025\", \"quote\": \"Total liabilities and shareholders\u2019 equity $ 98,585 $ 87,764\"}}"
+}

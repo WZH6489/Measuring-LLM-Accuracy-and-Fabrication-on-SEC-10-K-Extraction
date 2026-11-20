@@ -1,0 +1,13 @@
+{
+ "ticker": "KO",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 1,
+ "ts": "2026-11-19T21:52:16+00:00",
+ "prompt_sha": "630514ccd661",
+ "prompt_chars": 14472,
+ "in_tokens": 6740,
+ "out_tokens": 620,
+ "cost_usd": 0.000984,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 47941000000,\n    \"unit\": \"USD\",\n    \"period\": \"Year ended December 31, 2025\",\n    \"quote\": \"Net Operating Revenues $ 47,941 $ 47,061 $ 45,754\"\n  },\n  \"net_income\": {\n    \"value\": 13107000000,\n    \"unit\": \"USD\",\n    \"period\": \"Year ended December 31, 2025\",\n    \"quote\": \"Net Income Attributable to Shareowners of The Coca-Cola Company $ 13,107 $ 10,631 $ 10,714\"\n  },\n  \"operating_income\": {\n    \"value\": 13762000000,\n    \"unit\": \"USD\",\n    \"period\": \"Year ended December 31, 2025\",\n    \"quote\": \"Operating Income 13,762 9,992 11,311\"\n  },\n  \"total_assets\": {\n    \"value\": 104816000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"Total Assets $ 104,816 $ 100,549\"\n  }\n}\n```"
+}

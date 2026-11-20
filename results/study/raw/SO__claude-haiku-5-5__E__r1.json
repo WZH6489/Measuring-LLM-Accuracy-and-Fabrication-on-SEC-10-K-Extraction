@@ -1,0 +1,13 @@
+{
+ "ticker": "SO",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 1,
+ "ts": "2026-11-19T22:02:19+00:00",
+ "prompt_sha": "88e3b6cefb8d",
+ "prompt_chars": 492,
+ "in_tokens": 168,
+ "out_tokens": 957,
+ "cost_usd": 0.000495,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 27500000000,\n    \"unit\": \"USD (approximate estimate, not verified against the FY2025 10-K)\",\n    \"period\": \"FY2025 (year ended 2025-12-31)\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 3900000000,\n    \"unit\": \"USD (approximate estimate, not verified against the FY2025 10-K)\",\n    \"period\": \"FY2025 (year ended 2025-12-31)\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 6500000000,\n    \"unit\": \"USD (approximate estimate, not verified against the FY2025 10-K)\",\n    \"period\": \"FY2025 (year ended 2025-12-31)\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 160000000000,\n    \"unit\": \"USD (approximate estimate, not verified against the FY2025 10-K)\",\n    \"period\": \"As of 2025-12-31\",\n    \"quote\": null\n  }\n}\n```"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "GE",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 1,
+ "ts": "2026-11-19T21:58:03+00:00",
+ "prompt_sha": "a7ed18f94cd5",
+ "prompt_chars": 500,
+ "in_tokens": 173,
+ "out_tokens": 1288,
+ "cost_usd": 0.000661,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 44000000000,\n    \"unit\": \"USD (best estimate, not verified against the filing)\",\n    \"period\": \"FY2025, year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 7000000000,\n    \"unit\": \"USD (best estimate, not verified against the filing)\",\n    \"period\": \"FY2025, year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 8500000000,\n    \"unit\": \"USD (best estimate, not verified against the filing)\",\n    \"period\": \"FY2025, year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 130000000000,\n    \"unit\": \"USD (best estimate, not verified against the filing)\",\n    \"period\": \"As of 2025-12-31\",\n    \"quote\": null\n  }\n}\n```"
+}

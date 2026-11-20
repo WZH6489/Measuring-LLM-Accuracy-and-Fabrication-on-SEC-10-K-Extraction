@@ -1,0 +1,13 @@
+{
+ "ticker": "CALM",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 1,
+ "ts": "2026-11-19T22:08:33+00:00",
+ "prompt_sha": "6b84d231704f",
+ "prompt_chars": 500,
+ "in_tokens": 173,
+ "out_tokens": 808,
+ "cost_usd": 0.000421,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD; not available. I have no knowledge of the FY2026 10-K for the fiscal year ended May 30, 2026.\",\n    \"period\": \"Fiscal year ended 2026-05-30\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD; not available. I have no knowledge of the FY2026 10-K for the fiscal year ended May 30, 2026.\",\n    \"period\": \"Fiscal year ended 2026-05-30\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD; not available. I have no knowledge of the FY2026 10-K for the fiscal year ended May 30, 2026.\",\n    \"period\": \"Fiscal year ended 2026-05-30\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD; not available. I have no knowledge of the FY2026 10-K for the fiscal year ended May 30, 2026.\",\n    \"period\": \"Fiscal year ended 2026-05-30\",\n    \"quote\": null\n  }\n}\n```"
+}

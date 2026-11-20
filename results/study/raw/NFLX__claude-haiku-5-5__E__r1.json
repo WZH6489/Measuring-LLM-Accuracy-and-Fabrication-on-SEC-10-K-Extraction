@@ -1,0 +1,13 @@
+{
+ "ticker": "NFLX",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 1,
+ "ts": "2026-11-19T22:04:14+00:00",
+ "prompt_sha": "cd9664cfa1f7",
+ "prompt_chars": 492,
+ "in_tokens": 167,
+ "out_tokens": 1131,
+ "cost_usd": 0.000582,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 45200000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31); estimate, not verified against the filed 10-K\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 10800000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31); estimate, not verified against the filed 10-K\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 13300000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31); estimate, not verified against the filed 10-K\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 58000000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of 2025-12-31; estimate, not verified against the filed 10-K\",\n    \"quote\": null\n  }\n}\n```"
+}

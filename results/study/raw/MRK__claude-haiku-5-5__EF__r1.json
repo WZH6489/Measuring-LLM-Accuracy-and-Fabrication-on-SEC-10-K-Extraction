@@ -1,0 +1,13 @@
+{
+ "ticker": "MRK",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 1,
+ "ts": "2026-11-19T21:50:45+00:00",
+ "prompt_sha": "7bdd64a9a6b4",
+ "prompt_chars": 502,
+ "in_tokens": 173,
+ "out_tokens": 286,
+ "cost_usd": 0.00016,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

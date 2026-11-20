@@ -1,0 +1,13 @@
+{
+ "ticker": "SXI",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 1,
+ "ts": "2026-11-19T22:10:24+00:00",
+ "prompt_sha": "dd618eb58e33",
+ "prompt_chars": 511,
+ "in_tokens": 181,
+ "out_tokens": 947,
+ "cost_usd": 0.000492,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 800000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-06-30 (low-confidence estimate; not verified against the filing)\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 70000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-06-30 (low-confidence estimate; not verified against the filing)\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 105000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-06-30 (low-confidence estimate; not verified against the filing)\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 1300000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of 2026-06-30 (low-confidence estimate; not verified against the filing)\",\n    \"quote\": null\n  }\n}\n```"
+}

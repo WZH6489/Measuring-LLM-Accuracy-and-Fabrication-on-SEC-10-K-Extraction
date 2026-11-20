@@ -1,0 +1,13 @@
+{
+ "ticker": "EXC",
+ "model": "claude-haiku-5-5",
+ "cell": "C+F",
+ "repeat": 1,
+ "ts": "2026-11-19T22:03:36+00:00",
+ "prompt_sha": "f98736af8044",
+ "prompt_chars": 37016,
+ "in_tokens": 19240,
+ "out_tokens": 423,
+ "cost_usd": 0.002135,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": {\n    \"value\": 116570000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": \"Total assets\\n$\\n116,570\"\n  }\n}\n```"
+}

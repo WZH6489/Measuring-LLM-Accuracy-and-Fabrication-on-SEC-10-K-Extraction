@@ -1,0 +1,13 @@
+{
+ "ticker": "PFE",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 1,
+ "ts": "2026-11-19T21:50:16+00:00",
+ "prompt_sha": "0917c00ebe19",
+ "prompt_chars": 495,
+ "in_tokens": 169,
+ "out_tokens": 350,
+ "cost_usd": 0.000192,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

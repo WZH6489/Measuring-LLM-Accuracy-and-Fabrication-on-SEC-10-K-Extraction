@@ -1,0 +1,13 @@
+{
+ "ticker": "D",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 1,
+ "ts": "2026-11-19T22:02:34+00:00",
+ "prompt_sha": "2a8f3786eebf",
+ "prompt_chars": 43941,
+ "in_tokens": 22446,
+ "out_tokens": 473,
+ "cost_usd": 0.002481,
+ "raw": "```json\n{\n \"revenue\": {\n  \"value\": 16506000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Operating Revenue\\n$\\n16,506\"\n },\n \"net_income\": {\n  \"value\": 2998000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Net Income Attributable to Dominion Energy\\n$\\n2,998\"\n },\n \"operating_income\": {\n  \"value\": 4414000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Income from operations\\n4,414\"\n },\n \"total_assets\": {\n  \"value\": 115857000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total assets\\n$\\n115,857\"\n }\n}\n```"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "PFE",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 1,
+ "ts": "2026-11-19T21:50:07+00:00",
+ "prompt_sha": "3c8d57453db4",
+ "prompt_chars": 491,
+ "in_tokens": 166,
+ "out_tokens": 995,
+ "cost_usd": 0.000514,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 62600000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31); unverified estimate, not confirmed against the 10-K\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 10000000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31); unverified estimate, net income attributable to Pfizer, not confirmed against the 10-K\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 12000000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31); unverified estimate, not confirmed against the 10-K\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 226000000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of 2025-12-31; unverified estimate, not confirmed against the 10-K\",\n    \"quote\": null\n  }\n}\n```"
+}

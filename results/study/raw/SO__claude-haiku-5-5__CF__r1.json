@@ -1,0 +1,13 @@
+{
+ "ticker": "SO",
+ "model": "claude-haiku-5-5",
+ "cell": "C+F",
+ "repeat": 1,
+ "ts": "2026-11-19T22:02:24+00:00",
+ "prompt_sha": "e888cd07bf4c",
+ "prompt_chars": 44018,
+ "in_tokens": 22607,
+ "out_tokens": 559,
+ "cost_usd": 0.00254,
+ "raw": "```json\n{\n \"revenue\": {\n  \"value\": 29553000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total operating revenues\\n29,553\"\n },\n \"net_income\": {\n  \"value\": 4341000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Consolidated Net Income Attributable to Southern Company\\n$\\n4,341\"\n },\n \"operating_income\": {\n  \"value\": 7285000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Operating Income\\n7,285\"\n },\n \"total_assets\": {\n  \"value\": 155720000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total Assets\\n$\\n155,720\"\n }\n}\n```"
+}

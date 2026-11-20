@@ -1,0 +1,13 @@
+{
+ "ticker": "AEP",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 1,
+ "ts": "2026-11-19T22:02:52+00:00",
+ "prompt_sha": "2dce650a7aea",
+ "prompt_chars": 14472,
+ "in_tokens": 7587,
+ "out_tokens": 519,
+ "cost_usd": 0.001018,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 21876000000,\n    \"unit\": \"USD\",\n    \"period\": \"Year ended December 31, 2025\",\n    \"quote\": \"TOTAL REVENUES 21,876 19,721 18,982\"\n  },\n  \"net_income\": {\n    \"value\": 3696000000,\n    \"unit\": \"USD\",\n    \"period\": \"Year ended December 31, 2025\",\n    \"quote\": \"NET INCOME 3,696 2,976 2,213\"\n  },\n  \"operating_income\": {\n    \"value\": 5319000000,\n    \"unit\": \"USD\",\n    \"period\": \"Year ended December 31, 2025\",\n    \"quote\": \"OPERATING INCOME 5,319 4,304 3,556\"\n  },\n  \"total_assets\": {\n    \"value\": 114460000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"TOTAL ASSETS $ 114,460 $ 103,078\"\n  }\n}\n```"
+}

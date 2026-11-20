@@ -1,0 +1,13 @@
+{
+ "ticker": "SO",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 1,
+ "ts": "2026-11-19T22:02:09+00:00",
+ "prompt_sha": "ec0e2a2655ff",
+ "prompt_chars": 14472,
+ "in_tokens": 6821,
+ "out_tokens": 537,
+ "cost_usd": 0.000951,
+ "raw": "{\"revenue\":{\"value\":29553000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended December 31, 2025\",\"quote\":\"Total operating revenues 29,553 26,724 25,253\"},\"net_income\":{\"value\":4341000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended December 31, 2025\",\"quote\":\"Consolidated Net Income Attributable to Southern Company $ 4,341 $ 4,401 $ 3,976\"},\"operating_income\":{\"value\":7285000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended December 31, 2025\",\"quote\":\"Operating Income 7,285 7,068 5,826\"},\"total_assets\":{\"value\":155720000000,\"unit\":\"USD\",\"period\":\"As of December 31, 2025\",\"quote\":\"Total Assets $ 155,720 $ 145,180\"}}"
+}

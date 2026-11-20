@@ -1,0 +1,414 @@
+{
+ "study_version": 1,
+ "conditions": {
+  "B": {
+   "label": "Zero-shot, statements only",
+   "context": "statements",
+   "abstain": false,
+   "shots": 0
+  },
+  "C": {
+   "label": "Few-shot, statements only",
+   "context": "statements",
+   "abstain": false,
+   "shots": 2
+  },
+  "D": {
+   "label": "Retrieval (BM25 top passages)",
+   "context": "retrieved",
+   "abstain": false,
+   "shots": 0
+  },
+  "E": {
+   "label": "Closed-book (no document)",
+   "context": "none",
+   "abstain": false,
+   "shots": 0
+  },
+  "B+F": {
+   "label": "Zero-shot + may answer null",
+   "context": "statements",
+   "abstain": true,
+   "shots": 0
+  },
+  "C+F": {
+   "label": "Few-shot + may answer null",
+   "context": "statements",
+   "abstain": true,
+   "shots": 2
+  },
+  "D+F": {
+   "label": "Retrieval + may answer null",
+   "context": "retrieved",
+   "abstain": true,
+   "shots": 0
+  },
+  "E+F": {
+   "label": "Closed-book + may answer null",
+   "context": "none",
+   "abstain": true,
+   "shots": 0
+  }
+ },
+ "prompt_templates": {
+  "main": "You are extracting numbers from the financial statements of a 10-K filing.\nReturn JSON only, no other text, with these keys: {fields}.\nFor each key give an object with: value (a number in full US dollars, applying any scale stated in the table header such as \"in millions\"), unit, period (the fiscal period it covers), and quote (a verbatim quote from the text that contains the number).\nUse the most recent fiscal year only.\n{extra}\n{body}",
+  "abstain_text": "If a figure is not reported in the text, set that key to null. Do not guess.\n",
+  "closed_book": "No document is provided. From your own knowledge, state these figures from the 10-K that {company} filed for the fiscal year ended {period_end}.\nReturn JSON only, no other text, with these keys: {fields}.\nFor each key give an object with: value (a number in full US dollars), unit, period (the fiscal period it covers), and quote (set this to null, because there is no document to quote).\n{extra}",
+  "closed_answer": "Give your best answer for every key, even if you are unsure.",
+  "closed_abstain": "If you do not know a figure, set that key to null. Do not guess.",
+  "retrieved_note": "The text below is a set of passages retrieved from the filing by a keyword search. It is not the whole filing, and the passages may not be complete statements.\n\n",
+  "fewshot_intro": "Here are worked examples from other companies' filings, showing the expected output. Your filing follows them.\n\n"
+ },
+ "retrieval": {
+  "method": "BM25 (sparse keyword ranking, not neural embeddings)",
+  "chunk_chars": 1500,
+  "overlap_chars": 250,
+  "top_k_per_field": 3,
+  "max_chars": 24000,
+  "queries": {
+   "revenue": "total revenue net sales revenues consolidated statements of operations",
+   "net_income": "net income attributable consolidated statements of income",
+   "operating_income": "operating income income from operations consolidated statements of operations",
+   "total_assets": "total assets consolidated balance sheets"
+  }
+ },
+ "answer_key": {
+  "source": "SEC XBRL 'companyfacts' API (data.sec.gov)",
+  "tags": {
+   "revenue": [
+    "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "Revenues",
+    "SalesRevenueNet",
+    "RevenueFromContractWithCustomerIncludingAssessedTax"
+   ],
+   "net_income": [
+    "NetIncomeLoss",
+    "ProfitLoss"
+   ],
+   "operating_income": [
+    "OperatingIncomeLoss"
+   ],
+   "total_assets": [
+    "Assets"
+   ]
+  },
+  "rules": [
+   "Only values reported in this exact 10-K (matching accession number) and fiscal period end.",
+   "Flow items (revenue, net income, operating income) must cover 340-380 days.",
+   "The first tag in each list that has a value is the key; other tags that disagree by more than 0.1% mark the item as ambiguous.",
+   "Net income is NetIncomeLoss (attributable to the parent) before ProfitLoss."
+  ]
+ },
+ "scoring": {
+  "match_tolerance": 0.01,
+  "classes": {
+   "match": "within 1% of the SEC value",
+   "wrong_scale": "off by exactly 1,000x or 1,000,000x",
+   "wrong_value": "a number that does appear in the filing, but is not the SEC value (wrong line, period or column)",
+   "not_in_text": "a number that appears nowhere in the filing: fabricated or recalled wrongly",
+   "missing": "no answer given (when the model was not allowed to abstain)",
+   "abstained": "the model answered null when it was allowed to",
+   "bad_json": "the reply could not be parsed",
+   "no_section": "the financial statement could not be located in the filing, so the model was never asked",
+   "answered_no_key": "the model gave a number but SEC has no value to check it against",
+   "no_key": "no SEC value and no answer: not scored"
+  }
+ },
+ "model_settings": {
+  "max_tokens": 4000,
+  "temperature": "not settable on these models; repeats measure the spread"
+ },
+ "prices_per_million_tokens": {
+  "claude-haiku-5-5": [
+   0.1,
+   0.5
+  ],
+  "claude-sonnet-5-5": [
+   2.0,
+   10.0
+  ]
+ },
+ "sec_access": {
+  "user_agent": "William Huang wzh1@sfu.ca",
+  "pause_seconds": 0.2
+ },
+ "sample": [
+  {
+   "ticker": "AAPL",
+   "group": "Technology"
+  },
+  {
+   "ticker": "MSFT",
+   "group": "Technology"
+  },
+  {
+   "ticker": "NVDA",
+   "group": "Technology"
+  },
+  {
+   "ticker": "ORCL",
+   "group": "Technology"
+  },
+  {
+   "ticker": "CSCO",
+   "group": "Technology"
+  },
+  {
+   "ticker": "TXN",
+   "group": "Technology"
+  },
+  {
+   "ticker": "JNJ",
+   "group": "Healthcare"
+  },
+  {
+   "ticker": "PFE",
+   "group": "Healthcare"
+  },
+  {
+   "ticker": "MRK",
+   "group": "Healthcare"
+  },
+  {
+   "ticker": "ABT",
+   "group": "Healthcare"
+  },
+  {
+   "ticker": "TMO",
+   "group": "Healthcare"
+  },
+  {
+   "ticker": "AMGN",
+   "group": "Healthcare"
+  },
+  {
+   "ticker": "WMT",
+   "group": "Consumer staples"
+  },
+  {
+   "ticker": "KO",
+   "group": "Consumer staples"
+  },
+  {
+   "ticker": "PEP",
+   "group": "Consumer staples"
+  },
+  {
+   "ticker": "PG",
+   "group": "Consumer staples"
+  },
+  {
+   "ticker": "COST",
+   "group": "Consumer staples"
+  },
+  {
+   "ticker": "CL",
+   "group": "Consumer staples"
+  },
+  {
+   "ticker": "AMZN",
+   "group": "Consumer discretionary"
+  },
+  {
+   "ticker": "HD",
+   "group": "Consumer discretionary"
+  },
+  {
+   "ticker": "NKE",
+   "group": "Consumer discretionary"
+  },
+  {
+   "ticker": "MCD",
+   "group": "Consumer discretionary"
+  },
+  {
+   "ticker": "SBUX",
+   "group": "Consumer discretionary"
+  },
+  {
+   "ticker": "TJX",
+   "group": "Consumer discretionary"
+  },
+  {
+   "ticker": "CAT",
+   "group": "Industrials"
+  },
+  {
+   "ticker": "HON",
+   "group": "Industrials"
+  },
+  {
+   "ticker": "UPS",
+   "group": "Industrials"
+  },
+  {
+   "ticker": "GE",
+   "group": "Industrials"
+  },
+  {
+   "ticker": "DE",
+   "group": "Industrials"
+  },
+  {
+   "ticker": "LMT",
+   "group": "Industrials"
+  },
+  {
+   "ticker": "XOM",
+   "group": "Energy"
+  },
+  {
+   "ticker": "CVX",
+   "group": "Energy"
+  },
+  {
+   "ticker": "COP",
+   "group": "Energy"
+  },
+  {
+   "ticker": "SLB",
+   "group": "Energy"
+  },
+  {
+   "ticker": "EOG",
+   "group": "Energy"
+  },
+  {
+   "ticker": "MPC",
+   "group": "Energy"
+  },
+  {
+   "ticker": "NEE",
+   "group": "Utilities"
+  },
+  {
+   "ticker": "DUK",
+   "group": "Utilities"
+  },
+  {
+   "ticker": "SO",
+   "group": "Utilities"
+  },
+  {
+   "ticker": "D",
+   "group": "Utilities"
+  },
+  {
+   "ticker": "AEP",
+   "group": "Utilities"
+  },
+  {
+   "ticker": "EXC",
+   "group": "Utilities"
+  },
+  {
+   "ticker": "META",
+   "group": "Communication"
+  },
+  {
+   "ticker": "NFLX",
+   "group": "Communication"
+  },
+  {
+   "ticker": "DIS",
+   "group": "Communication"
+  },
+  {
+   "ticker": "CMCSA",
+   "group": "Communication"
+  },
+  {
+   "ticker": "T",
+   "group": "Communication"
+  },
+  {
+   "ticker": "VZ",
+   "group": "Communication"
+  },
+  {
+   "ticker": "LIN",
+   "group": "Materials"
+  },
+  {
+   "ticker": "APD",
+   "group": "Materials"
+  },
+  {
+   "ticker": "SHW",
+   "group": "Materials"
+  },
+  {
+   "ticker": "ECL",
+   "group": "Materials"
+  },
+  {
+   "ticker": "NUE",
+   "group": "Materials"
+  },
+  {
+   "ticker": "FCX",
+   "group": "Materials"
+  },
+  {
+   "ticker": "CALM",
+   "group": "Smaller companies"
+  },
+  {
+   "ticker": "COKE",
+   "group": "Smaller companies"
+  },
+  {
+   "ticker": "WING",
+   "group": "Smaller companies"
+  },
+  {
+   "ticker": "BOOT",
+   "group": "Smaller companies"
+  },
+  {
+   "ticker": "HLIT",
+   "group": "Smaller companies"
+  },
+  {
+   "ticker": "SXI",
+   "group": "Smaller companies"
+  }
+ ],
+ "hard_cases": [
+  {
+   "ticker": "JPM",
+   "group": "Banks (hard case)"
+  }
+ ],
+ "held_out_for_fewshot": [
+  "KR",
+  "LOW",
+  "ITW",
+  "TGT"
+ ],
+ "runs": [
+  {
+   "started": "2026-11-19T21:47:17+00:00",
+   "models": [
+    "claude-haiku-5-5"
+   ],
+   "repeats": 1,
+   "cells": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "B+F",
+    "C+F",
+    "D+F",
+    "E+F"
+   ],
+   "git_commit": "b9889236341e0783169f98090f1db9d64a7ced37",
+   "code_sha": {
+    "study.py": "90612b26dcd2",
+    "pipeline.py": "138e926466a5",
+    "companies.py": "cb3558203ebf"
+   }
+  }
+ ]
+}

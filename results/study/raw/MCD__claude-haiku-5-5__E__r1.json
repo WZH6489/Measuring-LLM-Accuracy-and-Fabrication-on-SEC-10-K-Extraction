@@ -1,0 +1,13 @@
+{
+ "ticker": "MCD",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 1,
+ "ts": "2026-11-19T21:55:22+00:00",
+ "prompt_sha": "428821ebb20c",
+ "prompt_chars": 495,
+ "in_tokens": 169,
+ "out_tokens": 818,
+ "cost_usd": 0.000426,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 26900000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31); estimate, not verified against the filed 10-K\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 8500000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31); estimate, not verified against the filed 10-K\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 12200000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31); estimate, not verified against the filed 10-K\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 57000000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of 2025-12-31; estimate, not verified against the filed 10-K\",\n    \"quote\": null\n  }\n}\n```"
+}

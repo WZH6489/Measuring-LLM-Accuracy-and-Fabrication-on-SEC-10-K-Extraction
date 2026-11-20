@@ -1,0 +1,13 @@
+{
+ "ticker": "EOG",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 1,
+ "ts": "2026-11-19T22:00:54+00:00",
+ "prompt_sha": "5de5a3085483",
+ "prompt_chars": 502,
+ "in_tokens": 173,
+ "out_tokens": 298,
+ "cost_usd": 0.000166,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

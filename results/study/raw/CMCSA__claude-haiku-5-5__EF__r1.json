@@ -1,0 +1,13 @@
+{
+ "ticker": "CMCSA",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 1,
+ "ts": "2026-11-19T22:05:12+00:00",
+ "prompt_sha": "35a826de94ed",
+ "prompt_chars": 497,
+ "in_tokens": 170,
+ "out_tokens": 231,
+ "cost_usd": 0.000132,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

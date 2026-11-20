@@ -1,0 +1,13 @@
+{
+ "ticker": "DIS",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 1,
+ "ts": "2026-11-19T22:04:40+00:00",
+ "prompt_sha": "23ffe4ef2957",
+ "prompt_chars": 495,
+ "in_tokens": 167,
+ "out_tokens": 729,
+ "cost_usd": 0.000381,
+ "raw": "```json\n{\n  \"note\": \"I don't have access to Disney's 10-K for the fiscal year ended 2026-10-03, and that date is beyond my knowledge, so I can't provide these figures without guessing. Please check the filing on SEC EDGAR or Disney's investor relations site.\",\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-10-03\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-10-03\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-10-03\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"As of 2026-10-03\",\n    \"quote\": null\n  }\n}\n```"
+}

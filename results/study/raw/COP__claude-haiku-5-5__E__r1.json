@@ -1,0 +1,13 @@
+{
+ "ticker": "COP",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 1,
+ "ts": "2026-11-19T21:59:52+00:00",
+ "prompt_sha": "2e9cac7da964",
+ "prompt_chars": 495,
+ "in_tokens": 171,
+ "out_tokens": 912,
+ "cost_usd": 0.000473,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"as of 2025-12-31\",\n    \"quote\": null\n  },\n  \"note\": \"I do not have reliable knowledge of ConocoPhillips's FY2025 10-K figures, so I am not providing values that could be mistaken for filed amounts. Please check the filing on SEC EDGAR or the company's investor relations site.\"\n}\n```"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "NUE",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 1,
+ "ts": "2026-11-19T22:07:45+00:00",
+ "prompt_sha": "46e5f5ba56f4",
+ "prompt_chars": 491,
+ "in_tokens": 167,
+ "out_tokens": 884,
+ "cost_usd": 0.000459,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 30500000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 1100000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 1600000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 38000000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of 2025-12-31\",\n    \"quote\": null\n  }\n}\n```"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "JNJ",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 1,
+ "ts": "2026-11-19T21:49:31+00:00",
+ "prompt_sha": "423af1d89fdb",
+ "prompt_chars": 43941,
+ "in_tokens": 22481,
+ "out_tokens": 1164,
+ "cost_usd": 0.00283,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 94193000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-28\",\n    \"quote\": \"Sales to customers\\n$\\n94,193\"\n  },\n  \"net_income\": {\n    \"value\": 26804000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-28\",\n    \"quote\": \"Net earnings\\n$\\n26,804\"\n  },\n  \"operating_income\": {\n    \"value\": 25287000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-28 (derived: gross profit 63,937 less selling, marketing and administrative expenses 23,676, research and development expense 14,665, in-process research and development impairments 81, and restructuring 228; no operating income subtotal is reported)\",\n    \"quote\": \"Gross profit\\n63,937\\nSelling, marketing and administrative expenses\\n23,676\\nResearch and development expense\\n14,665\\nIn-process research and development impairments\\n81\\nRestructuring (Note 20)\\n228\"\n  },\n  \"total_assets\": {\n    \"value\": 199210000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-28\",\n    \"quote\": \"Total assets\\n$\\n199,210\"\n  }\n}\n```"
+}

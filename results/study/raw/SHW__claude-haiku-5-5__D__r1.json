@@ -1,0 +1,13 @@
+{
+ "ticker": "SHW",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 1,
+ "ts": "2026-11-19T22:06:50+00:00",
+ "prompt_sha": "0985b758d873",
+ "prompt_chars": 18831,
+ "in_tokens": 7673,
+ "out_tokens": 1180,
+ "cost_usd": 0.001357,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 23574300000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net sales $ 23,574.3 $ 23,098.5 $ 23,051.9\"\n  },\n  \"net_income\": {\n    \"value\": 2568500000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net income $ 2,568.5 $ 2,681.4 $ 2,388.8\"\n  },\n  \"operating_income\": {\n    \"value\": 3820500000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Gross profit 11,515.5 ... Selling, general and administrative expenses 7,695.0\"\n  },\n  \"total_assets\": {\n    \"value\": 25901700000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"Total Assets $ 25,901.7 $ 23,632.6 $ 22,954.4\"\n  }\n}\n```"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "SBUX",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 1,
+ "ts": "2026-11-19T21:55:45+00:00",
+ "prompt_sha": "d25d2a2db496",
+ "prompt_chars": 495,
+ "in_tokens": 169,
+ "out_tokens": 928,
+ "cost_usd": 0.000481,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-09-27\",\n    \"quote\": null,\n    \"note\": \"I have no reliable knowledge of Starbucks' FY2026 10-K. Any figure I gave would be a guess presented as a filed number.\"\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-09-27\",\n    \"quote\": null,\n    \"note\": \"Not available from my knowledge; verify against the SEC EDGAR filing.\"\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-09-27\",\n    \"quote\": null,\n    \"note\": \"Not available from my knowledge; verify against the SEC EDGAR filing.\"\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-09-27\",\n    \"quote\": null,\n    \"note\": \"Not available from my knowledge; verify against the SEC EDGAR filing.\"\n  }\n}\n```"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "LIN",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 1,
+ "ts": "2026-11-19T22:05:57+00:00",
+ "prompt_sha": "6a8c59e7390d",
+ "prompt_chars": 14472,
+ "in_tokens": 7168,
+ "out_tokens": 483,
+ "cost_usd": 0.000958,
+ "raw": "{\"revenue\":{\"value\":33986000000,\"unit\":\"USD\",\"period\":\"Year ended December 31, 2025\",\"quote\":\"Sales $ 33,986\"},\"net_income\":{\"value\":6898000000,\"unit\":\"USD\",\"period\":\"Year ended December 31, 2025\",\"quote\":\"Net Income \u2013 Linde plc $ 6,898\"},\"operating_income\":{\"value\":8923000000,\"unit\":\"USD\",\"period\":\"Year ended December 31, 2025\",\"quote\":\"Operating Profit 8,923\"},\"total_assets\":{\"value\":86817000000,\"unit\":\"USD\",\"period\":\"As of December 31, 2025\",\"quote\":\"Total Assets $ 86,817\"}}"
+}

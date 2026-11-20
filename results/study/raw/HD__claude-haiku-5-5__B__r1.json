@@ -1,0 +1,13 @@
+{
+ "ticker": "HD",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 1,
+ "ts": "2026-11-19T21:54:26+00:00",
+ "prompt_sha": "33e8151265f9",
+ "prompt_chars": 14472,
+ "in_tokens": 6801,
+ "out_tokens": 633,
+ "cost_usd": 0.000997,
+ "raw": "{\n  \"revenue\": {\n    \"value\": 164683000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal 2025 (52 weeks ended February 1, 2026)\",\n    \"quote\": \"Net sales $ 164,683\"\n  },\n  \"net_income\": {\n    \"value\": 14156000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal 2025 (52 weeks ended February 1, 2026)\",\n    \"quote\": \"Net earnings $ 14,156\"\n  },\n  \"operating_income\": {\n    \"value\": 20890000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal 2025 (52 weeks ended February 1, 2026)\",\n    \"quote\": \"Operating income 20,890 21,526 21,689\"\n  },\n  \"total_assets\": {\n    \"value\": 105095000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of February 1, 2026 (fiscal 2025 year-end)\",\n    \"quote\": \"Total assets $ 105,095 $ 96,119\"\n  }\n}"
+}

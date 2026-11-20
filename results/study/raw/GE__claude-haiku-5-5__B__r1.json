@@ -1,0 +1,13 @@
+{
+ "ticker": "GE",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 1,
+ "ts": "2026-11-19T21:57:49+00:00",
+ "prompt_sha": "712f2dca8df1",
+ "prompt_chars": 7470,
+ "in_tokens": 3327,
+ "out_tokens": 936,
+ "cost_usd": 0.000801,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 45855000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Total revenue 45,855 38,702 35,348\"\n  },\n  \"net_income\": {\n    \"value\": 8698000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net income (loss) 8,698 6,566 9,445\"\n  },\n  \"operating_income\": {\n    \"value\": 8513000000,\n    \"unit\": \"USD (derived: total revenue of 45,855 less total costs and expenses of 37,342, in millions; no operating income line item is reported)\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Total revenue 45,855 ... Total costs and expenses 37,342\"\n  },\n  \"total_assets\": {\n    \"value\": 130169000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"Total assets $ 130,169 $ 123,140\"\n  }\n}\n```"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "APD",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 1,
+ "ts": "2026-11-19T22:06:19+00:00",
+ "prompt_sha": "047f996c3414",
+ "prompt_chars": 14472,
+ "in_tokens": 7107,
+ "out_tokens": 602,
+ "cost_usd": 0.001012,
+ "raw": "{\"revenue\": {\"value\": 12990900000, \"unit\": \"USD\", \"period\": \"Fiscal year ended 30 September 2026\", \"quote\": \"Sales $ 12,990.9 $ 12,037.3 $ 12,100.6\"}, \"net_income\": {\"value\": 532100000, \"unit\": \"USD\", \"period\": \"Fiscal year ended 30 September 2026\", \"quote\": \"Net Income (Loss) Attributable to Air Products $ 532.1 ($ 394.5 ) $ 3,828.2\"}, \"operating_income\": {\"value\": 23300000, \"unit\": \"USD\", \"period\": \"Fiscal year ended 30 September 2026\", \"quote\": \"Operating Income (Loss) 23.3 ( 877.0 ) 4,466.1\"}, \"total_assets\": {\"value\": 41209800000, \"unit\": \"USD\", \"period\": \"As of 30 September 2026\", \"quote\": \"Total Assets (A) $ 41,209.8 $ 41,059.5\"}}"
+}

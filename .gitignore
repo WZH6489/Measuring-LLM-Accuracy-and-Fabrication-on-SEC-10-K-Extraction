@@ -3,3 +3,10 @@ data/
 .env
 __pycache__/
 .DS_Store
+venv/
+data/
+__pycache__/
+.DS_Store
+.claude/
+.agents/
+.streamlit/

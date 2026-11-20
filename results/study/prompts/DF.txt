@@ -1,0 +1,858 @@
+# AAPL / D+F
+
+You are extracting numbers from the financial statements of a 10-K filing.
+Return JSON only, no other text, with these keys: revenue, net_income, operating_income, total_assets.
+For each key give an object with: value (a number in full US dollars, applying any scale stated in the table header such as "in millions"), unit, period (the fiscal period it covers), and quote (a verbatim quote from the text that contains the number).
+Use the most recent fiscal year only.
+If a figure is not reported in the text, set that key to null. Do not guess.
+
+The text below is a set of passages retrieved from the filing by a keyword search. It is not the whole filing, and the passages may not be complete statements.
+
+35
+Consolidated Statements of Cash Flows for the years ended September 26, 2026, September 27, 2025 and September 28, 2024
+36
+Notes to Consolidated Financial Statements
+37
+Reports of Independent Registered Public Accounting Firm
+54
+All financial statement schedules have been omitted, since the required information is not applicable or is not present in amounts sufficient to require submission of the schedule, or because the information required is included in the consolidated financial statements and accompanying notes.
+Apple Inc. | 2026 Form 10-K | 31
+Apple Inc.
+CONSOLIDATED STATEMENTS OF OPERATIONS
+(In millions, except number of shares, which are reflected in thousands, and per-share amounts)
+Years Ended
+September 26,
+2026
+September 27,
+2025
+September 28,
+2024
+Net sales:
+   Products
+$
+355,533
+$
+307,003
+$
+294,866
+   Services
+123,301
+109,158
+96,169
+Total net sales
+478,834
+416,161
+391,035
+Cost of sales:
+   Products
+215,874
+194,116
+185,233
+   Services
+29,358
+26,844
+25,119
+Total cost of sales
+245,232
+220,960
+210,352
+Gross margin
+233,602
+195,201
+180,683
+Operating expenses:
+Research and development
+45,765
+34,550
+31,370
+Selling, general and administrative
+29,774
+27,601
+26,097
+Total operating expenses
+75,539
+62,151
+57,467
+Operating income
+158,063
+133,050
+123,216
+Other income/(expense), net
+1,174
+(
+321
+)
+269
+Income before provision for income taxes
+159,237
+132,729
+123,485
+Provision for income taxes
+27,062
+20,719
+29,749
+Net income
+$
+132,175
+$
+112,010
+$
+93,736
+Earnings per share:
+Basic
+---
+158,063
+133,050
+123,216
+Other income/(expense), net
+1,174
+(
+321
+)
+269
+Income before provision for income taxes
+159,237
+132,729
+123,485
+Provision for income taxes
+27,062
+20,719
+29,749
+Net income
+$
+132,175
+$
+112,010
+$
+93,736
+Earnings per share:
+Basic
+$
+9.01
+$
+7.49
+$
+6.11
+Diluted
+$
+8.98
+$
+7.46
+$
+6.08
+Shares used in computing earnings per share:
+Basic
+14,661,935
+14,948,500
+15,343,783
+Diluted
+14,720,306
+15,004,697
+15,408,095
+See accompanying Notes to Consolidated Financial Statements.
+Apple Inc. | 2026 Form 10-K | 32
+Apple Inc.
+CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME
+(In millions)
+Years Ended
+September 26,
+2026
+September 27,
+2025
+September 28,
+2024
+Net income
+$
+132,175
+$
+112,010
+$
+93,736
+Other comprehensive income/(loss):
+Change in foreign currency translation, net of tax
+12
+(
+267
+)
+395
+Change in unrealized gains/losses on derivative instruments, net of tax:
+Change in fair value of derivative instruments
+539
+849
+(
+832
+)
+Adjustment for net (gains)/losses realized and included in net income
+5
+(
+212
+)
+(
+1,337
+)
+Total change in unrealized gains/losses on derivative instruments
+544
+637
+(
+2,169
+)
+Change in unrealized gains/losses on marketable debt securities, net of tax:
+Change in fair value of marketable debt securities
+(
+1,464
+)
+817
+5,850
+Adjustment for net (gains)/losses realized and included in net income
+57
+414
+204
+Total change in unrealized gains/losses on marketable debt securities
+(
+1,407
+)
+1,231
+6,054
+Total other comprehensive income/(loss)
+(
+851
+)
+1,601
+4,280
+Total comprehensive income
+---
+57
+414
+204
+Total change in unrealized gains/losses on marketable debt securities
+(
+1,407
+)
+1,231
+6,054
+Total other comprehensive income/(loss)
+(
+851
+)
+1,601
+4,280
+Total comprehensive income
+$
+131,324
+$
+113,611
+$
+98,016
+See accompanying Notes to Consolidated Financial Statements.
+Apple Inc. | 2026 Form 10-K | 33
+Apple Inc.
+CONSOLIDATED BALANCE SHEETS
+(In millions, except number of shares, which are reflected in thousands, and par value)
+September 26,
+2026
+September 27,
+2025
+ASSETS:
+Current assets:
+Cash and cash equivalents
+$
+36,305
+$
+35,934
+Marketable securities
+20,417
+18,763
+Accounts receivable, net
+43,817
+39,777
+Vendor non-trade receivables
+39,896
+33,180
+Inventories
+14,541
+5,718
+Other current assets
+18,881
+14,585
+Total current assets
+173,857
+147,957
+Non-current assets:
+Marketable securities
+80,213
+77,723
+Property, plant and equipment, net
+52,084
+49,834
+Intangible assets, net
+20,278
+11,093
+Other non-current assets
+78,116
+72,634
+Total non-current assets
+230,691
+211,284
+Total assets
+$
+404,548
+$
+359,241
+LIABILITIES AND SHAREHOLDERS’ EQUITY:
+Current liabilities:
+Accounts payable
+$
+82,252
+$
+69,860
+Other current liabilities
+66,124
+66,387
+Deferred revenue
+9,636
+9,055
+Commercial paper
+1,997
+7,979
+Term debt
+9,906
+12,350
+Total current liabilities
+169,915
+165,631
+Non-current liabilities:
+Term debt
+68,208
+78,328
+Other non-current liabilities
+54,332
+41,549
+Total non-current liabilities
+122,540
+119,877
+Total liabilities
+292,455
+285,508
+Commitments and contingencies
+Shareholders’ equity:
+Common stock and additional paid-in capital, $
+---
+Beginning balances
+(
+14,264
+)
+(
+19,154
+)
+(
+214
+)
+Net income
+132,175
+112,010
+93,736
+Dividends and dividend equivalents declared
+(
+15,704
+)
+(
+15,413
+)
+(
+15,218
+)
+Common stock withheld related to net share settlement of equity awards
+(
+2,022
+)
+(
+1,655
+)
+(
+1,612
+)
+Common stock repurchased
+(
+86,485
+)
+(
+90,052
+)
+(
+95,846
+)
+Ending balances
+13,700
+(
+14,264
+)
+(
+19,154
+)
+Accumulated other comprehensive loss:
+Beginning balances
+(
+5,571
+)
+(
+7,172
+)
+(
+11,452
+)
+Other comprehensive income/(loss)
+(
+851
+)
+1,601
+4,280
+Ending balances
+(
+6,422
+)
+(
+5,571
+)
+(
+7,172
+)
+Total shareholders’ equity, ending balances
+$
+112,093
+$
+73,733
+$
+56,950
+Dividends and dividend equivalents declared per share or RSU
+$
+1.06
+$
+1.02
+$
+0.98
+See accompanying Notes to Consolidated Financial Statements.
+Apple Inc. | 2026 Form 10-K | 35
+Apple Inc.
+CONSOLIDATED STATEMENTS OF CASH FLOWS
+(In millions)
+Years Ended
+September 26,
+2026
+September 27,
+2025
+September 28,
+2024
+Cash, cash equivalents, and restricted cash and cash equivalents, beginning balances
+$
+35,934
+$
+29,943
+$
+30,737
+Operating activities:
+Net income
+132,175
+112,010
+93,736
+Adjustments to reconcile net income to cash generated by operating activities:
+Depreciation and amortization
+13,423
+11,698
+11,445
+Share-based compensation expense
+13,789
+12,863
+11,688
+Other
+568
+(
+89
+)
+(
+2,266
+)
+Changes in operating assets and liabilities:
+Accounts receivable, net
+(
+3,994
+)
+(
+6,682
+)
+(
+3,788
+)
+Vendor non-trade receivables
+(
+6,716
+)
+(
+347
+)
+(
+1,356
+)
+Inventories
+(
+8,905
+)
+1,400
+(
+1,046
+---
+Apple Inc. | 2026 Form 10-K | 38
+The following table shows disaggregated net sales, as well as the portion of total net sales that was previously deferred, for 2026, 2025 and 2024 (in millions):
+2026
+2025
+2024
+iPhone
+$
+254,098
+$
+209,586
+$
+201,183
+Mac
+37,929
+33,708
+29,984
+iPad
+27,929
+28,023
+26,694
+Wearables, Home and Accessories
+35,577
+35,686
+37,005
+Services 
+(1)
+123,301
+109,158
+96,169
+Total net sales
+$
+478,834
+$
+416,161
+$
+391,035
+Portion of total net sales that was included in deferred revenue as of the beginning of the period
+$
+8,717
+$
+8,229
+$
+7,728
+(1)
+Services net sales include amortization of the deferred value of services bundled in the sales price of certain products.
+The Company’s proportion of net sales by disaggregated revenue source was generally consistent for each reportable segment (refer to Note 14, “Segment Information and Geographic Data”) for 2026, 2025 and 2024, except in Greater China, where iPhone revenue represented a moderately higher proportion of net sales. In addition, in 2026, Services revenue represented a moderately lower proportion of net sales in Greater China.
+As of September 26, 2026 and September 27, 2025, the Company had total deferred revenue of $
+14.8
+ billion and $
+13.7
+ billion, respectively. As of September 26, 2026, the Company expects 
+65
+% of total deferred revenue to be realized in less than a year, 
+22
+% within one-to-two years, 
+11
+% within two-to-three years and 
+2
+% in greater than three years.
+Note 3 – 
+Earnings Per Share
+The following table shows the computation of basic and diluted earnings per share for 2026, 2025 and 2024 (net income in millions and shares in thousands):
+---
+All derivative instruments are recorded in the Consolidated Balance Sheets at fair value. The accounting treatment for derivative gains and losses is based on intended use and hedge designation.
+Gains and losses arising from amounts that are included in the assessment of cash flow hedge effectiveness are initially deferred in accumulated other comprehensive income/(loss) and subsequently reclassified into earnings when the hedged transaction affects earnings, and in the same line item in the Consolidated Statements of Operations. Gains and losses arising from amounts that are included in the assessment of fair value hedge effectiveness are recognized in the Consolidated Statements of Operations line item to which the hedge relates along with offsetting losses and gains related to the change in value of the hedged item.
+For derivative instruments designated as cash flow and fair value hedges, amounts excluded from the assessment of hedge effectiveness are recognized on a straight-line basis over the life of the hedge in the Consolidated Statements of Operations line item to which the hedge relates. Changes in the fair value of amounts excluded from the assessment of hedge effectiveness are recognized in other comprehensive income/(loss).
+Gains and losses arising from changes in the fair values of derivative instruments that are not designated as accounting hedges are recognized in the Consolidated Statements of Operations.
+The Company classifies cash flows related to derivative instruments in the same section of the Consolidated Statements of Cash Flows as the items being hedged, which are generally classified as operating activities.
+---
+Assets
+Gross
+Intangible
+Assets
+Accumulated
+Amortization
+Net
+Intangible
+Assets
+Amortizable intangible assets:
+Licensed intangible assets
+$
+29,582
+$
+(
+8,639
+)
+$
+20,943
+$
+16,061
+$
+(
+6,882
+)
+$
+9,179
+Owned intangible assets
+8,363
+(
+5,145
+)
+3,218
+7,514
+(
+4,767
+)
+2,747
+Total
+37,945
+(
+13,784
+)
+24,161
+23,575
+(
+11,649
+)
+11,926
+Non-amortizable owned intangible assets
+1,539
+— 
+1,539
+1,375
+— 
+1,375
+Total intangible assets
+39,484
+(
+13,784
+)
+25,700
+24,950
+(
+11,649
+)
+13,301
+Less: Current portion of licensed intangible assets
+(
+5,422
+)
+(
+2,208
+)
+Non-current portion of intangible assets
+$
+20,278
+$
+11,093
+Amortization expense related to intangible assets was $
+4.9
+ billion, $
+3.7
+ billion and $
+3.6
+ billion in 2026, 2025 and 2024, respectively. 
+The expected annual amortization expense related to intangible assets as of September 26, 2026, is as follows (in millions):
+2027
+$
+6,617
+2028
+6,044
+2029
+5,517
+2030
+3,815
+2031
+756
+Thereafter
+1,412
+Total
+$
+24,161
+Note 7 – 
+Consolidated Financial Statement Details
+The following tables show the Company’s consolidated financial statement details as of September 26, 2026 and September 27, 2025 (in millions):
+Inventories
+2026
+2025
+Components
+$
+10,447
+$
+2,124
+Finished goods
+4,094
+3,594
+Total inventories
+$
+14,541
+$
+5,718
+Other Non-Current Assets
+2026
+2025
+Deferred tax assets
+$
+20,379
+$
+20,777
+Other non-current assets
+57,737
+51,857
+Total other non-current assets
+$
+78,116
+$
+72,634
+Apple Inc. | 2026 Form 10-K | 43
+Other Current Liabilities
+2026
+2025
+Income taxes payable
+---
+$
+66,952
+$
+25,052
+$
+30,658
+$
+—
+$
+391,035
+Cost of sales
+(
+89,587
+)
+(
+55,197
+)
+(
+37,519
+)
+(
+11,744
+)
+(
+16,305
+)
+—
+(
+210,352
+)
+Research and development
+—
+—
+—
+—
+—
+(
+31,370
+)
+(
+31,370
+)
+Selling and marketing
+(
+9,802
+)
+(
+4,341
+)
+(
+2,351
+)
+(
+854
+)
+(
+1,291
+)
+—
+(
+18,639
+)
+General and administrative
+—
+—
+—
+—
+—
+(
+7,458
+)
+(
+7,458
+)
+Operating income/(loss)
+$
+67,656
+$
+41,790
+$
+27,082
+$
+12,454
+$
+13,062
+$
+(
+38,828
+)
+$
+123,216
+Apple Inc. | 2026 Form 10-K | 52
+The following tables show net sales for 2026, 2025 and 2024 and long-lived assets as of September 26, 2026 and September 27, 2025 for countries that individually accounted for 10% or more of the respective totals, as well as aggregate amounts for the remaining countries (in millions):
+2026
+2025
+2024
+Net sales:
+U.S.
+$
+167,746
+$
+151,790
+$
+142,196
+China
+ (1)
+82,378
+64,377
+66,952
+Other countries
+228,710
+199,994
+181,887
+Total net sales
+$
+478,834
+$
+416,161
+$
+391,035
+(1)
+China includes Hong Kong and Taiwan.
+2026
+2025
+Long-lived assets:
+U.S.
+$
+41,386
+$
+40,274
+Other countries
+10,698
+9,560
+Total long-lived assets
+$
+52,084
+$
+49,834
+Apple Inc. | 2026 Form 10-K | 53
+Report of Independent Registered Public Accounting Firm
+To the Shareholders and the Board of Directors of Apple Inc.
+Opinion on the Financial Statements
+We have audited the accompanying consolidated balance sheets of Apple Inc. (the “Company”) as of September 26, 2026 and September 27, 2025, the related consolidated statements of operations, comprehensive income, shareholders’ equity and cash flows for each of the three years in the period ended September 26, 2026, and the related notes (collectively referred to as the “financial statements”). In our opinion, the financial statements present fairly, in all material respects, the financial position of the Company at September 26, 2026 and September 27, 2025, and the results of its operations and its cash flows for each of the three years in the period ended September 26, 2026, in conformity with U.S. generally accepted accounting principles (“GAAP”).

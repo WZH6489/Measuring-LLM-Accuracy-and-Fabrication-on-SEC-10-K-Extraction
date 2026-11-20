@@ -1,0 +1,13 @@
+{
+ "ticker": "DUK",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 1,
+ "ts": "2026-11-19T22:01:53+00:00",
+ "prompt_sha": "92be2fbef2ae",
+ "prompt_chars": 17534,
+ "in_tokens": 7806,
+ "out_tokens": 910,
+ "cost_usd": 0.001236,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (year ended December 31, 2025)\",\n    \"quote\": \"Not found in the provided passages; the only operating revenue figure shown (29,357) is for the Electric Utilities and Infrastructure segment, not the consolidated total.\"\n  },\n  \"net_income\": {\n    \"value\": 5071000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (year ended December 31, 2025)\",\n    \"quote\": \"Net Income $ 5,071 $ 4,614 $ 2,874\"\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (year ended December 31, 2025)\",\n    \"quote\": \"Not found in the provided passages; the Operating Income figures shown (7,813 and 2,827) are segment or subsidiary figures, not the consolidated total.\"\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"December 31, 2025\",\n    \"quote\": \"Not found in the provided passages; the consolidated balance sheet is truncated before the total assets line.\"\n  }\n}\n```"
+}

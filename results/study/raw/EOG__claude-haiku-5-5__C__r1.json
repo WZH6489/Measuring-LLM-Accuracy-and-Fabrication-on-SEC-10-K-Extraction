@@ -1,0 +1,13 @@
+{
+ "ticker": "EOG",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 1,
+ "ts": "2026-11-19T22:00:37+00:00",
+ "prompt_sha": "25379e97ffeb",
+ "prompt_chars": 36939,
+ "in_tokens": 19539,
+ "out_tokens": 717,
+ "cost_usd": 0.002312,
+ "raw": "```json\n{\n \"revenue\": {\n  \"value\": null,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Not present in the provided excerpt (no statement of income included)\"\n },\n \"net_income\": {\n  \"value\": 4980000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Net Income\\n$\\n4,980\"\n },\n \"operating_income\": {\n  \"value\": null,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Not present in the provided excerpt (no statement of income included)\"\n },\n \"total_assets\": {\n  \"value\": 51799000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total Assets\\n$\\n51,799\"\n }\n}\n```"
+}

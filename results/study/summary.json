@@ -1,0 +1,631 @@
+{
+ "generated": "2026-11-19T22:21:43+00:00",
+ "exclude_ambiguous": false,
+ "n_filings": 59,
+ "cells": [
+  {
+   "model": "claude-haiku-5-5",
+   "cell": "B",
+   "label": "Zero-shot, statements only",
+   "n_items": 202,
+   "n_filings": 58,
+   "repeats": 1,
+   "accuracy": [
+    0.9257425742574258,
+    0.8823529411764706,
+    0.9644670050761421
+   ],
+   "answer_rate": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "precision": [
+    0.9257425742574258,
+    0.8823529411764706,
+    0.9644670050761421
+   ],
+   "fabrication": [
+    0.0049504950495049506,
+    0.0,
+    0.015463917525773196
+   ],
+   "wrong_value": [
+    0.06930693069306931,
+    0.03365384615384615,
+    0.10891089108910891
+   ],
+   "classes": {
+    "match": 0.9257425742574258,
+    "wrong_scale": 0.0,
+    "wrong_value": 0.06930693069306931,
+    "not_in_text": 0.0049504950495049506,
+    "abstained": 0.0,
+    "missing": 0.0,
+    "bad_json": 0.0
+   },
+   "by_field": {
+    "net_income": 0.8301886792452831,
+    "operating_income": 0.9523809523809523,
+    "revenue": 0.9245283018867925,
+    "total_assets": 1.0
+   },
+   "by_group": {
+    "Communication": 0.7916666666666666,
+    "Consumer discretionary": 1.0,
+    "Consumer staples": 1.0,
+    "Energy": 0.7692307692307693,
+    "Healthcare": 1.0,
+    "Industrials": 0.9285714285714286,
+    "Materials": 0.95,
+    "Smaller companies": 0.9523809523809523,
+    "Technology": 1.0,
+    "Utilities": 0.8095238095238095
+   },
+   "consistency": null,
+   "quote_found_rate": 0.9405940594059405
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "cell": "C",
+   "label": "Few-shot, statements only",
+   "n_items": 202,
+   "n_filings": 58,
+   "repeats": 1,
+   "accuracy": [
+    0.9603960396039604,
+    0.9282296650717703,
+    0.9853658536585366
+   ],
+   "answer_rate": [
+    0.995049504950495,
+    0.9847715736040609,
+    1.0
+   ],
+   "precision": [
+    0.9651741293532339,
+    0.9333333333333333,
+    0.9898477157360406
+   ],
+   "fabrication": [
+    0.004975124378109453,
+    0.0,
+    0.015544041450777202
+   ],
+   "wrong_value": [
+    0.029850746268656716,
+    0.0053475935828877,
+    0.061224489795918366
+   ],
+   "classes": {
+    "match": 0.9603960396039604,
+    "wrong_scale": 0.0,
+    "wrong_value": 0.0297029702970297,
+    "not_in_text": 0.0049504950495049506,
+    "abstained": 0.0,
+    "missing": 0.0049504950495049506,
+    "bad_json": 0.0
+   },
+   "by_field": {
+    "net_income": 0.9622641509433962,
+    "operating_income": 0.9523809523809523,
+    "revenue": 0.9245283018867925,
+    "total_assets": 1.0
+   },
+   "by_group": {
+    "Communication": 0.9583333333333334,
+    "Consumer discretionary": 1.0,
+    "Consumer staples": 1.0,
+    "Energy": 0.9230769230769231,
+    "Healthcare": 1.0,
+    "Industrials": 0.9285714285714286,
+    "Materials": 0.9,
+    "Smaller companies": 1.0,
+    "Technology": 1.0,
+    "Utilities": 0.8571428571428571
+   },
+   "consistency": null,
+   "quote_found_rate": 0.9601990049751243
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "cell": "D",
+   "label": "Retrieval (BM25 top passages)",
+   "n_items": 224,
+   "n_filings": 59,
+   "repeats": 1,
+   "accuracy": [
+    0.875,
+    0.8165938864628821,
+    0.9292035398230089
+   ],
+   "answer_rate": [
+    0.9241071428571429,
+    0.8761061946902655,
+    0.960352422907489
+   ],
+   "precision": [
+    0.9468599033816425,
+    0.9137055837563451,
+    0.9764150943396226
+   ],
+   "fabrication": [
+    0.004830917874396135,
+    0.0,
+    0.01485148514851485
+   ],
+   "wrong_value": [
+    0.04830917874396135,
+    0.018957345971563982,
+    0.08056872037914692
+   ],
+   "classes": {
+    "match": 0.875,
+    "wrong_scale": 0.0,
+    "wrong_value": 0.044642857142857144,
+    "not_in_text": 0.004464285714285714,
+    "abstained": 0.0,
+    "missing": 0.07589285714285714,
+    "bad_json": 0.0
+   },
+   "by_field": {
+    "net_income": 0.8813559322033898,
+    "operating_income": 0.8936170212765957,
+    "revenue": 0.9152542372881356,
+    "total_assets": 0.8135593220338984
+   },
+   "by_group": {
+    "Communication": 0.7916666666666666,
+    "Consumer discretionary": 1.0,
+    "Consumer staples": 1.0,
+    "Energy": 0.8235294117647058,
+    "Healthcare": 0.9523809523809523,
+    "Industrials": 0.9090909090909091,
+    "Materials": 0.9090909090909091,
+    "Smaller companies": 0.9166666666666666,
+    "Technology": 0.9583333333333334,
+    "Utilities": 0.5
+   },
+   "consistency": null,
+   "quote_found_rate": 0.8990825688073395
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "cell": "E",
+   "label": "Closed-book (no document)",
+   "n_items": 224,
+   "n_filings": 59,
+   "repeats": 1,
+   "accuracy": [
+    0.1875,
+    0.12831858407079647,
+    0.2488479262672811
+   ],
+   "answer_rate": [
+    0.8794642857142857,
+    0.788546255506608,
+    0.9515418502202643
+   ],
+   "precision": [
+    0.2131979695431472,
+    0.14646464646464646,
+    0.2810810810810811
+   ],
+   "fabrication": [
+    0.6142131979695431,
+    0.5363128491620112,
+    0.6919191919191919
+   ],
+   "wrong_value": [
+    0.17258883248730963,
+    0.11055276381909548,
+    0.24752475247524752
+   ],
+   "classes": {
+    "match": 0.1875,
+    "wrong_scale": 0.0,
+    "wrong_value": 0.15178571428571427,
+    "not_in_text": 0.5401785714285714,
+    "abstained": 0.0,
+    "missing": 0.12053571428571429,
+    "bad_json": 0.0
+   },
+   "by_field": {
+    "net_income": 0.11864406779661017,
+    "operating_income": 0.1276595744680851,
+    "revenue": 0.4406779661016949,
+    "total_assets": 0.05084745762711865
+   },
+   "by_group": {
+    "Communication": 0.4166666666666667,
+    "Consumer discretionary": 0.3181818181818182,
+    "Consumer staples": 0.20833333333333334,
+    "Energy": 0.058823529411764705,
+    "Healthcare": 0.2857142857142857,
+    "Industrials": 0.2727272727272727,
+    "Materials": 0.0,
+    "Smaller companies": 0.0,
+    "Technology": 0.20833333333333334,
+    "Utilities": 0.08333333333333333
+   },
+   "consistency": null,
+   "quote_found_rate": null
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "cell": "B+F",
+   "label": "Zero-shot + may answer null",
+   "n_items": 202,
+   "n_filings": 58,
+   "repeats": 1,
+   "accuracy": [
+    0.9257425742574258,
+    0.8823529411764706,
+    0.9644670050761421
+   ],
+   "answer_rate": [
+    0.9900990099009901,
+    0.975,
+    1.0
+   ],
+   "precision": [
+    0.935,
+    0.8939393939393939,
+    0.97
+   ],
+   "fabrication": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "wrong_value": [
+    0.065,
+    0.03,
+    0.10606060606060606
+   ],
+   "classes": {
+    "match": 0.9257425742574258,
+    "wrong_scale": 0.0,
+    "wrong_value": 0.06435643564356436,
+    "not_in_text": 0.0,
+    "abstained": 0.009900990099009901,
+    "missing": 0.0,
+    "bad_json": 0.0
+   },
+   "by_field": {
+    "net_income": 0.8301886792452831,
+    "operating_income": 0.9523809523809523,
+    "revenue": 0.9245283018867925,
+    "total_assets": 1.0
+   },
+   "by_group": {
+    "Communication": 0.7916666666666666,
+    "Consumer discretionary": 1.0,
+    "Consumer staples": 1.0,
+    "Energy": 0.7692307692307693,
+    "Healthcare": 1.0,
+    "Industrials": 0.9285714285714286,
+    "Materials": 0.95,
+    "Smaller companies": 0.9523809523809523,
+    "Technology": 1.0,
+    "Utilities": 0.8095238095238095
+   },
+   "consistency": null,
+   "quote_found_rate": 0.945
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "cell": "C+F",
+   "label": "Few-shot + may answer null",
+   "n_items": 202,
+   "n_filings": 58,
+   "repeats": 1,
+   "accuracy": [
+    0.9603960396039604,
+    0.9282296650717703,
+    0.9853658536585366
+   ],
+   "answer_rate": [
+    0.9900990099009901,
+    0.975,
+    1.0
+   ],
+   "precision": [
+    0.97,
+    0.9387755102040817,
+    0.9946236559139785
+   ],
+   "fabrication": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "wrong_value": [
+    0.03,
+    0.005376344086021506,
+    0.061224489795918366
+   ],
+   "classes": {
+    "match": 0.9603960396039604,
+    "wrong_scale": 0.0,
+    "wrong_value": 0.0297029702970297,
+    "not_in_text": 0.0,
+    "abstained": 0.009900990099009901,
+    "missing": 0.0,
+    "bad_json": 0.0
+   },
+   "by_field": {
+    "net_income": 0.9622641509433962,
+    "operating_income": 0.9523809523809523,
+    "revenue": 0.9245283018867925,
+    "total_assets": 1.0
+   },
+   "by_group": {
+    "Communication": 0.9583333333333334,
+    "Consumer discretionary": 1.0,
+    "Consumer staples": 1.0,
+    "Energy": 0.9230769230769231,
+    "Healthcare": 1.0,
+    "Industrials": 0.9285714285714286,
+    "Materials": 0.9,
+    "Smaller companies": 1.0,
+    "Technology": 1.0,
+    "Utilities": 0.8571428571428571
+   },
+   "consistency": null,
+   "quote_found_rate": 0.965
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "cell": "D+F",
+   "label": "Retrieval + may answer null",
+   "n_items": 224,
+   "n_filings": 59,
+   "repeats": 1,
+   "accuracy": [
+    0.8348214285714286,
+    0.7699115044247787,
+    0.8949771689497716
+   ],
+   "answer_rate": [
+    0.8883928571428571,
+    0.8378378378378378,
+    0.9311926605504587
+   ],
+   "precision": [
+    0.9396984924623115,
+    0.9045226130653267,
+    0.9715639810426541
+   ],
+   "fabrication": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "wrong_value": [
+    0.06030150753768844,
+    0.02843601895734597,
+    0.09547738693467336
+   ],
+   "classes": {
+    "match": 0.8348214285714286,
+    "wrong_scale": 0.0,
+    "wrong_value": 0.05357142857142857,
+    "not_in_text": 0.0,
+    "abstained": 0.11160714285714286,
+    "missing": 0.0,
+    "bad_json": 0.0
+   },
+   "by_field": {
+    "net_income": 0.847457627118644,
+    "operating_income": 0.8723404255319149,
+    "revenue": 0.8813559322033898,
+    "total_assets": 0.7457627118644068
+   },
+   "by_group": {
+    "Communication": 0.6666666666666666,
+    "Consumer discretionary": 1.0,
+    "Consumer staples": 0.9583333333333334,
+    "Energy": 0.7058823529411765,
+    "Healthcare": 0.9523809523809523,
+    "Industrials": 0.8181818181818182,
+    "Materials": 0.9090909090909091,
+    "Smaller companies": 0.875,
+    "Technology": 0.9583333333333334,
+    "Utilities": 0.5
+   },
+   "consistency": null,
+   "quote_found_rate": 0.9447236180904522
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "cell": "E+F",
+   "label": "Closed-book + may answer null",
+   "n_items": 224,
+   "n_filings": 59,
+   "repeats": 1,
+   "accuracy": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "answer_rate": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "precision": [
+    null,
+    null,
+    null
+   ],
+   "fabrication": [
+    null,
+    null,
+    null
+   ],
+   "wrong_value": [
+    null,
+    null,
+    null
+   ],
+   "classes": {
+    "match": 0.0,
+    "wrong_scale": 0.0,
+    "wrong_value": 0.0,
+    "not_in_text": 0.0,
+    "abstained": 1.0,
+    "missing": 0.0,
+    "bad_json": 0.0
+   },
+   "by_field": {
+    "net_income": 0.0,
+    "operating_income": 0.0,
+    "revenue": 0.0,
+    "total_assets": 0.0
+   },
+   "by_group": {
+    "Communication": 0.0,
+    "Consumer discretionary": 0.0,
+    "Consumer staples": 0.0,
+    "Energy": 0.0,
+    "Healthcare": 0.0,
+    "Industrials": 0.0,
+    "Materials": 0.0,
+    "Smaller companies": 0.0,
+    "Technology": 0.0,
+    "Utilities": 0.0
+   },
+   "consistency": null,
+   "quote_found_rate": null
+  },
+  {
+   "model": "regex",
+   "cell": "A",
+   "label": "Rule/regex baseline (no model)",
+   "n_items": 202,
+   "n_filings": 58,
+   "repeats": 1,
+   "accuracy": [
+    0.6584158415841584,
+    0.5643564356435643,
+    0.75
+   ],
+   "answer_rate": [
+    0.8514851485148515,
+    0.7740384615384616,
+    0.9186602870813397
+   ],
+   "precision": [
+    0.7732558139534884,
+    0.6871508379888268,
+    0.8542713567839196
+   ],
+   "fabrication": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "wrong_value": [
+    0.18023255813953487,
+    0.1165644171779141,
+    0.24571428571428572
+   ],
+   "classes": {
+    "match": 0.6584158415841584,
+    "wrong_scale": 0.039603960396039604,
+    "wrong_value": 0.15346534653465346,
+    "not_in_text": 0.0,
+    "abstained": 0.0,
+    "missing": 0.1485148514851485,
+    "bad_json": 0.0
+   },
+   "by_field": {
+    "net_income": 0.49056603773584906,
+    "operating_income": 0.7857142857142857,
+    "revenue": 0.5660377358490566,
+    "total_assets": 0.8148148148148148
+   },
+   "by_group": {
+    "Communication": 0.75,
+    "Consumer discretionary": 0.7272727272727273,
+    "Consumer staples": 0.875,
+    "Energy": 0.38461538461538464,
+    "Healthcare": 0.5789473684210527,
+    "Industrials": 0.5714285714285714,
+    "Materials": 0.35,
+    "Smaller companies": 0.7142857142857143,
+    "Technology": 1.0,
+    "Utilities": 0.38095238095238093
+   },
+   "consistency": null,
+   "quote_found_rate": null
+  }
+ ],
+ "paired": [
+  {
+   "model": "claude-haiku-5-5",
+   "a": "B",
+   "b": "A",
+   "what": "model vs regex baseline",
+   "diff": 0.26732673267326734,
+   "lo": 0.175,
+   "hi": 0.365,
+   "filings": 58
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "a": "C",
+   "b": "B",
+   "what": "few-shot vs zero-shot",
+   "diff": 0.034653465346534656,
+   "lo": 0.0049261083743842365,
+   "hi": 0.06698564593301436,
+   "filings": 58
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "a": "D",
+   "b": "B",
+   "what": "retrieval vs full statements",
+   "diff": -0.054455445544554455,
+   "lo": -0.10416666666666667,
+   "hi": -0.014634146341463415,
+   "filings": 58
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "a": "B+F",
+   "b": "B",
+   "what": "abstention vs none (zero-shot)",
+   "diff": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "filings": 58
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "a": "E",
+   "b": "B",
+   "what": "closed-book vs reading the statements",
+   "diff": -0.7326732673267327,
+   "lo": -0.8085106382978723,
+   "hi": -0.6551724137931034,
+   "filings": 58
+  }
+ ],
+ "coverage": {
+  "statement_finder": {
+   "items": 232,
+   "no_section": 18
+  },
+  "answered_without_sec_value": {
+   "claude-haiku-5-5 D": 10,
+   "claude-haiku-5-5 E": 11,
+   "claude-haiku-5-5 B": 7,
+   "claude-haiku-5-5 C": 4
+  },
+  "ambiguous_keys": 34
+ },
+ "audit": null
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "NKE",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 1,
+ "ts": "2026-11-19T21:54:48+00:00",
+ "prompt_sha": "1636edbc57cc",
+ "prompt_chars": 14472,
+ "in_tokens": 6987,
+ "out_tokens": 759,
+ "cost_usd": 0.001078,
+ "raw": "{\"revenue\":{\"value\":46398000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended May 31, 2026\",\"quote\":\"Revenues $ 46,398 $ 46,309 $ 51,362\"},\"net_income\":{\"value\":3108000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended May 31, 2026\",\"quote\":\"NET INCOME $ 3,108 $ 3,219 $ 5,700\"},\"operating_income\":{\"value\":3797000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended May 31, 2026\",\"quote\":\"Gross profit 19,911 19,790 22,887 ... Total selling and administrative expense 16,114 16,088 16,576\"},\"total_assets\":{\"value\":38410000000,\"unit\":\"USD\",\"period\":\"As of May 31, 2026\",\"quote\":\"TOTAL ASSETS $ 38,410 $ 36,579\"}}"
+}

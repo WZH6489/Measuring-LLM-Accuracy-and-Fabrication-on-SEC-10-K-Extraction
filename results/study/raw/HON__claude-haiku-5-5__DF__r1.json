@@ -1,0 +1,13 @@
+{
+ "ticker": "HON",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 1,
+ "ts": "2026-11-19T21:57:05+00:00",
+ "prompt_sha": "e694d7cffaf4",
+ "prompt_chars": 20033,
+ "in_tokens": 8228,
+ "out_tokens": 951,
+ "cost_usd": 0.001298,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": {\n    \"value\": 4729000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net income attributable to Honeywell $ 4,729 $ 5,705 $ 5,658\"\n  },\n  \"operating_income\": null,\n  \"total_assets\": {\n    \"value\": 73681000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"Total liabilities, redeemable noncontrolling interest and shareowners\u2019 equity $ 73,681 $ 75,196\"\n  }\n}\n```"
+}

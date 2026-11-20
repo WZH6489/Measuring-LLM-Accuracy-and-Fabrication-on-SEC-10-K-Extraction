@@ -1,0 +1,13 @@
+{
+ "ticker": "VZ",
+ "model": "claude-haiku-5-5",
+ "cell": "B+F",
+ "repeat": 1,
+ "ts": "2026-11-19T22:05:48+00:00",
+ "prompt_sha": "6dd4bd30c6ff",
+ "prompt_chars": 14549,
+ "in_tokens": 6585,
+ "out_tokens": 579,
+ "cost_usd": 0.000948,
+ "raw": "{\"revenue\":{\"value\":138191000000,\"unit\":\"USD\",\"period\":\"Year ended December 31, 2025\",\"quote\":\"Total Operating Revenues 138,191 134,788 133,974\"},\"net_income\":{\"value\":17608000000,\"unit\":\"USD\",\"period\":\"Year ended December 31, 2025\",\"quote\":\"Net Income $ 17,608 $ 17,949 $ 12,095\"},\"operating_income\":{\"value\":29259000000,\"unit\":\"USD\",\"period\":\"Year ended December 31, 2025\",\"quote\":\"Operating Income 29,259 28,686 22,877\"},\"total_assets\":{\"value\":404258000000,\"unit\":\"USD\",\"period\":\"At December 31, 2025\",\"quote\":\"Total assets $ 404,258 $ 384,711\"}}"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "UPS",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 1,
+ "ts": "2026-11-19T21:57:16+00:00",
+ "prompt_sha": "5ad9e4a1a608",
+ "prompt_chars": 16375,
+ "in_tokens": 6442,
+ "out_tokens": 1113,
+ "cost_usd": 0.001201,
+ "raw": "{\"revenue\": {\"value\": 88661000000, \"unit\": \"USD\", \"period\": \"Fiscal year ended December 31, 2025\", \"quote\": \"Total Consolidated Revenue $ 88,661 $ 91,070 $ 90,958\"}, \"net_income\": {\"value\": 5572000000, \"unit\": \"USD\", \"period\": \"Fiscal year ended December 31, 2025\", \"quote\": \"Net Income $ 5,572 $ 5,782 $ 6,708\"}, \"operating_income\": {\"value\": 7867000000, \"unit\": \"USD (derived: income before income taxes of 7,164 million plus total other expense of 703 million; not reported as a line item)\", \"period\": \"Fiscal year ended December 31, 2025\", \"quote\": \"Total Other Income and (Expense) ( 703 ) ( 1,026 ) ( 568 )\"}, \"total_assets\": {\"value\": 73090000000, \"unit\": \"USD\", \"period\": \"As of December 31, 2025\", \"quote\": \"Total Assets $ 73,090 $ 70,070\"}}"
+}

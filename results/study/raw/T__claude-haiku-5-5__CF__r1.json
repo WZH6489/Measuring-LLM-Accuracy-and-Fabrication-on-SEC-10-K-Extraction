@@ -1,0 +1,13 @@
+{
+ "ticker": "T",
+ "model": "claude-haiku-5-5",
+ "cell": "C+F",
+ "repeat": 1,
+ "ts": "2026-11-19T22:05:29+00:00",
+ "prompt_sha": "b836ee9adaaf",
+ "prompt_chars": 44018,
+ "in_tokens": 22474,
+ "out_tokens": 622,
+ "cost_usd": 0.002558,
+ "raw": "{\n \"revenue\": {\n  \"value\": 125648000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total operating revenues\\n125,648\"\n },\n \"net_income\": {\n  \"value\": 21953000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Net Income Attributable to AT&T\\n$\\n21,953\"\n },\n \"operating_income\": {\n  \"value\": 24162000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Operating Income\\n24,162\"\n },\n \"total_assets\": {\n  \"value\": 420198000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total Assets\\n$\\n420,198\"\n }\n}"
+}

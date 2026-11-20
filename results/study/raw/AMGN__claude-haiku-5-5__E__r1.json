@@ -1,0 +1,13 @@
+{
+ "ticker": "AMGN",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 1,
+ "ts": "2026-11-19T21:51:42+00:00",
+ "prompt_sha": "61582d7b992d",
+ "prompt_chars": 490,
+ "in_tokens": 166,
+ "out_tokens": 846,
+ "cost_usd": 0.00044,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 35500000000,\n    \"unit\": \"USD (approximate estimate, not verified against the filing)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 7500000000,\n    \"unit\": \"USD (approximate estimate, not verified against the filing)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 11000000000,\n    \"unit\": \"USD (approximate estimate, not verified against the filing)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 70000000000,\n    \"unit\": \"USD (approximate estimate, not verified against the filing)\",\n    \"period\": \"As of 2025-12-31\",\n    \"quote\": null\n  }\n}\n```"
+}

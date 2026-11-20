@@ -1,0 +1,13 @@
+{
+ "ticker": "FCX",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 1,
+ "ts": "2026-11-19T22:08:20+00:00",
+ "prompt_sha": "a22876cb2264",
+ "prompt_chars": 505,
+ "in_tokens": 177,
+ "out_tokens": 611,
+ "cost_usd": 0.000323,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": null\n  }\n}\n```"
+}

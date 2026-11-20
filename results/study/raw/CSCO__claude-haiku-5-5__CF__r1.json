@@ -1,0 +1,13 @@
+{
+ "ticker": "CSCO",
+ "model": "claude-haiku-5-5",
+ "cell": "C+F",
+ "repeat": 1,
+ "ts": "2026-11-19T21:48:56+00:00",
+ "prompt_sha": "4226afdbec4e",
+ "prompt_chars": 44018,
+ "in_tokens": 22700,
+ "out_tokens": 502,
+ "cost_usd": 0.002521,
+ "raw": "{\n \"revenue\": {\n  \"value\": 63325000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-07-25\",\n  \"quote\": \"Total revenue\\n63,325\\n56,654\\n53,803\"\n },\n \"net_income\": {\n  \"value\": 13267000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-07-25\",\n  \"quote\": \"NET INCOME\\n$\\n13,267\\n$\\n10,180\\n$\\n10,320\"\n },\n \"operating_income\": {\n  \"value\": 15368000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-07-25\",\n  \"quote\": \"OPERATING INCOME\\n15,368\\n11,760\\n12,181\"\n },\n \"total_assets\": {\n  \"value\": 129637000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-07-25\",\n  \"quote\": \"TOTAL ASSETS\\n$\\n129,637\\n$\\n122,291\"\n }\n}"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "DUK",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 1,
+ "ts": "2026-11-19T22:01:47+00:00",
+ "prompt_sha": "ac9e81ca4d7b",
+ "prompt_chars": 14472,
+ "in_tokens": 6790,
+ "out_tokens": 542,
+ "cost_usd": 0.00095,
+ "raw": "{\"revenue\":{\"value\":32237000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended December 31, 2025\",\"quote\":\"Total operating revenues 32,237 30,357 29,060\"},\"net_income\":{\"value\":5071000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended December 31, 2025\",\"quote\":\"Net Income 5,071 4,614 2,874\"},\"operating_income\":{\"value\":8626000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended December 31, 2025\",\"quote\":\"Operating Income 8,626 7,926 7,070\"},\"total_assets\":{\"value\":195736000000,\"unit\":\"USD\",\"period\":\"As of December 31, 2025\",\"quote\":\"Total Assets $ 195,736 $ 186,343\"}}"
+}

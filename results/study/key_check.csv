@@ -1,0 +1,237 @@
+ticker,group,field,key,tag,ambiguous,in_statements,in_filing,label_ok,verdict
+AAPL,Technology,revenue,478834000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+AAPL,Technology,net_income,132175000000,NetIncomeLoss,False,True,True,True,ok
+AAPL,Technology,operating_income,158063000000,OperatingIncomeLoss,False,True,True,True,ok
+AAPL,Technology,total_assets,404548000000,Assets,False,True,True,True,ok
+MSFT,Technology,revenue,331839000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+MSFT,Technology,net_income,133749000000,NetIncomeLoss,False,True,True,True,ok
+MSFT,Technology,operating_income,155237000000,OperatingIncomeLoss,False,True,True,True,ok
+MSFT,Technology,total_assets,758376000000,Assets,False,True,True,True,ok
+NVDA,Technology,revenue,215938000000,Revenues,False,True,True,True,ok
+NVDA,Technology,net_income,120067000000,NetIncomeLoss,False,True,True,True,ok
+NVDA,Technology,operating_income,130387000000,OperatingIncomeLoss,False,True,True,True,ok
+NVDA,Technology,total_assets,206803000000,Assets,False,True,True,True,ok
+ORCL,Technology,revenue,67357000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+ORCL,Technology,net_income,17087000000,NetIncomeLoss,True,True,True,True,ok
+ORCL,Technology,operating_income,20606000000,OperatingIncomeLoss,False,True,True,True,ok
+ORCL,Technology,total_assets,261759000000,Assets,False,True,True,True,ok
+CSCO,Technology,revenue,63325000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+CSCO,Technology,net_income,13267000000,NetIncomeLoss,False,True,True,True,ok
+CSCO,Technology,operating_income,15368000000,OperatingIncomeLoss,False,True,True,True,ok
+CSCO,Technology,total_assets,129637000000,Assets,False,True,True,True,ok
+TXN,Technology,revenue,17682000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+TXN,Technology,net_income,5001000000,NetIncomeLoss,False,True,True,True,ok
+TXN,Technology,operating_income,6023000000,OperatingIncomeLoss,False,True,True,True,ok
+TXN,Technology,total_assets,34585000000,Assets,False,True,True,True,ok
+JNJ,Healthcare,revenue,94193000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,False,label_mismatch
+JNJ,Healthcare,net_income,26804000000,NetIncomeLoss,False,True,True,True,ok
+JNJ,Healthcare,operating_income,,,False,,,,no_key
+JNJ,Healthcare,total_assets,199210000000,Assets,False,True,True,True,ok
+PFE,Healthcare,revenue,62579000000,Revenues,False,True,True,True,ok
+PFE,Healthcare,net_income,7771000000,NetIncomeLoss,True,True,True,True,ok
+PFE,Healthcare,operating_income,,,False,,,,no_key
+PFE,Healthcare,total_assets,208160000000,Assets,False,True,True,True,ok
+MRK,Healthcare,revenue,65011000000,Revenues,False,True,True,False,label_mismatch
+MRK,Healthcare,net_income,18254000000,NetIncomeLoss,False,True,True,True,ok
+MRK,Healthcare,operating_income,,,False,,,,no_key
+MRK,Healthcare,total_assets,136866000000,Assets,False,True,True,False,label_mismatch
+ABT,Healthcare,revenue,44328000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+ABT,Healthcare,net_income,6524000000,NetIncomeLoss,False,True,True,True,ok
+ABT,Healthcare,operating_income,8053000000,OperatingIncomeLoss,False,True,True,False,label_mismatch
+ABT,Healthcare,total_assets,86713000000,Assets,False,True,True,False,label_mismatch
+TMO,Healthcare,revenue,44556000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+TMO,Healthcare,net_income,6704000000,NetIncomeLoss,True,True,True,True,ok
+TMO,Healthcare,operating_income,7746000000,OperatingIncomeLoss,False,True,True,True,ok
+TMO,Healthcare,total_assets,110343000000,Assets,False,True,True,True,ok
+AMGN,Healthcare,revenue,36751000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+AMGN,Healthcare,net_income,7711000000,NetIncomeLoss,False,True,True,True,ok
+AMGN,Healthcare,operating_income,9080000000,OperatingIncomeLoss,False,True,True,True,ok
+AMGN,Healthcare,total_assets,90586000000,Assets,False,True,True,True,ok
+WMT,Consumer staples,revenue,706413000000,RevenueFromContractWithCustomerExcludingAssessedTax,True,True,True,True,ok
+WMT,Consumer staples,net_income,21893000000,NetIncomeLoss,True,True,True,True,ok
+WMT,Consumer staples,operating_income,29825000000,OperatingIncomeLoss,False,True,True,True,ok
+WMT,Consumer staples,total_assets,284668000000,Assets,False,True,True,True,ok
+KO,Consumer staples,revenue,47941000000,Revenues,False,True,True,True,ok
+KO,Consumer staples,net_income,13107000000,NetIncomeLoss,True,True,True,True,ok
+KO,Consumer staples,operating_income,13762000000,OperatingIncomeLoss,False,True,True,True,ok
+KO,Consumer staples,total_assets,104816000000,Assets,False,True,True,True,ok
+PEP,Consumer staples,revenue,93925000000,Revenues,False,True,True,True,ok
+PEP,Consumer staples,net_income,8240000000,NetIncomeLoss,True,True,True,True,ok
+PEP,Consumer staples,operating_income,11498000000,OperatingIncomeLoss,False,True,True,True,ok
+PEP,Consumer staples,total_assets,107399000000,Assets,False,True,True,True,ok
+PG,Consumer staples,revenue,87032000000,Revenues,False,True,True,True,ok
+PG,Consumer staples,net_income,16046000000,NetIncomeLoss,True,True,True,True,ok
+PG,Consumer staples,operating_income,19748000000,OperatingIncomeLoss,False,True,True,True,ok
+PG,Consumer staples,total_assets,126521000000,Assets,False,True,True,True,ok
+COST,Consumer staples,revenue,303154000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+COST,Consumer staples,net_income,9226000000,NetIncomeLoss,False,True,True,True,ok
+COST,Consumer staples,operating_income,11685000000,OperatingIncomeLoss,False,True,True,True,ok
+COST,Consumer staples,total_assets,89045000000,Assets,False,True,True,True,ok
+CL,Consumer staples,revenue,20382000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+CL,Consumer staples,net_income,2132000000,NetIncomeLoss,True,True,True,True,ok
+CL,Consumer staples,operating_income,3306000000,OperatingIncomeLoss,False,True,True,True,ok
+CL,Consumer staples,total_assets,16330000000,Assets,False,True,True,True,ok
+AMZN,Consumer discretionary,revenue,716924000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+AMZN,Consumer discretionary,net_income,77670000000,NetIncomeLoss,False,True,True,True,ok
+AMZN,Consumer discretionary,operating_income,79975000000,OperatingIncomeLoss,False,True,True,True,ok
+AMZN,Consumer discretionary,total_assets,818042000000,Assets,False,True,True,True,ok
+HD,Consumer discretionary,revenue,164683000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+HD,Consumer discretionary,net_income,14156000000,NetIncomeLoss,False,True,True,True,ok
+HD,Consumer discretionary,operating_income,20890000000,OperatingIncomeLoss,False,True,True,True,ok
+HD,Consumer discretionary,total_assets,105095000000,Assets,False,True,True,True,ok
+NKE,Consumer discretionary,revenue,46398000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+NKE,Consumer discretionary,net_income,3108000000,NetIncomeLoss,False,True,True,True,ok
+NKE,Consumer discretionary,operating_income,,,False,,,,no_key
+NKE,Consumer discretionary,total_assets,38410000000,Assets,False,True,True,True,ok
+MCD,Consumer discretionary,revenue,26885000000,Revenues,False,True,True,True,ok
+MCD,Consumer discretionary,net_income,8563000000,NetIncomeLoss,False,True,True,True,ok
+MCD,Consumer discretionary,operating_income,12393000000,OperatingIncomeLoss,False,True,True,True,ok
+MCD,Consumer discretionary,total_assets,59515000000,Assets,False,True,True,True,ok
+SBUX,Consumer discretionary,revenue,37910600000,Revenues,False,True,True,True,ok
+SBUX,Consumer discretionary,net_income,2526700000,NetIncomeLoss,False,True,True,True,ok
+SBUX,Consumer discretionary,operating_income,3691100000,OperatingIncomeLoss,False,True,True,True,ok
+SBUX,Consumer discretionary,total_assets,28389900000,Assets,False,True,True,True,ok
+TJX,Consumer discretionary,revenue,60372000000,RevenueFromContractWithCustomerIncludingAssessedTax,False,True,True,True,ok
+TJX,Consumer discretionary,net_income,5494000000,NetIncomeLoss,False,True,True,True,ok
+TJX,Consumer discretionary,operating_income,,,False,,,,no_key
+TJX,Consumer discretionary,total_assets,35767000000,Assets,False,True,True,True,ok
+CAT,Industrials,revenue,67589000000,Revenues,False,,True,,no_section
+CAT,Industrials,net_income,8882000000,ProfitLoss,False,,True,,no_section
+CAT,Industrials,operating_income,11151000000,OperatingIncomeLoss,False,,True,,no_section
+CAT,Industrials,total_assets,98585000000,Assets,False,,True,,no_section
+HON,Industrials,revenue,37442000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+HON,Industrials,net_income,4729000000,NetIncomeLoss,True,True,True,True,ok
+HON,Industrials,operating_income,8127000000,OperatingIncomeLoss,False,False,True,False,not_in_statements
+HON,Industrials,total_assets,73681000000,Assets,False,True,True,True,ok
+UPS,Industrials,revenue,88661000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+UPS,Industrials,net_income,5572000000,NetIncomeLoss,False,True,True,True,ok
+UPS,Industrials,operating_income,7867000000,OperatingIncomeLoss,False,True,True,True,ok
+UPS,Industrials,total_assets,73090000000,Assets,False,True,True,True,ok
+GE,Industrials,revenue,45855000000,Revenues,False,True,True,True,ok
+GE,Industrials,net_income,8704000000,NetIncomeLoss,False,True,True,True,ok
+GE,Industrials,operating_income,,,False,,,,no_key
+GE,Industrials,total_assets,130169000000,Assets,False,True,True,True,ok
+DE,Industrials,revenue,45684000000,Revenues,False,True,True,False,label_mismatch
+DE,Industrials,net_income,5027000000,NetIncomeLoss,True,True,True,False,label_mismatch
+DE,Industrials,operating_income,,,False,,,,no_key
+DE,Industrials,total_assets,105996000000,Assets,False,True,True,True,ok
+LMT,Industrials,revenue,75048000000,Revenues,False,True,True,False,label_mismatch
+LMT,Industrials,net_income,5017000000,NetIncomeLoss,False,True,True,True,ok
+LMT,Industrials,operating_income,7731000000,OperatingIncomeLoss,False,True,True,True,ok
+LMT,Industrials,total_assets,59840000000,Assets,False,True,True,True,ok
+CVX,Energy,revenue,184432000000,RevenueFromContractWithCustomerExcludingAssessedTax,True,True,True,True,ok
+CVX,Energy,net_income,12299000000,NetIncomeLoss,True,True,True,True,ok
+CVX,Energy,operating_income,,,False,,,,no_key
+CVX,Energy,total_assets,324012000000,Assets,False,True,True,True,ok
+COP,Energy,revenue,51824000000,RevenueFromContractWithCustomerExcludingAssessedTax,True,False,True,False,not_in_statements
+COP,Energy,net_income,7988000000,NetIncomeLoss,False,True,True,True,ok
+COP,Energy,operating_income,,,False,,,,no_key
+COP,Energy,total_assets,121939000000,Assets,False,True,True,True,ok
+SLB,Energy,revenue,35708000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+SLB,Energy,net_income,3374000000,NetIncomeLoss,True,True,True,True,ok
+SLB,Energy,operating_income,,,False,,,,no_key
+SLB,Energy,total_assets,54868000000,Assets,False,True,True,False,label_mismatch
+EOG,Energy,revenue,22632000000,Revenues,False,False,True,False,not_in_statements
+EOG,Energy,net_income,4980000000,NetIncomeLoss,False,True,True,True,ok
+EOG,Energy,operating_income,6385000000,OperatingIncomeLoss,False,False,True,False,not_in_statements
+EOG,Energy,total_assets,51799000000,Assets,False,True,True,True,ok
+MPC,Energy,revenue,132699000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+MPC,Energy,net_income,4047000000,NetIncomeLoss,True,True,True,True,ok
+MPC,Energy,operating_income,8291000000,OperatingIncomeLoss,False,True,True,True,ok
+MPC,Energy,total_assets,83955000000,Assets,False,True,True,True,ok
+NEE,Utilities,revenue,25800000000,RevenueFromContractWithCustomerIncludingAssessedTax,False,False,False,False,not_in_filing
+NEE,Utilities,net_income,6835000000,NetIncomeLoss,True,True,True,True,ok
+NEE,Utilities,operating_income,8280000000,OperatingIncomeLoss,False,True,True,True,ok
+NEE,Utilities,total_assets,212721000000,Assets,False,True,True,True,ok
+DUK,Utilities,revenue,31741000000,RevenueFromContractWithCustomerIncludingAssessedTax,False,False,True,False,not_in_statements
+DUK,Utilities,net_income,4968000000,NetIncomeLoss,True,True,True,True,ok
+DUK,Utilities,operating_income,8626000000,OperatingIncomeLoss,False,True,True,True,ok
+DUK,Utilities,total_assets,195736000000,Assets,False,True,True,True,ok
+SO,Utilities,revenue,29553000000,Revenues,True,True,True,True,ok
+SO,Utilities,net_income,4341000000,NetIncomeLoss,True,True,True,True,ok
+SO,Utilities,operating_income,7285000000,OperatingIncomeLoss,False,True,True,True,ok
+SO,Utilities,total_assets,155720000000,Assets,False,True,True,True,ok
+D,Utilities,revenue,16523000000,RevenueFromContractWithCustomerExcludingAssessedTax,True,False,True,False,not_in_statements
+D,Utilities,net_income,2998000000,NetIncomeLoss,True,True,True,True,ok
+D,Utilities,operating_income,4414000000,OperatingIncomeLoss,False,True,True,True,ok
+D,Utilities,total_assets,115857000000,Assets,False,True,True,True,ok
+AEP,Utilities,revenue,21702000000,RevenueFromContractWithCustomerExcludingAssessedTax,True,False,True,False,not_in_statements
+AEP,Utilities,net_income,3696000000,ProfitLoss,False,True,True,True,ok
+AEP,Utilities,operating_income,5319000000,OperatingIncomeLoss,False,True,True,True,ok
+AEP,Utilities,total_assets,114460000000,Assets,False,True,True,True,ok
+EXC,Utilities,revenue,24258000000,Revenues,False,False,True,False,not_in_statements
+EXC,Utilities,net_income,2768000000,ProfitLoss,False,True,True,True,ok
+EXC,Utilities,operating_income,5148000000,OperatingIncomeLoss,False,False,True,False,not_in_statements
+EXC,Utilities,total_assets,116570000000,Assets,False,True,True,True,ok
+META,Communication,revenue,200966000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+META,Communication,net_income,60458000000,NetIncomeLoss,False,True,True,True,ok
+META,Communication,operating_income,83276000000,OperatingIncomeLoss,False,True,True,True,ok
+META,Communication,total_assets,366021000000,Assets,False,True,True,True,ok
+NFLX,Communication,revenue,45183036000,Revenues,False,True,True,True,ok
+NFLX,Communication,net_income,10981201000,NetIncomeLoss,False,True,True,True,ok
+NFLX,Communication,operating_income,13326603000,OperatingIncomeLoss,False,True,True,True,ok
+NFLX,Communication,total_assets,55596993000,Assets,False,True,True,True,ok
+DIS,Communication,revenue,102344000000,Revenues,False,True,True,True,ok
+DIS,Communication,net_income,9899000000,NetIncomeLoss,True,True,True,True,ok
+DIS,Communication,operating_income,19728000000,OperatingIncomeLoss,False,False,True,False,not_in_statements
+DIS,Communication,total_assets,206138000000,Assets,False,True,True,True,ok
+CMCSA,Communication,revenue,123707000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+CMCSA,Communication,net_income,19998000000,NetIncomeLoss,True,True,True,True,ok
+CMCSA,Communication,operating_income,20672000000,OperatingIncomeLoss,False,True,True,True,ok
+CMCSA,Communication,total_assets,272631000000,Assets,False,True,True,True,ok
+T,Communication,revenue,125648000000,Revenues,False,True,True,True,ok
+T,Communication,net_income,21953000000,NetIncomeLoss,True,True,True,True,ok
+T,Communication,operating_income,24162000000,OperatingIncomeLoss,False,True,True,True,ok
+T,Communication,total_assets,420198000000,Assets,False,True,True,True,ok
+VZ,Communication,revenue,138191000000,Revenues,False,True,True,True,ok
+VZ,Communication,net_income,17174000000,NetIncomeLoss,True,True,True,True,ok
+VZ,Communication,operating_income,29259000000,OperatingIncomeLoss,False,True,True,True,ok
+VZ,Communication,total_assets,404258000000,Assets,False,True,True,True,ok
+LIN,Materials,revenue,33986000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,False,label_mismatch
+LIN,Materials,net_income,6898000000,NetIncomeLoss,True,True,True,True,ok
+LIN,Materials,operating_income,8923000000,OperatingIncomeLoss,False,True,True,True,ok
+LIN,Materials,total_assets,86817000000,Assets,False,True,True,True,ok
+APD,Materials,revenue,12990900000,Revenues,False,True,True,False,label_mismatch
+APD,Materials,net_income,532100000,NetIncomeLoss,True,True,True,True,ok
+APD,Materials,operating_income,23300000,OperatingIncomeLoss,False,True,True,True,ok
+APD,Materials,total_assets,41209800000,Assets,False,True,True,True,ok
+SHW,Materials,revenue,23574300000,RevenueFromContractWithCustomerExcludingAssessedTax,False,False,True,False,not_in_statements
+SHW,Materials,net_income,2568500000,NetIncomeLoss,False,True,True,True,ok
+SHW,Materials,operating_income,,,False,,,,no_key
+SHW,Materials,total_assets,25901700000,Assets,False,True,True,True,ok
+ECL,Materials,revenue,16081200000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+ECL,Materials,net_income,2075600000,NetIncomeLoss,True,True,True,True,ok
+ECL,Materials,operating_income,2737600000,OperatingIncomeLoss,False,True,True,True,ok
+ECL,Materials,total_assets,24696300000,Assets,False,True,True,True,ok
+NUE,Materials,revenue,32494000000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+NUE,Materials,net_income,1744000000,NetIncomeLoss,True,True,True,True,ok
+NUE,Materials,operating_income,,,False,,,,no_key
+NUE,Materials,total_assets,35104000000,Assets,False,True,True,True,ok
+FCX,Materials,revenue,25186000000,RevenueFromContractWithCustomerExcludingAssessedTax,True,False,True,False,not_in_statements
+FCX,Materials,net_income,4152000000,ProfitLoss,False,True,True,True,ok
+FCX,Materials,operating_income,6518000000,OperatingIncomeLoss,False,True,True,True,ok
+FCX,Materials,total_assets,58167000000,Assets,False,True,True,True,ok
+CALM,Smaller companies,revenue,2911632000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+CALM,Smaller companies,net_income,316682000,NetIncomeLoss,True,True,True,True,ok
+CALM,Smaller companies,operating_income,350186000,OperatingIncomeLoss,False,True,True,True,ok
+CALM,Smaller companies,total_assets,3107570000,Assets,False,True,True,True,ok
+COKE,Smaller companies,revenue,7228055000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+COKE,Smaller companies,net_income,570582000,NetIncomeLoss,False,True,True,True,ok
+COKE,Smaller companies,operating_income,950656000,OperatingIncomeLoss,False,True,True,True,ok
+COKE,Smaller companies,total_assets,4302998000,Assets,False,True,True,True,ok
+WING,Smaller companies,revenue,696853000,Revenues,False,True,True,True,ok
+WING,Smaller companies,net_income,174267000,NetIncomeLoss,False,True,True,True,ok
+WING,Smaller companies,operating_income,179291000,OperatingIncomeLoss,False,True,True,True,ok
+WING,Smaller companies,total_assets,693409000,Assets,False,True,True,True,ok
+BOOT,Smaller companies,revenue,2253859000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+BOOT,Smaller companies,net_income,225880000,NetIncomeLoss,False,True,True,True,ok
+BOOT,Smaller companies,operating_income,299145000,OperatingIncomeLoss,False,True,True,True,ok
+BOOT,Smaller companies,total_assets,2450075000,Assets,False,True,True,True,ok
+HLIT,Smaller companies,revenue,360523000,RevenueFromContractWithCustomerExcludingAssessedTax,False,True,True,True,ok
+HLIT,Smaller companies,net_income,-43310000,NetIncomeLoss,False,True,True,True,ok
+HLIT,Smaller companies,operating_income,14080000,OperatingIncomeLoss,False,True,True,True,ok
+HLIT,Smaller companies,total_assets,718483000,Assets,False,True,True,True,ok
+SXI,Smaller companies,revenue,891597000,RevenueFromContractWithCustomerIncludingAssessedTax,False,True,True,True,ok
+SXI,Smaller companies,net_income,104632000,NetIncomeLoss,True,True,True,True,ok
+SXI,Smaller companies,operating_income,193584000,OperatingIncomeLoss,False,True,True,True,ok
+SXI,Smaller companies,total_assets,1585708000,Assets,False,True,True,True,ok

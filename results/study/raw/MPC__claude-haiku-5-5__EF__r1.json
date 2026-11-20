@@ -1,0 +1,13 @@
+{
+ "ticker": "MPC",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 1,
+ "ts": "2026-11-19T22:01:20+00:00",
+ "prompt_sha": "2dceb7887caa",
+ "prompt_chars": 508,
+ "in_tokens": 174,
+ "out_tokens": 356,
+ "cost_usd": 0.000195,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

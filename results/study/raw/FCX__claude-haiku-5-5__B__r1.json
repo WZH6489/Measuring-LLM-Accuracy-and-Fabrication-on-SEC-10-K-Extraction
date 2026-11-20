@@ -1,0 +1,13 @@
+{
+ "ticker": "FCX",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 1,
+ "ts": "2026-11-19T22:07:57+00:00",
+ "prompt_sha": "9ed84d9b819e",
+ "prompt_chars": 14472,
+ "in_tokens": 6667,
+ "out_tokens": 568,
+ "cost_usd": 0.000951,
+ "raw": "{\"revenue\":{\"value\":25915000000,\"unit\":\"USD\",\"period\":\"Year ended December 31, 2025\",\"quote\":\"Revenues $ 25,915 $ 25,455 $ 22,855\"},\"net_income\":{\"value\":4152000000,\"unit\":\"USD\",\"period\":\"Year ended December 31, 2025\",\"quote\":\"Net income 4,152 4,399 3,751\"},\"operating_income\":{\"value\":6518000000,\"unit\":\"USD\",\"period\":\"Year ended December 31, 2025\",\"quote\":\"Operating income 6,518 6,864 6,225\"},\"total_assets\":{\"value\":58167000000,\"unit\":\"USD\",\"period\":\"As of December 31, 2025\",\"quote\":\"Total assets $ 58,167 $ 54,848\"}}"
+}

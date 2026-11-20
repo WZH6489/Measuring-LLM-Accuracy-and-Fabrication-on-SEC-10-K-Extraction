@@ -1,0 +1,13 @@
+{
+ "ticker": "HD",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 1,
+ "ts": "2026-11-19T21:54:28+00:00",
+ "prompt_sha": "7126ea444135",
+ "prompt_chars": 43941,
+ "in_tokens": 22562,
+ "out_tokens": 460,
+ "cost_usd": 0.002486,
+ "raw": "{\"revenue\": {\"value\": 164683000000, \"unit\": \"USD\", \"period\": \"fiscal year ended 2026-02-01\", \"quote\": \"Net sales\\n$\\n164,683\"}, \"net_income\": {\"value\": 14156000000, \"unit\": \"USD\", \"period\": \"fiscal year ended 2026-02-01\", \"quote\": \"Net earnings\\n$\\n14,156\"}, \"operating_income\": {\"value\": 20890000000, \"unit\": \"USD\", \"period\": \"fiscal year ended 2026-02-01\", \"quote\": \"Operating income\\n20,890\"}, \"total_assets\": {\"value\": 105095000000, \"unit\": \"USD\", \"period\": \"fiscal year ended 2026-02-01\", \"quote\": \"Total assets\\n$\\n105,095\"}}"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "EXC",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 1,
+ "ts": "2026-11-19T22:03:39+00:00",
+ "prompt_sha": "33d6276a149a",
+ "prompt_chars": 17458,
+ "in_tokens": 7725,
+ "out_tokens": 606,
+ "cost_usd": 0.001076,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 24258000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Total operating revenues 24,258 23,028 21,727\"\n  },\n  \"net_income\": {\n    \"value\": 2768000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net income attributable to common shareholders $ 2,768 $ 2,460 $ 2,328\"\n  },\n  \"operating_income\": {\n    \"value\": 5148000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Operating income 5,148 4,319 4,023\"\n  },\n  \"total_assets\": null\n}\n```"
+}

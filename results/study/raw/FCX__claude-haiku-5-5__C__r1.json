@@ -1,0 +1,13 @@
+{
+ "ticker": "FCX",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 1,
+ "ts": "2026-11-19T22:07:59+00:00",
+ "prompt_sha": "aa51515b8ac9",
+ "prompt_chars": 43941,
+ "in_tokens": 22428,
+ "out_tokens": 572,
+ "cost_usd": 0.002529,
+ "raw": "```json\n{\n \"revenue\": {\n  \"value\": 25915000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Revenues\\n$\\n25,915\"\n },\n \"net_income\": {\n  \"value\": 2204000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Net income attributable to common stockholders\\n$\\n2,204\"\n },\n \"operating_income\": {\n  \"value\": 6518000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Operating income \\n6,518\"\n },\n \"total_assets\": {\n  \"value\": 58167000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total assets\\n$\\n58,167\"\n }\n}\n```"
+}

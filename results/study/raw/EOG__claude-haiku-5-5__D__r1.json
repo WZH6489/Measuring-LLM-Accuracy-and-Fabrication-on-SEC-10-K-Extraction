@@ -1,0 +1,13 @@
+{
+ "ticker": "EOG",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 1,
+ "ts": "2026-11-19T22:00:40+00:00",
+ "prompt_sha": "e2f9464d92f7",
+ "prompt_chars": 20696,
+ "in_tokens": 8147,
+ "out_tokens": 609,
+ "cost_usd": 0.001119,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 22632000000,\n    \"unit\": \"USD\",\n    \"period\": \"Year ended December 31, 2025\",\n    \"quote\": \"During 2025, total operating revenues decreased $1,066 million, or 4%, to $22,632 million from $23,698 million in 2024.\"\n  },\n  \"net_income\": {\n    \"value\": 4980000000,\n    \"unit\": \"USD\",\n    \"period\": \"Year ended December 31, 2025\",\n    \"quote\": \"Net Income $ 4,980 $ 6,403 $ 7,594\"\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Year ended December 31, 2025\",\n    \"quote\": \"Not found in the provided passages.\"\n  },\n  \"total_assets\": {\n    \"value\": 51799000000,\n    \"unit\": \"USD\",\n    \"period\": \"At December 31, 2025\",\n    \"quote\": \"Total Assets $ 51,799 $ 47,186\"\n  }\n}\n```"
+}

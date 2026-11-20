@@ -1,0 +1,13 @@
+{
+ "ticker": "APD",
+ "model": "claude-haiku-5-5",
+ "cell": "B+F",
+ "repeat": 1,
+ "ts": "2026-11-19T22:06:32+00:00",
+ "prompt_sha": "9f8baf87aa85",
+ "prompt_chars": 14549,
+ "in_tokens": 7132,
+ "out_tokens": 923,
+ "cost_usd": 0.001175,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 12990900000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 30 September 2026\",\n    \"quote\": \"Sales $ 12,990.9\"\n  },\n  \"net_income\": {\n    \"value\": 532100000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 30 September 2026\",\n    \"quote\": \"Net Income (Loss) Attributable to Air Products $ 532.1\"\n  },\n  \"operating_income\": {\n    \"value\": 23300000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 30 September 2026\",\n    \"quote\": \"Operating Income (Loss) 23.3\"\n  },\n  \"total_assets\": {\n    \"value\": 41209800000,\n    \"unit\": \"USD\",\n    \"period\": \"As of 30 September 2026\",\n    \"quote\": \"Total Assets (A) $ 41,209.8\"\n  }\n}\n```"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "HON",
+ "model": "claude-haiku-5-5",
+ "cell": "C+F",
+ "repeat": 1,
+ "ts": "2026-11-19T21:57:00+00:00",
+ "prompt_sha": "5aa733b2b319",
+ "prompt_chars": 44018,
+ "in_tokens": 22392,
+ "out_tokens": 503,
+ "cost_usd": 0.002491,
+ "raw": "```json\n{\n \"revenue\": {\n  \"value\": 37442000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Net sales\\n37,442\"\n },\n \"net_income\": {\n  \"value\": 4729000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Net income attributable to Honeywell\\n$\\n4,729\"\n },\n \"operating_income\": null,\n \"total_assets\": {\n  \"value\": 73681000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total assets\\n$\\n73,681\"\n }\n}\n```"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "CVX",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 1,
+ "ts": "2026-11-19T21:59:25+00:00",
+ "prompt_sha": "aad2d7dfd1b2",
+ "prompt_chars": 493,
+ "in_tokens": 168,
+ "out_tokens": 1267,
+ "cost_usd": 0.00065,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 190000000000,\n    \"unit\": \"USD (estimate, not verified against the filing; sales and other operating revenues)\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31)\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 12000000000,\n    \"unit\": \"USD (estimate, not verified against the filing; net income attributable to Chevron)\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31)\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 17000000000,\n    \"unit\": \"USD (estimate, not verified; Chevron does not report a single operating income line, so this approximates pre-tax income)\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31)\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 330000000000,\n    \"unit\": \"USD (estimate, not verified against the filing; balance at period end)\",\n    \"period\": \"As of 2025-12-31\",\n    \"quote\": null\n  }\n}\n```"
+}

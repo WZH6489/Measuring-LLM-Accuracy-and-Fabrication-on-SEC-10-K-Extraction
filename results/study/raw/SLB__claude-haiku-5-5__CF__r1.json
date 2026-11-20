@@ -1,0 +1,13 @@
+{
+ "ticker": "SLB",
+ "model": "claude-haiku-5-5",
+ "cell": "C+F",
+ "repeat": 1,
+ "ts": "2026-11-19T22:00:26+00:00",
+ "prompt_sha": "22a42900ca31",
+ "prompt_chars": 37016,
+ "in_tokens": 19364,
+ "out_tokens": 877,
+ "cost_usd": 0.002375,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 35708000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": \"Total Revenue\\n35,708\"\n  },\n  \"net_income\": {\n    \"value\": 3374000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": \"Net income attributable to SLB\\n$\\n3,374\"\n  },\n  \"operating_income\": null,\n  \"total_assets\": {\n    \"value\": 54868000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": \"$\\n54,868\\n$\\n48,935\"\n  }\n}\n```"
+}

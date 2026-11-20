@@ -1,0 +1,13 @@
+{
+ "ticker": "PEP",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 1,
+ "ts": "2026-11-19T21:52:46+00:00",
+ "prompt_sha": "ef231b358fe3",
+ "prompt_chars": 492,
+ "in_tokens": 167,
+ "out_tokens": 947,
+ "cost_usd": 0.00049,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 93000000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2025-12-27 (FY2025). Estimate from memory, not verified against the filing.\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 9000000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2025-12-27 (FY2025). Estimate from memory, attributable to PepsiCo, not verified against the filing.\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 12500000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2025-12-27 (FY2025). Estimate from memory, not verified against the filing.\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 125000000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of fiscal year end 2025-12-27 (FY2025). Estimate from memory, not verified against the filing.\",\n    \"quote\": null\n  }\n}\n```"
+}

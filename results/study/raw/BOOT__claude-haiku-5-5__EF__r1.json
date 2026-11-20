@@ -1,0 +1,13 @@
+{
+ "ticker": "BOOT",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 1,
+ "ts": "2026-11-19T22:09:48+00:00",
+ "prompt_sha": "f0076ce873ca",
+ "prompt_chars": 509,
+ "in_tokens": 177,
+ "out_tokens": 274,
+ "cost_usd": 0.000155,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

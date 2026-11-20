@@ -1,0 +1,13 @@
+{
+ "ticker": "APD",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 1,
+ "ts": "2026-11-19T22:06:28+00:00",
+ "prompt_sha": "bb6592058c22",
+ "prompt_chars": 511,
+ "in_tokens": 174,
+ "out_tokens": 960,
+ "cost_usd": 0.000497,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"FY2026 (fiscal year ended 2026-09-30)\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"FY2026 (fiscal year ended 2026-09-30)\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"FY2026 (fiscal year ended 2026-09-30)\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"FY2026 (fiscal year ended 2026-09-30)\",\n    \"quote\": null\n  },\n  \"note\": \"I do not have reliable knowledge of Air Products' FY2026 10-K figures, so I have left the values null rather than guess.\"\n}\n```"
+}

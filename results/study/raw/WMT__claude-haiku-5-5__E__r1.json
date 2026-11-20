@@ -1,0 +1,13 @@
+{
+ "ticker": "WMT",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 1,
+ "ts": "2026-11-19T21:52:03+00:00",
+ "prompt_sha": "5ea97fc85343",
+ "prompt_chars": 493,
+ "in_tokens": 167,
+ "out_tokens": 1062,
+ "cost_usd": 0.000548,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 705000000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended January 31, 2026 (estimate; not verified against the filing)\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 20000000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended January 31, 2026 (estimate; not verified against the filing)\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 30000000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended January 31, 2026 (estimate; not verified against the filing)\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 275000000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of January 31, 2026 (estimate; not verified against the filing)\",\n    \"quote\": null\n  }\n}\n```"
+}

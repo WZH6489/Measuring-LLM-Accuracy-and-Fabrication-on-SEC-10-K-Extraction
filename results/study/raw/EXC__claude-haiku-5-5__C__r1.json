@@ -1,0 +1,13 @@
+{
+ "ticker": "EXC",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 1,
+ "ts": "2026-11-19T22:03:22+00:00",
+ "prompt_sha": "22052473c8bf",
+ "prompt_chars": 36939,
+ "in_tokens": 19215,
+ "out_tokens": 1129,
+ "cost_usd": 0.002486,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": \"\"\n  },\n  \"net_income\": {\n    \"value\": 2768000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": \"Net income\\n\u2014 \\n\u2014 \\n\u2014 \\n2,768\"\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": \"\"\n  },\n  \"total_assets\": {\n    \"value\": 116570000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": \"Total assets\\n$\\n116,570\"\n  }\n}\n```"
+}

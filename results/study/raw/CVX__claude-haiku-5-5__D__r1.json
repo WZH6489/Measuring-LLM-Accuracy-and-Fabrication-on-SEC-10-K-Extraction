@@ -1,0 +1,13 @@
+{
+ "ticker": "CVX",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 1,
+ "ts": "2026-11-19T21:59:19+00:00",
+ "prompt_sha": "b1867e70c66a",
+ "prompt_chars": 17493,
+ "in_tokens": 7811,
+ "out_tokens": 1069,
+ "cost_usd": 0.001316,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 184432000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Sales and other operating revenues $ 184,432 $ 193,414 $ 196,913\"\n  },\n  \"net_income\": {\n    \"value\": 12299000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net Income (Loss) Attributable to Chevron Corporation $ 12,299 $ 17,661 $ 21,369\"\n  },\n  \"operating_income\": {\n    \"value\": 19743000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Income (Loss) Before Income Tax Expense 19,743 27,506 29,584\",\n    \"note\": \"No operating income line is reported. Value is income before income tax expense, used as a proxy (Total Revenues and Other Income 189,031 less Total Costs and Other Deductions 169,288).\"\n  },\n  \"total_assets\": {\n    \"value\": 324012000000,\n    \"unit\": \"USD\",\n    \"period\": \"At December 31, 2025\",\n    \"quote\": \"Total Assets $ 324,012 $ 256,938\"\n  }\n}\n```"
+}

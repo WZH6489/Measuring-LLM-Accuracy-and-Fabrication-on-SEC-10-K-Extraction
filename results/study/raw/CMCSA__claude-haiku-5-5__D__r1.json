@@ -1,0 +1,13 @@
+{
+ "ticker": "CMCSA",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 1,
+ "ts": "2026-11-19T22:04:59+00:00",
+ "prompt_sha": "a9e879e1c4a5",
+ "prompt_chars": 13215,
+ "in_tokens": 5452,
+ "out_tokens": 905,
+ "cost_usd": 0.000998,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 123707000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Total costs and expenses 103,035 100,434 98,258 Operating income 20,672 23,297 23,314 (revenue derived as operating income plus total costs and expenses: 20,672 + 103,035 = 123,707 in millions)\"\n  },\n  \"net_income\": {\n    \"value\": 19998000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net income attributable to Comcast Corporation $ 19,998 $ 16,192 $ 15,388\"\n  },\n  \"operating_income\": {\n    \"value\": 20672000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Operating income 20,672 23,297 23,314\"\n  },\n  \"total_assets\": {\n    \"value\": 272631000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"Total assets $ 272,631 $ 266,211\"\n  }\n}\n```"
+}
