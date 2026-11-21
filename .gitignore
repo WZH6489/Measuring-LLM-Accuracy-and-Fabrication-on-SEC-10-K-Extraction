@@ -11,3 +11,4 @@ __pycache__/
 .agents/
 .streamlit/*
 !.streamlit/config.toml
+assets/slides/

@@ -227,29 +227,12 @@ CSS = """<style>
 html, body, .stApp, .stMarkdown, input, button, p, div { font-family: var(--fc-sans); }
 .stApp { background: var(--fc-bg); color: var(--fc-fg); letter-spacing:-.011em; -webkit-font-smoothing:antialiased; }
 [data-testid="stMain"], .stApp { overflow-x:hidden; }
-/* Backdrop: a night sky, brighter overhead, with faint colour low on the sides for the glass to pick up. */
+/* Backdrop: the rendered night-sky image (tools/make_background.py), fixed behind everything,
+   with a gentle darkening low down so long pages stay readable. */
 .stApp::before { content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
-  background:
-    radial-gradient(120% 70% at 50% -12%, rgba(62,98,160,.45), transparent 62%),
-    radial-gradient(50rem 30rem at 88% 8%, rgba(94,234,212,.07), transparent 60%),
-    radial-gradient(50rem 40rem at 6% 62%, rgba(76,96,210,.13), transparent 60%),
-    radial-gradient(60rem 40rem at 94% 100%, rgba(40,160,170,.11), transparent 60%); }
-.stApp::after { content:""; position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.7;
-  background-image:
-    radial-gradient(1px 1px at 12% 18%, rgba(255,255,255,.8), transparent 60%),
-    radial-gradient(1px 1px at 72% 12%, rgba(255,255,255,.6), transparent 60%),
-    radial-gradient(1.2px 1.2px at 38% 46%, rgba(255,255,255,.7), transparent 60%),
-    radial-gradient(1px 1px at 86% 34%, rgba(255,255,255,.5), transparent 60%),
-    radial-gradient(1px 1px at 54% 24%, rgba(255,255,255,.45), transparent 60%),
-    radial-gradient(1px 1px at 24% 58%, rgba(255,255,255,.5), transparent 60%),
-    radial-gradient(1.4px 1.4px at 94% 8%, rgba(255,255,255,.65), transparent 60%),
-    radial-gradient(.8px .8px at 64% 52%, rgba(255,255,255,.5), transparent 60%);
-  background-size: 420px 420px, 560px 560px, 380px 380px, 640px 640px, 300px 300px, 520px 520px, 700px 700px, 240px 240px;
-  -webkit-mask-image: linear-gradient(180deg, #000 0%, rgba(0,0,0,.5) 55%, rgba(0,0,0,.15)); mask-image: linear-gradient(180deg, #000 0%, rgba(0,0,0,.5) 55%, rgba(0,0,0,.15)); }
+  background: linear-gradient(180deg, rgba(5,7,13,0) 55%, rgba(5,7,13,.45)), url('/app/static/bg.jpg') center / cover no-repeat, #05070d; }
 @keyframes fcUp { from { opacity:0; transform: translateY(16px); } to { opacity:1; transform:none; } }
 @keyframes fcGrow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
-@keyframes fcDash { to { stroke-dashoffset: -1000; } }
-@keyframes fcTwinkle { 0%, 100% { opacity:.55; } 50% { opacity:1; } }
 [data-testid="stAppViewContainer"], .block-container { position:relative; z-index:1; background:transparent; }
 header[data-testid="stHeader"], [data-testid="stToolbar"], #MainMenu, footer, [data-testid="stSidebarNav"], [data-testid="stSidebarCollapsedControl"] { display:none !important; }
 .block-container { max-width: 1120px; padding-top: 1rem; padding-bottom: 3rem; }
@@ -284,21 +267,6 @@ header[data-testid="stHeader"], [data-testid="stToolbar"], #MainMenu, footer, [d
 .fc-cta:hover { background: linear-gradient(180deg, var(--glass-tint-top-hover), var(--glass-tint-bottom-hover)) !important; }
 @media (max-width: 860px) { .fc-nav { grid-template-columns:1fr auto; } .fc-links { display:none; } }
 
-/* ---- The sky (shared by both pages) ---------------------------------------------- */
-.fc-sky { position:absolute; z-index:-1; left:50%; top:-90px; width:100vw; translate:-50% 0; height:calc(var(--horizon) + 520px); pointer-events:none; overflow:hidden;
-  -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent); mask-image: linear-gradient(180deg, #000 80%, transparent); }
-.fc-sky svg { position:absolute; inset:0; width:100%; height:100%; }
-.fc-sky .atmo { fill: rgba(94,200,255,.28); }
-.fc-sky .rim { fill:none; stroke: rgba(180,235,255,.75); stroke-width:1.4; filter: drop-shadow(0 -4px 14px rgba(94,234,212,.55)); }
-.fc-sky .lat { fill:none; stroke: rgba(255,255,255,.045); stroke-width:1; }
-.fc-sky .arc { fill:none; stroke: rgba(94,234,212,.32); stroke-width:1; } .fc-sky .arc.faint { stroke: rgba(94,234,212,.14); }
-.fc-sky .pulse { fill:none; stroke: #9ff5e6; stroke-width:2; stroke-linecap:round; stroke-dasharray: 3 997; animation: fcDash 6s linear infinite; filter: drop-shadow(0 0 4px #5eead4); }
-.fc-sky .dot { fill:#e6fffb; } .fc-sky .halo { fill: rgba(94,234,212,.16); }
-.fc-sky .node .halo { animation: fcTwinkle 4s ease-in-out infinite; }
-.fc-sky text { font-family: 'JetBrains Mono', monospace; font-size:11px; letter-spacing:.06em; fill: rgba(226,240,255,.55); }
-.fc-sky .hub .dot { fill:#5eead4; } .fc-sky .hub .halo { fill: rgba(94,234,212,.22); }
-.fc-sky .hub text { fill:#9ff5e6; font-size:12px; letter-spacing:.18em; }
-
 /* ---- Hero ----------------------------------------------------------------------- */
 .fc-hero { position:relative; isolation:isolate; text-align:center; padding:0; }
 .fc-chip { display:inline-flex; align-items:center; gap:9px; padding:6px 14px 6px 8px; font-size:.8rem; font-weight:400; color:var(--fc-muted); animation: fcUp .6s .05s var(--glass-ease) both; }
@@ -327,7 +295,7 @@ header[data-testid="stHeader"], [data-testid="stToolbar"], #MainMenu, footer, [d
 .fc-row-l { text-align:center; font-family:var(--fc-mono); font-size:.66rem; letter-spacing:.16em; text-transform:uppercase; color:var(--fc-faint); margin:14px 0 4px; }
 
 /* ---- "What we found": a row of glass cards on the horizon ------------------------ */
-.fc-found { margin-top:200px; }
+.fc-found { margin-top:110px; }
 .fc-found-h { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:16px; }
 .fc-found-h span { font-size:.92rem; color:var(--fc-muted); } .fc-found-h span::before { content:"\\201C"; font-size:1.4rem; line-height:0; vertical-align:-.3em; margin-right:8px; color:var(--fc-fg); }
 .fc-found-g { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
@@ -393,7 +361,7 @@ header[data-testid="stHeader"], [data-testid="stToolbar"], #MainMenu, footer, [d
 div[data-baseweb="popover"] > div, div[data-baseweb="popover"] ul { background: color-mix(in srgb, var(--glass-menu-surface) 92%, transparent) !important;
   backdrop-filter: blur(24px) saturate(150%); -webkit-backdrop-filter: blur(24px) saturate(150%); border-radius:var(--glass-radius) !important; }
 @media (max-width: 640px) { .fc-panel { padding:24px 22px; border-radius:22px; } .fc-co-name { font-size:1.8rem; }
-  .fc-found { margin-top:150px; } .fc-found-g { grid-template-columns:1fr; } [data-testid="stForm"] { border-radius:28px !important; padding:8px !important; } }
+  .fc-found { margin-top:80px; } .fc-found-g { grid-template-columns:1fr; } [data-testid="stForm"] { border-radius:28px !important; padding:8px !important; } }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 </style>"""
 TYPER = """<script>
@@ -600,7 +568,7 @@ def page_home():
         ticks = []
     chip = ('<span class="fc-chip"><span class="fc-tick-row">' + "".join(f"<i>{esc(t[:2])}</i>" for t in ticks) + '</span>'
             + (f'<span><b>{n} SEC filings</b> tested in our study</span>' if n else '<span>Verified against SEC XBRL data</span>') + '</span>')
-    st.markdown(f'<div class="fc-hero">{ui_pages.sky_html(780)}{nav("home")}<div style="height:84px"></div>{chip}'
+    st.markdown(f'<div class="fc-hero">{nav("home")}<div style="height:96px"></div>{chip}'
                 '<div class="fc-h1">Read the 10-K.<br>Check every number.</div>'
                 '<div class="fc-sub">Ask about any U.S. public company in plain English. An AI model reads its latest annual report, '
                 'and every figure is checked against what the company filed with the SEC.</div></div>',

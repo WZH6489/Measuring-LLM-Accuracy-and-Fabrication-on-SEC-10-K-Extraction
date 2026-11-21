@@ -348,55 +348,6 @@ def render_study():
         st.download_button("Download the summary table (CSV)", open("results/study/cell_summary.csv").read(), "cell_summary.csv", "text/csv")
 
 
-# ------------------------------------------------------------------ the sky
-# A night horizon over a dark globe. Each study company is a point on the surface, linked by an arc to
-# the SEC XBRL answer key: the background shows the method. Drawn 1:1 in CSS px vertically
-# (viewBox 2400 wide, sliced to the viewport width), so the horizon sits at a known height.
-
-def sky_html(horizon=780):
-    import math
-    import random
-    try:
-        tickers = list(study.load_json(study.FILINGS_JSON, {}).keys())
-    except Exception:
-        tickers = []
-    tickers = tickers or ["AAPL", "MSFT", "JPM", "KO", "WMT", "XOM", "PFE", "NVDA", "HD", "CAT"]
-    rnd = random.Random(218)
-    W, R = 2400, 2600
-    cx, cy = W / 2, horizon + R
-
-    def surface(x, depth):
-        return cy - math.sqrt(max(R * R - (x - cx) ** 2, 0)) + depth
-
-    hub = (cx, surface(cx, 70))
-    picks = rnd.sample(tickers, min(14, len(tickers)))
-    nodes = []
-    for i, t in enumerate(picks):
-        side = -1 if i % 2 else 1
-        x = cx + side * (90 + (i // 2) * 105 + rnd.uniform(-30, 30))
-        nodes.append((t, x, surface(x, rnd.uniform(24, 230))))
-    lat = "".join(f'<circle cx="{cx}" cy="{cy}" r="{R - d}" class="lat"/>' for d in (60, 150, 270, 420))
-    arcs, pulses = "", ""
-    for i, (t, x, y) in enumerate(nodes):
-        lift = 90 + abs(x - hub[0]) * .28
-        d = f"M{x:.0f} {y:.0f} Q{(x + hub[0]) / 2:.0f} {min(y, hub[1]) - lift:.0f} {hub[0]:.0f} {hub[1]:.0f}"
-        arcs += f'<path d="{d}" class="arc"/>'
-        pulses += f'<path d="{d}" class="pulse" style="animation-duration:{4 + (i % 5) * 1.3:.1f}s;animation-delay:-{i * .7:.1f}s"/>'
-    for (_, x1, y1), (_, x2, y2) in zip(nodes[::3], nodes[1::3]):
-        arcs += f'<path d="M{x1:.0f} {y1:.0f} Q{(x1 + x2) / 2:.0f} {min(y1, y2) - 70:.0f} {x2:.0f} {y2:.0f}" class="arc faint"/>'
-    dots = "".join(f'<g class="node"><circle cx="{x:.0f}" cy="{y:.0f}" r="7" class="halo"/><circle cx="{x:.0f}" cy="{y:.0f}" r="2.6" class="dot"/>'
-                   f'<text x="{x + 9:.0f}" y="{y - 7:.0f}">{esc(t)}</text></g>' for t, x, y in nodes)
-    hub_g = (f'<g class="hub"><circle cx="{hub[0]:.0f}" cy="{hub[1]:.0f}" r="16" class="halo"/><circle cx="{hub[0]:.0f}" cy="{hub[1]:.0f}" r="4.5" class="dot"/>'
-             f'<text x="{hub[0]:.0f}" y="{hub[1] + 30:.0f}" text-anchor="middle">SEC XBRL</text></g>')
-    return (f'<div class="fc-sky" aria-hidden="true" style="--horizon:{horizon}px"><svg viewBox="0 0 {W} {horizon + 520}" preserveAspectRatio="xMidYMin slice">'
-            '<defs><radialGradient id="fcPlanet" cx="50%" cy="0%" r="60%"><stop offset="0" stop-color="#0d1a2c"/><stop offset=".5" stop-color="#070c16"/>'
-            '<stop offset="1" stop-color="#05070d"/></radialGradient>'
-            '<filter id="fcGlow" x="-20%" y="-200%" width="140%" height="500%"><feGaussianBlur stdDeviation="22"/></filter></defs>'
-            f'<ellipse cx="{cx}" cy="{horizon + 10}" rx="1500" ry="90" class="atmo" filter="url(#fcGlow)"/>'
-            f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="url(#fcPlanet)"/>{lat}'
-            f'<circle cx="{cx}" cy="{cy}" r="{R}" class="rim"/>{arcs}{pulses}{dots}{hub_g}</svg></div>')
-
-
 # ------------------------------------------------------------- study page
 
 STUDY_CSS = """<style>
@@ -408,7 +359,7 @@ STUDY_CSS = """<style>
 .fs-toc { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin:30px auto 0; max-width:760px; }
 .fs-toc a { text-decoration:none !important; color:var(--fc-muted) !important; font-size:.82rem; padding:7px 14px; border-radius:999px; }
 .fs-toc a:hover { color:var(--fc-fg) !important; }
-.fs-kpis { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; margin-top:120px; text-align:left; }
+.fs-kpis { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; margin-top:72px; text-align:left; }
 .fs-kpi { border-radius:20px; padding:20px 22px; }
 .fs-kpi small { display:block; font-family:var(--fc-mono); font-size:.66rem; letter-spacing:.14em; text-transform:uppercase; color:var(--fc-faint); }
 .fs-kpi b { display:block; font-weight:300; font-size:2.7rem; letter-spacing:-.04em; line-height:1; margin:18px 0 8px; font-variant-numeric:tabular-nums; }
@@ -433,7 +384,7 @@ STUDY_CSS = """<style>
 .fs-body .fc-h2 { font-size:1.25rem; font-weight:500; margin:40px 0 8px; letter-spacing:-.02em; }
 @media (max-width: 760px) {
   .fs-cards.three { grid-template-columns:1fr; }
-  .fs-kpis { grid-template-columns:1fr 1fr; margin-top:110px; } .fs-sec-h { grid-template-columns:1fr; gap:4px; } .fs-body { margin-left:0; }
+  .fs-kpis { grid-template-columns:1fr 1fr; margin-top:48px; } .fs-sec-h { grid-template-columns:1fr; gap:4px; } .fs-body { margin-left:0; }
   .fs-num { font-size:2.4rem; } .fs-hero { min-height:0; padding-bottom:20px; } }
 </style>"""
 
@@ -482,7 +433,7 @@ def render_study_page():
     toc = "".join(f'<a class="fc-chip" href="#{i}" target="_self">{t}</a>' for i, t in (
         ("problem", "Problem"), ("related", "Related work"), ("method", "Method"), ("results", "Results"),
         ("findings", "Findings"), ("conclusion", "Conclusion"), ("appendix", "Appendix")))
-    st.markdown('<div class="fs-hero">' + sky_html(720) +
+    st.markdown('<div class="fs-hero">' +
                 '<div class="fs-kick">CMPT 218 &middot; Fall 2026 &middot; Final project</div>'
                 '<div class="fs-title">Measuring LLM accuracy <span>and fabrication on SEC 10-K extraction</span></div>'
                 '<div class="fs-meta"><b>William Huang, Vincent Zhao, James Park</b> &middot; Simon Fraser University</div>'
