@@ -1,0 +1,13 @@
+{
+ "ticker": "HD",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:03:15+00:00",
+ "prompt_sha": "3a8d01270cf4",
+ "prompt_chars": 501,
+ "in_tokens": 174,
+ "out_tokens": 489,
+ "cost_usd": 0.000262,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

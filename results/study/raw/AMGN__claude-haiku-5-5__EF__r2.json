@@ -1,0 +1,13 @@
+{
+ "ticker": "AMGN",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:36:33+00:00",
+ "prompt_sha": "e801d849a21e",
+ "prompt_chars": 494,
+ "in_tokens": 169,
+ "out_tokens": 326,
+ "cost_usd": 0.00018,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "VZ",
+ "model": "claude-haiku-5-5",
+ "cell": "C+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:14:24+00:00",
+ "prompt_sha": "ceb18761164c",
+ "prompt_chars": 44018,
+ "in_tokens": 22346,
+ "out_tokens": 658,
+ "cost_usd": 0.002564,
+ "raw": "{\n \"revenue\": {\n  \"value\": 138191000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total Operating Revenues\\n138,191\"\n },\n \"net_income\": {\n  \"value\": 17174000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Net income attributable to Verizon\\n17,174\\n$\\n17,506\\n11,614\"\n },\n \"operating_income\": {\n  \"value\": 29259000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Operating Income\\n29,259\"\n },\n \"total_assets\": {\n  \"value\": 404258000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total assets\\n$\\n404,258\"\n }\n}"
+}

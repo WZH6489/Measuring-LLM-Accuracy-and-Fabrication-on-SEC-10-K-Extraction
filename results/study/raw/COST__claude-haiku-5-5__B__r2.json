@@ -1,0 +1,13 @@
+{
+ "ticker": "COST",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 2,
+ "ts": "2026-11-20T17:38:09+00:00",
+ "prompt_sha": "159e4624f67c",
+ "prompt_chars": 14472,
+ "in_tokens": 7283,
+ "out_tokens": 568,
+ "cost_usd": 0.001012,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 303154000000,\n    \"unit\": \"USD\",\n    \"period\": \"52 weeks ended August 30, 2026\",\n    \"quote\": \"Total revenue 303,154\"\n  },\n  \"net_income\": {\n    \"value\": 9226000000,\n    \"unit\": \"USD\",\n    \"period\": \"52 weeks ended August 30, 2026\",\n    \"quote\": \"NET INCOME $ 9,226\"\n  },\n  \"operating_income\": {\n    \"value\": 11685000000,\n    \"unit\": \"USD\",\n    \"period\": \"52 weeks ended August 30, 2026\",\n    \"quote\": \"Operating income 11,685\"\n  },\n  \"total_assets\": {\n    \"value\": 89045000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of August 30, 2026\",\n    \"quote\": \"TOTAL ASSETS $ 89,045\"\n  }\n}\n```"
+}

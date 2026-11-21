@@ -1,0 +1,13 @@
+{
+ "ticker": "COP",
+ "model": "claude-haiku-5-5",
+ "cell": "C+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:08:13+00:00",
+ "prompt_sha": "219da9f4b03a",
+ "prompt_chars": 44018,
+ "in_tokens": 22280,
+ "out_tokens": 545,
+ "cost_usd": 0.002501,
+ "raw": "{\n \"revenue\": {\n  \"value\": 58944000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Sales and other operating revenues\\n$\\n58,944\"\n },\n \"net_income\": {\n  \"value\": 7988000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Net income (loss)\\n$\\n7,988\"\n },\n \"operating_income\": null,\n \"total_assets\": {\n  \"value\": 121939000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total assets\\n$\\n121,939\"\n }\n}"
+}

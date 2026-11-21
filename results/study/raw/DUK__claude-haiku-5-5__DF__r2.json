@@ -1,0 +1,13 @@
+{
+ "ticker": "DUK",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:46:53+00:00",
+ "prompt_sha": "a39be1747891",
+ "prompt_chars": 17611,
+ "in_tokens": 7831,
+ "out_tokens": 551,
+ "cost_usd": 0.001059,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": {\n    \"value\": 5071000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net Income $ 5,071 $ 4,614 $ 2,874\"\n  },\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

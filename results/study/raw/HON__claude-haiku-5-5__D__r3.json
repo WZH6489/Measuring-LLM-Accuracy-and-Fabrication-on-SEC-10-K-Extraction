@@ -1,0 +1,13 @@
+{
+ "ticker": "HON",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 3,
+ "ts": "2026-11-20T18:05:26+00:00",
+ "prompt_sha": "27848e840e87",
+ "prompt_chars": 19956,
+ "in_tokens": 8203,
+ "out_tokens": 1359,
+ "cost_usd": 0.0015,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 37442000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Total costs, expenses and other 31,966 28,473 26,818 Income from continuing operations before taxes 5,476 6,244 6,191\"\n  },\n  \"net_income\": {\n    \"value\": 4772000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net income $ 4,772 $ 5,740 $ 5,672\"\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"\"\n  },\n  \"total_assets\": {\n    \"value\": 73681000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"Total liabilities, redeemable noncontrolling interest and shareowners\u2019 equity $ 73,681 $ 75,196\"\n  }\n}\n```"
+}

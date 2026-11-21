@@ -1,0 +1,13 @@
+{
+ "ticker": "AEP",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 2,
+ "ts": "2026-11-20T17:47:55+00:00",
+ "prompt_sha": "1b6e8acedd84",
+ "prompt_chars": 511,
+ "in_tokens": 179,
+ "out_tokens": 1053,
+ "cost_usd": 0.000544,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 23000000000,\n    \"unit\": \"USD (estimate, not verified against the FY2025 10-K)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 2700000000,\n    \"unit\": \"USD (estimate, not verified against the FY2025 10-K)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 4400000000,\n    \"unit\": \"USD (estimate, not verified against the FY2025 10-K)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 155000000000,\n    \"unit\": \"USD (estimate, not verified against the FY2025 10-K)\",\n    \"period\": \"As of 2025-12-31\",\n    \"quote\": null\n  }\n}\n```"
+}

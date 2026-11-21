@@ -1,0 +1,13 @@
+{
+ "ticker": "NVDA",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:32:51+00:00",
+ "prompt_sha": "a7030b314bbb",
+ "prompt_chars": 496,
+ "in_tokens": 171,
+ "out_tokens": 365,
+ "cost_usd": 0.0002,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

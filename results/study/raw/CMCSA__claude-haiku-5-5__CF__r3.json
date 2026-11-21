@@ -1,0 +1,13 @@
+{
+ "ticker": "CMCSA",
+ "model": "claude-haiku-5-5",
+ "cell": "C+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:13:38+00:00",
+ "prompt_sha": "39ead36bd350",
+ "prompt_chars": 44018,
+ "in_tokens": 21961,
+ "out_tokens": 523,
+ "cost_usd": 0.002458,
+ "raw": "{\n \"revenue\": {\n  \"value\": 123707000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Revenue\\n$\\n123,707\"\n },\n \"net_income\": {\n  \"value\": 19998000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Net income attributable to Comcast Corporation\\n$\\n19,998\"\n },\n \"operating_income\": {\n  \"value\": 20672000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Operating income\\n20,672\"\n },\n \"total_assets\": {\n  \"value\": 272631000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total assets\\n$\\n272,631\"\n }\n}"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "HD",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 2,
+ "ts": "2026-11-20T17:39:24+00:00",
+ "prompt_sha": "7b5cdf21d2cb",
+ "prompt_chars": 497,
+ "in_tokens": 171,
+ "out_tokens": 916,
+ "cost_usd": 0.000475,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 164000000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year 2025, ended February 1, 2026 (estimate, not verified against the filing)\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 15000000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year 2025, ended February 1, 2026 (estimate, not verified against the filing)\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 21000000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year 2025, ended February 1, 2026 (estimate, not verified against the filing)\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 80000000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of February 1, 2026 (estimate, not verified against the filing)\",\n    \"quote\": null\n  }\n}\n```"
+}

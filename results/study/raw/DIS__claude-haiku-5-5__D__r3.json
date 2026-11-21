@@ -1,0 +1,13 @@
+{
+ "ticker": "DIS",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 3,
+ "ts": "2026-11-20T18:13:05+00:00",
+ "prompt_sha": "c7c69e619014",
+ "prompt_chars": 13281,
+ "in_tokens": 5657,
+ "out_tokens": 1132,
+ "cost_usd": 0.001132,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 102344000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended October 3, 2026\",\n    \"quote\": \"Total revenues 102,344 94,425 91,361\"\n  },\n  \"net_income\": {\n    \"value\": 10648000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended October 3, 2026\",\n    \"quote\": \"Net income 10,648 13,431 5,773\"\n  },\n  \"operating_income\": {\n    \"value\": 15041000000,\n    \"unit\": \"USD (derived: total revenues less total costs and expenses less restructuring and impairment charges; not separately reported on the consolidated statement)\",\n    \"period\": \"Fiscal year ended October 3, 2026\",\n    \"quote\": \"Total costs and expenses ( 85,847 ) ( 80,593 ) ( 79,447 ) Restructuring and impairment charges ( 1,456 )\"\n  },\n  \"total_assets\": {\n    \"value\": 206138000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of October 3, 2026\",\n    \"quote\": \"Total liabilities and equity $ 206,138 $ 197,514\"\n  }\n}\n```"
+}

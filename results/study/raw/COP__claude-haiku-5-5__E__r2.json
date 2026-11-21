@@ -1,0 +1,13 @@
+{
+ "ticker": "COP",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 2,
+ "ts": "2026-11-20T17:44:36+00:00",
+ "prompt_sha": "2e9cac7da964",
+ "prompt_chars": 495,
+ "in_tokens": 171,
+ "out_tokens": 1063,
+ "cost_usd": 0.000549,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 54000000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY ended 2025-12-31 (unverified estimate, not confirmed against the 10-K)\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 7000000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY ended 2025-12-31 (unverified estimate, not confirmed against the 10-K)\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 11000000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY ended 2025-12-31 (unverified estimate; ConocoPhillips does not report a standalone operating income line)\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 120000000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of 2025-12-31 (unverified estimate, not confirmed against the 10-K)\",\n    \"quote\": null\n  }\n}\n```"
+}

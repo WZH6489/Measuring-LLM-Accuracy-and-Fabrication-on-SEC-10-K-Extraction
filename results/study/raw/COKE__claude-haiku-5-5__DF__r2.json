@@ -1,0 +1,13 @@
+{
+ "ticker": "COKE",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:54:10+00:00",
+ "prompt_sha": "0bd423c877d6",
+ "prompt_chars": 16840,
+ "in_tokens": 6531,
+ "out_tokens": 479,
+ "cost_usd": 0.000893,
+ "raw": "{\"revenue\": {\"value\": 7228055000, \"unit\": \"USD\", \"period\": \"Fiscal year ended December 31, 2025\", \"quote\": \"Net sales $ 7,228,055 $ 6,899,716 $ 6,653,858\"}, \"net_income\": {\"value\": 570582000, \"unit\": \"USD\", \"period\": \"Fiscal year ended December 31, 2025\", \"quote\": \"Net income $ 570,582 $ 633,125 $ 408,375\"}, \"operating_income\": {\"value\": 950656000, \"unit\": \"USD\", \"period\": \"Fiscal year ended December 31, 2025\", \"quote\": \"Income from operations 950,656 920,350 834,451\"}, \"total_assets\": null}"
+}

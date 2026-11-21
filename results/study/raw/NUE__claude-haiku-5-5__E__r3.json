@@ -1,0 +1,13 @@
+{
+ "ticker": "NUE",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 3,
+ "ts": "2026-11-20T18:16:21+00:00",
+ "prompt_sha": "46e5f5ba56f4",
+ "prompt_chars": 491,
+ "in_tokens": 167,
+ "out_tokens": 1200,
+ "cost_usd": 0.000617,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 30500000000,\n    \"unit\": \"USD (estimate, not verified against the FY2025 10-K)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 1100000000,\n    \"unit\": \"USD (estimate, not verified against the FY2025 10-K)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 1400000000,\n    \"unit\": \"USD (estimate; Nucor does not report an operating income line, so this approximates earnings before income taxes; not verified against the FY2025 10-K)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 39000000000,\n    \"unit\": \"USD (estimate, not verified against the FY2025 10-K)\",\n    \"period\": \"As of 2025-12-31\",\n    \"quote\": null\n  }\n}\n```"
+}

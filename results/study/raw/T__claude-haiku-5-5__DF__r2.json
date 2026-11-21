@@ -1,0 +1,13 @@
+{
+ "ticker": "T",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:50:37+00:00",
+ "prompt_sha": "1cb2988e6732",
+ "prompt_chars": 16221,
+ "in_tokens": 6766,
+ "out_tokens": 592,
+ "cost_usd": 0.000973,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 125648000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Total Operating Revenues 125,648 122,336 122,428 2.7 (0.1)\"\n  },\n  \"net_income\": {\n    \"value\": 23386000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net Income 23,386 12,253 15,623 90.9\"\n  },\n  \"operating_income\": {\n    \"value\": 24162000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Operating Income 24,162 19,049 23,461 26.8 (18.8)\"\n  },\n  \"total_assets\": null\n}\n```"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "CSCO",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 3,
+ "ts": "2026-11-20T17:57:09+00:00",
+ "prompt_sha": "a0fa8f0dffb6",
+ "prompt_chars": 43941,
+ "in_tokens": 22675,
+ "out_tokens": 434,
+ "cost_usd": 0.002485,
+ "raw": "{\"revenue\": {\"value\": 63325000000, \"unit\": \"USD\", \"period\": \"fiscal year ended 2026-07-25\", \"quote\": \"Total revenue\\n63,325\\n56,654\\n53,803\"}, \"net_income\": {\"value\": 13267000000, \"unit\": \"USD\", \"period\": \"fiscal year ended 2026-07-25\", \"quote\": \"NET INCOME\\n$\\n13,267\\n$\\n10,180\\n$\\n10,320\"}, \"operating_income\": {\"value\": 15368000000, \"unit\": \"USD\", \"period\": \"fiscal year ended 2026-07-25\", \"quote\": \"OPERATING INCOME\\n15,368\\n11,760\\n12,181\"}, \"total_assets\": {\"value\": 129637000000, \"unit\": \"USD\", \"period\": \"fiscal year ended 2026-07-25\", \"quote\": \"TOTAL ASSETS\\n$\\n129,637\\n$\\n122,291\"}}"
+}

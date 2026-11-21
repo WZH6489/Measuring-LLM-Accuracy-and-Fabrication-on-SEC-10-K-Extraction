@@ -1,0 +1,13 @@
+{
+ "ticker": "SHW",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:52:13+00:00",
+ "prompt_sha": "26ef20a6c234",
+ "prompt_chars": 504,
+ "in_tokens": 177,
+ "out_tokens": 325,
+ "cost_usd": 0.00018,
+ "raw": "{\"revenue\": null, \"net_income\": null, \"operating_income\": null, \"total_assets\": null}"
+}

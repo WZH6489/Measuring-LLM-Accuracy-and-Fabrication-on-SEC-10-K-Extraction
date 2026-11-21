@@ -1,0 +1,13 @@
+{
+ "ticker": "TMO",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 2,
+ "ts": "2026-11-20T17:36:04+00:00",
+ "prompt_sha": "9730fc5cde90",
+ "prompt_chars": 510,
+ "in_tokens": 179,
+ "out_tokens": 1168,
+ "cost_usd": 0.000602,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 44500000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null,\n    \"note\": \"Estimate only. I could not verify this against the FY2025 10-K and have no reliable recall of the reported figure.\"\n  },\n  \"net_income\": {\n    \"value\": 6300000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null,\n    \"note\": \"Estimate only, approximating net income attributable to Thermo Fisher. Not verified against the FY2025 10-K.\"\n  },\n  \"operating_income\": {\n    \"value\": 8000000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null,\n    \"note\": \"Estimate only. Not verified against the FY2025 10-K.\"\n  },\n  \"total_assets\": {\n    \"value\": 100000000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of 2025-12-31\",\n    \"quote\": null,\n    \"note\": \"Estimate only. Not verified against the FY2025 10-K.\"\n  }\n}\n```"
+}

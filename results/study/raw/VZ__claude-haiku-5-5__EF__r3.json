@@ -1,0 +1,13 @@
+{
+ "ticker": "VZ",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:14:29+00:00",
+ "prompt_sha": "ea05b4003bf3",
+ "prompt_chars": 511,
+ "in_tokens": 179,
+ "out_tokens": 431,
+ "cost_usd": 0.000233,
+ "raw": "```json\n{\n  \"revenue\": {\"value\": null, \"unit\": \"USD\", \"period\": \"FY2025 (fiscal year ended 2025-12-31)\", \"quote\": null},\n  \"net_income\": {\"value\": null, \"unit\": \"USD\", \"period\": \"FY2025 (fiscal year ended 2025-12-31)\", \"quote\": null},\n  \"operating_income\": {\"value\": null, \"unit\": \"USD\", \"period\": \"FY2025 (fiscal year ended 2025-12-31)\", \"quote\": null},\n  \"total_assets\": {\"value\": null, \"unit\": \"USD\", \"period\": \"As of 2025-12-31\", \"quote\": null}\n}\n```"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "HLIT",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 2,
+ "ts": "2026-11-20T17:55:07+00:00",
+ "prompt_sha": "a0bade315408",
+ "prompt_chars": 494,
+ "in_tokens": 168,
+ "out_tokens": 1062,
+ "cost_usd": 0.000548,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 700000000,\n    \"unit\": \"USD (estimate from memory, not verified against the FY2025 10-K)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 40000000,\n    \"unit\": \"USD (estimate from memory, not verified against the FY2025 10-K)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 30000000,\n    \"unit\": \"USD (estimate from memory, not verified against the FY2025 10-K)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 750000000,\n    \"unit\": \"USD (estimate from memory, not verified against the FY2025 10-K)\",\n    \"period\": \"As of 2025-12-31\",\n    \"quote\": null\n  }\n}\n```"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "ECL",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 2,
+ "ts": "2026-11-20T17:52:26+00:00",
+ "prompt_sha": "c1ae6c7e8e6b",
+ "prompt_chars": 492,
+ "in_tokens": 168,
+ "out_tokens": 875,
+ "cost_usd": 0.000454,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 16400000000,\n    \"unit\": \"USD (best estimate, not verified against the filing)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 1800000000,\n    \"unit\": \"USD (best estimate, not verified against the filing)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 2600000000,\n    \"unit\": \"USD (best estimate, not verified against the filing)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 22500000000,\n    \"unit\": \"USD (best estimate, not verified against the filing)\",\n    \"period\": \"As of 2025-12-31\",\n    \"quote\": null\n  }\n}\n```"
+}

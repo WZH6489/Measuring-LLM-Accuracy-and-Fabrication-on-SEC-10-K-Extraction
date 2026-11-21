@@ -1,0 +1,13 @@
+{
+ "ticker": "SLB",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 3,
+ "ts": "2026-11-20T18:08:36+00:00",
+ "prompt_sha": "c8eb74d8a569",
+ "prompt_chars": 495,
+ "in_tokens": 170,
+ "out_tokens": 1140,
+ "cost_usd": 0.000587,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 35500000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31)\",\n    \"quote\": null,\n    \"note\": \"Estimate from memory, not verified against the filing\"\n  },\n  \"net_income\": {\n    \"value\": 3500000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31)\",\n    \"quote\": null,\n    \"note\": \"Estimate from memory, not verified against the filing; net income attributable to SLB\"\n  },\n  \"operating_income\": {\n    \"value\": 5000000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31)\",\n    \"quote\": null,\n    \"note\": \"Estimate from memory, not verified against the filing\"\n  },\n  \"total_assets\": {\n    \"value\": 55000000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of 2025-12-31\",\n    \"quote\": null,\n    \"note\": \"Estimate from memory, not verified against the filing\"\n  }\n}\n```"
+}

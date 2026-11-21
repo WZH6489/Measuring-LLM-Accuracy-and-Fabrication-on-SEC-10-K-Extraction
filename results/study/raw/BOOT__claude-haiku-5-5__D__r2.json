@@ -1,0 +1,13 @@
+{
+ "ticker": "BOOT",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 2,
+ "ts": "2026-11-20T17:54:41+00:00",
+ "prompt_sha": "8a5f21ff7188",
+ "prompt_chars": 18143,
+ "in_tokens": 7729,
+ "out_tokens": 295,
+ "cost_usd": 0.00092,
+ "raw": "{\"revenue\": {\"value\": 2253859000, \"unit\": \"USD\", \"period\": \"Fiscal year ended March 28, 2026\", \"quote\": \"Net sales | $ 2,253,859 | $ 1,911,104\"}, \"net_income\": {\"value\": 225880000, \"unit\": \"USD\", \"period\": \"Fiscal year ended March 28, 2026\", \"quote\": \"Net income | $ 225,880 | $ 180,942 | $ 146,996\"}, \"operating_income\": {\"value\": 299145000, \"unit\": \"USD\", \"period\": \"Fiscal year ended March 28, 2026\", \"quote\": \"Income from operations | 299,145 | 239,352 | 198,214\"}, \"total_assets\": {\"value\": 2450075000, \"unit\": \"USD\", \"period\": \"As of March 28, 2026\", \"quote\": \"Total assets | $ 2,450,075 | $ 2,018,021\"}}"
+}

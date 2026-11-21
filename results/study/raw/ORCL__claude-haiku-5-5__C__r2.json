@@ -1,0 +1,13 @@
+{
+ "ticker": "ORCL",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 2,
+ "ts": "2026-11-20T17:32:57+00:00",
+ "prompt_sha": "7be71ba84753",
+ "prompt_chars": 43941,
+ "in_tokens": 22867,
+ "out_tokens": 749,
+ "cost_usd": 0.002661,
+ "raw": "{\n \"revenue\": {\n  \"value\": 67357000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-05-31\",\n  \"quote\": \"Total revenues\\n67,357\\n57,399\\n52,961\"\n },\n \"net_income\": {\n  \"value\": 17087000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-05-31\",\n  \"quote\": \"Net income\\n$\\n17,087\\n$\\n12,443\\n$\\n10,467\"\n },\n \"operating_income\": {\n  \"value\": 20606000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-05-31\",\n  \"quote\": \"Operating income\\n20,606\\n17,678\\n15,353\"\n },\n \"total_assets\": {\n  \"value\": 261759000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-05-31\",\n  \"quote\": \"Total assets\\n$\\n261,759\\n$\\n168,361\"\n }\n}"
+}

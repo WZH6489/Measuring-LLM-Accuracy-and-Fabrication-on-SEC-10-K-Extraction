@@ -1,0 +1,13 @@
+{
+ "ticker": "PG",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 2,
+ "ts": "2026-11-20T17:37:56+00:00",
+ "prompt_sha": "4d0f24f2c7b7",
+ "prompt_chars": 500,
+ "in_tokens": 173,
+ "out_tokens": 1111,
+ "cost_usd": 0.000573,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 86000000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended June 30, 2026 (estimate, not verified; no FY2026 10-K is available to me, so this extrapolates from FY2025 results)\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 16500000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended June 30, 2026 (estimate, not verified; net earnings attributable to P&G, extrapolated from FY2025)\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 19500000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended June 30, 2026 (estimate, not verified; extrapolated from FY2025)\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 124000000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of June 30, 2026 (estimate, not verified; extrapolated from the June 30, 2025 balance sheet)\",\n    \"quote\": null\n  }\n}\n```"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "CSCO",
+ "model": "claude-haiku-5-5",
+ "cell": "B+F",
+ "repeat": 3,
+ "ts": "2026-11-20T17:57:20+00:00",
+ "prompt_sha": "9d12a80486f3",
+ "prompt_chars": 14549,
+ "in_tokens": 6939,
+ "out_tokens": 520,
+ "cost_usd": 0.000954,
+ "raw": "{\"revenue\":{\"value\":63325000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended July 25, 2026\",\"quote\":\"Total revenue $ 63,325 $ 56,654 $ 53,803\"},\"net_income\":{\"value\":13267000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended July 25, 2026\",\"quote\":\"NET INCOME $ 13,267 $ 10,180 $ 10,320\"},\"operating_income\":{\"value\":15368000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended July 25, 2026\",\"quote\":\"OPERATING INCOME 15,368 11,760 12,181\"},\"total_assets\":{\"value\":129637000000,\"unit\":\"USD\",\"period\":\"As of July 25, 2026\",\"quote\":\"TOTAL ASSETS $ 129,637 $ 122,291\"}}"
+}

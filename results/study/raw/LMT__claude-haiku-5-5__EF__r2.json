@@ -1,0 +1,13 @@
+{
+ "ticker": "LMT",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:43:54+00:00",
+ "prompt_sha": "acfd9e336b8f",
+ "prompt_chars": 505,
+ "in_tokens": 177,
+ "out_tokens": 303,
+ "cost_usd": 0.000169,
+ "raw": "{\"revenue\": null, \"net_income\": null, \"operating_income\": null, \"total_assets\": null}"
+}

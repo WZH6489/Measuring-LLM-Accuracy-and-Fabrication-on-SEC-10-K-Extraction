@@ -1,0 +1,13 @@
+{
+ "ticker": "CAT",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:41:34+00:00",
+ "prompt_sha": "52130d39ab2d",
+ "prompt_chars": 500,
+ "in_tokens": 172,
+ "out_tokens": 406,
+ "cost_usd": 0.00022,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

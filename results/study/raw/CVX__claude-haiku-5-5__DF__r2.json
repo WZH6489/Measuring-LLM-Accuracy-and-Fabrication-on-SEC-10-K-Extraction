@@ -1,0 +1,13 @@
+{
+ "ticker": "CVX",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:44:18+00:00",
+ "prompt_sha": "e3c4b9e51486",
+ "prompt_chars": 17570,
+ "in_tokens": 7836,
+ "out_tokens": 670,
+ "cost_usd": 0.001119,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 184432000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Sales and other operating revenues $ 184,432 $ 193,414 $ 196,913\"\n  },\n  \"net_income\": {\n    \"value\": 12299000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net Income (Loss) Attributable to Chevron Corporation $ 12,299 $ 17,661 $ 21,369\"\n  },\n  \"operating_income\": null,\n  \"total_assets\": {\n    \"value\": 324012000000,\n    \"unit\": \"USD\",\n    \"period\": \"At December 31, 2025\",\n    \"quote\": \"Total Assets $ 324,012 $ 256,938\"\n  }\n}\n```"
+}

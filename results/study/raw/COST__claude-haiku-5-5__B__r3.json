@@ -1,0 +1,13 @@
+{
+ "ticker": "COST",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 3,
+ "ts": "2026-11-20T18:01:49+00:00",
+ "prompt_sha": "159e4624f67c",
+ "prompt_chars": 14472,
+ "in_tokens": 7283,
+ "out_tokens": 591,
+ "cost_usd": 0.001024,
+ "raw": "{\"revenue\":{\"value\":303154000000,\"unit\":\"USD\",\"period\":\"52 weeks ended August 30, 2026\",\"quote\":\"Total revenue 303,154 275,235 254,453\"},\"net_income\":{\"value\":9226000000,\"unit\":\"USD\",\"period\":\"52 weeks ended August 30, 2026\",\"quote\":\"NET INCOME $ 9,226 $ 8,099 $ 7,367\"},\"operating_income\":{\"value\":11685000000,\"unit\":\"USD\",\"period\":\"52 weeks ended August 30, 2026\",\"quote\":\"Operating income 11,685 10,383 9,285\"},\"total_assets\":{\"value\":89045000000,\"unit\":\"USD\",\"period\":\"As of August 30, 2026\",\"quote\":\"TOTAL ASSETS $ 89,045 $ 77,099\"}}"
+}

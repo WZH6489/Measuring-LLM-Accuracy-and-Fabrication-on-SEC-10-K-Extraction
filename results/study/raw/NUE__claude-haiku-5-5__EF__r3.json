@@ -1,0 +1,13 @@
+{
+ "ticker": "NUE",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:16:30+00:00",
+ "prompt_sha": "5870f9eb97e1",
+ "prompt_chars": 495,
+ "in_tokens": 170,
+ "out_tokens": 262,
+ "cost_usd": 0.000148,
+ "raw": "{\"revenue\": null, \"net_income\": null, \"operating_income\": null, \"total_assets\": null}"
+}

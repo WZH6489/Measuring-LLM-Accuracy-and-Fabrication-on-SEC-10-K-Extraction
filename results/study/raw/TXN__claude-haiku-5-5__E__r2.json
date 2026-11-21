@@ -1,0 +1,13 @@
+{
+ "ticker": "TXN",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 2,
+ "ts": "2026-11-20T17:33:48+00:00",
+ "prompt_sha": "9ec36a961633",
+ "prompt_chars": 502,
+ "in_tokens": 175,
+ "out_tokens": 1009,
+ "cost_usd": 0.000522,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 17200000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31); best estimate, not verified against the filing\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 4700000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31); best estimate, not verified against the filing\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 5200000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31); best estimate, not verified against the filing\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 37000000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of 2025-12-31; best estimate, not verified against the filing\",\n    \"quote\": null\n  }\n}\n```"
+}

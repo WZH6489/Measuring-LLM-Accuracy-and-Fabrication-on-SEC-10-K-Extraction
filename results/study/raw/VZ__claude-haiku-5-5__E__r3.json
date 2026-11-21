@@ -1,0 +1,13 @@
+{
+ "ticker": "VZ",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 3,
+ "ts": "2026-11-20T18:14:18+00:00",
+ "prompt_sha": "7068936acf30",
+ "prompt_chars": 507,
+ "in_tokens": 176,
+ "out_tokens": 951,
+ "cost_usd": 0.000493,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 138000000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2025-12-31 (unverified estimate; no source document provided)\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 17000000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2025-12-31 (unverified estimate; no source document provided)\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 23000000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2025-12-31 (unverified estimate; no source document provided)\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 390000000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of fiscal year end 2025-12-31 (unverified estimate; no source document provided)\",\n    \"quote\": null\n  }\n}\n```"
+}

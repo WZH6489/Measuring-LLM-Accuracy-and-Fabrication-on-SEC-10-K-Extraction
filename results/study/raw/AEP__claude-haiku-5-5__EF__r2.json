@@ -1,0 +1,13 @@
+{
+ "ticker": "AEP",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:48:06+00:00",
+ "prompt_sha": "d17f4982a607",
+ "prompt_chars": 515,
+ "in_tokens": 182,
+ "out_tokens": 605,
+ "cost_usd": 0.000321,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"FY ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"FY ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"FY ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"FY ended 2025-12-31\",\n    \"quote\": null\n  }\n}\n```"
+}

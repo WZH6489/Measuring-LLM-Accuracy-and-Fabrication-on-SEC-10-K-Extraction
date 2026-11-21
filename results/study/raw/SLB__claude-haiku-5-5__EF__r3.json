@@ -1,0 +1,13 @@
+{
+ "ticker": "SLB",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:08:48+00:00",
+ "prompt_sha": "b57e38fc02e0",
+ "prompt_chars": 499,
+ "in_tokens": 173,
+ "out_tokens": 391,
+ "cost_usd": 0.000213,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

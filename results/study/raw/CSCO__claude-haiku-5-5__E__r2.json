@@ -1,0 +1,13 @@
+{
+ "ticker": "CSCO",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 2,
+ "ts": "2026-11-20T17:33:27+00:00",
+ "prompt_sha": "ad83659fd77b",
+ "prompt_chars": 500,
+ "in_tokens": 174,
+ "out_tokens": 943,
+ "cost_usd": 0.000489,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD; not available: I cannot access the FY2026 10-K and have no reliable knowledge of this figure\",\n    \"period\": \"Fiscal year ended July 25, 2026\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD; not available: I cannot access the FY2026 10-K and have no reliable knowledge of this figure\",\n    \"period\": \"Fiscal year ended July 25, 2026\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD; not available: I cannot access the FY2026 10-K and have no reliable knowledge of this figure\",\n    \"period\": \"Fiscal year ended July 25, 2026\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD; not available: I cannot access the FY2026 10-K and have no reliable knowledge of this figure\",\n    \"period\": \"As of July 25, 2026\",\n    \"quote\": null\n  }\n}\n```"
+}

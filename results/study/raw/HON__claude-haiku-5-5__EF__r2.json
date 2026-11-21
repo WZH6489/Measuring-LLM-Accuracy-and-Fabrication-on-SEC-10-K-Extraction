@@ -1,0 +1,13 @@
+{
+ "ticker": "HON",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:42:03+00:00",
+ "prompt_sha": "b013b012be7f",
+ "prompt_chars": 512,
+ "in_tokens": 180,
+ "out_tokens": 329,
+ "cost_usd": 0.000182,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

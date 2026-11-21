@@ -1,0 +1,13 @@
+{
+ "ticker": "SXI",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 2,
+ "ts": "2026-11-20T17:55:23+00:00",
+ "prompt_sha": "5020c07614c9",
+ "prompt_chars": 43941,
+ "in_tokens": 22667,
+ "out_tokens": 527,
+ "cost_usd": 0.00253,
+ "raw": "{\n \"revenue\": {\n  \"value\": 891597000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-06-30\",\n  \"quote\": \"Net sales\\n$\\n891,597\"\n },\n \"net_income\": {\n  \"value\": 104632000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-06-30\",\n  \"quote\": \"Net income attributable to Standex International Corporation\\n$\\n104,632\"\n },\n \"operating_income\": {\n  \"value\": 193584000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-06-30\",\n  \"quote\": \"Income from operations\\n193,584\"\n },\n \"total_assets\": {\n  \"value\": 1585708000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-06-30\",\n  \"quote\": \"Total assets\\n$\\n1,585,708\"\n }\n}"
+}

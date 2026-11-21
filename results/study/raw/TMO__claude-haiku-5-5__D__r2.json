@@ -1,0 +1,13 @@
+{
+ "ticker": "TMO",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 2,
+ "ts": "2026-11-20T17:35:58+00:00",
+ "prompt_sha": "bd24ff9562cc",
+ "prompt_chars": 19287,
+ "in_tokens": 7899,
+ "out_tokens": 276,
+ "cost_usd": 0.000928,
+ "raw": "{\"revenue\": {\"value\": 44556000000, \"unit\": \"USD\", \"period\": \"fiscal year ended December 31, 2025\", \"quote\": \"Revenues\\n$\\n44,556 \\n$\\n42,879 \"},\"net_income\": {\"value\": 6721000000, \"unit\": \"USD\", \"period\": \"fiscal year ended December 31, 2025\", \"quote\": \"Net income\\n6,721\\n6,338\\n5,955\"},\"operating_income\": {\"value\": 7746000000, \"unit\": \"USD\", \"period\": \"fiscal year ended December 31, 2025\", \"quote\": \"Operating income\\n7,746\\n7,337\\n6,859\"},\"total_assets\": {\"value\": 110343000000, \"unit\": \"USD\", \"period\": \"as of December 31, 2025\", \"quote\": \"Total assets\\n$\\n110,343\\n$\\n97,321\"}}"
+}

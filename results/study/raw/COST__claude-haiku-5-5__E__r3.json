@@ -1,0 +1,13 @@
+{
+ "ticker": "COST",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 3,
+ "ts": "2026-11-20T18:01:58+00:00",
+ "prompt_sha": "811327aed712",
+ "prompt_chars": 507,
+ "in_tokens": 178,
+ "out_tokens": 779,
+ "cost_usd": 0.000407,
+ "raw": "```json\n{\n  \"revenue\": {\"value\": null, \"unit\": \"USD\", \"period\": \"fiscal year ended 2026-08-30\", \"quote\": null},\n  \"net_income\": {\"value\": null, \"unit\": \"USD\", \"period\": \"fiscal year ended 2026-08-30\", \"quote\": null},\n  \"operating_income\": {\"value\": null, \"unit\": \"USD\", \"period\": \"fiscal year ended 2026-08-30\", \"quote\": null},\n  \"total_assets\": {\"value\": null, \"unit\": \"USD\", \"period\": \"fiscal year ended 2026-08-30\", \"quote\": null},\n  \"note\": \"My training data does not include Costco's 10-K for the fiscal year ended 2026-08-30, so I cannot state these figures without fabricating them. Please check the filing on SEC EDGAR (CIK 0000909832).\"\n}\n```"
+}

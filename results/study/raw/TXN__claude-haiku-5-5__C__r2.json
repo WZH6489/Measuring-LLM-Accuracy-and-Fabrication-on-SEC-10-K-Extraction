@@ -1,0 +1,13 @@
+{
+ "ticker": "TXN",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 2,
+ "ts": "2026-11-20T17:33:41+00:00",
+ "prompt_sha": "7744462a7388",
+ "prompt_chars": 43941,
+ "in_tokens": 22583,
+ "out_tokens": 520,
+ "cost_usd": 0.002518,
+ "raw": "{\"revenue\": {\"value\": 17682000000, \"unit\": \"USD\", \"period\": \"fiscal year ended 2025-12-31\", \"quote\": \"Revenue\\n$\\n17,682\\n$\\n15,641\\n$\\n17,519\"}, \"net_income\": {\"value\": 5001000000, \"unit\": \"USD\", \"period\": \"fiscal year ended 2025-12-31\", \"quote\": \"Net income\\n$\\n5,001\\n$\\n4,799\\n$\\n6,510\"}, \"operating_income\": {\"value\": 6023000000, \"unit\": \"USD\", \"period\": \"fiscal year ended 2025-12-31\", \"quote\": \"Operating profit\\n6,023\\n5,465\\n7,331\"}, \"total_assets\": {\"value\": 34585000000, \"unit\": \"USD\", \"period\": \"fiscal year ended 2025-12-31\", \"quote\": \"Total assets\\n$\\n34,585\\n$\\n35,509\"}}"
+}

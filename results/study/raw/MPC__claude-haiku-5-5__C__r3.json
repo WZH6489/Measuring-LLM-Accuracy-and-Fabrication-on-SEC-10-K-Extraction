@@ -1,0 +1,13 @@
+{
+ "ticker": "MPC",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 3,
+ "ts": "2026-11-20T18:09:16+00:00",
+ "prompt_sha": "75d8baaa6bf9",
+ "prompt_chars": 43941,
+ "in_tokens": 22627,
+ "out_tokens": 722,
+ "cost_usd": 0.002624,
+ "raw": "```json\n{\n \"revenue\": {\n  \"value\": 132699000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Sales and other operating revenues\\n$\\n132,699\"\n },\n \"net_income\": {\n  \"value\": 4047000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Net income attributable to MPC\\n$\\n4,047\"\n },\n \"operating_income\": {\n  \"value\": 8291000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Income from operations\\n8,291\"\n },\n \"total_assets\": {\n  \"value\": 83955000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total assets\\n$\\n83,955\"\n }\n}\n```"
+}

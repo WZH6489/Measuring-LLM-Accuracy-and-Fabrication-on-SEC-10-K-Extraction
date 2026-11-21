@@ -1,0 +1,13 @@
+{
+ "ticker": "TXN",
+ "model": "claude-haiku-5-5",
+ "cell": "B+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:33:51+00:00",
+ "prompt_sha": "6b2cf217ebcd",
+ "prompt_chars": 14549,
+ "in_tokens": 6847,
+ "out_tokens": 674,
+ "cost_usd": 0.001022,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 17682000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Revenue $ 17,682 $ 15,641 $ 17,519\"\n  },\n  \"net_income\": {\n    \"value\": 5001000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net income $ 5,001 $ 4,799 $ 6,510\"\n  },\n  \"operating_income\": {\n    \"value\": 6023000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Operating profit 6,023 5,465 7,331\"\n  },\n  \"total_assets\": {\n    \"value\": 34585000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"Total assets $ 34,585 $ 35,509\"\n  }\n}\n```"
+}

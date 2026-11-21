@@ -1,0 +1,13 @@
+{
+ "ticker": "MPC",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 2,
+ "ts": "2026-11-20T17:45:54+00:00",
+ "prompt_sha": "d9adb8c6fed2",
+ "prompt_chars": 504,
+ "in_tokens": 171,
+ "out_tokens": 961,
+ "cost_usd": 0.000498,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": null,\n    \"note\": \"I do not have reliable knowledge of this figure from the FY2025 10-K and will not estimate it. Please check the filing on SEC EDGAR.\"\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": null,\n    \"note\": \"I do not have reliable knowledge of this figure from the FY2025 10-K and will not estimate it. Please check the filing on SEC EDGAR.\"\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": null,\n    \"note\": \"I do not have reliable knowledge of this figure from the FY2025 10-K and will not estimate it. Please check the filing on SEC EDGAR.\"\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"as of 2025-12-31\",\n    \"quote\": null,\n    \"note\": \"I do not have reliable knowledge of this figure from the FY2025 10-K and will not estimate it. Please check the filing on SEC EDGAR.\"\n  }\n}\n```"
+}

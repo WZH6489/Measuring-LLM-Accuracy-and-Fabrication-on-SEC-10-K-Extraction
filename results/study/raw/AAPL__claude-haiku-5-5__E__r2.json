@@ -1,0 +1,13 @@
+{
+ "ticker": "AAPL",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 2,
+ "ts": "2026-11-20T17:32:00+00:00",
+ "prompt_sha": "ffc98337789c",
+ "prompt_chars": 491,
+ "in_tokens": 166,
+ "out_tokens": 857,
+ "cost_usd": 0.000445,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-09-26\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-09-26\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-09-26\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-09-26\",\n    \"quote\": null\n  },\n  \"note\": \"I do not have reliable knowledge of Apple's FY2026 10-K figures, so I am not providing estimates for these values.\"\n}\n```"
+}

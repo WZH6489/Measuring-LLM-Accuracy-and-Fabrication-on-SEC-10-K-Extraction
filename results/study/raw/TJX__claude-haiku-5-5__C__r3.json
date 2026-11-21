@@ -1,0 +1,13 @@
+{
+ "ticker": "TJX",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 3,
+ "ts": "2026-11-20T18:04:35+00:00",
+ "prompt_sha": "135bc7788b7f",
+ "prompt_chars": 43941,
+ "in_tokens": 22569,
+ "out_tokens": 871,
+ "cost_usd": 0.002692,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 60372000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-01-31\",\n    \"quote\": \"Net sales\\n$\\n60,372\"\n  },\n  \"net_income\": {\n    \"value\": 5494000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-01-31\",\n    \"quote\": \"Net income\\n$\\n5,494\"\n  },\n  \"operating_income\": {\n    \"value\": 7178000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-01-31 (derived: income before income taxes of 7,299 less net interest income of 121; no operating income line is reported)\",\n    \"quote\": \"Income before income taxes\\n7,299\\nInterest (income) expense, net\\n(\\n121\\n)\"\n  },\n  \"total_assets\": {\n    \"value\": 35767000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-01-31\",\n    \"quote\": \"Total assets\\n$\\n35,767\"\n  }\n}\n```"
+}

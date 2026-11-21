@@ -1,0 +1,13 @@
+{
+ "ticker": "HD",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 3,
+ "ts": "2026-11-20T18:02:57+00:00",
+ "prompt_sha": "6f228a80b3c3",
+ "prompt_chars": 13264,
+ "in_tokens": 6117,
+ "out_tokens": 333,
+ "cost_usd": 0.000778,
+ "raw": "{\"revenue\": {\"value\": 164683000000, \"unit\": \"USD\", \"period\": \"Fiscal 2025 (year ended February 1, 2026)\", \"quote\": \"Net sales\\n$\\n164,683 \\n$\\n159,514 \\n$\\n152,669\"}, \"net_income\": {\"value\": 14156000000, \"unit\": \"USD\", \"period\": \"Fiscal 2025 (year ended February 1, 2026)\", \"quote\": \"Net earnings\\n$\\n14,156\\n$\\n14,806\\n$\\n15,143\"}, \"operating_income\": {\"value\": 20890000000, \"unit\": \"USD\", \"period\": \"Fiscal 2025 (year ended February 1, 2026)\", \"quote\": \"Operating income\\n20,890\\n12.7 \\n21,526\"}, \"total_assets\": {\"value\": 105095000000, \"unit\": \"USD\", \"period\": \"As of February 1, 2026 (fiscal 2025 year end)\", \"quote\": \"Total assets\\n$\\n105,095\\n$\\n96,119\"}}"
+}

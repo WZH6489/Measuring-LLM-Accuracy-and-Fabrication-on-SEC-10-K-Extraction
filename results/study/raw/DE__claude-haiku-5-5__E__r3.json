@@ -1,0 +1,13 @@
+{
+ "ticker": "DE",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 3,
+ "ts": "2026-11-20T18:06:53+00:00",
+ "prompt_sha": "0284bfdacdef",
+ "prompt_chars": 491,
+ "in_tokens": 166,
+ "out_tokens": 1132,
+ "cost_usd": 0.000583,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 45680000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2025-11-02 (unverified estimate from memory)\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 5030000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2025-11-02 (unverified estimate from memory)\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 6500000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2025-11-02 (unverified estimate; Deere does not report a consolidated operating income line)\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 90000000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of 2025-11-02 (unverified estimate from memory)\",\n    \"quote\": null\n  }\n}\n```"
+}

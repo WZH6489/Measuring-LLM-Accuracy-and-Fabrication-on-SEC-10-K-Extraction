@@ -1,0 +1,13 @@
+{
+ "ticker": "MPC",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:46:04+00:00",
+ "prompt_sha": "247cfa5a43a4",
+ "prompt_chars": 13225,
+ "in_tokens": 5512,
+ "out_tokens": 801,
+ "cost_usd": 0.000952,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 132699000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Sales and other operating revenues $ 132,699 $ 138,864 $ 148,379\"\n  },\n  \"net_income\": {\n    \"value\": 5878000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net income 5,878 5,067 11,172\"\n  },\n  \"operating_income\": {\n    \"value\": 8291000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Income from operations 8,291 6,796 14,514\"\n  },\n  \"total_assets\": null\n}\n```"
+}

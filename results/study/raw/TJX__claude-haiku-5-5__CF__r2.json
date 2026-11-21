@@ -1,0 +1,13 @@
+{
+ "ticker": "TJX",
+ "model": "claude-haiku-5-5",
+ "cell": "C+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:41:15+00:00",
+ "prompt_sha": "6ff559370d03",
+ "prompt_chars": 44018,
+ "in_tokens": 22594,
+ "out_tokens": 468,
+ "cost_usd": 0.002493,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 60372000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-01-31\",\n    \"quote\": \"Net sales\\n$\\n60,372\"\n  },\n  \"net_income\": {\n    \"value\": 5494000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-01-31\",\n    \"quote\": \"Net income\\n$\\n5,494\"\n  },\n  \"operating_income\": null,\n  \"total_assets\": {\n    \"value\": 35767000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-01-31\",\n    \"quote\": \"Total assets\\n$\\n35,767\"\n  }\n}\n```"
+}

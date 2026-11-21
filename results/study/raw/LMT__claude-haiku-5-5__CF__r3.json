@@ -1,0 +1,13 @@
+{
+ "ticker": "LMT",
+ "model": "claude-haiku-5-5",
+ "cell": "C+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:07:23+00:00",
+ "prompt_sha": "7400a11eea9b",
+ "prompt_chars": 44018,
+ "in_tokens": 22265,
+ "out_tokens": 554,
+ "cost_usd": 0.002504,
+ "raw": "{\n \"revenue\": {\n  \"value\": 75048000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total sales\\n75,048\"\n },\n \"net_income\": {\n  \"value\": 5017000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Net earnings\\n$\\n5,017\"\n },\n \"operating_income\": {\n  \"value\": 7731000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Operating profit\\n7,731\"\n },\n \"total_assets\": {\n  \"value\": 59840000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total assets\\n$\\n59,840\"\n }\n}"
+}

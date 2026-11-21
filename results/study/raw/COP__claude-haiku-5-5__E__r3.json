@@ -1,0 +1,13 @@
+{
+ "ticker": "COP",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 3,
+ "ts": "2026-11-20T18:08:07+00:00",
+ "prompt_sha": "2e9cac7da964",
+ "prompt_chars": 495,
+ "in_tokens": 171,
+ "out_tokens": 954,
+ "cost_usd": 0.000494,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": null,\n    \"note\": \"I don't have reliable knowledge of ConocoPhillips' FY2025 10-K figures, and I won't estimate them. The FY2025 10-K would have been filed after my training data was collected. Verify against the filing on SEC EDGAR.\"\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": null,\n    \"note\": \"Not available from my knowledge. See the revenue note.\"\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": null,\n    \"note\": \"Not available from my knowledge. ConocoPhillips does not report a conventional 'operating income' line, so the filing's income statement and the definition used must be checked.\"\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"as of 2025-12-31\",\n    \"quote\": null,\n    \"note\": \"Not available from my knowledge. See the revenue note.\"\n  }\n}\n```"
+}

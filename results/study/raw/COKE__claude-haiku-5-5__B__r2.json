@@ -1,0 +1,13 @@
+{
+ "ticker": "COKE",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 2,
+ "ts": "2026-11-20T17:53:53+00:00",
+ "prompt_sha": "1822455f2516",
+ "prompt_chars": 14472,
+ "in_tokens": 6827,
+ "out_tokens": 644,
+ "cost_usd": 0.001005,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 7228055000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year 2025 (ended December 31, 2025)\",\n    \"quote\": \"Net sales $ 7,228,055 $ 6,899,716 $ 6,653,858\"\n  },\n  \"net_income\": {\n    \"value\": 570582000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year 2025 (ended December 31, 2025)\",\n    \"quote\": \"Net income $ 570,582 $ 633,125 $ 408,375\"\n  },\n  \"operating_income\": {\n    \"value\": 950656000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year 2025 (ended December 31, 2025)\",\n    \"quote\": \"Income from operations 950,656 920,350 834,451\"\n  },\n  \"total_assets\": {\n    \"value\": 4302998000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"Total assets $ 4,302,998 $ 5,313,139\"\n  }\n}\n```"
+}

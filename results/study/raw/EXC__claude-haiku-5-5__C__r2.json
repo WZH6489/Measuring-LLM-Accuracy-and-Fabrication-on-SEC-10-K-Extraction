@@ -1,0 +1,13 @@
+{
+ "ticker": "EXC",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 2,
+ "ts": "2026-11-20T17:48:18+00:00",
+ "prompt_sha": "22052473c8bf",
+ "prompt_chars": 36939,
+ "in_tokens": 19215,
+ "out_tokens": 1072,
+ "cost_usd": 0.002458,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": \"Consolidated Statements of Operations for Exelon Corporation not included in the provided excerpt; only Commonwealth Edison Company's statement appears\"\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": \"Consolidated Statements of Operations for Exelon Corporation not included in the provided excerpt; only Commonwealth Edison Company's statement appears\"\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": \"Consolidated Statements of Operations for Exelon Corporation not included in the provided excerpt; only Commonwealth Edison Company's statement appears\"\n  },\n  \"total_assets\": {\n    \"value\": 116570000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": \"Total assets\\n$\\n116,570\"\n  }\n}\n```"
+}

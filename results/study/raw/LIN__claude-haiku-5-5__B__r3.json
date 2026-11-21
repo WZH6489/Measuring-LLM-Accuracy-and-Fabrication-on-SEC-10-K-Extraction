@@ -1,0 +1,13 @@
+{
+ "ticker": "LIN",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 3,
+ "ts": "2026-11-20T18:14:32+00:00",
+ "prompt_sha": "6a8c59e7390d",
+ "prompt_chars": 14472,
+ "in_tokens": 7168,
+ "out_tokens": 676,
+ "cost_usd": 0.001055,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 33986000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Sales $ 33,986 $ 33,005 $ 32,854\"\n  },\n  \"net_income\": {\n    \"value\": 6898000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net Income \u2013 Linde plc $ 6,898 $ 6,565 $ 6,199\"\n  },\n  \"operating_income\": {\n    \"value\": 8923000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Operating Profit 8,923 8,635 8,024\"\n  },\n  \"total_assets\": {\n    \"value\": 86817000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"Total Assets $ 86,817 $ 80,147\"\n  }\n}\n```"
+}

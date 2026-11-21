@@ -1,0 +1,13 @@
+{
+ "ticker": "MCD",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 3,
+ "ts": "2026-11-20T18:03:47+00:00",
+ "prompt_sha": "3b51cdd3df66",
+ "prompt_chars": 14472,
+ "in_tokens": 6711,
+ "out_tokens": 463,
+ "cost_usd": 0.000903,
+ "raw": "{\"revenue\": {\"value\": 26885000000, \"unit\": \"USD\", \"period\": \"Year ended December 31, 2025\", \"quote\": \"Total revenues 26,885 25,920 25,494\"}, \"net_income\": {\"value\": 8563000000, \"unit\": \"USD\", \"period\": \"Year ended December 31, 2025\", \"quote\": \"Net income $ 8,563 $ 8,223 $ 8,469\"}, \"operating_income\": {\"value\": 12393000000, \"unit\": \"USD\", \"period\": \"Year ended December 31, 2025\", \"quote\": \"Operating income 12,393 11,712 11,647\"}, \"total_assets\": {\"value\": 59515000000, \"unit\": \"USD\", \"period\": \"As of December 31, 2025\", \"quote\": \"Total assets $ 59,515 $ 55,182\"}}"
+}

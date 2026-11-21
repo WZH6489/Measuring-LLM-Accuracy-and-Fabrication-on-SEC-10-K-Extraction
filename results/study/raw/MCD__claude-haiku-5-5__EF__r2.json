@@ -1,0 +1,13 @@
+{
+ "ticker": "MCD",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:40:27+00:00",
+ "prompt_sha": "7240ff9488eb",
+ "prompt_chars": 499,
+ "in_tokens": 172,
+ "out_tokens": 279,
+ "cost_usd": 0.000157,
+ "raw": "{\"revenue\": null, \"net_income\": null, \"operating_income\": null, \"total_assets\": null}"
+}

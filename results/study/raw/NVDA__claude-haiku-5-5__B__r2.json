@@ -1,0 +1,13 @@
+{
+ "ticker": "NVDA",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 2,
+ "ts": "2026-11-20T17:32:30+00:00",
+ "prompt_sha": "a873ac946fe3",
+ "prompt_chars": 14472,
+ "in_tokens": 6900,
+ "out_tokens": 291,
+ "cost_usd": 0.000835,
+ "raw": "{\"revenue\": {\"value\": 215938000000, \"unit\": \"USD\", \"period\": \"Fiscal year ended Jan 25, 2026\", \"quote\": \"Revenue $ 215,938 $ 130,497 $ 60,922\"}, \"net_income\": {\"value\": 120067000000, \"unit\": \"USD\", \"period\": \"Fiscal year ended Jan 25, 2026\", \"quote\": \"Net income $ 120,067 $ 72,880 $ 29,760\"}, \"operating_income\": {\"value\": 130387000000, \"unit\": \"USD\", \"period\": \"Fiscal year ended Jan 25, 2026\", \"quote\": \"Operating income 130,387 81,453 32,972\"}, \"total_assets\": {\"value\": 206803000000, \"unit\": \"USD\", \"period\": \"As of Jan 25, 2026\", \"quote\": \"Total assets $ 206,803 $ 111,601\"}}"
+}

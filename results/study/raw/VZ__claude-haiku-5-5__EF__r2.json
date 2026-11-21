@@ -1,0 +1,13 @@
+{
+ "ticker": "VZ",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:51:01+00:00",
+ "prompt_sha": "ea05b4003bf3",
+ "prompt_chars": 511,
+ "in_tokens": 179,
+ "out_tokens": 237,
+ "cost_usd": 0.000136,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

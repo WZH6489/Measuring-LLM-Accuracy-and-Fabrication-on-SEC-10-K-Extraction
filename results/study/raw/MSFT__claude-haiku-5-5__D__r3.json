@@ -1,0 +1,13 @@
+{
+ "ticker": "MSFT",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 3,
+ "ts": "2026-11-20T17:56:09+00:00",
+ "prompt_sha": "10a2ea44d490",
+ "prompt_chars": 13473,
+ "in_tokens": 5064,
+ "out_tokens": 496,
+ "cost_usd": 0.000754,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 331839000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended June 30, 2026\",\n    \"quote\": \"Total revenue 331,839\"\n  },\n  \"net_income\": {\n    \"value\": 133749000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended June 30, 2026\",\n    \"quote\": \"Net income $ 133,749 $ 101,832 $ 88,136\"\n  },\n  \"operating_income\": {\n    \"value\": 155237000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended June 30, 2026\",\n    \"quote\": \"Operating income 155,237 128,528 109,433\"\n  },\n  \"total_assets\": {\n    \"value\": 758376000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of June 30, 2026\",\n    \"quote\": \"Total assets $ 758,376 $ 619,003\"\n  }\n}\n```"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "SXI",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 3,
+ "ts": "2026-11-20T18:19:01+00:00",
+ "prompt_sha": "dd618eb58e33",
+ "prompt_chars": 511,
+ "in_tokens": 181,
+ "out_tokens": 643,
+ "cost_usd": 0.00034,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-06-30\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-06-30\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-06-30\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-06-30\",\n    \"quote\": null\n  }\n}\n```"
+}

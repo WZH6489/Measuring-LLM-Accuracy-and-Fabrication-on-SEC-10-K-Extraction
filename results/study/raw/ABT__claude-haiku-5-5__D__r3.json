@@ -1,0 +1,13 @@
+{
+ "ticker": "ABT",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 3,
+ "ts": "2026-11-20T17:59:23+00:00",
+ "prompt_sha": "28eb34a78ddc",
+ "prompt_chars": 13032,
+ "in_tokens": 5266,
+ "out_tokens": 699,
+ "cost_usd": 0.000876,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 44328000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net Sales $ 44,328 $ 41,950 $ 40,109\"\n  },\n  \"net_income\": {\n    \"value\": 6524000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net earnings $ 6,524 $ 13,402 $ 5,723\"\n  },\n  \"operating_income\": {\n    \"value\": 8053000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Operating Earnings 8,053 6,825 6,478\"\n  },\n  \"total_assets\": {\n    \"value\": 86713000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"$ 86,713 $ 81,414\"\n  }\n}\n```"
+}

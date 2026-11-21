@@ -1,0 +1,13 @@
+{
+ "ticker": "DIS",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 3,
+ "ts": "2026-11-20T18:12:57+00:00",
+ "prompt_sha": "4aaded17b8f6",
+ "prompt_chars": 14472,
+ "in_tokens": 7200,
+ "out_tokens": 919,
+ "cost_usd": 0.001179,
+ "raw": "{\"revenue\":{\"value\":102344000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended October 3, 2026\",\"quote\":\"Total revenues 102,344 94,425 91,361\"},\"net_income\":{\"value\":10648000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended October 3, 2026\",\"quote\":\"Net income 10,648 13,431 5,773\"},\"operating_income\":{\"value\":15041000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended October 3, 2026\",\"quote\":\"Total revenues 102,344 ... Total costs and expenses ( 85,847 ) ... Restructuring and impairment charges ( 1,456 ). Operating income is not reported as a line item; derived as 102,344 - 85,847 - 1,456 = 15,041 million\"},\"total_assets\":{\"value\":206138000000,\"unit\":\"USD\",\"period\":\"As of October 3, 2026\",\"quote\":\"Total assets $ 206,138 $ 197,514\"}}"
+}

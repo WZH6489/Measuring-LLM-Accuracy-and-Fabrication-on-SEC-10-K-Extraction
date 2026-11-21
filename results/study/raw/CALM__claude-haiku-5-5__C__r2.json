@@ -1,0 +1,13 @@
+{
+ "ticker": "CALM",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 2,
+ "ts": "2026-11-20T17:53:34+00:00",
+ "prompt_sha": "0eb63ff4184c",
+ "prompt_chars": 43941,
+ "in_tokens": 23998,
+ "out_tokens": 604,
+ "cost_usd": 0.002702,
+ "raw": "{\n \"revenue\": {\n  \"value\": 2911632000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-05-30\",\n  \"quote\": \"Net sales \\n$ \\n2,911,632\"\n },\n \"net_income\": {\n  \"value\": 316682000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-05-30\",\n  \"quote\": \"Net income\\nattributable\\nto Cal\\n-Maine Foods,\\nInc. \\n$ \\n316,682\"\n },\n \"operating_income\": {\n  \"value\": 350186000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-05-30\",\n  \"quote\": \"Operating\\nincome \\n350,186\"\n },\n \"total_assets\": {\n  \"value\": 3107570000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-05-30\",\n  \"quote\": \"Total\\nassets \\n$ \\n3,107,570\"\n }\n}"
+}

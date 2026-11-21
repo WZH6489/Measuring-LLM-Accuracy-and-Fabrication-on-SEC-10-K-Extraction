@@ -1,0 +1,13 @@
+{
+ "ticker": "BOOT",
+ "model": "claude-haiku-5-5",
+ "cell": "C+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:18:19+00:00",
+ "prompt_sha": "391699d56bb8",
+ "prompt_chars": 44018,
+ "in_tokens": 24385,
+ "out_tokens": 499,
+ "cost_usd": 0.002688,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 2253859000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-03-28\",\n    \"quote\": \"Net sales\\n$\\n2,253,859\"\n  },\n  \"net_income\": {\n    \"value\": 225880000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-03-28\",\n    \"quote\": \"Net income \\n$\\n225,880\"\n  },\n  \"operating_income\": {\n    \"value\": 299145000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-03-28\",\n    \"quote\": \"Income from operations\\n299,145\"\n  },\n  \"total_assets\": {\n    \"value\": 2450075000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-03-28\",\n    \"quote\": \"Total assets\\n$\\n2,450,075\"\n  }\n}\n```"
+}

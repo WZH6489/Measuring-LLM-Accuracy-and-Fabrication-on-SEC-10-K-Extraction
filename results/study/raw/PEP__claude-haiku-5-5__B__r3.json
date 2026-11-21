@@ -1,0 +1,13 @@
+{
+ "ticker": "PEP",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 3,
+ "ts": "2026-11-20T18:01:04+00:00",
+ "prompt_sha": "2440876fcc2f",
+ "prompt_chars": 14472,
+ "in_tokens": 6253,
+ "out_tokens": 648,
+ "cost_usd": 0.000949,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 93925000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 27, 2025\",\n    \"quote\": \"Net Revenue $ 93,925 $ 91,854 $ 91,471\"\n  },\n  \"net_income\": {\n    \"value\": 8295000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 27, 2025\",\n    \"quote\": \"Net income 8,295 9,626 9,155\"\n  },\n  \"operating_income\": {\n    \"value\": 11498000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 27, 2025\",\n    \"quote\": \"Operating Profit 11,498 12,887 11,986\"\n  },\n  \"total_assets\": {\n    \"value\": 107399000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 27, 2025\",\n    \"quote\": \"Total Assets $ 107,399 $ 99,467\"\n  }\n}\n```"
+}

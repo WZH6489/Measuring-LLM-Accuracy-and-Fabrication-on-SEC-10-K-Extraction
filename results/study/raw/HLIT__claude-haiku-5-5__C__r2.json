@@ -1,0 +1,13 @@
+{
+ "ticker": "HLIT",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 2,
+ "ts": "2026-11-20T17:54:59+00:00",
+ "prompt_sha": "83acb0f38617",
+ "prompt_chars": 43941,
+ "in_tokens": 22768,
+ "out_tokens": 596,
+ "cost_usd": 0.002575,
+ "raw": "```json\n{\n \"revenue\": {\n  \"value\": 360523000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total net revenue\\n360,523\\n488,200\\n388,482\"\n },\n \"net_income\": {\n  \"value\": -43310000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Net income (loss)\\n$\\n(\\n43,310\\n)\\n$\\n39,217\\n$\\n83,994\"\n },\n \"operating_income\": {\n  \"value\": 14080000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Income from operations\\n14,080\\n74,734\\n30,029\"\n },\n \"total_assets\": {\n  \"value\": 718483000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total assets\\n$\\n718,483\\n$\\n796,506\"\n }\n}\n```"
+}

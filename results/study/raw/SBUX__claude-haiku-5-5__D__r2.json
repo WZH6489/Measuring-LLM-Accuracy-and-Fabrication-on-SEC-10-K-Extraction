@@ -1,0 +1,13 @@
+{
+ "ticker": "SBUX",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 2,
+ "ts": "2026-11-20T17:40:35+00:00",
+ "prompt_sha": "7fbbb5464998",
+ "prompt_chars": 16465,
+ "in_tokens": 7587,
+ "out_tokens": 793,
+ "cost_usd": 0.001155,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 37910600000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended September 27, 2026\",\n    \"quote\": \"Total net revenues $ 37,910.6 $ 37,184.4 $ 36,176.2\"\n  },\n  \"net_income\": {\n    \"value\": 2526700000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended September 27, 2026\",\n    \"quote\": \"Net earnings attributable to Starbucks $ 2,526.7 $ 1,856.4 $ 3,760.9\"\n  },\n  \"operating_income\": {\n    \"value\": 3691100000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended September 27, 2026\",\n    \"quote\": \"Operating income 3,691.1 2,936.6 5,408.8\"\n  },\n  \"total_assets\": {\n    \"value\": 28389900000,\n    \"unit\": \"USD\",\n    \"period\": \"As of September 27, 2026\",\n    \"quote\": \"TOTAL ASSETS $ 28,389.9 $ 32,019.7\"\n  }\n}\n```"
+}

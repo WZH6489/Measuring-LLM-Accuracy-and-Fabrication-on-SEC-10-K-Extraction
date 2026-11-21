@@ -1,0 +1,13 @@
+{
+ "ticker": "VZ",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:51:00+00:00",
+ "prompt_sha": "44fc3e9fe4e1",
+ "prompt_chars": 19108,
+ "in_tokens": 7365,
+ "out_tokens": 622,
+ "cost_usd": 0.001048,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 138191000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Total Operating Revenues 138,191 134,788 133,974\"\n  },\n  \"net_income\": {\n    \"value\": 17608000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net Income $ 17,608 $ 17,949 $ 12,095\"\n  },\n  \"operating_income\": {\n    \"value\": 29259000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Operating Income 29,259 28,686 22,877\"\n  },\n  \"total_assets\": {\n    \"value\": 404258000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"Total assets $ 404,258 $ 384,711\"\n  }\n}\n```"
+}

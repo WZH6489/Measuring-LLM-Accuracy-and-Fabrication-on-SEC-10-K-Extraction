@@ -1,0 +1,13 @@
+{
+ "ticker": "EXC",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 2,
+ "ts": "2026-11-20T17:48:27+00:00",
+ "prompt_sha": "7af74aa78144",
+ "prompt_chars": 492,
+ "in_tokens": 166,
+ "out_tokens": 1148,
+ "cost_usd": 0.000591,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 23000000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31); unverified estimate, not confirmed against the filing\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 2300000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31); unverified estimate, not confirmed against the filing\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 3900000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended 2025-12-31); unverified estimate, not confirmed against the filing\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 140000000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of 2025-12-31 (FY2025); unverified estimate, not confirmed against the filing\",\n    \"quote\": null\n  }\n}\n```"
+}

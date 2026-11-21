@@ -1,0 +1,13 @@
+{
+ "ticker": "HON",
+ "model": "claude-haiku-5-5",
+ "cell": "B+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:05:33+00:00",
+ "prompt_sha": "18a4cb20f80f",
+ "prompt_chars": 14549,
+ "in_tokens": 6631,
+ "out_tokens": 622,
+ "cost_usd": 0.000974,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 37442000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net sales 37,442 34,717 33,009\"\n  },\n  \"net_income\": {\n    \"value\": 4772000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net income $ 4,772 $ 5,740 $ 5,672\"\n  },\n  \"operating_income\": null,\n  \"total_assets\": {\n    \"value\": 73681000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"Total assets $ 73,681 $ 75,196\"\n  }\n}\n```"
+}

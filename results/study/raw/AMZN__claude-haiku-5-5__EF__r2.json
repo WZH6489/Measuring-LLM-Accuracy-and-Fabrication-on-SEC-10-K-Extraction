@@ -1,0 +1,13 @@
+{
+ "ticker": "AMZN",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:39:13+00:00",
+ "prompt_sha": "37f952640603",
+ "prompt_chars": 499,
+ "in_tokens": 171,
+ "out_tokens": 346,
+ "cost_usd": 0.00019,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

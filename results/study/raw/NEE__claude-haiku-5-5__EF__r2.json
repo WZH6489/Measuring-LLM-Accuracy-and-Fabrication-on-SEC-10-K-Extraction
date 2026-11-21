@@ -1,0 +1,13 @@
+{
+ "ticker": "NEE",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:46:32+00:00",
+ "prompt_sha": "e4dab26fc810",
+ "prompt_chars": 503,
+ "in_tokens": 175,
+ "out_tokens": 372,
+ "cost_usd": 0.000204,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

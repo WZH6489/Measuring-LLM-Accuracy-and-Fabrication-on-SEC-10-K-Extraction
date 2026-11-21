@@ -1,0 +1,13 @@
+{
+ "ticker": "CSCO",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 3,
+ "ts": "2026-11-20T17:57:17+00:00",
+ "prompt_sha": "ad83659fd77b",
+ "prompt_chars": 500,
+ "in_tokens": 174,
+ "out_tokens": 1175,
+ "cost_usd": 0.000605,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 56655000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended July 26, 2025); closest year I have data for, not the FY2026 year ended July 25, 2026\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 10180000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended July 26, 2025); closest year I have data for, not the FY2026 year ended July 25, 2026\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 13200000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (fiscal year ended July 26, 2025); approximate, not the FY2026 year ended July 25, 2026\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 112000000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of July 26, 2025 (FY2025); approximate, not as of July 25, 2026\",\n    \"quote\": null\n  }\n}\n```"
+}

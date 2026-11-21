@@ -1,0 +1,13 @@
+{
+ "ticker": "CALM",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:17:16+00:00",
+ "prompt_sha": "5ab2aaabf317",
+ "prompt_chars": 15785,
+ "in_tokens": 8207,
+ "out_tokens": 750,
+ "cost_usd": 0.001196,
+ "raw": "{\"revenue\":{\"value\":2911632000,\"unit\":\"USD\",\"period\":\"fiscal year ended May 30, 2026\",\"quote\":\"Net sales $ 2,911,632\"},\"net_income\":{\"value\":318112000,\"unit\":\"USD\",\"period\":\"fiscal year ended May 30, 2026\",\"quote\":\"Net income $ 318,112\"},\"operating_income\":{\"value\":350186000,\"unit\":\"USD\",\"period\":\"fiscal year ended May 30, 2026\",\"quote\":\"Operating income 350,186\"},\"total_assets\":{\"value\":3107570000,\"unit\":\"USD\",\"period\":\"as of May 30, 2026\",\"quote\":\"Total liabilities and stockholders\u2019 equity $ 3,107,570\"}}"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "DIS",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 3,
+ "ts": "2026-11-20T18:13:00+00:00",
+ "prompt_sha": "f95f06265ced",
+ "prompt_chars": 43941,
+ "in_tokens": 22961,
+ "out_tokens": 800,
+ "cost_usd": 0.002696,
+ "raw": "```json\n{\n \"revenue\": {\n  \"value\": 102344000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-10-03\",\n  \"quote\": \"Total revenues\\n102,344\"\n },\n \"net_income\": {\n  \"value\": 9899000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-10-03\",\n  \"quote\": \"Net income attributable to The Walt Disney Company (Disney)\\n$\\n9,899\"\n },\n \"operating_income\": {\n  \"value\": null,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-10-03\",\n  \"quote\": \"Not reported: the Consolidated Statements of Income contain no operating income line item\"\n },\n \"total_assets\": {\n  \"value\": 206138000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-10-03\",\n  \"quote\": \"Total assets\\n$\\n206,138\"\n }\n}\n```"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "WING",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 3,
+ "ts": "2026-11-20T18:17:43+00:00",
+ "prompt_sha": "789667c9777d",
+ "prompt_chars": 36939,
+ "in_tokens": 19271,
+ "out_tokens": 576,
+ "cost_usd": 0.002215,
+ "raw": "{\n \"revenue\": {\n  \"value\": 696853000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-27\",\n  \"quote\": \"Total revenue\\n696,853\"\n },\n \"net_income\": {\n  \"value\": 174267000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-27\",\n  \"quote\": \"Net income\\n$\\n174,267\"\n },\n \"operating_income\": {\n  \"value\": 179291000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-27\",\n  \"quote\": \"Operating income\\n179,291\"\n },\n \"total_assets\": {\n  \"value\": 693409000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-27\",\n  \"quote\": \"Total assets\\n$\\n693,409\"\n }\n}"
+}

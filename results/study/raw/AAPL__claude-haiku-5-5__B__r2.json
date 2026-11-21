@@ -1,0 +1,13 @@
+{
+ "ticker": "AAPL",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 2,
+ "ts": "2026-11-20T17:31:51+00:00",
+ "prompt_sha": "ab68fc41716c",
+ "prompt_chars": 14472,
+ "in_tokens": 6460,
+ "out_tokens": 462,
+ "cost_usd": 0.000877,
+ "raw": "{\"revenue\": {\"value\": 478834000000, \"unit\": \"USD\", \"period\": \"Fiscal year ended September 26, 2026\", \"quote\": \"Total net sales 478,834\"}, \"net_income\": {\"value\": 132175000000, \"unit\": \"USD\", \"period\": \"Fiscal year ended September 26, 2026\", \"quote\": \"Net income $ 132,175\"}, \"operating_income\": {\"value\": 158063000000, \"unit\": \"USD\", \"period\": \"Fiscal year ended September 26, 2026\", \"quote\": \"Operating income 158,063\"}, \"total_assets\": {\"value\": 404548000000, \"unit\": \"USD\", \"period\": \"As of September 26, 2026\", \"quote\": \"Total assets $ 404,548\"}}"
+}

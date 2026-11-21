@@ -1,0 +1,13 @@
+{
+ "ticker": "SHW",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:52:11+00:00",
+ "prompt_sha": "17bbfd0e9ea6",
+ "prompt_chars": 18908,
+ "in_tokens": 7698,
+ "out_tokens": 615,
+ "cost_usd": 0.001077,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 23574300000,\n    \"unit\": \"USD\",\n    \"period\": \"Year ended December 31, 2025\",\n    \"quote\": \"Net sales $ 23,574.3 $ 23,098.5 $ 23,051.9\"\n  },\n  \"net_income\": {\n    \"value\": 2568500000,\n    \"unit\": \"USD\",\n    \"period\": \"Year ended December 31, 2025\",\n    \"quote\": \"Net income $ 2,568.5 $ 2,681.4 $ 2,388.8\"\n  },\n  \"operating_income\": null,\n  \"total_assets\": {\n    \"value\": 25901700000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"Total Assets $ 25,901.7 $ 23,632.6 $ 22,954.4\"\n  }\n}\n```"
+}

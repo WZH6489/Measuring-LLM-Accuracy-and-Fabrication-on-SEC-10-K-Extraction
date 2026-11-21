@@ -1,0 +1,13 @@
+{
+ "ticker": "GE",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 3,
+ "ts": "2026-11-20T18:06:22+00:00",
+ "prompt_sha": "a7ed18f94cd5",
+ "prompt_chars": 500,
+ "in_tokens": 173,
+ "out_tokens": 1262,
+ "cost_usd": 0.000648,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 45300000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null,\n    \"note\": \"Best estimate from memory, not verified against the filing. Figure is approximate.\"\n  },\n  \"net_income\": {\n    \"value\": 9900000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null,\n    \"note\": \"Best estimate from memory, not verified against the filing. Figure is approximate and may reflect attributable net income or total net income.\"\n  },\n  \"operating_income\": {\n    \"value\": 8900000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null,\n    \"note\": \"Best estimate from memory, not verified against the filing. Figure is approximate and may correspond to segment profit or operating profit as reported.\"\n  },\n  \"total_assets\": {\n    \"value\": 125000000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of 2025-12-31\",\n    \"quote\": null,\n    \"note\": \"Best estimate from memory, not verified against the filing. Figure is approximate.\"\n  }\n}\n```"
+}

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T22:21:51+00:00",
+ "generated": "2026-11-21T20:55:46+00:00",
  "exclude_ambiguous": true,
  "n_filings": 59,
  "cells": [
@@ -9,7 +9,7 @@
    "label": "Zero-shot, statements only",
    "n_items": 168,
    "n_filings": 58,
-   "repeats": 1,
+   "repeats": 3,
    "accuracy": [
     0.9761904761904762,
     0.9512195121951219,
@@ -62,8 +62,8 @@
     "Technology": 1.0,
     "Utilities": 0.8571428571428571
    },
-   "consistency": null,
-   "quote_found_rate": 0.9404761904761905
+   "consistency": 1.0,
+   "quote_found_rate": 0.9325396825396826
   },
   {
    "model": "claude-haiku-5-5",
@@ -71,7 +71,7 @@
    "label": "Few-shot, statements only",
    "n_items": 168,
    "n_filings": 58,
-   "repeats": 1,
+   "repeats": 3,
    "accuracy": [
     0.9642857142857143,
     0.9337349397590361,
@@ -79,29 +79,29 @@
    ],
    "answer_rate": [
     0.9940476190476191,
-    0.9813664596273292,
+    0.9841269841269842,
     1.0
    ],
    "precision": [
     0.9700598802395209,
-    0.9411764705882353,
-    0.9938271604938271
+    0.9425287356321839,
+    0.991578947368421
    ],
    "fabrication": [
-    0.005988023952095809,
+    0.003992015968063872,
     0.0,
-    0.01910828025477707
+    0.01282051282051282
    ],
    "wrong_value": [
-    0.023952095808383235,
-    0.005780346820809248,
-    0.04878048780487805
+    0.02594810379241517,
+    0.006263048016701462,
+    0.05133079847908745
    ],
    "classes": {
     "match": 0.9642857142857143,
     "wrong_scale": 0.0,
-    "wrong_value": 0.023809523809523808,
-    "not_in_text": 0.005952380952380952,
+    "wrong_value": 0.025793650793650792,
+    "not_in_text": 0.003968253968253968,
     "abstained": 0.0,
     "missing": 0.005952380952380952,
     "bad_json": 0.0
@@ -124,8 +124,8 @@
     "Technology": 1.0,
     "Utilities": 0.7857142857142857
    },
-   "consistency": null,
-   "quote_found_rate": 0.9580838323353293
+   "consistency": 0.9880952380952381,
+   "quote_found_rate": 0.954183266932271
   },
   {
    "model": "claude-haiku-5-5",
@@ -133,44 +133,44 @@
    "label": "Retrieval (BM25 top passages)",
    "n_items": 190,
    "n_filings": 59,
-   "repeats": 1,
+   "repeats": 3,
    "accuracy": [
-    0.9052631578947369,
-    0.8541666666666666,
-    0.9484536082474226
+    0.9017543859649123,
+    0.8481481481481481,
+    0.9450171821305843
    ],
    "answer_rate": [
-    0.9157894736842105,
-    0.8655913978494624,
-    0.9558011049723757
+    0.9140350877192982,
+    0.8637992831541218,
+    0.9543859649122808
    ],
    "precision": [
-    0.9885057471264368,
-    0.9709302325581395,
-    1.0
+    0.9865642994241843,
+    0.9704251386321626,
+    0.9981515711645101
    ],
    "fabrication": [
-    0.005747126436781609,
+    0.005758157389635317,
     0.0,
-    0.017964071856287425
+    0.015452538631346576
    ],
    "wrong_value": [
-    0.005747126436781609,
+    0.007677543186180422,
     0.0,
-    0.01818181818181818
+    0.021484375
    ],
    "classes": {
-    "match": 0.9052631578947369,
+    "match": 0.9017543859649123,
     "wrong_scale": 0.0,
-    "wrong_value": 0.005263157894736842,
+    "wrong_value": 0.007017543859649123,
     "not_in_text": 0.005263157894736842,
     "abstained": 0.0,
-    "missing": 0.08421052631578947,
+    "missing": 0.08596491228070176,
     "bad_json": 0.0
    },
    "by_field": {
     "net_income": 1.0,
-    "operating_income": 0.8936170212765957,
+    "operating_income": 0.8794326241134752,
     "revenue": 0.9615384615384616,
     "total_assets": 0.8135593220338984
    },
@@ -180,14 +180,14 @@
     "Consumer staples": 1.0,
     "Energy": 0.9166666666666666,
     "Healthcare": 0.9473684210526315,
-    "Industrials": 0.9,
+    "Industrials": 0.8666666666666666,
     "Materials": 0.9411764705882353,
     "Smaller companies": 0.9545454545454546,
     "Technology": 0.9565217391304348,
     "Utilities": 0.47058823529411764
    },
-   "consistency": null,
-   "quote_found_rate": 0.9021739130434783
+   "consistency": 0.9842105263157894,
+   "quote_found_rate": 0.8963636363636364
   },
   {
    "model": "claude-haiku-5-5",
@@ -195,60 +195,60 @@
    "label": "Closed-book (no document)",
    "n_items": 190,
    "n_filings": 59,
-   "repeats": 1,
+   "repeats": 3,
    "accuracy": [
-    0.20526315789473684,
-    0.140625,
-    0.2696629213483146
+    0.18596491228070178,
+    0.13368983957219252,
+    0.23595505617977527
    ],
    "answer_rate": [
-    0.8789473684210526,
-    0.785,
-    0.9565217391304348
+    0.8596491228070176,
+    0.7794871794871795,
+    0.9302721088435375
    ],
    "precision": [
-    0.23353293413173654,
-    0.16184971098265896,
-    0.30666666666666664
+    0.2163265306122449,
+    0.1606334841628959,
+    0.2690763052208835
    ],
    "fabrication": [
-    0.6047904191616766,
-    0.5229885057471264,
-    0.6850828729281768
+    0.6387755102040815,
+    0.5740740740740741,
+    0.7028571428571428
    ],
    "wrong_value": [
-    0.16167664670658682,
-    0.0963855421686747,
-    0.24
+    0.14489795918367346,
+    0.09090909090909091,
+    0.2108843537414966
    ],
    "classes": {
-    "match": 0.20526315789473684,
+    "match": 0.18596491228070175,
     "wrong_scale": 0.0,
-    "wrong_value": 0.14210526315789473,
-    "not_in_text": 0.531578947368421,
+    "wrong_value": 0.12456140350877193,
+    "not_in_text": 0.5491228070175439,
     "abstained": 0.0,
-    "missing": 0.12105263157894737,
+    "missing": 0.14035087719298245,
     "bad_json": 0.0
    },
    "by_field": {
-    "net_income": 0.15625,
-    "operating_income": 0.1276595744680851,
-    "revenue": 0.4807692307692308,
-    "total_assets": 0.05084745762711865
+    "net_income": 0.10416666666666666,
+    "operating_income": 0.09219858156028368,
+    "revenue": 0.46153846153846156,
+    "total_assets": 0.06214689265536723
    },
    "by_group": {
-    "Communication": 0.45,
-    "Consumer discretionary": 0.3181818181818182,
-    "Consumer staples": 0.2222222222222222,
-    "Energy": 0.08333333333333333,
-    "Healthcare": 0.3157894736842105,
+    "Communication": 0.4,
+    "Consumer discretionary": 0.2727272727272727,
+    "Consumer staples": 0.2037037037037037,
+    "Energy": 0.1111111111111111,
+    "Healthcare": 0.2807017543859649,
     "Industrials": 0.25,
-    "Materials": 0.0,
-    "Smaller companies": 0.0,
-    "Technology": 0.21739130434782608,
-    "Utilities": 0.11764705882352941
+    "Materials": 0.058823529411764705,
+    "Smaller companies": 0.01515151515151515,
+    "Technology": 0.14492753623188404,
+    "Utilities": 0.0784313725490196
    },
-   "consistency": null,
+   "consistency": 0.5789473684210527,
    "quote_found_rate": null
   },
   {
@@ -257,7 +257,7 @@
    "label": "Zero-shot + may answer null",
    "n_items": 168,
    "n_filings": 58,
-   "repeats": 1,
+   "repeats": 3,
    "accuracy": [
     0.9761904761904762,
     0.9512195121951219,
@@ -310,7 +310,7 @@
     "Technology": 1.0,
     "Utilities": 0.8571428571428571
    },
-   "consistency": null,
+   "consistency": 1.0,
    "quote_found_rate": 0.9457831325301205
   },
   {
@@ -319,7 +319,7 @@
    "label": "Few-shot + may answer null",
    "n_items": 168,
    "n_filings": 58,
-   "repeats": 1,
+   "repeats": 3,
    "accuracy": [
     0.9642857142857143,
     0.9337349397590361,
@@ -372,8 +372,8 @@
     "Technology": 1.0,
     "Utilities": 0.7857142857142857
    },
-   "consistency": null,
-   "quote_found_rate": 0.963855421686747
+   "consistency": 1.0,
+   "quote_found_rate": 0.9618473895582329
   },
   {
    "model": "claude-haiku-5-5",
@@ -381,20 +381,20 @@
    "label": "Retrieval + may answer null",
    "n_items": 190,
    "n_filings": 59,
-   "repeats": 1,
+   "repeats": 3,
    "accuracy": [
-    0.868421052631579,
-    0.8115183246073299,
-    0.918918918918919
+    0.8631578947368421,
+    0.8021978021978022,
+    0.9148936170212766
    ],
    "answer_rate": [
-    0.8736842105263158,
-    0.8176795580110497,
-    0.9214659685863874
+    0.868421052631579,
+    0.8100172711571676,
+    0.9187396351575455
    ],
    "precision": [
-    0.9939759036144579,
-    0.9808917197452229,
+    0.9939393939393939,
+    0.9808510638297873,
     1.0
    ],
    "fabrication": [
@@ -403,16 +403,16 @@
     0.0
    ],
    "wrong_value": [
-    0.006024096385542169,
+    0.006060606060606061,
     0.0,
-    0.01910828025477707
+    0.019148936170212766
    ],
    "classes": {
-    "match": 0.868421052631579,
+    "match": 0.8631578947368421,
     "wrong_scale": 0.0,
     "wrong_value": 0.005263157894736842,
     "not_in_text": 0.0,
-    "abstained": 0.12631578947368421,
+    "abstained": 0.13157894736842105,
     "missing": 0.0,
     "bad_json": 0.0
    },
@@ -420,22 +420,22 @@
     "net_income": 1.0,
     "operating_income": 0.8723404255319149,
     "revenue": 0.9230769230769231,
-    "total_assets": 0.7457627118644068
+    "total_assets": 0.7288135593220338
    },
    "by_group": {
-    "Communication": 0.8,
+    "Communication": 0.7833333333333333,
     "Consumer discretionary": 1.0,
     "Consumer staples": 0.9444444444444444,
-    "Energy": 0.8333333333333334,
+    "Energy": 0.8611111111111112,
     "Healthcare": 0.9473684210526315,
-    "Industrials": 0.8,
+    "Industrials": 0.7666666666666667,
     "Materials": 0.9411764705882353,
-    "Smaller companies": 0.9090909090909091,
+    "Smaller companies": 0.893939393939394,
     "Technology": 0.9565217391304348,
     "Utilities": 0.47058823529411764
    },
-   "consistency": null,
-   "quote_found_rate": 0.9518072289156626
+   "consistency": 0.9789473684210527,
+   "quote_found_rate": 0.9454545454545454
   },
   {
    "model": "claude-haiku-5-5",
@@ -443,7 +443,7 @@
    "label": "Closed-book + may answer null",
    "n_items": 190,
    "n_filings": 59,
-   "repeats": 1,
+   "repeats": 3,
    "accuracy": [
     0.0,
     0.0,
@@ -496,7 +496,7 @@
     "Technology": 0.0,
     "Utilities": 0.0
    },
-   "consistency": null,
+   "consistency": 1.0,
    "quote_found_rate": null
   },
   {
@@ -608,22 +608,22 @@
    "a": "E",
    "b": "B",
    "what": "closed-book vs reading the statements",
-   "diff": -0.7619047619047619,
-   "lo": -0.8363636363636363,
-   "hi": -0.6818181818181818,
+   "diff": -0.7896825396825397,
+   "lo": -0.8484848484848485,
+   "hi": -0.73125,
    "filings": 58
   }
  ],
  "coverage": {
   "statement_finder": {
-   "items": 232,
-   "no_section": 18
+   "items": 696,
+   "no_section": 54
   },
   "answered_without_sec_value": {
-   "claude-haiku-5-5 D": 10,
-   "claude-haiku-5-5 E": 11,
-   "claude-haiku-5-5 B": 7,
-   "claude-haiku-5-5 C": 4
+   "claude-haiku-5-5 B": 24,
+   "claude-haiku-5-5 E": 33,
+   "claude-haiku-5-5 D": 24,
+   "claude-haiku-5-5 C": 10
   },
   "ambiguous_keys": 34
  },

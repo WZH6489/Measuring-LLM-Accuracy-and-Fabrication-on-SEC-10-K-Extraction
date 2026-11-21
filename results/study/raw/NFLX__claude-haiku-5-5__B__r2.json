@@ -1,0 +1,13 @@
+{
+ "ticker": "NFLX",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 2,
+ "ts": "2026-11-20T17:49:04+00:00",
+ "prompt_sha": "a0ac412d3c71",
+ "prompt_chars": 14472,
+ "in_tokens": 6365,
+ "out_tokens": 487,
+ "cost_usd": 0.00088,
+ "raw": "{\"revenue\": {\"value\": 45183036000, \"unit\": \"USD\", \"period\": \"Year ended December 31, 2025\", \"quote\": \"Revenues $ 45,183,036 $ 39,000,966 $ 33,723,297\"}, \"net_income\": {\"value\": 10981201000, \"unit\": \"USD\", \"period\": \"Year ended December 31, 2025\", \"quote\": \"Net income $ 10,981,201 $ 8,711,631 $ 5,407,990\"}, \"operating_income\": {\"value\": 13326603000, \"unit\": \"USD\", \"period\": \"Year ended December 31, 2025\", \"quote\": \"Operating income 13,326,603 10,417,614 6,954,003\"}, \"total_assets\": {\"value\": 55596993000, \"unit\": \"USD\", \"period\": \"As of December 31, 2025\", \"quote\": \"Total assets $ 55,596,993 $ 53,630,374\"}}"
+}

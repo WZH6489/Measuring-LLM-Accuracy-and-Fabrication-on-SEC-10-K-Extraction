@@ -1,0 +1,13 @@
+{
+ "ticker": "NKE",
+ "model": "claude-haiku-5-5",
+ "cell": "B+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:39:56+00:00",
+ "prompt_sha": "f55adbdc6e59",
+ "prompt_chars": 14549,
+ "in_tokens": 7012,
+ "out_tokens": 611,
+ "cost_usd": 0.001007,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 46398000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended May 31, 2026\",\n    \"quote\": \"Revenues $ 46,398 $ 46,309 $ 51,362\"\n  },\n  \"net_income\": {\n    \"value\": 3108000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended May 31, 2026\",\n    \"quote\": \"NET INCOME $ 3,108 $ 3,219 $ 5,700\"\n  },\n  \"operating_income\": null,\n  \"total_assets\": {\n    \"value\": 38410000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of May 31, 2026\",\n    \"quote\": \"TOTAL ASSETS $ 38,410 $ 36,579\"\n  }\n}\n```"
+}

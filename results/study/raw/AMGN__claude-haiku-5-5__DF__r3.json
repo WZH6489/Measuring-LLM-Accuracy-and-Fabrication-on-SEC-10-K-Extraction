@@ -1,0 +1,13 @@
+{
+ "ticker": "AMGN",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:00:16+00:00",
+ "prompt_sha": "7477845837c1",
+ "prompt_chars": 17470,
+ "in_tokens": 6906,
+ "out_tokens": 487,
+ "cost_usd": 0.000934,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 36751000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Total revenues 36,751 33,424 28,190\"\n  },\n  \"net_income\": {\n    \"value\": 7711000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net income $ 7,711 $ 4,090 $ 6,717\"\n  },\n  \"operating_income\": {\n    \"value\": 9080000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Operating income 9,080 7,258 7,897\"\n  },\n  \"total_assets\": null\n}\n```"
+}

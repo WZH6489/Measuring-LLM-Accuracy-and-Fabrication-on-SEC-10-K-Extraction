@@ -1,0 +1,13 @@
+{
+ "ticker": "NUE",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 3,
+ "ts": "2026-11-20T18:16:16+00:00",
+ "prompt_sha": "b8d9565d6bd5",
+ "prompt_chars": 16377,
+ "in_tokens": 6845,
+ "out_tokens": 991,
+ "cost_usd": 0.00118,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 32494000000,\n    \"unit\": \"USD\",\n    \"period\": \"Year ended December 31, 2025\",\n    \"quote\": \"Net sales $ 32,494 $ 30,734 $ 34,714\"\n  },\n  \"net_income\": {\n    \"value\": 1744000000,\n    \"unit\": \"USD\",\n    \"period\": \"Year ended December 31, 2025\",\n    \"quote\": \"Net earnings attributable to Nucor stockholders $ 1,744 $ 2,027 $ 4,525\"\n  },\n  \"operating_income\": {\n    \"value\": 2659000000,\n    \"unit\": \"USD\",\n    \"period\": \"Year ended December 31, 2025\",\n    \"quote\": \"Net sales $ 32,494 ... Cost of products sold 28,616 ... Marketing, administrative and other expenses 1,219 (derived: net sales less cost of products sold less marketing, administrative and other expenses; operating income is not reported as a separate line)\"\n  },\n  \"total_assets\": {\n    \"value\": 35104000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"Total assets $ 35,104 $ 33,940\"\n  }\n}\n```"
+}

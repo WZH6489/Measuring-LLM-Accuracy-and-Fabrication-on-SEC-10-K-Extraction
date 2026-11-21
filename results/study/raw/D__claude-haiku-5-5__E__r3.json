@@ -1,0 +1,13 @@
+{
+ "ticker": "D",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 3,
+ "ts": "2026-11-20T18:11:02+00:00",
+ "prompt_sha": "57bddee198f6",
+ "prompt_chars": 501,
+ "in_tokens": 172,
+ "out_tokens": 970,
+ "cost_usd": 0.000502,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 15500000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (year ended 2025-12-31); estimate, not verified against the filing\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 2200000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (year ended 2025-12-31); estimate, not verified against the filing\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 4000000000,\n    \"unit\": \"USD\",\n    \"period\": \"FY2025 (year ended 2025-12-31); estimate, not verified against the filing\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 110000000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of 2025-12-31; estimate, not verified against the filing\",\n    \"quote\": null\n  }\n}\n```"
+}

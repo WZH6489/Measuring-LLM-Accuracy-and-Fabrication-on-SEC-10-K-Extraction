@@ -1,0 +1,13 @@
+{
+ "ticker": "DIS",
+ "model": "claude-haiku-5-5",
+ "cell": "B+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:13:13+00:00",
+ "prompt_sha": "e04d6ede0486",
+ "prompt_chars": 14549,
+ "in_tokens": 7225,
+ "out_tokens": 697,
+ "cost_usd": 0.001071,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 102344000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year 2026 (ended October 3, 2026)\",\n    \"quote\": \"Total revenues 102,344 94,425 91,361\"\n  },\n  \"net_income\": {\n    \"value\": 10648000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year 2026 (ended October 3, 2026)\",\n    \"quote\": \"Net income 10,648 13,431 5,773\"\n  },\n  \"operating_income\": null,\n  \"total_assets\": {\n    \"value\": 206138000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of October 3, 2026\",\n    \"quote\": \"Total assets $ 206,138 $ 197,514\"\n  }\n}\n```"
+}

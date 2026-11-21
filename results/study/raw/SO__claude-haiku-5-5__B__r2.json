@@ -1,0 +1,13 @@
+{
+ "ticker": "SO",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 2,
+ "ts": "2026-11-20T17:46:58+00:00",
+ "prompt_sha": "ec0e2a2655ff",
+ "prompt_chars": 14472,
+ "in_tokens": 6821,
+ "out_tokens": 627,
+ "cost_usd": 0.000996,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 29553000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Total operating revenues 29,553 26,724 25,253\"\n  },\n  \"net_income\": {\n    \"value\": 4341000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Consolidated Net Income Attributable to Southern Company $ 4,341 $ 4,401 $ 3,976\"\n  },\n  \"operating_income\": {\n    \"value\": 7285000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Operating Income 7,285 7,068 5,826\"\n  },\n  \"total_assets\": {\n    \"value\": 155720000000,\n    \"unit\": \"USD\",\n    \"period\": \"At December 31, 2025\",\n    \"quote\": \"Total Assets $ 155,720 $ 145,180\"\n  }\n}\n```"
+}

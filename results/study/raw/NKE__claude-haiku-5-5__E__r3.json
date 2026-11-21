@@ -1,0 +1,13 @@
+{
+ "ticker": "NKE",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 3,
+ "ts": "2026-11-20T18:03:35+00:00",
+ "prompt_sha": "cb2258deb27c",
+ "prompt_chars": 491,
+ "in_tokens": 168,
+ "out_tokens": 1254,
+ "cost_usd": 0.000644,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-05-31\",\n    \"quote\": null,\n    \"note\": \"Not available to me. This 10-K covers a period after my knowledge cutoff. The most recent fiscal year I have data for is FY2025 (ended May 31, 2025), with revenue of roughly $46.3 billion.\"\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-05-31\",\n    \"quote\": null,\n    \"note\": \"Not available to me. For FY2025, net income was roughly $3.2 billion.\"\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-05-31\",\n    \"quote\": null,\n    \"note\": \"Not available to me. I do not have a reliable FY2025 operating income figure to offer as a substitute.\"\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-05-31\",\n    \"quote\": null,\n    \"note\": \"Not available to me. I do not have a reliable recent total assets figure to offer as a substitute.\"\n  }\n}\n```"
+}

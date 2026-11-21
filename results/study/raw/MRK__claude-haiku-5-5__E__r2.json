@@ -1,0 +1,13 @@
+{
+ "ticker": "MRK",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 2,
+ "ts": "2026-11-20T17:35:14+00:00",
+ "prompt_sha": "65f121cbd597",
+ "prompt_chars": 498,
+ "in_tokens": 170,
+ "out_tokens": 989,
+ "cost_usd": 0.000512,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 65000000000,\n    \"unit\": \"USD (estimate; not verified against the FY2025 10-K)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 12000000000,\n    \"unit\": \"USD (estimate; not verified against the FY2025 10-K)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 15000000000,\n    \"unit\": \"USD (estimate; not verified against the FY2025 10-K)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 122000000000,\n    \"unit\": \"USD (estimate; not verified against the FY2025 10-K)\",\n    \"period\": \"As of 2025-12-31\",\n    \"quote\": null\n  }\n}\n```"
+}

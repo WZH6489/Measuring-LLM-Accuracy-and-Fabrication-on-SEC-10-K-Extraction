@@ -1,0 +1,13 @@
+{
+ "ticker": "FCX",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 3,
+ "ts": "2026-11-20T18:16:33+00:00",
+ "prompt_sha": "9ed84d9b819e",
+ "prompt_chars": 14472,
+ "in_tokens": 6667,
+ "out_tokens": 580,
+ "cost_usd": 0.000957,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 25915000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Revenues $ 25,915 $ 25,455 $ 22,855\"\n  },\n  \"net_income\": {\n    \"value\": 4152000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net income 4,152 4,399 3,751\"\n  },\n  \"operating_income\": {\n    \"value\": 6518000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Operating income 6,518 6,864 6,225\"\n  },\n  \"total_assets\": {\n    \"value\": 58167000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"Total assets $ 58,167 $ 54,848\"\n  }\n}\n```"
+}

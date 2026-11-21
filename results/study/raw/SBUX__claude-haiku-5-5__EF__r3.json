@@ -1,0 +1,13 @@
+{
+ "ticker": "SBUX",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:04:27+00:00",
+ "prompt_sha": "5e5df93f9116",
+ "prompt_chars": 499,
+ "in_tokens": 172,
+ "out_tokens": 236,
+ "cost_usd": 0.000135,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

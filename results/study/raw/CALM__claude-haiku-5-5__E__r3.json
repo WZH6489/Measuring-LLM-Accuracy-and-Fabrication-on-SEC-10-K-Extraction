@@ -1,0 +1,13 @@
+{
+ "ticker": "CALM",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 3,
+ "ts": "2026-11-20T18:17:07+00:00",
+ "prompt_sha": "6b84d231704f",
+ "prompt_chars": 500,
+ "in_tokens": 173,
+ "out_tokens": 953,
+ "cost_usd": 0.000494,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-05-30\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-05-30\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-05-30\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-05-30\",\n    \"quote\": null\n  },\n  \"note\": \"I don't have reliable knowledge of Cal-Maine Foods' fiscal 2026 10-K results, so I cannot state these figures without guessing. Please check the filing on SEC EDGAR.\"\n}\n```"
+}

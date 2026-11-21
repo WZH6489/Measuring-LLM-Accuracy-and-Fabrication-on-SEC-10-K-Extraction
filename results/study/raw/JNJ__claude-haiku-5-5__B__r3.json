@@ -1,0 +1,13 @@
+{
+ "ticker": "JNJ",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 3,
+ "ts": "2026-11-20T17:57:51+00:00",
+ "prompt_sha": "8177647751d1",
+ "prompt_chars": 14472,
+ "in_tokens": 6720,
+ "out_tokens": 903,
+ "cost_usd": 0.001123,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 94193000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year 2025 (ended December 28, 2025)\",\n    \"quote\": \"Sales to customers $ 94,193 88,821 85,159\"\n  },\n  \"net_income\": {\n    \"value\": 26804000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year 2025 (ended December 28, 2025)\",\n    \"quote\": \"Net earnings $ 26,804 14,066 35,153\"\n  },\n  \"operating_income\": {\n    \"value\": 25287000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year 2025 (ended December 28, 2025)\",\n    \"quote\": \"Gross profit 63,937 61,350 58,606. Derived as gross profit less Selling, marketing and administrative expenses (23,676), Research and development expense (14,665), In-process research and development impairments (81) and Restructuring (228); the filing does not report an operating income line.\"\n  },\n  \"total_assets\": {\n    \"value\": 199210000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 28, 2025\",\n    \"quote\": \"Total assets $ 199,210 180,104\"\n  }\n}\n```"
+}

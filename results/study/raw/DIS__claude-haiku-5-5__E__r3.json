@@ -1,0 +1,13 @@
+{
+ "ticker": "DIS",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 3,
+ "ts": "2026-11-20T18:13:10+00:00",
+ "prompt_sha": "23ffe4ef2957",
+ "prompt_chars": 495,
+ "in_tokens": 167,
+ "out_tokens": 845,
+ "cost_usd": 0.000439,
+ "raw": "```json\n{\n  \"revenue\": {\"value\": null, \"unit\": \"USD\", \"period\": \"fiscal year ended 2026-10-03\", \"quote\": null},\n  \"net_income\": {\"value\": null, \"unit\": \"USD\", \"period\": \"fiscal year ended 2026-10-03\", \"quote\": null},\n  \"operating_income\": {\"value\": null, \"unit\": \"USD\", \"period\": \"fiscal year ended 2026-10-03\", \"quote\": null},\n  \"total_assets\": {\"value\": null, \"unit\": \"USD\", \"period\": \"fiscal year ended 2026-10-03\", \"quote\": null},\n  \"note\": \"I can't provide these figures. My knowledge does not include Disney's 10-K for the fiscal year ended October 3, 2026, and I would be guessing. Please check the filing on SEC EDGAR or Disney's investor relations site.\"\n}\n```"
+}

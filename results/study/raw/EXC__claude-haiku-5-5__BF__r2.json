@@ -1,0 +1,13 @@
+{
+ "ticker": "EXC",
+ "model": "claude-haiku-5-5",
+ "cell": "B+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:48:32+00:00",
+ "prompt_sha": "98fb7f8989dc",
+ "prompt_chars": 7547,
+ "in_tokens": 3479,
+ "out_tokens": 1285,
+ "cost_usd": 0.00099,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 7267000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025 (Commonwealth Edison Company subsidiary statement of operations)\",\n    \"quote\": \"Total operating revenues 7,267 8,219 7,844\"\n  },\n  \"net_income\": {\n    \"value\": 1147000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025 (Commonwealth Edison Company subsidiary statement of operations)\",\n    \"quote\": \"Net income $ 1,147 $ 1,066 $ 1,090\"\n  },\n  \"operating_income\": {\n    \"value\": 1806000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025 (Commonwealth Edison Company subsidiary statement of operations)\",\n    \"quote\": \"Operating income 1,806 1,589 1,806\"\n  },\n  \"total_assets\": {\n    \"value\": 116570000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025 (Exelon Corporation consolidated balance sheet)\",\n    \"quote\": \"Total assets $ 116,570 $ 107,784\"\n  }\n}\n```"
+}

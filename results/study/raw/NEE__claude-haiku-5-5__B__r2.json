@@ -1,0 +1,13 @@
+{
+ "ticker": "NEE",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 2,
+ "ts": "2026-11-20T17:46:10+00:00",
+ "prompt_sha": "cdc2cc14801e",
+ "prompt_chars": 14472,
+ "in_tokens": 6985,
+ "out_tokens": 695,
+ "cost_usd": 0.001046,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 27412000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"OPERATING REVENUES $ 27,412 $ 24,753 $ 28,114\"\n  },\n  \"net_income\": {\n    \"value\": 5332000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"NET INCOME 5,332 5,698 6,282\"\n  },\n  \"operating_income\": {\n    \"value\": 8280000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"OPERATING INCOME 8,280 7,479 10,237\"\n  },\n  \"total_assets\": {\n    \"value\": 212721000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"TOTAL ASSETS $ 212,721 $ 190,144\"\n  }\n}\n```"
+}

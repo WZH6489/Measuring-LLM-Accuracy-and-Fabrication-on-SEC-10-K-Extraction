@@ -1,0 +1,13 @@
+{
+ "ticker": "WING",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:17:59+00:00",
+ "prompt_sha": "284c68bdf13b",
+ "prompt_chars": 18421,
+ "in_tokens": 7217,
+ "out_tokens": 901,
+ "cost_usd": 0.001172,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 696853000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 27, 2025\",\n    \"quote\": \"Total revenue 696,853 625,807 460,055\"\n  },\n  \"net_income\": {\n    \"value\": 174267000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 27, 2025\",\n    \"quote\": \"Net income $ 174,267 $ 108,717 $ 70,175\"\n  },\n  \"operating_income\": {\n    \"value\": 179291000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 27, 2025\",\n    \"quote\": \"Operating income 179,291 165,616 112,594\"\n  },\n  \"total_assets\": {\n    \"value\": 693409000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 27, 2025\",\n    \"quote\": \"Total liabilities and stockholders' deficit $ 693,409 $ 716,246\"\n  }\n}\n```"
+}

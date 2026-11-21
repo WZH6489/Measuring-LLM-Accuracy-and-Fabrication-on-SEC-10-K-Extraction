@@ -1,0 +1,13 @@
+{
+ "ticker": "PEP",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:37:41+00:00",
+ "prompt_sha": "c372e50cfcf7",
+ "prompt_chars": 15305,
+ "in_tokens": 6013,
+ "out_tokens": 757,
+ "cost_usd": 0.00098,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 93925000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 27, 2025\",\n    \"quote\": \"Net Revenue $ 93,925 $ 91,854 $ 91,471\"\n  },\n  \"net_income\": {\n    \"value\": 8240000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 27, 2025\",\n    \"quote\": \"Net Income Attributable to PepsiCo $ 8,240 $ 9,578 $ 9,074\"\n  },\n  \"operating_income\": {\n    \"value\": 11498000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 27, 2025\",\n    \"quote\": \"Operating Profit 11,498 12,887 11,986\"\n  },\n  \"total_assets\": null\n}\n```"
+}

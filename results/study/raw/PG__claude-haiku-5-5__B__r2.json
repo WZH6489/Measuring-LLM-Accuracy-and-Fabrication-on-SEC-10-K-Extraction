@@ -1,0 +1,13 @@
+{
+ "ticker": "PG",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 2,
+ "ts": "2026-11-20T17:37:46+00:00",
+ "prompt_sha": "b7dfd5477fe1",
+ "prompt_chars": 14472,
+ "in_tokens": 7495,
+ "out_tokens": 492,
+ "cost_usd": 0.000996,
+ "raw": "{\"revenue\":{\"value\":87032000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended June 30, 2026\",\"quote\":\"NET SALES $ 87,032\"},\"net_income\":{\"value\":16046000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended June 30, 2026\",\"quote\":\"NET EARNINGS ATTRIBUTABLE TO PROCTER & GAMBLE $ 16,046\"},\"operating_income\":{\"value\":19748000000,\"unit\":\"USD\",\"period\":\"Fiscal year ended June 30, 2026\",\"quote\":\"OPERATING INCOME 19,748\"},\"total_assets\":{\"value\":126521000000,\"unit\":\"USD\",\"period\":\"As of June 30, 2026\",\"quote\":\"TOTAL ASSETS $ 126,521\"}}"
+}

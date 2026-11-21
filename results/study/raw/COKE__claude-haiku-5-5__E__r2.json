@@ -1,0 +1,13 @@
+{
+ "ticker": "COKE",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 2,
+ "ts": "2026-11-20T17:54:03+00:00",
+ "prompt_sha": "ea97c92b0e14",
+ "prompt_chars": 509,
+ "in_tokens": 176,
+ "out_tokens": 1050,
+ "cost_usd": 0.000543,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"note\": \"I do not have reliable knowledge of the figures in Coca-Cola Consolidated's 10-K for fiscal 2025, so I cannot state these values without guessing. Please check the filing on SEC EDGAR or the company's investor relations site.\"\n}\n```"
+}

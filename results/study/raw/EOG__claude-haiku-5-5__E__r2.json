@@ -1,0 +1,13 @@
+{
+ "ticker": "EOG",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 2,
+ "ts": "2026-11-20T17:45:32+00:00",
+ "prompt_sha": "ae91a8a416d1",
+ "prompt_chars": 498,
+ "in_tokens": 170,
+ "out_tokens": 1058,
+ "cost_usd": 0.000546,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 21000000000,\n    \"unit\": \"USD (rough estimate, not verified against the FY2025 10-K)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 4500000000,\n    \"unit\": \"USD (rough estimate, not verified against the FY2025 10-K)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 6500000000,\n    \"unit\": \"USD (rough estimate, not verified against the FY2025 10-K)\",\n    \"period\": \"Fiscal year ended 2025-12-31\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 48000000000,\n    \"unit\": \"USD (rough estimate, not verified against the FY2025 10-K)\",\n    \"period\": \"As of 2025-12-31\",\n    \"quote\": null\n  }\n}\n```"
+}

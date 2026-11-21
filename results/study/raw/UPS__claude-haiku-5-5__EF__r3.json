@@ -1,0 +1,13 @@
+{
+ "ticker": "UPS",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:06:03+00:00",
+ "prompt_sha": "064069c4b80b",
+ "prompt_chars": 510,
+ "in_tokens": 178,
+ "out_tokens": 269,
+ "cost_usd": 0.000152,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

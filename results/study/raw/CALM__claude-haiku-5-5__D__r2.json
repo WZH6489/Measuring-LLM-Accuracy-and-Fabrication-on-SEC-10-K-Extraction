@@ -1,0 +1,13 @@
+{
+ "ticker": "CALM",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 2,
+ "ts": "2026-11-20T17:53:37+00:00",
+ "prompt_sha": "e8459e36bc62",
+ "prompt_chars": 15708,
+ "in_tokens": 8182,
+ "out_tokens": 838,
+ "cost_usd": 0.001237,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 2911632000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended May 30, 2026\",\n    \"quote\": \"Net sales $ 2,911,632 $ 4,261,885 $ 2,326,443\"\n  },\n  \"net_income\": {\n    \"value\": 318112000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended May 30, 2026\",\n    \"quote\": \"Net income $ 318,112 $ 1,218,232 $ 276,282\"\n  },\n  \"operating_income\": {\n    \"value\": 350186000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended May 30, 2026\",\n    \"quote\": \"Operating income 350,186 1,536,539 312,452\"\n  },\n  \"total_assets\": {\n    \"value\": 3107570000,\n    \"unit\": \"USD\",\n    \"period\": \"As of May 30, 2026\",\n    \"quote\": \"Total liabilities and stockholders\u2019 equity $ 3,107,570 $ 3,084,619\"\n  }\n}\n```"
+}

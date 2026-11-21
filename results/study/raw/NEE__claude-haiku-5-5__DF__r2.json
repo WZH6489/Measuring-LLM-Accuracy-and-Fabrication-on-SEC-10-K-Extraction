@@ -1,0 +1,13 @@
+{
+ "ticker": "NEE",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:46:30+00:00",
+ "prompt_sha": "8d75b11f6d74",
+ "prompt_chars": 19307,
+ "in_tokens": 8078,
+ "out_tokens": 701,
+ "cost_usd": 0.001158,
+ "raw": "{\n  \"revenue\": {\n    \"value\": 27412000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"OPERATING REVENUES $ 27,412 $ 24,753 $ 28,114\"\n  },\n  \"net_income\": {\n    \"value\": 5332000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"NET INCOME 5,332 5,698 6,282\"\n  },\n  \"operating_income\": {\n    \"value\": 8280000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"OPERATING INCOME 8,280 7,479 10,237\"\n  },\n  \"total_assets\": null\n}"
+}

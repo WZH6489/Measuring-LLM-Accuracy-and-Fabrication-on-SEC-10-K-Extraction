@@ -1,0 +1,13 @@
+{
+ "ticker": "AAPL",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:32:09+00:00",
+ "prompt_sha": "ddc8e907a925",
+ "prompt_chars": 495,
+ "in_tokens": 169,
+ "out_tokens": 251,
+ "cost_usd": 0.000142,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

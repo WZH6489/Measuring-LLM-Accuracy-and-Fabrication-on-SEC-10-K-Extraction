@@ -1,0 +1,13 @@
+{
+ "ticker": "DIS",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 2,
+ "ts": "2026-11-20T17:49:42+00:00",
+ "prompt_sha": "23ffe4ef2957",
+ "prompt_chars": 495,
+ "in_tokens": 167,
+ "out_tokens": 697,
+ "cost_usd": 0.000365,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-10-03\",\n    \"quote\": null,\n    \"note\": \"Not available: I have no access to this filing, and my knowledge does not cover it.\"\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-10-03\",\n    \"quote\": null,\n    \"note\": \"Not available: I have no access to this filing, and my knowledge does not cover it.\"\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-10-03\",\n    \"quote\": null,\n    \"note\": \"Not available: I have no access to this filing, and my knowledge does not cover it.\"\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2026-10-03\",\n    \"quote\": null,\n    \"note\": \"Not available: I have no access to this filing, and my knowledge does not cover it.\"\n  }\n}\n```"
+}

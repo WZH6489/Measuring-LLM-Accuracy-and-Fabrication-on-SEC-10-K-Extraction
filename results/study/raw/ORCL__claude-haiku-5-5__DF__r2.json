@@ -1,0 +1,13 @@
+{
+ "ticker": "ORCL",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:33:14+00:00",
+ "prompt_sha": "80315b4c5ea3",
+ "prompt_chars": 13438,
+ "in_tokens": 4739,
+ "out_tokens": 601,
+ "cost_usd": 0.000774,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 67357000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended May 31, 2026\",\n    \"quote\": \"Total revenues 67,357 57,399 52,961\"\n  },\n  \"net_income\": {\n    \"value\": 17087000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended May 31, 2026\",\n    \"quote\": \"Net income $ 17,087 $ 12,443 $ 10,467\"\n  },\n  \"operating_income\": {\n    \"value\": 20606000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended May 31, 2026\",\n    \"quote\": \"Operating income 20,606 17,678 15,353\"\n  },\n  \"total_assets\": null\n}\n```"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "TXN",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 3,
+ "ts": "2026-11-20T17:57:48+00:00",
+ "prompt_sha": "385c3bc1b8b0",
+ "prompt_chars": 506,
+ "in_tokens": 178,
+ "out_tokens": 299,
+ "cost_usd": 0.000167,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

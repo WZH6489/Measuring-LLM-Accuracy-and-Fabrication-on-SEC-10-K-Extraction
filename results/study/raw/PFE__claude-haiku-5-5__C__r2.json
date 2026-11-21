@@ -1,0 +1,13 @@
+{
+ "ticker": "PFE",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 2,
+ "ts": "2026-11-20T17:34:36+00:00",
+ "prompt_sha": "d841c5318813",
+ "prompt_chars": 43941,
+ "in_tokens": 22772,
+ "out_tokens": 1009,
+ "cost_usd": 0.002782,
+ "raw": "```json\n{\n \"revenue\": {\n  \"value\": 62579000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total revenues\\n62,579\\n63,627\\n59,553\"\n },\n \"net_income\": {\n  \"value\": 7771000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Net income attributable to Pfizer Inc. common shareholders\\n$\\n7,771\\n$\\n8,031\\n$\\n2,119\"\n },\n \"operating_income\": {\n  \"value\": 7520000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31 (no operating profit line reported; income from continuing operations before taxes used as proxy)\",\n  \"quote\": \"Income from continuing operations before provision/(benefit) for taxes on income\\n7,520\\n8,023\\n1,058\"\n },\n \"total_assets\": {\n  \"value\": 208160000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total assets\\n$\\n208,160\\n$\\n213,396\"\n }\n}\n```"
+}

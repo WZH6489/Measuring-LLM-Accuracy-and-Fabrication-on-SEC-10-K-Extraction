@@ -409,6 +409,29 @@
     "pipeline.py": "138e926466a5",
     "companies.py": "cb3558203ebf"
    }
+  },
+  {
+   "started": "2026-11-20T17:31:45+00:00",
+   "models": [
+    "claude-haiku-5-5"
+   ],
+   "repeats": 3,
+   "cells": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "B+F",
+    "C+F",
+    "D+F",
+    "E+F"
+   ],
+   "git_commit": "fdeba83c7266e5978f4d8cf95ccbce6c060bcfbd",
+   "code_sha": {
+    "study.py": "6249c5a173f5",
+    "pipeline.py": "138e926466a5",
+    "companies.py": "cb3558203ebf"
+   }
   }
  ]
 }

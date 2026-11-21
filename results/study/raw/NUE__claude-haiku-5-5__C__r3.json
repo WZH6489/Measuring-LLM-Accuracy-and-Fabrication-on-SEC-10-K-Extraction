@@ -1,0 +1,13 @@
+{
+ "ticker": "NUE",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 3,
+ "ts": "2026-11-20T18:16:12+00:00",
+ "prompt_sha": "b1aa019ff68a",
+ "prompt_chars": 43941,
+ "in_tokens": 23225,
+ "out_tokens": 888,
+ "cost_usd": 0.002766,
+ "raw": "```json\n{\n \"revenue\": {\n  \"value\": 32494000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Net sales\\n$\\n32,494\"\n },\n \"net_income\": {\n  \"value\": 1744000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Net earnings attributable to Nucor\\n   stockholders\\n$\\n1,744\"\n },\n \"operating_income\": {\n  \"value\": null,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"\"\n },\n \"total_assets\": {\n  \"value\": 35104000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total assets\\n$\\n35,104\"\n }\n}\n```"
+}

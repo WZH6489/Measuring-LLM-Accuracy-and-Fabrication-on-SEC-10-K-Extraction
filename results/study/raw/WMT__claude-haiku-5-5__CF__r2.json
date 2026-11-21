@@ -1,0 +1,13 @@
+{
+ "ticker": "WMT",
+ "model": "claude-haiku-5-5",
+ "cell": "C+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:36:52+00:00",
+ "prompt_sha": "2032b344a0d6",
+ "prompt_chars": 44018,
+ "in_tokens": 22869,
+ "out_tokens": 609,
+ "cost_usd": 0.002591,
+ "raw": "{\n \"revenue\": {\n  \"value\": 713163000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-01-31\",\n  \"quote\": \"Total revenues\\n713,163\"\n },\n \"net_income\": {\n  \"value\": 21893000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-01-31\",\n  \"quote\": \"Consolidated net income attributable to Walmart\\n$\\n21,893\"\n },\n \"operating_income\": {\n  \"value\": 29825000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-01-31\",\n  \"quote\": \"Operating income\\n29,825\"\n },\n \"total_assets\": {\n  \"value\": 284668000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2026-01-31\",\n  \"quote\": \"Total assets\\n$\\n284,668\"\n }\n}"
+}

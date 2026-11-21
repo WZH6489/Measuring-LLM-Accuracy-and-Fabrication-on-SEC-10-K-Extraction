@@ -1,0 +1,13 @@
+{
+ "ticker": "TJX",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 2,
+ "ts": "2026-11-20T17:40:52+00:00",
+ "prompt_sha": "1d42b0c20e79",
+ "prompt_chars": 14472,
+ "in_tokens": 6808,
+ "out_tokens": 961,
+ "cost_usd": 0.001161,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 60372000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal 2026 (52 weeks ended January 31, 2026)\",\n    \"quote\": \"Net sales $ 60,372 $ 56,360 $ 54,217\"\n  },\n  \"net_income\": {\n    \"value\": 5494000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal 2026 (52 weeks ended January 31, 2026)\",\n    \"quote\": \"Net income $ 5,494 $ 4,864 $ 4,474\"\n  },\n  \"operating_income\": {\n    \"value\": 7178000000,\n    \"unit\": \"USD (derived: net sales $60,372M \u2212 cost of sales $41,679M \u2212 SG&A $11,515M; equals income before income taxes $7,299M less net interest income $121M)\",\n    \"period\": \"Fiscal 2026 (52 weeks ended January 31, 2026)\",\n    \"quote\": \"Selling, general and administrative expenses 11,515 ... Income before income taxes 7,299\"\n  },\n  \"total_assets\": {\n    \"value\": 35767000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of January 31, 2026\",\n    \"quote\": \"Total assets $ 35,767 $ 31,749\"\n  }\n}\n```"
+}

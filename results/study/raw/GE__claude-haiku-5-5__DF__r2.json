@@ -1,0 +1,13 @@
+{
+ "ticker": "GE",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:42:53+00:00",
+ "prompt_sha": "fc7d439909ac",
+ "prompt_chars": 16943,
+ "in_tokens": 6729,
+ "out_tokens": 641,
+ "cost_usd": 0.000993,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 45855000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Total revenue 45,855 38,702 35,348\"\n  },\n  \"net_income\": {\n    \"value\": 8704000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net income (loss) attributable to the Company 8,704 6,556 9,482\"\n  },\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

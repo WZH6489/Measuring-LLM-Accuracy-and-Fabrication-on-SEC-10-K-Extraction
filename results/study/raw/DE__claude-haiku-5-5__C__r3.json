@@ -1,0 +1,13 @@
+{
+ "ticker": "DE",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 3,
+ "ts": "2026-11-20T18:06:42+00:00",
+ "prompt_sha": "a4008b9468f3",
+ "prompt_chars": 43941,
+ "in_tokens": 26372,
+ "out_tokens": 1385,
+ "cost_usd": 0.00333,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 45684000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-11-02\",\n    \"quote\": \"Total\\n40,259\\n46,361\\n57,059\\n6,289\\n6,493\\n5,554\\n(864)\\n(1,138)\\n(1,362)\\n45,684\\n51,716\\n61,251\"\n  },\n  \"net_income\": {\n    \"value\": 5027000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-11-02\",\n    \"quote\": \"Net\\nIncome\\nAttributable\\nto\\nDeere & Company\\n$\\n4,137\\n$\\n6,404\\n$\\n9,547\\n$\\n890\\n$\\n696\\n$\\n619\\n$\\n5,027\"\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-11-02\",\n    \"quote\": \"Not reported: the income statement has no operating income subtotal. The closest line is Income before Income Taxes, consolidated 6,257.\"\n  },\n  \"total_assets\": {\n    \"value\": 105996000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-11-02\",\n    \"quote\": \"Total\\nAssets\\n$\\n42,859\\n$\\n39,205\\n$\\n70,021\\n$\\n73,612\\n$\\n(6,884)\\n$\\n(5,497)\\n$\\n105,996\\n$\\n107,320\"\n  }\n}\n```"
+}

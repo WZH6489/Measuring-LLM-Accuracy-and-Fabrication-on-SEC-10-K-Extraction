@@ -1,0 +1,13 @@
+{
+ "ticker": "SBUX",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 3,
+ "ts": "2026-11-20T18:04:17+00:00",
+ "prompt_sha": "d25d2a2db496",
+ "prompt_chars": 495,
+ "in_tokens": 169,
+ "out_tokens": 793,
+ "cost_usd": 0.000413,
+ "raw": "```json\n{\n  \"note\": \"I don't have access to Starbucks' 10-K for the fiscal year ended 2026-09-27, and that filing is outside my knowledge, so I can't provide these figures without guessing. Please check the filing on SEC EDGAR or Starbucks' investor relations site.\",\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": null,\n    \"period\": \"Fiscal year ended 2026-09-27\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": null,\n    \"period\": \"Fiscal year ended 2026-09-27\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": null,\n    \"period\": \"Fiscal year ended 2026-09-27\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": null,\n    \"period\": \"As of fiscal year end 2026-09-27\",\n    \"quote\": null\n  }\n}\n```"
+}

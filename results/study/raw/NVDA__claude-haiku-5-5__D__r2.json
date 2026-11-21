@@ -1,0 +1,13 @@
+{
+ "ticker": "NVDA",
+ "model": "claude-haiku-5-5",
+ "cell": "D",
+ "repeat": 2,
+ "ts": "2026-11-20T17:32:36+00:00",
+ "prompt_sha": "460955842f94",
+ "prompt_chars": 15736,
+ "in_tokens": 6592,
+ "out_tokens": 759,
+ "cost_usd": 0.001039,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 215938000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended Jan 25, 2026\",\n    \"quote\": \"Revenue $ 215,938 $ 130,497 $ 60,922\"\n  },\n  \"net_income\": {\n    \"value\": 120067000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended Jan 25, 2026\",\n    \"quote\": \"Net income $ 120,067 $ 72,880 $ 29,760\"\n  },\n  \"operating_income\": {\n    \"value\": 130387000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended Jan 25, 2026\",\n    \"quote\": \"Operating income 130,387 81,453 32,972\"\n  },\n  \"total_assets\": {\n    \"value\": 206803000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of Jan 25, 2026\",\n    \"quote\": \"Total assets $ 206,803 $ 111,601\"\n  }\n}\n```"
+}

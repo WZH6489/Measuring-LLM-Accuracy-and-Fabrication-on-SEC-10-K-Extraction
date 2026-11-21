@@ -1,0 +1,13 @@
+{
+ "ticker": "AEP",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:48:02+00:00",
+ "prompt_sha": "223d6f90dc8b",
+ "prompt_chars": 19029,
+ "in_tokens": 9875,
+ "out_tokens": 572,
+ "cost_usd": 0.001273,
+ "raw": "{\n  \"revenue\": null,\n  \"net_income\": {\n    \"value\": 3696000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net Income $ 3,696 $ 2,976 $ 2,213\"\n  },\n  \"operating_income\": null,\n  \"total_assets\": null\n}"
+}

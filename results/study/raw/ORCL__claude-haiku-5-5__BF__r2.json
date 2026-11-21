@@ -1,0 +1,13 @@
+{
+ "ticker": "ORCL",
+ "model": "claude-haiku-5-5",
+ "cell": "B+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:33:08+00:00",
+ "prompt_sha": "390b6c9a76c5",
+ "prompt_chars": 14549,
+ "in_tokens": 7131,
+ "out_tokens": 628,
+ "cost_usd": 0.001027,
+ "raw": "{\n  \"revenue\": {\n    \"value\": 67357000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended May 31, 2026\",\n    \"quote\": \"Total revenues 67,357 57,399 52,961\"\n  },\n  \"net_income\": {\n    \"value\": 17087000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended May 31, 2026\",\n    \"quote\": \"Net income $ 17,087 $ 12,443 $ 10,467\"\n  },\n  \"operating_income\": {\n    \"value\": 20606000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended May 31, 2026\",\n    \"quote\": \"Operating income 20,606 17,678 15,353\"\n  },\n  \"total_assets\": {\n    \"value\": 261759000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of May 31, 2026\",\n    \"quote\": \"Total assets $ 261,759 $ 168,361\"\n  }\n}"
+}

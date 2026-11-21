@@ -1,0 +1,13 @@
+{
+ "ticker": "NKE",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 2,
+ "ts": "2026-11-20T17:39:38+00:00",
+ "prompt_sha": "1636edbc57cc",
+ "prompt_chars": 14472,
+ "in_tokens": 6987,
+ "out_tokens": 964,
+ "cost_usd": 0.001181,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 46398000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended May 31, 2026\",\n    \"quote\": \"Revenues $ 46,398 $ 46,309 $ 51,362\"\n  },\n  \"net_income\": {\n    \"value\": 3108000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended May 31, 2026\",\n    \"quote\": \"NET INCOME $ 3,108 $ 3,219 $ 5,700\"\n  },\n  \"operating_income\": {\n    \"value\": 3797000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended May 31, 2026\",\n    \"quote\": \"Gross profit 19,911 19,790 22,887 ... Total selling and administrative expense 16,114 16,088 16,576. Derived as gross profit less total selling and administrative expense (19,911 - 16,114 = 3,797 million); the statement does not report an operating income line.\"\n  },\n  \"total_assets\": {\n    \"value\": 38410000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of May 31, 2026\",\n    \"quote\": \"TOTAL ASSETS $ 38,410 $ 36,579\"\n  }\n}\n```"
+}

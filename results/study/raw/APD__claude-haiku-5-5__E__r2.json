@@ -1,0 +1,13 @@
+{
+ "ticker": "APD",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 2,
+ "ts": "2026-11-20T17:51:37+00:00",
+ "prompt_sha": "bb6592058c22",
+ "prompt_chars": 511,
+ "in_tokens": 174,
+ "out_tokens": 883,
+ "cost_usd": 0.000459,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-09-30\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-09-30\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-09-30\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-09-30\",\n    \"quote\": null\n  }\n}\n```"
+}

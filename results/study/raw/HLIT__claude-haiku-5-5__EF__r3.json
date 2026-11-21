@@ -1,0 +1,13 @@
+{
+ "ticker": "HLIT",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:18:48+00:00",
+ "prompt_sha": "57531c5f28cf",
+ "prompt_chars": 498,
+ "in_tokens": 171,
+ "out_tokens": 290,
+ "cost_usd": 0.000162,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

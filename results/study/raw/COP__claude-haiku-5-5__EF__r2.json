@@ -1,0 +1,13 @@
+{
+ "ticker": "COP",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:44:46+00:00",
+ "prompt_sha": "4088ec1579c5",
+ "prompt_chars": 499,
+ "in_tokens": 174,
+ "out_tokens": 192,
+ "cost_usd": 0.000113,
+ "raw": "{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}"
+}

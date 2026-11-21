@@ -1,0 +1,13 @@
+{
+ "ticker": "ECL",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:16:01+00:00",
+ "prompt_sha": "a39d59bac9e4",
+ "prompt_chars": 17410,
+ "in_tokens": 8928,
+ "out_tokens": 522,
+ "cost_usd": 0.001154,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 16081200000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year 2025 (ended December 31, 2025)\",\n    \"quote\": \"Net sales 16,081.2 15,741.4 15,320.2\"\n  },\n  \"net_income\": {\n    \"value\": 2075600000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year 2025\",\n    \"quote\": \"Net income attributable to Ecolab $ 2,075.6 $ 2,112.4 $ 1,372.3\"\n  },\n  \"operating_income\": {\n    \"value\": 2737600000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year 2025\",\n    \"quote\": \"Operating income 2,737.6 2,802.4 1,992.3\"\n  },\n  \"total_assets\": null\n}\n```"
+}

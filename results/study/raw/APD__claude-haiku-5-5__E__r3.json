@@ -1,0 +1,13 @@
+{
+ "ticker": "APD",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 3,
+ "ts": "2026-11-20T18:15:04+00:00",
+ "prompt_sha": "bb6592058c22",
+ "prompt_chars": 511,
+ "in_tokens": 174,
+ "out_tokens": 913,
+ "cost_usd": 0.000474,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-09-30\",\n    \"quote\": null,\n    \"note\": \"Not available. My knowledge does not include Air Products' FY2026 10-K, and I cannot verify these figures.\"\n  },\n  \"net_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-09-30\",\n    \"quote\": null,\n    \"note\": \"Not available. My knowledge does not include Air Products' FY2026 10-K, and I cannot verify these figures.\"\n  },\n  \"operating_income\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended 2026-09-30\",\n    \"quote\": null,\n    \"note\": \"Not available. My knowledge does not include Air Products' FY2026 10-K, and I cannot verify these figures.\"\n  },\n  \"total_assets\": {\n    \"value\": null,\n    \"unit\": \"USD\",\n    \"period\": \"As of 2026-09-30\",\n    \"quote\": null,\n    \"note\": \"Not available. My knowledge does not include Air Products' FY2026 10-K, and I cannot verify these figures.\"\n  }\n}\n```"
+}

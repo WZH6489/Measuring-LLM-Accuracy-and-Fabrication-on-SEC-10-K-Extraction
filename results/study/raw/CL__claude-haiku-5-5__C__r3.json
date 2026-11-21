@@ -1,0 +1,13 @@
+{
+ "ticker": "CL",
+ "model": "claude-haiku-5-5",
+ "cell": "C",
+ "repeat": 3,
+ "ts": "2026-11-20T18:02:12+00:00",
+ "prompt_sha": "49e820daf6e8",
+ "prompt_chars": 43941,
+ "in_tokens": 22805,
+ "out_tokens": 559,
+ "cost_usd": 0.00256,
+ "raw": "{\n \"revenue\": {\n  \"value\": 20382000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Net sales\\n$\\n20,382\"\n },\n \"net_income\": {\n  \"value\": 2132000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Net income attributable to Colgate-Palmolive Company\\n$\\n2,132\"\n },\n \"operating_income\": {\n  \"value\": 3306000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Operating profit\\n3,306\"\n },\n \"total_assets\": {\n  \"value\": 16330000000,\n  \"unit\": \"USD\",\n  \"period\": \"fiscal year ended 2025-12-31\",\n  \"quote\": \"Total assets\\n$\\n16,330\"\n }\n}"
+}

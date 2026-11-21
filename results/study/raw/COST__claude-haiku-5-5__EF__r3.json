@@ -1,0 +1,13 @@
+{
+ "ticker": "COST",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:02:07+00:00",
+ "prompt_sha": "ae5b48d89197",
+ "prompt_chars": 511,
+ "in_tokens": 181,
+ "out_tokens": 235,
+ "cost_usd": 0.000136,
+ "raw": "{\"revenue\": null, \"net_income\": null, \"operating_income\": null, \"total_assets\": null}"
+}

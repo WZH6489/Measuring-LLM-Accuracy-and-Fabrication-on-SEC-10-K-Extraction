@@ -1,0 +1,13 @@
+{
+ "ticker": "DE",
+ "model": "claude-haiku-5-5",
+ "cell": "C+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:07:01+00:00",
+ "prompt_sha": "8c095cb68930",
+ "prompt_chars": 44018,
+ "in_tokens": 26397,
+ "out_tokens": 993,
+ "cost_usd": 0.003136,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 45684000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-11-02\",\n    \"quote\": \"Total\\n45,684\"\n  },\n  \"net_income\": {\n    \"value\": 5027000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-11-02\",\n    \"quote\": \"Net\\nIncome\\nAttributable\\nto\\nDeere & Company\\n$\\n 4,137\\n$\\n 6,404\\n$\\n 9,547\\n$\\n 890\\n$\\n 696\\n$\\n 619\\n$\\n 5,027\"\n  },\n  \"operating_income\": null,\n  \"total_assets\": {\n    \"value\": 105996000000,\n    \"unit\": \"USD\",\n    \"period\": \"fiscal year ended 2025-11-02\",\n    \"quote\": \"Total\\nAssets\\n$\\n 42,859\\n$\\n 39,205\\n$\\n 70,021\\n$\\n 73,612\\n$\\n (6,884)\\n$\\n (5,497)\\n$\\n 105,996\"\n  }\n}\n```"
+}

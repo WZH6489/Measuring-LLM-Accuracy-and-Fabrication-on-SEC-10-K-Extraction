@@ -1,0 +1,13 @@
+{
+ "ticker": "MSFT",
+ "model": "claude-haiku-5-5",
+ "cell": "E",
+ "repeat": 3,
+ "ts": "2026-11-20T17:56:14+00:00",
+ "prompt_sha": "fba5545dc6ef",
+ "prompt_chars": 495,
+ "in_tokens": 169,
+ "out_tokens": 1022,
+ "cost_usd": 0.000528,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 325000000000,\n    \"unit\": \"USD (estimate; not verified against the FY2026 10-K)\",\n    \"period\": \"Fiscal year ended June 30, 2026 (July 1, 2025 to June 30, 2026)\",\n    \"quote\": null\n  },\n  \"net_income\": {\n    \"value\": 130000000000,\n    \"unit\": \"USD (estimate; not verified against the FY2026 10-K)\",\n    \"period\": \"Fiscal year ended June 30, 2026 (July 1, 2025 to June 30, 2026)\",\n    \"quote\": null\n  },\n  \"operating_income\": {\n    \"value\": 150000000000,\n    \"unit\": \"USD (estimate; not verified against the FY2026 10-K)\",\n    \"period\": \"Fiscal year ended June 30, 2026 (July 1, 2025 to June 30, 2026)\",\n    \"quote\": null\n  },\n  \"total_assets\": {\n    \"value\": 720000000000,\n    \"unit\": \"USD (estimate; not verified against the FY2026 10-K)\",\n    \"period\": \"As of June 30, 2026\",\n    \"quote\": null\n  }\n}\n```"
+}

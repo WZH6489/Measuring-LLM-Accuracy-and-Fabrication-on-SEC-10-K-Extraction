@@ -1,0 +1,13 @@
+{
+ "ticker": "CAT",
+ "model": "claude-haiku-5-5",
+ "cell": "D+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:41:31+00:00",
+ "prompt_sha": "d34e228da816",
+ "prompt_chars": 14335,
+ "in_tokens": 6659,
+ "out_tokens": 867,
+ "cost_usd": 0.001099,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 67589000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Total sales and revenues 67,589 64,809 67,060\"\n  },\n  \"net_income\": {\n    \"value\": 8884000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Profit 1 $ 8,884 $ 10,792 $ 10,335\"\n  },\n  \"operating_income\": {\n    \"value\": 11151000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Operating profit 11,151 13,072 12,966\"\n  },\n  \"total_assets\": {\n    \"value\": 98585000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"Total liabilities and shareholders\u2019 equity $ 98,585 $ 87,764\"\n  }\n}\n```"
+}

@@ -1,0 +1,13 @@
+{
+ "ticker": "HON",
+ "model": "claude-haiku-5-5",
+ "cell": "B",
+ "repeat": 2,
+ "ts": "2026-11-20T17:41:38+00:00",
+ "prompt_sha": "46b15248e2ad",
+ "prompt_chars": 14472,
+ "in_tokens": 6606,
+ "out_tokens": 1160,
+ "cost_usd": 0.001241,
+ "raw": "```json\n{\n  \"revenue\": {\n    \"value\": 37442000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net sales 37,442 34,717 33,009\"\n  },\n  \"net_income\": {\n    \"value\": 4729000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net income attributable to Honeywell $ 4,729 $ 5,705 $ 5,658\"\n  },\n  \"operating_income\": {\n    \"value\": 5573000000,\n    \"unit\": \"USD\",\n    \"period\": \"Fiscal year ended December 31, 2025\",\n    \"quote\": \"Net sales 37,442; Total Cost of products and services sold 23,613; Research and development expenses 1,812; Selling, general and administrative expenses 5,450; Impairment of goodwill 724; Impairment of assets held for sale 270 (derived: 37,442 \u2212 23,613 \u2212 1,812 \u2212 5,450 \u2212 724 \u2212 270)\"\n  },\n  \"total_assets\": {\n    \"value\": 73681000000,\n    \"unit\": \"USD\",\n    \"period\": \"As of December 31, 2025\",\n    \"quote\": \"Total assets $ 73,681 $ 75,196\"\n  }\n}\n```"
+}

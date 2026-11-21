@@ -1,0 +1,13 @@
+{
+ "ticker": "MSFT",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 3,
+ "ts": "2026-11-20T17:56:22+00:00",
+ "prompt_sha": "259215422acd",
+ "prompt_chars": 499,
+ "in_tokens": 172,
+ "out_tokens": 217,
+ "cost_usd": 0.000126,
+ "raw": "{\"revenue\": null, \"net_income\": null, \"operating_income\": null, \"total_assets\": null}"
+}

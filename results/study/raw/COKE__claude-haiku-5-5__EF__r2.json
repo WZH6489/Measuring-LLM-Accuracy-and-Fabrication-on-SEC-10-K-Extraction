@@ -1,0 +1,13 @@
+{
+ "ticker": "COKE",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:54:11+00:00",
+ "prompt_sha": "cd4fb50e97b6",
+ "prompt_chars": 513,
+ "in_tokens": 179,
+ "out_tokens": 255,
+ "cost_usd": 0.000145,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}

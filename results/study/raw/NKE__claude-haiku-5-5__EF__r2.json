@@ -1,0 +1,13 @@
+{
+ "ticker": "NKE",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 2,
+ "ts": "2026-11-20T17:40:05+00:00",
+ "prompt_sha": "ed9447aea84b",
+ "prompt_chars": 495,
+ "in_tokens": 171,
+ "out_tokens": 465,
+ "cost_usd": 0.00025,
+ "raw": "{\"revenue\": null, \"net_income\": null, \"operating_income\": null, \"total_assets\": null}"
+}

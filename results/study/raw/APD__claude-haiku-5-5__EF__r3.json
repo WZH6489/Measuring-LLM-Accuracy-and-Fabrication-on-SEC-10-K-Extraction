@@ -1,0 +1,13 @@
+{
+ "ticker": "APD",
+ "model": "claude-haiku-5-5",
+ "cell": "E+F",
+ "repeat": 3,
+ "ts": "2026-11-20T18:15:14+00:00",
+ "prompt_sha": "ad2602c13c97",
+ "prompt_chars": 515,
+ "in_tokens": 177,
+ "out_tokens": 212,
+ "cost_usd": 0.000124,
+ "raw": "```json\n{\n  \"revenue\": null,\n  \"net_income\": null,\n  \"operating_income\": null,\n  \"total_assets\": null\n}\n```"
+}
