@@ -17,8 +17,7 @@ stylesheet's plain `backdrop-filter: blur(...)` fallback stays in effect.
 """
 
 # Elements that get the full refraction effect. Chips and small repeated items stay CSS-only.
-SELECTOR = ('.fc-lg, [role="tablist"], [data-testid="stTextInputRootElement"], '
-            '[data-testid="stExpander"] details')
+SELECTOR = ('.fc-lg, [data-testid="stForm"], [data-testid="stExpander"] details')
 
 GLASS_JS = r"""
 (function () {

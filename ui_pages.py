@@ -30,13 +30,13 @@ EXTRA_CSS = """<style>
 [data-testid="stTab"] p { color:var(--fc-faint) !important; font-weight:500; font-size:.88rem; transition: color .15s; }
 [data-testid="stTab"]:hover p { color:var(--fc-muted) !important; }
 [data-testid="stTab"][aria-selected="true"] p { color:var(--fc-fg) !important; font-weight:600; }
-[data-testid="stTab"][aria-selected="true"]::after { content:""; position:absolute; left:50%; bottom:3px; width:16px; height:2px; margin-left:-8px; border-radius:2px; background:linear-gradient(90deg,#ffd9b8,#c9d4ff); }
+[data-testid="stTab"][aria-selected="true"]::after { content:""; position:absolute; left:50%; bottom:3px; width:16px; height:2px; margin-left:-8px; border-radius:2px; background:var(--fc-accent); }
 .react-aria-SelectionIndicator, [data-baseweb="tab-highlight"], [data-baseweb="tab-border"] { display:none !important; }
 [data-orientation="horizontal"][data-rac]:has(> [role="tablist"]) { border-bottom:none !important; }
 [data-testid="stCode"], [data-testid="stCode"] pre { background:rgba(0,0,0,.22) !important; border-radius:10px !important; }
-[data-testid="stCode"] code { font-family:'JetBrains Mono',monospace !important; font-size:.76rem !important; }
+[data-testid="stCode"] code { font-family:var(--fc-mono) !important; font-size:.76rem !important; }
 .stRadio label, .stRadio p, .stToggle label, .stToggle p, .stCheckbox label, .stCheckbox p, .stSelectbox label, .stSelectbox p, [data-testid="stCaptionContainer"] p { color:var(--fc-muted) !important; }
-.fc-h2 { font-family:var(--fc-display); font-size:clamp(1.7rem,3.4vw,2.3rem); font-weight:600; letter-spacing:-.03em; line-height:1.1; margin:64px 0 10px; }
+.fc-h2 { font-size:1.3rem; font-weight:500; letter-spacing:-.02em; line-height:1.2; margin:40px 0 8px; }
 .fc-lead { color:var(--fc-muted); font-size:1.02rem; line-height:1.65; max-width:760px; margin-bottom:16px; }
 .fc-flow { display:flex; align-items:stretch; gap:8px; flex-wrap:wrap; margin:16px 0 6px; }
 .fc-flow i { align-self:center; font-style:normal; color:var(--fc-faint); }
@@ -50,10 +50,10 @@ EXTRA_CSS = """<style>
 .fc-tbl th, .fc-tbl td { border-left:none !important; border-right:none !important; border-bottom:none !important; }
 .fc-tbl th { text-align:left; font-size:.68rem; letter-spacing:.09em; text-transform:uppercase; color:var(--fc-faint); padding:12px 14px 10px; font-weight:600; }
 .fc-tbl td { padding:11px 14px; border-top:1px solid var(--fc-hair); vertical-align:top; color:var(--fc-fg); }
-.fc-tbl td.m { font-family:'JetBrains Mono',monospace; font-size:.76rem; } .fc-tbl td.c { white-space:nowrap; font-variant-numeric:tabular-nums; }
-.fc-tbl .tag, .fc-tl-d .tag, .fc-note2 .tag { display:inline-block; font-family:'JetBrains Mono',monospace; font-size:.74rem; color:var(--fc-accent); margin:1px 6px 1px 0; }
+.fc-tbl td.m { font-family:var(--fc-mono); font-size:.76rem; } .fc-tbl td.c { white-space:nowrap; font-variant-numeric:tabular-nums; }
+.fc-tbl .tag, .fc-tl-d .tag, .fc-note2 .tag { display:inline-block; font-family:var(--fc-mono); font-size:.74rem; color:var(--fc-accent); margin:1px 6px 1px 0; }
 .fc-bar { position:relative; height:20px; min-width:150px; background:rgba(255,255,255,.06); border-radius:6px; overflow:hidden; }
-.fc-bar i { position:absolute; left:0; top:0; bottom:0; background:linear-gradient(90deg,rgba(75,163,255,.55),rgba(75,163,255,.9)); border-radius:6px; }
+.fc-bar i { position:absolute; left:0; top:0; bottom:0; background:linear-gradient(90deg,rgba(94,234,212,.45),rgba(94,234,212,.85)); border-radius:6px; }
 .fc-bar.a i { background:linear-gradient(90deg,rgba(233,236,242,.25),rgba(233,236,242,.4)); }
 .fc-bar u { position:absolute; top:9px; height:2px; background:rgba(255,255,255,.9); border-radius:1px; }
 .fc-bar span { position:absolute; left:9px; top:2px; font-size:.72rem; font-weight:600; color:#fff; font-variant-numeric:tabular-nums; text-shadow:0 1px 3px rgba(0,0,0,.5); }
@@ -61,9 +61,9 @@ EXTRA_CSS = """<style>
 .fc-legend { display:flex; flex-wrap:wrap; gap:6px 16px; font-size:.76rem; color:var(--fc-muted); margin:8px 0 10px; } .fc-legend b { display:inline-block; width:9px; height:9px; border-radius:2px; margin-right:6px; vertical-align:middle; }
 .fc-kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; margin:16px 0; }
 .fc-kpi { border-radius:var(--glass-radius-lg); padding:20px 22px; }
-.fc-kpi b { display:block; font-family:var(--fc-serif); font-style:italic; font-weight:400; font-size:2.4rem; line-height:1.05; font-variant-numeric:tabular-nums; } .fc-kpi span { font-size:.78rem; color:var(--fc-muted); }
+.fc-kpi b { display:block; font-weight:300; font-size:2.4rem; line-height:1.05; font-variant-numeric:tabular-nums; } .fc-kpi span { font-size:.78rem; color:var(--fc-muted); }
 .fc-tl { display:flex; gap:16px; padding:14px 0; }
-.fc-tl-n { flex:0 0 26px; font-family:var(--fc-serif); font-style:italic; font-size:1.3rem; line-height:1; color:var(--fc-faint); padding-top:2px; }
+.fc-tl-n { flex:0 0 26px; font-family:var(--fc-mono); font-size:.76rem; line-height:1.6; color:var(--fc-accent); padding-top:2px; }
 .fc-tl-b { flex:1; min-width:0; } .fc-tl-h { display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; align-items:center; font-size:.93rem; }
 .fc-tl-d { font-size:.84rem; color:var(--fc-muted); line-height:1.6; margin-top:6px; }
 .fc-note2 { font-size:.8rem; color:var(--fc-muted); line-height:1.6; margin-top:10px; }
@@ -101,7 +101,7 @@ def render_trace(r, judged, cell):
                  f'<td class="c">{pill({"ok": "ok", "warn": "warn", "bad": "bad"}[status], esc(cls))}</td><td>{qtxt}</td></tr>')
     steps.append({"title": "Compare each figure with the answer key and score it", "status": "ok", "seconds": 0,
                   "html": ('A figure counts as a <b>match</b> when it is within 1% of the SEC value. Anything else is classified by type of error '
-                           '(the full list of types is on the Method tab).'
+                           '(the full list of types is on the Study page).'
                            '<table class="fc-tbl" style="margin-top:10px"><tr><th>Field</th><th>Model said</th><th>SEC says</th><th>Result</th>'
                            f'<th>Quote in filing?</th></tr>{rows}</table>')})
     st.markdown(f'<div class="fc-note2">Condition <b>{esc(cell)}</b> &middot; {esc(res.get("model", ""))} &middot; every step below was run live for this answer.</div>',
@@ -138,10 +138,8 @@ def _source(obj):
         return "(source not available)"
 
 
-def render_method():
-    man = study.load_json(study.MANIFEST_JSON, {})
-    st.markdown('<div class="fc-h2">How FilingCheck works, and how we check it</div>'
-                '<div class="fc-lead">The study asks: when a language model reads a 10-K, how often does it get the key numbers right, '
+def render_method_core():
+    st.markdown('<div class="fc-lead">The study asks: when a language model reads a 10-K, how often does it get the key numbers right, '
                 'and when it is wrong, is the number misread or made up? Every number the model gives is compared with the figure the '
                 'company itself filed with the SEC in machine-readable form, so no one has to judge answers by hand.</div>'
                 '<div class="fc-flow">'
@@ -162,7 +160,7 @@ def render_method():
     st.markdown(f'<table class="fc-tbl"><tr><th>Field</th><th>XBRL tags tried, in order</th><th>Covers</th></tr>{trs}</table>', unsafe_allow_html=True)
     st.markdown('<div class="fc-note2"><b>Rules for the answer key</b><br>' + "<br>".join("&bull; " + esc(x) for x in study.KEY_RULES) +
                 '<br><b>Known weakness:</b> the answer key can itself be wrong or ambiguous (for example a company reporting both consolidated and '
-                'attributable net income). We flag items where tags disagree, and the Study results tab shows how often a hand check found the key wrong.</div>',
+                'attributable net income). We flag items where tags disagree, and the results section shows how often a hand check found the key wrong.</div>',
                 unsafe_allow_html=True)
 
     st.markdown('<div class="fc-h2">The experimental conditions</div>'
@@ -180,10 +178,6 @@ def render_method():
                 f'<div class="fc-note2">Retrieval details: {esc(study.RETRIEVAL["method"])}; passages of about {study.RETRIEVAL["chunk_chars"]} characters, '
                 f'top {study.RETRIEVAL["top_k_per_field"]} per field. Few-shot examples come from companies <i>outside</i> the test sample: '
                 f'{", ".join(study.HELD_OUT)} (the first two that download cleanly).</div>', unsafe_allow_html=True)
-    with st.expander("See the exact prompt for each condition"):
-        for cell in study.ALL_CELLS:
-            st.caption(f"Condition {cell}: {study.CELLS[cell]['label']}")
-            st.code(_demo_prompt(cell), language="text")
 
     st.markdown('<div class="fc-h2">How each answer is scored</div>', unsafe_allow_html=True)
     trs = "".join(f"<tr><td class='c'><span class='tag'>{k}</span></td><td>{esc(v)}</td></tr>" for k, v in study.CLASS_DEFS.items())
@@ -192,6 +186,14 @@ def render_method():
                 'so a failure of our statement finder is never blamed on the model. Confidence intervals come from resampling whole filings, '
                 'because the four numbers from one filing are not independent.</div>', unsafe_allow_html=True)
 
+
+
+def render_method_appendix():
+    man = study.load_json(study.MANIFEST_JSON, {})
+    with st.expander("See the exact prompt for each condition"):
+        for cell in study.ALL_CELLS:
+            st.caption(f"Condition {cell}: {study.CELLS[cell]['label']}")
+            st.code(_demo_prompt(cell), language="text")
     st.markdown('<div class="fc-h2">The code behind each step</div>'
                 '<div class="fc-lead">This is the real source, read from the files this site runs, not a copy.</div>', unsafe_allow_html=True)
     for title, obj in (("Find the latest 10-K (pipeline.get_latest_10k)", P.get_latest_10k),
@@ -219,14 +221,6 @@ def render_method():
                 'That is why final runs are repeated and the spread reported. Every raw model reply is saved in <span class="tag">results/study/raw/</span> '
                 'and every score is recomputed from those files.</div>', unsafe_allow_html=True)
 
-    st.markdown('<div class="fc-h2">Limits to keep in mind</div>'
-                '<div class="fc-note2" style="font-size:.88rem">'
-                '&bull; Four fields from the annual report of U.S. filers; quarterly reports and other items are not covered.<br>'
-                '&bull; Sixty companies is enough to compare conditions but not to describe every industry; groups of six are shown for context only.<br>'
-                '&bull; Retrieval uses keyword ranking (BM25), not neural embeddings, so it is a simple retrieval baseline.<br>'
-                '&bull; A wrong number that happens to appear elsewhere in the filing is counted as a wrong value, not a fabrication.<br>'
-                '&bull; The newest filings may be newer than a model\'s training data, which matters for the closed-book condition.</div>',
-                unsafe_allow_html=True)
 
 
 # ---------------------------------------------------------------------- study
@@ -253,7 +247,7 @@ def render_study():
     path = "results/study/summary_noamb.json" if st.session_state.get("clean_key") else "results/study/summary.json"
     if not os.path.exists("results/study/summary.json"):
         st.markdown('<div class="fc-h2">Study results</div><div class="fc-empty fc-lg"><b>No study results yet.</b><br>'
-                    '<span class="fc-note2">Run these in your project folder, then reload this page. Each step is explained on the Method tab.</span></div>',
+                    '<span class="fc-note2">Run these in your project folder, then reload this page. Each step is explained on the Study page.</span></div>',
                     unsafe_allow_html=True)
         st.code("python study.py prepare\npython study.py estimate\npython study.py run --budget 5\npython analyze_study.py", language="bash")
         return
@@ -269,11 +263,6 @@ def render_study():
     shown.sort(key=lambda e: (["A"] + study.ALL_CELLS).index(e["cell"]))
     best = max((e for e in shown if e["accuracy"][0] is not None and e["cell"] != "A"), key=lambda e: e["accuracy"][0])
     audit = (s.get("audit") or {}).get("random")
-    kp = [(f"{s['n_filings']}", "filings analysed"), (f"{max(e['n_items'] for e in shown)}", "items scored per condition"),
-          (_pct(best["accuracy"][0]), f"best accuracy (condition {best['cell']})"),
-          (f"{audit['key_wrong']} of {audit['checked']}" if audit else "not yet", "SEC answer keys wrong in our hand check")]
-    st.markdown('<div class="fc-h2">What the study found</div><div class="fc-kpis">' +
-                "".join(f'<div class="fc-kpi fc-lg"><b>{esc(a)}</b><span>{esc(b)}</span></div>' for a, b in kp) + '</div>', unsafe_allow_html=True)
 
     trs = ""
     for e in shown:
@@ -357,3 +346,207 @@ def render_study():
         st.download_button("Download all items (CSV)", df.to_csv(index=False), "filingcheck_items.csv", "text/csv")
     if os.path.exists("results/study/cell_summary.csv"):
         st.download_button("Download the summary table (CSV)", open("results/study/cell_summary.csv").read(), "cell_summary.csv", "text/csv")
+
+
+# ------------------------------------------------------------------ the sky
+# A night horizon over a dark globe. Each study company is a point on the surface, linked by an arc to
+# the SEC XBRL answer key: the background shows the method. Drawn 1:1 in CSS px vertically
+# (viewBox 2400 wide, sliced to the viewport width), so the horizon sits at a known height.
+
+def sky_html(horizon=780):
+    import math
+    import random
+    try:
+        tickers = list(study.load_json(study.FILINGS_JSON, {}).keys())
+    except Exception:
+        tickers = []
+    tickers = tickers or ["AAPL", "MSFT", "JPM", "KO", "WMT", "XOM", "PFE", "NVDA", "HD", "CAT"]
+    rnd = random.Random(218)
+    W, R = 2400, 2600
+    cx, cy = W / 2, horizon + R
+
+    def surface(x, depth):
+        return cy - math.sqrt(max(R * R - (x - cx) ** 2, 0)) + depth
+
+    hub = (cx, surface(cx, 70))
+    picks = rnd.sample(tickers, min(14, len(tickers)))
+    nodes = []
+    for i, t in enumerate(picks):
+        side = -1 if i % 2 else 1
+        x = cx + side * (90 + (i // 2) * 105 + rnd.uniform(-30, 30))
+        nodes.append((t, x, surface(x, rnd.uniform(24, 230))))
+    lat = "".join(f'<circle cx="{cx}" cy="{cy}" r="{R - d}" class="lat"/>' for d in (60, 150, 270, 420))
+    arcs, pulses = "", ""
+    for i, (t, x, y) in enumerate(nodes):
+        lift = 90 + abs(x - hub[0]) * .28
+        d = f"M{x:.0f} {y:.0f} Q{(x + hub[0]) / 2:.0f} {min(y, hub[1]) - lift:.0f} {hub[0]:.0f} {hub[1]:.0f}"
+        arcs += f'<path d="{d}" class="arc"/>'
+        pulses += f'<path d="{d}" class="pulse" style="animation-duration:{4 + (i % 5) * 1.3:.1f}s;animation-delay:-{i * .7:.1f}s"/>'
+    for (_, x1, y1), (_, x2, y2) in zip(nodes[::3], nodes[1::3]):
+        arcs += f'<path d="M{x1:.0f} {y1:.0f} Q{(x1 + x2) / 2:.0f} {min(y1, y2) - 70:.0f} {x2:.0f} {y2:.0f}" class="arc faint"/>'
+    dots = "".join(f'<g class="node"><circle cx="{x:.0f}" cy="{y:.0f}" r="7" class="halo"/><circle cx="{x:.0f}" cy="{y:.0f}" r="2.6" class="dot"/>'
+                   f'<text x="{x + 9:.0f}" y="{y - 7:.0f}">{esc(t)}</text></g>' for t, x, y in nodes)
+    hub_g = (f'<g class="hub"><circle cx="{hub[0]:.0f}" cy="{hub[1]:.0f}" r="16" class="halo"/><circle cx="{hub[0]:.0f}" cy="{hub[1]:.0f}" r="4.5" class="dot"/>'
+             f'<text x="{hub[0]:.0f}" y="{hub[1] + 30:.0f}" text-anchor="middle">SEC XBRL</text></g>')
+    return (f'<div class="fc-sky" aria-hidden="true" style="--horizon:{horizon}px"><svg viewBox="0 0 {W} {horizon + 520}" preserveAspectRatio="xMidYMin slice">'
+            '<defs><radialGradient id="fcPlanet" cx="50%" cy="0%" r="60%"><stop offset="0" stop-color="#0d1a2c"/><stop offset=".5" stop-color="#070c16"/>'
+            '<stop offset="1" stop-color="#05070d"/></radialGradient>'
+            '<filter id="fcGlow" x="-20%" y="-200%" width="140%" height="500%"><feGaussianBlur stdDeviation="22"/></filter></defs>'
+            f'<ellipse cx="{cx}" cy="{horizon + 10}" rx="1500" ry="90" class="atmo" filter="url(#fcGlow)"/>'
+            f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="url(#fcPlanet)"/>{lat}'
+            f'<circle cx="{cx}" cy="{cy}" r="{R}" class="rim"/>{arcs}{pulses}{dots}{hub_g}</svg></div>')
+
+
+# ------------------------------------------------------------- study page
+
+STUDY_CSS = """<style>
+.fs-hero { position:relative; isolation:isolate; text-align:center; padding:96px 0 0; }
+.fs-kick { font-family:var(--fc-mono); font-size:.72rem; font-weight:500; letter-spacing:.2em; text-transform:uppercase; color:var(--fc-accent); }
+.fs-title { font-weight:300; font-size:clamp(2.6rem,6.2vw,4.9rem); line-height:1.02; letter-spacing:-.045em; margin:22px auto 20px; max-width:900px; }
+.fs-title span { color:var(--fc-faint); }
+.fs-meta { font-size:.95rem; color:var(--fc-muted); } .fs-meta b { color:var(--fc-fg); font-weight:500; }
+.fs-toc { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin:30px auto 0; max-width:760px; }
+.fs-toc a { text-decoration:none !important; color:var(--fc-muted) !important; font-size:.82rem; padding:7px 14px; border-radius:999px; }
+.fs-toc a:hover { color:var(--fc-fg) !important; }
+.fs-kpis { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; margin-top:120px; text-align:left; }
+.fs-kpi { border-radius:20px; padding:20px 22px; }
+.fs-kpi small { display:block; font-family:var(--fc-mono); font-size:.66rem; letter-spacing:.14em; text-transform:uppercase; color:var(--fc-faint); }
+.fs-kpi b { display:block; font-weight:300; font-size:2.7rem; letter-spacing:-.04em; line-height:1; margin:18px 0 8px; font-variant-numeric:tabular-nums; }
+.fs-kpi span { font-size:.84rem; color:var(--fc-muted); line-height:1.45; display:block; }
+.fs-sec { padding-top:120px; scroll-margin-top:20px; }
+.fs-sec-h { display:grid; grid-template-columns:110px minmax(0,1fr); gap:20px; margin-bottom:26px; align-items:start; }
+.fs-num { font-weight:200; font-size:3.4rem; line-height:.9; letter-spacing:-.04em; color:var(--fc-faint); font-variant-numeric:tabular-nums; }
+.fs-h { font-weight:300; font-size:clamp(2rem,4vw,3rem); letter-spacing:-.04em; line-height:1.06; margin-top:12px; }
+.fs-body { margin-left:0; }
+.fs-lead { font-size:1.12rem; line-height:1.65; color:var(--fc-muted); max-width:780px; }
+.fs-lead + .fs-lead { margin-top:14px; } .fs-lead b { color:var(--fc-fg); font-weight:500; }
+.fs-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px; margin-top:26px; }
+.fs-cards.three { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.fs-card { border-radius:20px; padding:22px 24px 24px; }
+.fs-card small { font-family:var(--fc-mono); font-size:.66rem; letter-spacing:.14em; text-transform:uppercase; color:var(--fc-faint); }
+.fs-card h4 { font-size:1.12rem; font-weight:500; letter-spacing:-.02em; margin:12px 0 8px; color:var(--fc-fg); }
+.fs-card p { font-size:.9rem; line-height:1.55; color:var(--fc-muted); margin:0; }
+.fs-card .fs-big { font-weight:300; font-size:3rem; letter-spacing:-.04em; line-height:1; margin:16px 0 10px; color:var(--fc-fg); }
+.fs-card .fs-big.bad { color:var(--fc-bad); } .fs-card .fs-big.ok { color:var(--fc-accent); }
+.fs-refs { font-size:.84rem; color:var(--fc-muted); line-height:1.6; } .fs-refs p { margin:0 0 10px; }
+.fs-refs a { color:var(--fc-link) !important; }
+.fs-body .fc-h2 { font-size:1.25rem; font-weight:500; margin:40px 0 8px; letter-spacing:-.02em; }
+@media (max-width: 760px) {
+  .fs-cards.three { grid-template-columns:1fr; }
+  .fs-kpis { grid-template-columns:1fr 1fr; margin-top:110px; } .fs-sec-h { grid-template-columns:1fr; gap:4px; } .fs-body { margin-left:0; }
+  .fs-num { font-size:2.4rem; } .fs-hero { min-height:0; padding-bottom:20px; } }
+</style>"""
+
+
+def _sec(n, sid, kick, title):
+    st.markdown(f'<div class="fs-sec" id="{sid}"><div class="fs-sec-h"><div class="fs-num">{n}</div>'
+                f'<div><div class="fs-kick">{kick}</div><div class="fs-h">{title}</div></div></div></div>', unsafe_allow_html=True)
+
+
+def _body(html_text):
+    st.markdown(f'<div class="fs-body">{html_text}</div>', unsafe_allow_html=True)
+
+
+def _cell(s, name):
+    rows = [e for e in s.get("cells", []) if e["cell"] == name]
+    return next((e for e in rows if e["model"] != "regex"), rows[0] if rows else None)
+
+
+def headline_findings(s):
+    """The four numbers the study is about, read from the summary so they never drift from the tables."""
+    a, b, c, e = (_cell(s, k) for k in ("A", "B", "C", "E"))
+    if not all((a, b, c, e)):
+        return []
+    pct = lambda v: f"{100 * v:.0f}%" if v is not None and v >= .1 else f"{100 * v:.1f}%"
+    return [
+        ("Condition C · few-shot", pct(c["accuracy"][0]), "ok", "Accuracy when the model reads the statements, with worked examples."),
+        ("Condition B · fabrication", pct(b["fabrication"][0]), "", "Of answers were numbers that appear nowhere in the filing."),
+        ("Condition E · closed-book", pct(e["fabrication"][0]), "bad", "Fabricated when the model answers from memory, with no filing."),
+        ("Condition A · no model", pct(a["accuracy"][0]), "", f"For a keyword baseline. Reading with an LLM adds "
+                                                             f"{100 * (b['accuracy'][0] - a['accuracy'][0]):.0f} points."),
+    ]
+
+
+def render_study_page():
+    st.markdown(STUDY_CSS, unsafe_allow_html=True)
+    s = study.load_json("results/study/summary.json", {})
+    models = sorted({e["model"] for e in s.get("cells", []) if e["model"] != "regex"})
+    def pretty(m):  # claude-haiku-5-5 -> Claude Haiku 5.5
+        parts = m.split("-")
+        words = [w.title() for w in parts if not w.isdigit()]
+        nums = [w for w in parts if w.isdigit()]
+        return " ".join(words) + (" " + ".".join(nums) if nums else "")
+    model_name = ", ".join(pretty(m) for m in models) or "Claude"
+    finds = headline_findings(s)
+    kpis = "".join(f'<div class="fs-kpi fc-lg"><small>{esc(k)}</small><b>{esc(v)}</b><span>{esc(t)}</span></div>' for k, v, _, t in finds)
+    toc = "".join(f'<a class="fc-chip" href="#{i}" target="_self">{t}</a>' for i, t in (
+        ("problem", "Problem"), ("related", "Related work"), ("method", "Method"), ("results", "Results"),
+        ("findings", "Findings"), ("conclusion", "Conclusion"), ("appendix", "Appendix")))
+    st.markdown('<div class="fs-hero">' + sky_html(720) +
+                '<div class="fs-kick">CMPT 218 &middot; Fall 2026 &middot; Final project</div>'
+                '<div class="fs-title">Measuring LLM accuracy <span>and fabrication on SEC 10-K extraction</span></div>'
+                '<div class="fs-meta"><b>William Huang, Vincent Zhao, James Park</b> &middot; Simon Fraser University</div>'
+                f'<div class="fs-toc">{toc}</div>'
+                f'<div class="fs-kpis">{kpis}</div></div>', unsafe_allow_html=True)
+
+    _sec("01", "problem", "The problem", "10-Ks are long. People ask AI instead.")
+    _body('<div class="fs-lead">SEC filings are how investors judge a company\'s health and risks, but a 10-K runs past a hundred pages of '
+          'legal language. The 1998 Plain English rule only covers a few sections, and XBRL tags make figures machine-readable but '
+          'not readable to most people.</div>'
+          '<div class="fs-lead">So people increasingly paste filings into an AI model. Models can <b>misread</b> a table or '
+          '<b>fabricate</b> a number. We measure how often each happens, using the SEC\'s own XBRL data as the answer key.</div>')
+
+    _sec("02", "related", "Related work", "Where this sits.")
+    _body('<div class="fs-cards">'
+          '<div class="fs-card fc-lg"><small>Chen et al. · 2021</small><h4>FinQA</h4><p>Expert-written questions with step-by-step '
+          'calculations. Tests numerical reasoning; models trailed human experts.</p></div>'
+          '<div class="fs-card fc-lg"><small>Islam et al. · 2023</small><h4>FinanceBench</h4><p>10,231 questions over 40 companies. 81% of '
+          'answers were wrong or refused. Human-checked answers; ours come from XBRL.</p></div>'
+          '<div class="fs-card fc-lg"><small>Zhu et al. · 2021</small><h4>TAT-QA</h4><p>Mixed tables and text. Best model 58% vs 90.8% for '
+          'experts, scored right or wrong only. We classify why answers are wrong.</p></div></div>')
+
+    _sec("03", "method", "Method", "One answer key. Nine conditions.")
+    render_method_core()
+
+    _sec("04", "results", "Results", f"How {esc(model_name)} did.")
+    with st.container():
+        render_study()
+
+    _sec("05", "findings", "Key findings", "What the numbers say.")
+    p = {x["a"] + "-" + x["b"]: x for x in s.get("paired", [])}
+    def pts(k):
+        x = p.get(k)
+        return f"{100 * x['diff']:+.1f} points (95% interval {100 * x['lo']:+.0f} to {100 * x['hi']:+.0f})" if x else ""
+    cards = [
+        ("Reading beats rules", pts("B-A"), "The model reading the statements beats keyword matching by a wide margin, with fabrication staying under 1%."),
+        ("Examples help a little", pts("C-B"), "Few-shot prompting gives a small, marginal gain over zero-shot."),
+        ("Retrieval hurts", pts("D-B"), "Showing only search-retrieved passages is worse than handing over the full statements."),
+        ("Memory is not reading", pts("E-B"), "Without the filing, the model is mostly wrong, and most of what it says is fabricated."),
+        ("“I don’t know” barely matters", pts("B+F-B"), "Allowing null answers changes accuracy very little. Closed-book, the model simply never answers."),
+        ("The key can be wrong", "", "With ambiguous XBRL keys removed, zero-shot rises to the top: much of the remaining error is the answer key, not the model."),
+    ]
+    _body('<div class="fs-cards three">' + "".join(f'<div class="fs-card fc-lg"><h4>{esc(h)}</h4><p>{esc(t)}</p>'
+                                              + (f'<p style="margin-top:12px;font-family:var(--fc-mono);font-size:.74rem;color:var(--fc-accent)">{esc(d)}</p>' if d else "")
+                                              + '</div>' for h, d, t in cards) + '</div>')
+
+    _sec("06", "conclusion", "Conclusion", "Trust it to read. Still check.")
+    _body('<div class="fs-lead">Given the financial statements, the model extracts the four fields accurately and rarely fabricates. '
+          'Without the document it is mostly wrong and mostly made up. An LLM can be trusted to read simple fields from a filing, '
+          'but the values should still be double-checked, which is what FilingCheck does for every answer.</div>'
+          '<div class="fs-cards">'
+          '<div class="fs-card fc-lg"><small>Limits</small><p>Four fields, one model, about sixty companies, annual reports only. '
+          'Retrieval is keyword-based (BM25), not neural.</p></div>'
+          '<div class="fs-card fc-lg"><small>Future work</small><p>More models, a larger sample, harder questions, and hand-verifying '
+          'the ambiguous answer keys.</p></div>'
+          '<div class="fs-card fc-lg"><small>Ethics</small><p>Public data only. Easy access can invite over-trust, so every answer is '
+          'labelled AI-generated, checked against the SEC, and marked not financial advice.</p></div></div>')
+
+    _sec("07", "appendix", "Appendix", "Prompts, code and reproducibility.")
+    render_method_appendix()
+    st.markdown('<div class="fs-body"><div class="fc-h2">References</div><div class="fs-refs">'
+                '<p>[1] Chen et al. FinQA: A Dataset of Numerical Reasoning over Financial Data. EMNLP 2021.</p>'
+                '<p>[2] Islam et al. FinanceBench: A New Benchmark for Financial Question Answering. arXiv:2311.11944, 2023.</p>'
+                '<p>[3] Zhu et al. TAT-QA: A Question Answering Benchmark on a Hybrid of Tabular and Textual Content in Finance. ACL 2021.</p>'
+                '<p>[4] Huang, Zhao, Park. Measuring LLM Accuracy and Fabrication on SEC 10-K Extraction. '
+                '<a href="https://github.com/WZH6489/Measuring-LLM-Accuracy-and-Fabrication-on-SEC-10-K-Extraction" target="_blank">GitHub</a>, 2026.</p>'
+                '</div></div>', unsafe_allow_html=True)

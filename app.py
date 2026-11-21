@@ -118,7 +118,7 @@ def analyze(ticker, cik, model, abstain):
           + ("It is allowed to answer null when unsure." if abstain else "It is not told it may decline, so it may guess.")
           + ("" if parsed is not None else " <b>The reply was not valid JSON.</b>"),
           t, "ok" if parsed is not None else "bad",
-          [("The prompt (conditions are listed on the Method tab)", prompt, f"{ticker}_prompt.txt"), ("The model's raw reply", raw, f"{ticker}_reply.txt")])
+          [("The prompt (conditions are listed on the Study page)", prompt, f"{ticker}_prompt.txt"), ("The model's raw reply", raw, f"{ticker}_reply.txt")])
     t = time.time()
     key = P.xbrl_key(cik, info["accession"], info["period_end"])
     lines = []
@@ -170,24 +170,6 @@ def judge(field, res):
 REPO = "https://github.com/WZH6489/Measuring-LLM-Accuracy-and-Fabrication-on-SEC-10-K-Extraction"
 
 
-def study_stats():
-    """Headline numbers from the latest pipeline run, if results exist."""
-    try:
-        rows = [r for r in json.load(open("results/results.json")) if r.get("key") is not None]
-    except Exception:
-        rows = []
-    stats = []
-    for col, label in (("llm_class", "of figures the AI model got right in our test"),
-                       ("regex_class", "for a simple rule-based baseline")):
-        used = [r for r in rows if r.get(col) not in (None, "not_run", "no_section")]
-        if used:
-            stats.append((f"{100 * sum(r[col] == 'match' for r in used) / len(used):.0f}%", label))
-    if rows:
-        stats.append((str(len({r["ticker"] for r in rows})), "companies in the current test set"))
-    return stats or [("10-K", "annual reports, straight from SEC EDGAR"), ("XBRL", "official data used as the answer key"),
-                     ("4", "key figures checked per filing")]
-
-
 def ask_companies(q):
     """Which companies is the question about? Up to three, so you can compare."""
     import anthropic
@@ -226,156 +208,147 @@ def history(cik, tags):
 
 
 CSS = """<style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 :root {
   color-scheme: dark;
-  /* Page and text (Apple-style dark) */
-  --fc-bg: #040406; --fc-fg: #f5f5f7; --fc-muted: rgba(245,245,247,.72); --fc-faint: rgba(245,245,247,.5);
-  --fc-hair: rgba(255,255,255,.08);
-  --fc-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', system-ui, sans-serif;
-  --fc-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif;
-  --fc-serif: 'Instrument Serif', 'New York', ui-serif, Georgia, serif;
-  /* Accent + status (text and small marks only; never a glass tint) */
-  --fc-accent: #4ba3ff; --fc-ok: #34d399; --fc-bad: #ff7a7a; --fc-warn: #f5c463;
-  /* Liquid glass: colorless tint, polished rim. Colour comes from the backdrop. */
-  --glass-tint-top: rgba(255,255,255,.07); --glass-tint-bottom: rgba(179,179,179,.04);
-  --glass-tint-top-hover: rgba(255,255,255,.11); --glass-tint-bottom-hover: rgba(179,179,179,.08);
-  --glass-rim-top: rgba(255,255,255,.42); --glass-rim-hairline: rgba(255,255,255,.08); --glass-rim-bottom: rgba(255,255,255,.05);
-  --glass-border: rgba(255,255,255,.09); --glass-shadow: 0 24px 60px rgba(0,0,0,.45);
-  --glass-menu-surface: #141418;
-  --glass-radius: 16px; --glass-radius-lg: 24px; --glass-ease: cubic-bezier(.16,1,.3,1);
-  /* Ambient mesh the glass refracts */
-  --mesh-indigo: rgba(88,92,255,.2); --mesh-violet: rgba(168,85,247,.14); --mesh-amber: rgba(255,158,84,.13); --mesh-cyan: rgba(40,200,220,.1);
+  --fc-bg: #05070d; --fc-fg: #f2f5f9; --fc-muted: rgba(226,232,240,.72); --fc-faint: rgba(226,232,240,.46); --fc-hair: rgba(255,255,255,.08);
+  --fc-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif;
+  --fc-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+  /* teal for data and highlights, sky blue for links; status colours for verdicts */
+  --fc-accent: #5eead4; --fc-link: #7cc4ff; --fc-ok: #34d399; --fc-bad: #ff7a7a; --fc-warn: #f5c463;
+  /* Liquid glass: colorless tint and a polished rim. Colour comes from the sky behind. */
+  --glass-tint-top: rgba(255,255,255,.07); --glass-tint-bottom: rgba(179,190,210,.04);
+  --glass-tint-top-hover: rgba(255,255,255,.11); --glass-tint-bottom-hover: rgba(179,190,210,.08);
+  --glass-rim-top: rgba(255,255,255,.36); --glass-rim-hairline: rgba(255,255,255,.07); --glass-rim-bottom: rgba(255,255,255,.04);
+  --glass-border: rgba(255,255,255,.1); --glass-shadow: 0 24px 60px rgba(0,0,0,.45);
+  --glass-menu-surface: #0d121c;
+  --glass-radius: 14px; --glass-radius-lg: 20px; --glass-ease: cubic-bezier(.16,1,.3,1);
 }
 html, body, .stApp, .stMarkdown, input, button, p, div { font-family: var(--fc-sans); }
 .stApp { background: var(--fc-bg); color: var(--fc-fg); letter-spacing:-.011em; -webkit-font-smoothing:antialiased; }
-/* Backdrop: mesh glows plus soft curved light bands, like a lit studio wall. */
+[data-testid="stMain"], .stApp { overflow-x:hidden; }
+/* Backdrop: a night sky, brighter overhead, with faint colour low on the sides for the glass to pick up. */
 .stApp::before { content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
   background:
-    radial-gradient(48rem 36rem at 8% -6%, var(--mesh-indigo), transparent 62%),
-    radial-gradient(40rem 30rem at 92% 18%, var(--mesh-violet), transparent 60%),
-    radial-gradient(44rem 34rem at 50% 58%, var(--mesh-amber), transparent 64%),
-    radial-gradient(46rem 36rem at 96% 104%, var(--mesh-cyan), transparent 62%),
-    radial-gradient(40rem 30rem at 0% 100%, rgba(88,92,255,.1), transparent 60%),
-    radial-gradient(140% 60% at 120% 30%, transparent 58%, rgba(255,255,255,.035) 60%, transparent 66%),
-    radial-gradient(120% 70% at -30% 85%, transparent 56%, rgba(255,255,255,.03) 58.5%, transparent 64%); }
-/* Faint starfield */
-.stApp::after { content:""; position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.55;
+    radial-gradient(120% 70% at 50% -12%, rgba(62,98,160,.45), transparent 62%),
+    radial-gradient(50rem 30rem at 88% 8%, rgba(94,234,212,.07), transparent 60%),
+    radial-gradient(50rem 40rem at 6% 62%, rgba(76,96,210,.13), transparent 60%),
+    radial-gradient(60rem 40rem at 94% 100%, rgba(40,160,170,.11), transparent 60%); }
+.stApp::after { content:""; position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.7;
   background-image:
     radial-gradient(1px 1px at 12% 18%, rgba(255,255,255,.8), transparent 60%),
     radial-gradient(1px 1px at 72% 12%, rgba(255,255,255,.6), transparent 60%),
-    radial-gradient(1.2px 1.2px at 38% 66%, rgba(255,255,255,.7), transparent 60%),
-    radial-gradient(1px 1px at 86% 54%, rgba(255,255,255,.5), transparent 60%),
-    radial-gradient(1px 1px at 54% 34%, rgba(255,255,255,.45), transparent 60%),
-    radial-gradient(1px 1px at 24% 88%, rgba(255,255,255,.55), transparent 60%),
-    radial-gradient(1.4px 1.4px at 94% 82%, rgba(255,255,255,.65), transparent 60%);
-  background-size: 420px 420px, 560px 560px, 380px 380px, 640px 640px, 300px 300px, 520px 520px, 700px 700px;
-  -webkit-mask-image: linear-gradient(180deg, #000, rgba(0,0,0,.35) 70%, rgba(0,0,0,.2)); mask-image: linear-gradient(180deg, #000, rgba(0,0,0,.35) 70%, rgba(0,0,0,.2)); }
+    radial-gradient(1.2px 1.2px at 38% 46%, rgba(255,255,255,.7), transparent 60%),
+    radial-gradient(1px 1px at 86% 34%, rgba(255,255,255,.5), transparent 60%),
+    radial-gradient(1px 1px at 54% 24%, rgba(255,255,255,.45), transparent 60%),
+    radial-gradient(1px 1px at 24% 58%, rgba(255,255,255,.5), transparent 60%),
+    radial-gradient(1.4px 1.4px at 94% 8%, rgba(255,255,255,.65), transparent 60%),
+    radial-gradient(.8px .8px at 64% 52%, rgba(255,255,255,.5), transparent 60%);
+  background-size: 420px 420px, 560px 560px, 380px 380px, 640px 640px, 300px 300px, 520px 520px, 700px 700px, 240px 240px;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, rgba(0,0,0,.5) 55%, rgba(0,0,0,.15)); mask-image: linear-gradient(180deg, #000 0%, rgba(0,0,0,.5) 55%, rgba(0,0,0,.15)); }
 @keyframes fcUp { from { opacity:0; transform: translateY(16px); } to { opacity:1; transform:none; } }
 @keyframes fcGrow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes fcDash { to { stroke-dashoffset: -1000; } }
+@keyframes fcTwinkle { 0%, 100% { opacity:.55; } 50% { opacity:1; } }
 [data-testid="stAppViewContainer"], .block-container { position:relative; z-index:1; background:transparent; }
-header[data-testid="stHeader"], [data-testid="stToolbar"], #MainMenu, footer { display:none !important; }
-.block-container { max-width: 1080px; padding-top: 1rem; padding-bottom: 3rem; }
+header[data-testid="stHeader"], [data-testid="stToolbar"], #MainMenu, footer, [data-testid="stSidebarNav"], [data-testid="stSidebarCollapsedControl"] { display:none !important; }
+.block-container { max-width: 1120px; padding-top: 1rem; padding-bottom: 3rem; }
 [data-testid="stElementContainer"]:has(iframe) { position:absolute; height:0; overflow:hidden; }
 [data-testid="InputInstructions"] { display:none !important; }
-[data-testid="stMarkdownContainer"]:has(.fc-hero), [data-testid="stElementContainer"]:has(.fc-hero) { overflow:visible !important; }
+[data-testid="stElementContainer"]:has(.fc-hero), [data-testid="stElementContainer"]:has(.fs-hero),
+[data-testid="stMarkdownContainer"]:has(.fc-hero), [data-testid="stMarkdownContainer"]:has(.fs-hero) { overflow:visible !important; }
 
 /* ---- Glass tiers ---------------------------------------------------------------- */
-/* Panel tier: refraction is added by glass.py on top of this blur fallback. */
-.fc-lg, [data-testid="stTextInputRootElement"], [data-testid="stExpander"] details {
+.fc-lg, [data-testid="stForm"], [data-testid="stExpander"] details {
   position:relative; border:1px solid var(--glass-border) !important;
   background: linear-gradient(180deg, var(--glass-tint-top), var(--glass-tint-bottom)) !important;
   box-shadow: var(--glass-shadow), inset 0 1px 0 var(--glass-rim-top), inset 0 0 0 1px var(--glass-rim-hairline), inset 0 -1px 0 var(--glass-rim-bottom);
   backdrop-filter: blur(14px) saturate(140%); -webkit-backdrop-filter: blur(14px) saturate(140%); }
-/* Chip tier: CSS only, for small and repeated controls. */
 .fc-chip, .stButton button, .stDownloadButton button {
   border:1px solid var(--glass-border) !important; border-radius:999px !important;
   background: linear-gradient(180deg, var(--glass-tint-top), var(--glass-tint-bottom)) !important;
   box-shadow: inset 0 1px 0 var(--glass-rim-top);
   backdrop-filter: blur(10px) saturate(140%); -webkit-backdrop-filter: blur(10px) saturate(140%); }
 
-/* ---- Navigation: floating glass pill -------------------------------------------- */
-.fc-nav { display:flex; align-items:center; justify-content:space-between; gap:12px; max-width:880px; margin:0 auto;
-  border-radius:999px; padding:7px 7px 7px 8px; animation: fcUp .6s var(--glass-ease) both; }
+/* ---- Navigation: brand, a centred glass pill, a call to action ------------------ */
+.fc-nav { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:16px; padding:6px 0; animation: fcUp .6s var(--glass-ease) both; }
 .fc-nav a, .fc-link { text-decoration:none !important; }
-.fc-brand { display:flex; align-items:center; gap:10px; font-family:var(--fc-display); font-size:.95rem; font-weight:600; letter-spacing:-.015em; color:var(--fc-fg); }
-.fc-mark { display:grid; place-items:center; width:36px; height:36px; border-radius:50%; font-family:var(--fc-serif); font-style:italic; font-weight:400; font-size:1.3rem; line-height:1;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.16), inset 0 1px 0 rgba(255,255,255,.35); }
-.fc-links { display:flex; gap:2px; margin-left:auto; }
-.fc-links a { color:var(--fc-muted) !important; font-size:.84rem; font-weight:500; padding:8px 13px; border-radius:999px; transition: color .15s; }
+.fc-brand { display:flex; align-items:center; gap:10px; text-align:left; color:var(--fc-fg) !important; font-size:.95rem; font-weight:500; letter-spacing:-.01em; }
+.fc-brand svg { width:26px; height:26px; color:var(--fc-fg); }
+.fc-brand small { display:block; font-size:.72rem; font-weight:400; color:var(--fc-faint); letter-spacing:0; margin-top:1px; }
+.fc-links { display:flex; gap:2px; border-radius:999px; padding:5px; }
+.fc-links a { color:var(--fc-muted) !important; font-size:.84rem; font-weight:400; padding:8px 16px; border-radius:999px; transition: color .15s, background .15s; }
 .fc-links a:hover { color:var(--fc-fg) !important; }
-.fc-cta { background:var(--fc-fg); color:#0a0a0c !important; font-size:.84rem; font-weight:600; padding:9px 16px; border-radius:999px; white-space:nowrap;
-  box-shadow:0 4px 16px rgba(255,255,255,.12); transition: transform .2s var(--glass-ease), box-shadow .2s; }
-.fc-cta:hover { transform: scale(1.03); box-shadow:0 6px 22px rgba(255,255,255,.22); }
-@media (max-width: 640px) { .fc-links { display:none; } }
+.fc-links a.on { color:var(--fc-fg) !important; background:rgba(255,255,255,.1); }
+.fc-cta { justify-self:end; color:var(--fc-fg) !important; font-size:.86rem; font-weight:500; padding:11px 20px; white-space:nowrap; transition: background .2s; }
+.fc-cta:hover { background: linear-gradient(180deg, var(--glass-tint-top-hover), var(--glass-tint-bottom-hover)) !important; }
+@media (max-width: 860px) { .fc-nav { grid-template-columns:1fr auto; } .fc-links { display:none; } }
 
-/* ---- Hero: serif headline over a liquid orb ------------------------------------- */
-.fc-hero { position:relative; isolation:isolate; text-align:center; padding:110px 0 24px; }
-.fc-orb { position:absolute; left:50%; top:300px; z-index:-1; width:min(600px,94vw); aspect-ratio:1; translate:-50% -50%; pointer-events:none; animation: fcFloat 16s ease-in-out infinite; }
-.fc-orb::before, .fc-orb::after, .fc-orb span { content:""; position:absolute; inset:0; border-radius:46% 54% 43% 57% / 55% 44% 56% 45%; animation: fcMorph 18s ease-in-out infinite; }
-.fc-orb::before {
-  background:
-    radial-gradient(closest-side at 50% 50%, rgba(10,10,14,0) 62%, rgba(255,255,255,.1) 80%, rgba(255,255,255,.42) 95%, rgba(255,255,255,0) 100%),
-    conic-gradient(from 210deg at 50% 50%, rgba(255,150,90,.05), rgba(255,178,110,.55), rgba(255,236,200,.25), rgba(120,150,255,.5), rgba(80,220,230,.35), rgba(200,120,255,.45), rgba(255,150,90,.05));
-  -webkit-mask-image: radial-gradient(closest-side, rgba(0,0,0,.18) 48%, rgba(0,0,0,.75) 78%, #000 94%, transparent 100%);
-  mask-image: radial-gradient(closest-side, rgba(0,0,0,.18) 48%, rgba(0,0,0,.75) 78%, #000 94%, transparent 100%);
-  filter: blur(2px) saturate(130%); }
-.fc-orb::after {
-  background:
-    radial-gradient(22% 12% at 30% 18%, rgba(255,255,255,.85), transparent 70%),
-    radial-gradient(10% 22% at 14% 46%, rgba(255,255,255,.45), transparent 70%),
-    radial-gradient(30% 10% at 64% 88%, rgba(255,220,180,.7), transparent 70%),
-    radial-gradient(12% 6% at 82% 30%, rgba(200,215,255,.55), transparent 70%);
-  filter: blur(6px); mix-blend-mode: screen; }
-.fc-orb span { inset:18%; background: radial-gradient(closest-side, rgba(255,190,140,.16), rgba(120,140,255,.08) 60%, transparent); filter: blur(24px); animation-direction: reverse; }
-@keyframes fcMorph {
-  0%, 100% { border-radius:46% 54% 43% 57% / 55% 44% 56% 45%; rotate:0deg; }
-  33% { border-radius:56% 44% 52% 48% / 45% 56% 44% 55%; rotate:40deg; }
-  66% { border-radius:42% 58% 57% 43% / 52% 47% 53% 48%; rotate:-30deg; } }
-@keyframes fcFloat { 0%, 100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-14px) scale(1.02); } }
-.fc-chip { display:inline-flex; align-items:center; gap:9px; padding:7px 14px 7px 12px; font-size:.8rem; font-weight:500; color:var(--fc-muted); animation: fcUp .6s .05s var(--glass-ease) both; }
-.fc-chip i { width:7px; height:7px; border-radius:50%; background:var(--fc-ok); box-shadow:0 0 0 3px rgba(52,211,153,.18), 0 0 12px rgba(52,211,153,.7); }
-.fc-h1 { font-family:var(--fc-serif); font-weight:400; font-size:clamp(3.2rem,8.4vw,6.6rem); line-height:.98; letter-spacing:-.02em; margin:26px 0 22px; color:var(--fc-fg);
-  text-shadow:0 2px 30px rgba(0,0,0,.45); animation: fcUp .9s .1s var(--glass-ease) both; }
-.fc-h1 em { font-style:italic; background:linear-gradient(100deg,#fff 10%,#ffd9b8 45%,#c9d4ff 85%); -webkit-background-clip:text; background-clip:text; color:transparent; padding-right:.06em; }
-.fc-sub { max-width:600px; margin:0 auto 36px; font-size:clamp(1.02rem,1.6vw,1.2rem); line-height:1.5; color:var(--fc-muted); text-shadow:0 1px 18px rgba(0,0,0,.6); animation: fcUp .9s .2s var(--glass-ease) both; }
+/* ---- The sky (shared by both pages) ---------------------------------------------- */
+.fc-sky { position:absolute; z-index:-1; left:50%; top:-90px; width:100vw; translate:-50% 0; height:calc(var(--horizon) + 520px); pointer-events:none; overflow:hidden;
+  -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent); mask-image: linear-gradient(180deg, #000 80%, transparent); }
+.fc-sky svg { position:absolute; inset:0; width:100%; height:100%; }
+.fc-sky .atmo { fill: rgba(94,200,255,.28); }
+.fc-sky .rim { fill:none; stroke: rgba(180,235,255,.75); stroke-width:1.4; filter: drop-shadow(0 -4px 14px rgba(94,234,212,.55)); }
+.fc-sky .lat { fill:none; stroke: rgba(255,255,255,.045); stroke-width:1; }
+.fc-sky .arc { fill:none; stroke: rgba(94,234,212,.32); stroke-width:1; } .fc-sky .arc.faint { stroke: rgba(94,234,212,.14); }
+.fc-sky .pulse { fill:none; stroke: #9ff5e6; stroke-width:2; stroke-linecap:round; stroke-dasharray: 3 997; animation: fcDash 6s linear infinite; filter: drop-shadow(0 0 4px #5eead4); }
+.fc-sky .dot { fill:#e6fffb; } .fc-sky .halo { fill: rgba(94,234,212,.16); }
+.fc-sky .node .halo { animation: fcTwinkle 4s ease-in-out infinite; }
+.fc-sky text { font-family: 'JetBrains Mono', monospace; font-size:11px; letter-spacing:.06em; fill: rgba(226,240,255,.55); }
+.fc-sky .hub .dot { fill:#5eead4; } .fc-sky .hub .halo { fill: rgba(94,234,212,.22); }
+.fc-sky .hub text { fill:#9ff5e6; font-size:12px; letter-spacing:.18em; }
 
-/* ---- Search form ---------------------------------------------------------------- */
-[data-testid="stForm"] { border:none !important; padding:0 !important; max-width:700px; margin:0 auto; animation: fcUp .9s .3s var(--glass-ease) both; }
-[data-testid="stTextInputRootElement"] { border-radius:999px !important; overflow:hidden; transition: border-color .2s; }
-[data-testid="stTextInputRootElement"]:focus-within { border-color: rgba(255,255,255,.35) !important; }
-.stTextInput [data-baseweb="base-input"], .stTextInput [data-baseweb="input"] { background:transparent !important; border:none !important; }
-.stTextInput input { background:transparent !important; border:none !important; color:var(--fc-fg) !important; -webkit-text-fill-color:var(--fc-fg); caret-color:var(--fc-accent); padding:.9rem 1.4rem !important; font-size:1.02rem; }
+/* ---- Hero ----------------------------------------------------------------------- */
+.fc-hero { position:relative; isolation:isolate; text-align:center; padding:0; }
+.fc-chip { display:inline-flex; align-items:center; gap:9px; padding:6px 14px 6px 8px; font-size:.8rem; font-weight:400; color:var(--fc-muted); animation: fcUp .6s .05s var(--glass-ease) both; }
+.fc-chip b { font-weight:600; color:var(--fc-fg); }
+.fc-tick-row { display:inline-flex; } .fc-tick-row i { font-style:normal; font-family:var(--fc-mono); font-size:.58rem; font-weight:500; width:26px; height:26px; border-radius:50%;
+  display:grid; place-items:center; background:#0d1626; color:var(--fc-accent); box-shadow:0 0 0 1.5px #05070d, inset 0 0 0 1px rgba(94,234,212,.35); margin-left:-6px; }
+.fc-tick-row i:first-child { margin-left:0; }
+.fc-h1 { font-weight:300; font-size:clamp(2.9rem,7vw,5.6rem); line-height:1.02; letter-spacing:-.05em; margin:24px 0 20px; color:var(--fc-fg);
+  text-shadow:0 2px 30px rgba(0,0,0,.4); animation: fcUp .9s .1s var(--glass-ease) both; }
+.fc-sub { max-width:520px; margin:0 auto 34px; font-size:clamp(1rem,1.5vw,1.12rem); font-weight:400; line-height:1.55; color:var(--fc-muted); animation: fcUp .9s .2s var(--glass-ease) both; }
+
+/* ---- Search: one glass pill with the button inside ------------------------------ */
+[data-testid="stForm"] { max-width:600px; margin:0 auto; padding:6px 6px 6px 10px !important; border-radius:999px !important; animation: fcUp .9s .3s var(--glass-ease) both; }
+[data-testid="stForm"] [data-testid="stHorizontalBlock"] { gap:6px !important; align-items:center !important; }
+[data-testid="stTextInputRootElement"], .stTextInput [data-baseweb="base-input"], .stTextInput [data-baseweb="input"] { background:transparent !important; border:none !important; box-shadow:none !important; }
+.stTextInput input { background:transparent !important; border:none !important; color:var(--fc-fg) !important; -webkit-text-fill-color:var(--fc-fg); caret-color:var(--fc-accent); padding:.7rem .8rem !important; font-size:1rem; }
 .stTextInput input::placeholder { color:var(--fc-faint); -webkit-text-fill-color:var(--fc-faint); }
-/* Primary button: solid white pill, like the portfolio's primary CTA. */
-[data-testid="stFormSubmitButton"] button { border-radius:999px !important; min-height:3rem; font-weight:600; background:var(--fc-fg) !important; border:1px solid transparent !important;
-  box-shadow: 0 8px 28px rgba(255,255,255,.14), inset 0 1px 0 #fff; transition: transform .2s var(--glass-ease), box-shadow .2s, background .2s; }
-[data-testid="stFormSubmitButton"] button:hover { transform: translateY(-1px); background:#fff !important; box-shadow: 0 10px 34px rgba(255,255,255,.24), inset 0 1px 0 #fff; }
-[data-testid="stFormSubmitButton"] button p { color:#0a0a0c !important; font-weight:600; }
-.stButton button, .stDownloadButton button { color:var(--fc-muted) !important; padding:.4rem 1rem; transition: transform .2s var(--glass-ease), color .15s, background .15s; }
-.stButton button p, .stDownloadButton button p { font-size:.84rem; color:inherit !important; }
+[data-testid="stFormSubmitButton"] button { border-radius:999px !important; min-height:2.9rem; background:rgba(242,245,249,.94) !important; border:1px solid transparent !important;
+  box-shadow: 0 6px 22px rgba(160,220,255,.16), inset 0 1px 0 #fff; transition: transform .2s var(--glass-ease), background .2s; }
+[data-testid="stFormSubmitButton"] button:hover { transform: translateY(-1px); background:#fff !important; }
+[data-testid="stFormSubmitButton"] button p { color:#06080e !important; font-weight:600; font-size:.92rem; }
+.stButton button, .stDownloadButton button { color:var(--fc-muted) !important; padding:.38rem 1rem; transition: transform .2s var(--glass-ease), color .15s, background .15s; }
+.stButton button p, .stDownloadButton button p { font-size:.82rem; color:inherit !important; }
 .stButton button:hover, .stDownloadButton button:hover { transform: translateY(-1px); color:var(--fc-fg) !important;
   background: linear-gradient(180deg, var(--glass-tint-top-hover), var(--glass-tint-bottom-hover)) !important; }
-.fc-row-l { text-align:center; font-size:.76rem; font-weight:500; color:var(--fc-faint); margin:10px 0 0; }
+.fc-row-l { text-align:center; font-family:var(--fc-mono); font-size:.66rem; letter-spacing:.16em; text-transform:uppercase; color:var(--fc-faint); margin:14px 0 4px; }
 
-/* ---- Headline stats: separate glass cards with serif figures --------------------- */
-.fc-stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; margin:64px auto 0; max-width:780px; }
-.fc-stat { border-radius:var(--glass-radius-lg); padding:20px 22px 22px; text-align:left; animation: fcUp .8s .35s var(--glass-ease) both; transition: transform .22s var(--glass-ease), background .22s; }
-.fc-stat:hover { transform: translateY(-3px); background: linear-gradient(180deg, var(--glass-tint-top-hover), var(--glass-tint-bottom-hover)) !important; }
-.fc-stat-i { display:grid; place-items:center; width:30px; height:30px; border-radius:50%; margin-bottom:26px; color:var(--fc-muted); box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); }
-.fc-stat-i svg { width:15px; height:15px; }
-.fc-stat b { display:block; font-family:var(--fc-serif); font-style:italic; font-weight:400; font-size:2.8rem; line-height:1; letter-spacing:-.01em; }
-.fc-stat span { font-size:.82rem; color:var(--fc-faint); line-height:1.45; display:block; margin-top:8px; }
+/* ---- "What we found": a row of glass cards on the horizon ------------------------ */
+.fc-found { margin-top:200px; }
+.fc-found-h { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:16px; }
+.fc-found-h span { font-size:.92rem; color:var(--fc-muted); } .fc-found-h span::before { content:"\\201C"; font-size:1.4rem; line-height:0; vertical-align:-.3em; margin-right:8px; color:var(--fc-fg); }
+.fc-found-g { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
+.fc-f { border-radius:var(--glass-radius-lg); padding:18px 20px 20px; text-align:left; animation: fcUp .8s .35s var(--glass-ease) both; transition: transform .22s var(--glass-ease); }
+.fc-f:hover { transform: translateY(-3px); }
+.fc-f small { display:block; font-family:var(--fc-mono); font-size:.64rem; letter-spacing:.12em; text-transform:uppercase; color:var(--fc-faint); }
+.fc-f b { display:block; font-weight:300; font-size:2.6rem; letter-spacing:-.045em; line-height:1; margin:22px 0 10px; font-variant-numeric:tabular-nums; }
+.fc-f b.ok { color:var(--fc-accent); } .fc-f b.bad { color:var(--fc-bad); }
+.fc-f p { font-size:.86rem; color:var(--fc-muted); line-height:1.5; margin:0; }
+.fc-f-foot { margin-top:18px; padding-top:12px; border-top:1px solid var(--fc-hair); font-size:.72rem; color:var(--fc-faint); }
+@media (max-width: 860px) { .fc-found-g { grid-template-columns:1fr 1fr; } }
 
 /* ---- Result panel --------------------------------------------------------------- */
-.fc-panel { border-radius:30px; padding:32px 34px 28px; margin-top:28px; overflow:hidden; animation: fcUp .6s var(--glass-ease) both; }
+.fc-panel { border-radius:26px; padding:30px 32px 26px; margin-top:28px; overflow:hidden; animation: fcUp .6s var(--glass-ease) both; }
 .fc-co { display:flex; justify-content:space-between; align-items:flex-end; gap:16px; flex-wrap:wrap; margin-bottom:16px; }
-.fc-co-name { font-family:var(--fc-serif); font-size:2.6rem; font-weight:400; letter-spacing:-.015em; line-height:1.05; }
-.fc-tick { font-family:'JetBrains Mono',monospace; font-size:.78rem; font-weight:500; color:var(--fc-faint); margin-left:12px; letter-spacing:.02em; vertical-align:middle; }
+.fc-co-name { font-size:2.2rem; font-weight:300; letter-spacing:-.04em; line-height:1.05; }
+.fc-tick { font-family:var(--fc-mono); font-size:.76rem; font-weight:500; color:var(--fc-accent); margin-left:12px; letter-spacing:.06em; vertical-align:middle; }
 .fc-co-meta { color:var(--fc-muted); font-size:.86rem; margin-top:8px; }
-.fc-link { font-size:.88rem; font-weight:500; color:var(--fc-accent) !important; white-space:nowrap; }
+.fc-link { font-size:.86rem; font-weight:500; color:var(--fc-link) !important; white-space:nowrap; }
 .fc-link:hover { text-decoration:underline !important; text-underline-offset:3px; }
-.fc-banner { display:flex; align-items:center; gap:9px; font-size:.9rem; font-weight:500; color:var(--fc-muted); margin:0 0 26px; }
+.fc-banner { display:flex; align-items:center; gap:9px; font-size:.9rem; color:var(--fc-muted); margin:0 0 26px; }
 .fc-banner::before { content:""; flex:0 0 8px; height:8px; border-radius:50%; }
 .fc-banner.ok::before { background:var(--fc-ok); box-shadow:0 0 10px var(--fc-ok); }
 .fc-banner.bad::before { background:var(--fc-bad); box-shadow:0 0 10px var(--fc-bad); }
@@ -383,42 +356,44 @@ header[data-testid="stHeader"], [data-testid="stToolbar"], #MainMenu, footer { d
 .fc-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:28px 30px; }
 .fc-card { animation: fcUp .6s var(--glass-ease) both; }
 .fc-card:nth-child(2) { animation-delay:.05s; } .fc-card:nth-child(3) { animation-delay:.1s; } .fc-card:nth-child(4) { animation-delay:.15s; }
-.fc-label { font-size:.8rem; font-weight:600; color:var(--fc-faint); }
-.fc-value { font-family:var(--fc-display); font-size:2.1rem; font-weight:600; letter-spacing:-.035em; margin:6px 0 2px; font-variant-numeric:tabular-nums; }
-.fc-exact { font-family:'JetBrains Mono',monospace; font-size:.74rem; color:var(--fc-faint); margin-bottom:10px; }
+.fc-label { font-family:var(--fc-mono); font-size:.66rem; letter-spacing:.14em; text-transform:uppercase; color:var(--fc-faint); }
+.fc-value { font-size:2.3rem; font-weight:300; letter-spacing:-.045em; margin:8px 0 2px; font-variant-numeric:tabular-nums; }
+.fc-exact { font-family:var(--fc-mono); font-size:.72rem; color:var(--fc-faint); margin-bottom:10px; }
 .fc-pill { display:inline-flex; align-items:center; gap:6px; font-size:.78rem; font-weight:600; white-space:nowrap; }
 .fc-pill.ok { color:var(--fc-ok); } .fc-pill.bad { color:var(--fc-bad); } .fc-pill.warn { color:var(--fc-warn); }
 .fc-note { font-size:.8rem; color:var(--fc-muted); margin-top:6px; line-height:1.45; }
 .fc-yoy { font-size:.8rem; font-weight:600; margin-top:12px; font-variant-numeric:tabular-nums; } .fc-yoy span { font-weight:400; color:var(--fc-faint); }
 .fc-yoy.up { color:var(--fc-ok); } .fc-yoy.down { color:var(--fc-bad); }
 .fc-spark { width:100%; max-width:240px; height:36px; margin-top:8px; display:block; } .fc-spark rect { transform-origin: 50% 100%; transform-box: fill-box; animation: fcGrow .6s .2s var(--glass-ease) both; }
-.fc-spark-l { max-width:240px; display:flex; justify-content:space-between; font-family:'JetBrains Mono',monospace; font-size:.64rem; color:var(--fc-faint); margin-top:4px; }
+.fc-spark-l { max-width:240px; display:flex; justify-content:space-between; font-family:var(--fc-mono); font-size:.64rem; color:var(--fc-faint); margin-top:4px; }
 .fc-ratios { display:flex; flex-wrap:wrap; gap:6px 26px; margin-top:28px; align-items:baseline; }
 .fc-ratio { font-size:.86rem; color:var(--fc-muted); }
 .fc-ratio b { font-weight:600; margin-left:7px; color:var(--fc-fg); font-variant-numeric:tabular-nums; } .fc-ratios small { color:var(--fc-faint); font-size:.76rem; }
 [data-testid="stExpander"] { margin-top:12px; } [data-testid="stExpander"] details { border-radius:var(--glass-radius) !important; }
-[data-testid="stExpander"] summary, [data-testid="stExpander"] summary p { color:var(--fc-fg) !important; font-weight:500; background:transparent !important; }
+[data-testid="stExpander"] summary, [data-testid="stExpander"] summary p { color:var(--fc-fg) !important; font-weight:400; background:transparent !important; }
 .fc-ev { padding:14px 0; } .fc-ev:first-child { padding-top:2px; }
 .fc-ev-h { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; font-size:.9rem; }
-.fc-ev-h span { font-family:'JetBrains Mono',monospace; font-size:.76rem; color:var(--fc-faint); }
-.fc-quote { font-family:'JetBrains Mono',monospace; font-size:.78rem; border-left:2px solid rgba(255,217,184,.7); padding:4px 0 4px 14px; margin:10px 0 6px; white-space:pre-wrap; word-break:break-word; color:var(--fc-fg); }
+.fc-ev-h span { font-family:var(--fc-mono); font-size:.74rem; color:var(--fc-faint); }
+.fc-quote { font-family:var(--fc-mono); font-size:.78rem; border-left:2px solid var(--fc-accent); padding:4px 0 4px 14px; margin:10px 0 6px; white-space:pre-wrap; word-break:break-word; color:var(--fc-fg); }
 .fc-qok { font-size:.78rem; color:var(--fc-ok); } .fc-qbad { font-size:.78rem; color:var(--fc-bad); font-weight:600; }
 
 /* ---- How it works + footer ------------------------------------------------------ */
-.fc-sec { margin-top:96px; }
-.fc-sec-k { font-size:.82rem; font-weight:600; color:var(--fc-faint); margin-bottom:10px; }
-.fc-sec-t { font-family:var(--fc-display); font-weight:600; font-size:clamp(2rem,4.4vw,3rem); line-height:1.08; letter-spacing:-.03em; margin-bottom:32px; }
-.fc-steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
-.fc-step { border-radius:var(--glass-radius-lg); padding:28px 28px 30px; transition: transform .22s var(--glass-ease); } .fc-step:hover { transform: translateY(-3px); }
-.fc-step-n { font-family:var(--fc-serif); font-style:italic; font-size:2.4rem; line-height:1; color:var(--fc-faint); }
-.fc-step-t { font-family:var(--fc-display); font-size:1.3rem; font-weight:600; margin:22px 0 8px; letter-spacing:-.02em; } .fc-step-d { font-size:.95rem; color:var(--fc-muted); line-height:1.55; }
-.fc-foot { margin-top:72px; padding-top:22px; border-top:1px solid var(--fc-hair); display:flex; justify-content:space-between; gap:12px 24px; flex-wrap:wrap; font-size:.8rem; color:var(--fc-faint); line-height:1.6; }
+.fc-sec { margin-top:120px; scroll-margin-top:20px; }
+.fc-sec-k { font-family:var(--fc-mono); font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--fc-accent); margin-bottom:14px; }
+.fc-sec-t { font-weight:300; font-size:clamp(2rem,4.4vw,3.2rem); line-height:1.06; letter-spacing:-.045em; margin-bottom:34px; max-width:720px; }
+.fc-steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
+.fc-step { position:relative; border-radius:var(--glass-radius-lg); padding:24px 26px 28px; transition: transform .22s var(--glass-ease); } .fc-step:hover { transform: translateY(-3px); }
+.fc-step::after { content:"\\00d7"; position:absolute; right:20px; top:16px; color:var(--fc-faint); font-size:1rem; }
+.fc-step-n { font-family:var(--fc-mono); font-size:.72rem; letter-spacing:.14em; color:var(--fc-faint); }
+.fc-step-t { font-size:1.35rem; font-weight:400; margin:54px 0 8px; letter-spacing:-.03em; } .fc-step-d { font-size:.92rem; color:var(--fc-muted); line-height:1.55; }
+.fc-foot { margin-top:90px; padding-top:22px; border-top:1px solid var(--fc-hair); display:flex; justify-content:space-between; gap:12px 24px; flex-wrap:wrap; font-size:.78rem; color:var(--fc-faint); line-height:1.6; }
+.fc-foot b { color:var(--fc-muted); font-weight:600; }
 .fc-foot a { color:var(--fc-faint) !important; text-decoration:none !important; } .fc-foot a:hover { color:var(--fc-fg) !important; }
 [data-testid="stSpinner"] { justify-content:center; } [data-testid="stSpinner"] p { color:var(--fc-muted) !important; }
-/* Menu tier: dropdowns float over arbitrary content, so they get a heavy frost for legibility. */
 div[data-baseweb="popover"] > div, div[data-baseweb="popover"] ul { background: color-mix(in srgb, var(--glass-menu-surface) 92%, transparent) !important;
   backdrop-filter: blur(24px) saturate(150%); -webkit-backdrop-filter: blur(24px) saturate(150%); border-radius:var(--glass-radius) !important; }
-@media (max-width: 640px) { .fc-hero { padding-top:80px; } .fc-orb { top:270px; } .fc-panel { padding:24px 22px; border-radius:24px; } .fc-co-name { font-size:2rem; } }
+@media (max-width: 640px) { .fc-panel { padding:24px 22px; border-radius:22px; } .fc-co-name { font-size:1.8rem; }
+  .fc-found { margin-top:150px; } .fc-found-g { grid-template-columns:1fr; } [data-testid="stForm"] { border-radius:28px !important; padding:8px !important; } }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 </style>"""
 TYPER = """<script>
@@ -437,10 +412,6 @@ tick();
 </script>"""
 TYPED = ["Microsoft revenue and net income", "Compare Apple and Nvidia operating income", "How big are Walmart's total assets?",
          "What did Coca-Cola earn last year?", "Tesla vs Ford revenue"]
-STAT_ICONS = [
-    '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="m3.5 8.5 3 3 6-7"/></svg>',
-    '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M3 13V8M8 13V3M13 13V6"/></svg>',
-    '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2H4.5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V5z"/><path d="M9.5 2v3h3"/></svg>']
 PILL = {"ok": "&#10003; Verified", "bad": "&#10007; Mismatch", "warn": "Unverified"}
 esc = html.escape
 
@@ -511,7 +482,7 @@ def trend(field, r):
         bars = ""
         for i, (e, v) in enumerate(hist):
             h = max(2, 30 * abs(v) / hi)
-            fill = "#ff7a7a" if v < 0 else ("#4ba3ff" if i == len(hist) - 1 else "rgba(233,236,242,.28)")
+            fill = "#ff7a7a" if v < 0 else ("#5eead4" if i == len(hist) - 1 else "rgba(233,236,242,.28)")
             bars += (f'<rect x="{i * bw + bw * .16:.1f}" y="{32 - h:.1f}" width="{bw * .68:.1f}" height="{h:.1f}" rx="1.5" fill="{fill}">'
                      f'<title>FY{e[:4]}: {esc(money(v))}</title></rect>')
         out += (f'<svg class="fc-spark" viewBox="0 0 100 32" preserveAspectRatio="none">{bars}</svg>'
@@ -590,33 +561,59 @@ def to_csv(results):
     return buf.getvalue()
 
 
-st.set_page_config(page_title="FilingCheck", page_icon="🧾", layout="centered")
-st.markdown(CSS, unsafe_allow_html=True)
-st.markdown(f'<nav class="fc-nav fc-lg"><div class="fc-brand"><span class="fc-mark">F</span>FilingCheck</div>'
-            '<div class="fc-links"><a href="#how-it-works">How it works</a>'
-            '<a href="https://www.sec.gov/edgar/search/" target="_blank">SEC EDGAR</a></div>'
-            f'<a class="fc-cta" href="{REPO}" target="_blank">GitHub &#8599;</a></nav>'
-            '<div class="fc-hero"><div class="fc-orb" aria-hidden="true"><span></span></div>'
-            '<span class="fc-chip"><i></i>Verified against SEC XBRL data</span>'
-            '<div class="fc-h1">Ask a 10-K anything.<br><em>Trust the number.</em></div>'
-            '<div class="fc-sub">An AI model reads a company\'s latest annual report and answers in plain English. '
-            'Every figure is checked against the data the company filed with the SEC, so you know when to believe it.</div></div>',
-            unsafe_allow_html=True)
+LOGO = ('<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">'
+        '<circle cx="16" cy="16" r="13" opacity=".35"/><path d="M5 19c4-6 18-6 22 0" opacity=".6"/><path d="m11 15.5 3.5 3.5 7-8"/></svg>')
 
-st.markdown(ui_pages.EXTRA_CSS, unsafe_allow_html=True)
-t_lookup, t_method, t_study = st.tabs(["Lookup", "Method", "Study results"])
-with t_lookup:
+
+def nav(active):
+    link = lambda href, label, key: f'<a href="{href}" target="_self" class="{"on" if key == active else ""}">{label}</a>'
+    return ('<nav class="fc-nav">'
+            f'<a class="fc-brand" href="/" target="_self">{LOGO}<span>FilingCheck<small>10-K figures, checked</small></span></a>'
+            '<div class="fc-links fc-lg">' + link("/", "Check a filing", "home") + link("/study", "The study", "study")
+            + link("/#how-it-works", "How it works", "") + f'<a href="{REPO}" target="_blank">GitHub</a></div>'
+            + ('<a class="fc-cta fc-chip" href="/" target="_self">Check a filing &#8250;</a>' if active == "study" else
+               '<a class="fc-cta fc-chip" href="/study" target="_self">Read the study &#8250;</a>') + '</nav>')
+
+
+def footer():
+    st.markdown('<div class="fc-foot"><span><b>Not financial advice.</b> Figures are extracted by an AI model and compared with SEC XBRL data. '
+                'FilingCheck is a CMPT 218 project at Simon Fraser University by William Huang, Vincent Zhao and James Park.</span>'
+                f'<span><a href="/study" target="_self">The study</a> &nbsp;&middot;&nbsp; <a href="{REPO}" target="_blank">GitHub</a>'
+                ' &nbsp;&middot;&nbsp; <a href="https://www.sec.gov/edgar/search/" target="_blank">SEC EDGAR</a></span></div>',
+                unsafe_allow_html=True)
+
+
+def install_scripts(typer=False):
+    code = (TYPER.replace("__PHRASES__", json.dumps(TYPED)) if typer else "") + glass.loader()
+    if hasattr(st, "iframe"):  # newer Streamlit
+        st.iframe(code, height=1)
+    else:
+        st.components.v1.html(code, height=0)
+
+
+def page_home():
+    s = study.load_json("results/study/summary.json", {})
+    n = s.get("n_filings")
+    try:
+        ticks = list(study.load_json(study.FILINGS_JSON, {}).keys())[:4]
+    except Exception:
+        ticks = []
+    chip = ('<span class="fc-chip"><span class="fc-tick-row">' + "".join(f"<i>{esc(t[:2])}</i>" for t in ticks) + '</span>'
+            + (f'<span><b>{n} SEC filings</b> tested in our study</span>' if n else '<span>Verified against SEC XBRL data</span>') + '</span>')
+    st.markdown(f'<div class="fc-hero">{ui_pages.sky_html(780)}{nav("home")}<div style="height:84px"></div>{chip}'
+                '<div class="fc-h1">Read the 10-K.<br>Check every number.</div>'
+                '<div class="fc-sub">Ask about any U.S. public company in plain English. An AI model reads its latest annual report, '
+                'and every figure is checked against what the company filed with the SEC.</div></div>',
+                unsafe_allow_html=True)
+
     st.session_state.setdefault("q", "")
     with st.form("search", border=False):
-        c1, c2 = st.columns([5, 1], vertical_alignment="bottom")
-        q = c1.text_input("Your question", key="q", label_visibility="collapsed", placeholder=" ")
-        submitted = c2.form_submit_button("Check", use_container_width=True)
-    typer = TYPER.replace("__PHRASES__", json.dumps(TYPED)) + glass.loader()  # also installs the glass refraction
-    if hasattr(st, "iframe"):  # newer Streamlit
-        st.iframe(typer, height=1)
-    else:
-        st.components.v1.html(typer, height=0)
+        c1, c2 = st.columns([5, 1.25], vertical_alignment="center")
+        c1.text_input("Your question", key="q", label_visibility="collapsed", placeholder=" ")
+        submitted = c2.form_submit_button("Check ›", use_container_width=True)
+    install_scripts(typer=True)
 
+    st.markdown('<div class="fc-row-l">Try</div>', unsafe_allow_html=True)
     cols = st.columns([1, 3, 3, 3, 1])
     for c, ex in zip(cols[1:4], EXAMPLES):
         c.button(ex, on_click=set_question, args=(ex,), use_container_width=True)
@@ -626,35 +623,49 @@ with t_lookup:
         for i, (c, ex) in enumerate(zip(st.columns([1, 3, 3, 3, 1])[1:4], recent)):
             c.button(ex if len(ex) < 34 else ex[:31] + "...", key=f"recent{i}", on_click=set_question, args=(ex,), use_container_width=True)
 
-    with st.expander("Settings: model and conditions"):
-        st.selectbox("Model", list(study.PRICES), index=list(study.PRICES).index(P.MODEL) if P.MODEL in study.PRICES else 0, key="model")
-        st.toggle("Allow the model to answer 'not found' (condition F, the abstention variant)", key="abstain")
-        st.caption("Default is the zero-shot baseline, condition B. The Method tab explains every condition.")
-
     if (submitted or st.session_state.pop("go", False)) and st.session_state.q.strip():
         st.session_state.pop("results", None)
         lookup(st.session_state.q)
 
     if st.session_state.get("results"):
         results = st.session_state.results
-        for n, r in enumerate(results):
-            show_result(r, st.session_state.fields, n)
+        for i, r in enumerate(results):
+            show_result(r, st.session_state.fields, i)
         mid = st.columns([2, 2, 2])[1]
         mid.download_button("Download results (CSV)", to_csv(results), "filingcheck_results.csv", "text/csv", use_container_width=True)
     else:
-        st.markdown('<div class="fc-stats">' + "".join(f'<div class="fc-stat fc-lg"><span class="fc-stat-i">{STAT_ICONS[i % 3]}</span><b>{esc(n)}</b><span>{esc(t)}</span></div>'
-                                                      for i, (n, t) in enumerate(study_stats())) + '</div>', unsafe_allow_html=True)
+        finds = ui_pages.headline_findings(s)
+        if finds:
+            foot = f"{n} filings &middot; Claude Haiku &middot; 3 runs each" if n else "From our study"
+            st.markdown('<div class="fc-found"><div class="fc-found-h"><span>What we found when we tested it</span>'
+                        '<a class="fc-link" href="/study" target="_self">See the full study &#8250;</a></div><div class="fc-found-g">'
+                        + "".join(f'<div class="fc-f fc-lg"><small>{esc(k)}</small><b class="{cls}">{esc(v)}</b><p>{esc(t)}</p>'
+                                  f'<div class="fc-f-foot">{foot}</div></div>' for k, v, cls, t in finds)
+                        + '</div></div>', unsafe_allow_html=True)
+
+    with st.expander("Settings: model and study condition"):
+        st.selectbox("Model", list(study.PRICES), index=list(study.PRICES).index(P.MODEL) if P.MODEL in study.PRICES else 0, key="model")
+        st.toggle("Allow the model to answer 'not found' (condition F, the abstention variant)", key="abstain")
+        st.caption("Default is the zero-shot baseline, condition B. The Study page explains every condition.")
+
+    st.markdown('<div class="fc-sec" id="how-it-works"><div class="fc-sec-k">How it works</div>'
+                '<div class="fc-sec-t">Three steps between your question and a number you can trust.</div><div class="fc-steps">'
+                '<div class="fc-step fc-lg"><div class="fc-step-n">01 &middot; FIND</div><div class="fc-step-t">Find the filing</div><div class="fc-step-d">Looks up the company and downloads its latest 10-K from SEC EDGAR.</div></div>'
+                '<div class="fc-step fc-lg"><div class="fc-step-n">02 &middot; READ</div><div class="fc-step-t">Read the statements</div><div class="fc-step-d">An AI model reads the financial statements and quotes the exact line it used.</div></div>'
+                '<div class="fc-step fc-lg"><div class="fc-step-n">03 &middot; VERIFY</div><div class="fc-step-t">Verify the number</div><div class="fc-step-d">Each figure is compared with the company\'s official XBRL data, so mistakes are flagged.</div></div>'
+                '</div></div>', unsafe_allow_html=True)
 
 
-with t_method:
-    ui_pages.render_method()
-with t_study:
-    ui_pages.render_study()
+def page_study():
+    st.markdown(nav("study"), unsafe_allow_html=True)
+    install_scripts()
+    ui_pages.render_study_page()
 
-st.markdown('<div class="fc-sec" id="how-it-works"><div class="fc-sec-k">How it works</div><div class="fc-sec-t">Three steps. Every number checked.</div><div class="fc-steps">'
-            '<div class="fc-step fc-lg"><div class="fc-step-n">01</div><div class="fc-step-t">Find the filing</div><div class="fc-step-d">Looks up the company and downloads its latest 10-K from SEC EDGAR.</div></div>'
-            '<div class="fc-step fc-lg"><div class="fc-step-n">02</div><div class="fc-step-t">Read the statements</div><div class="fc-step-d">An AI model reads the financial statements and quotes the exact line it used.</div></div>'
-            '<div class="fc-step fc-lg"><div class="fc-step-n">03</div><div class="fc-step-t">Verify the number</div><div class="fc-step-d">Each figure is compared with the company\'s official XBRL data, so mistakes are flagged.</div></div>'
-            '</div></div><div class="fc-foot"><span>FilingCheck &middot; CMPT 218, Simon Fraser University &middot; not financial advice.</span>'
-            f'<span><a href="{REPO}" target="_blank">GitHub</a> &nbsp;&middot;&nbsp; <a href="https://www.sec.gov/edgar/search/" target="_blank">SEC EDGAR</a></span></div>',
-            unsafe_allow_html=True)
+
+st.set_page_config(page_title="FilingCheck", page_icon="🧾", layout="centered")
+st.markdown(CSS, unsafe_allow_html=True)
+st.markdown(ui_pages.EXTRA_CSS, unsafe_allow_html=True)
+pg = st.navigation([st.Page(page_home, title="FilingCheck", default=True),
+                    st.Page(page_study, title="The study · FilingCheck", url_path="study")], position="hidden")
+pg.run()
+footer()
