@@ -17,48 +17,57 @@ import study
 esc = html.escape
 FIELD_LABEL = {"revenue": "Revenue", "net_income": "Net income",
                "operating_income": "Operating income", "total_assets": "Total assets"}
-CLASS_COLOR = {"match": "#9BE8BE", "wrong_scale": "#FFD678", "wrong_value": "#FFA766", "not_in_text": "#FF8A80",
-               "abstained": "#B8B8D0", "missing": "#8E8EA8", "bad_json": "#C79BFF"}
+CLASS_COLOR = {"match": "#4fd1a1", "wrong_scale": "#f5c463", "wrong_value": "#f59e5b", "not_in_text": "#ff7a7a",
+               "abstained": "#9aa3b8", "missing": "#5d6478", "bad_json": "#a78bfa"}
 
 EXTRA_CSS = """<style>
-[role="tablist"] { gap:6px; background:rgba(255,255,255,.10) !important; border:1px solid rgba(255,255,255,.24) !important; border-radius:999px; padding:5px !important; width:fit-content; margin:30px auto 8px; backdrop-filter:blur(22px) saturate(180%); -webkit-backdrop-filter:blur(22px) saturate(180%); box-shadow: inset 0 1px 0 rgba(255,255,255,.45), 0 10px 30px rgba(5,8,28,.25); }
-[data-testid="stTab"] { border-radius:999px !important; padding:8px 22px !important; background:transparent !important; height:auto !important; border:none !important; }
-[data-testid="stTab"] p { color:rgba(255,255,255,.85) !important; font-weight:600; font-size:.9rem; }
-[data-testid="stTab"][aria-selected="true"] { background:rgba(255,255,255,.26) !important; box-shadow: inset 0 1px 0 rgba(255,255,255,.5); }
-[data-testid="stTab"][aria-selected="true"] p { color:#fff !important; }
+/* Tabs: one glass segmented bar; the selected tab is marked by type and an accent rule, not a second surface. */
+[role="tablist"] { gap:2px; border-radius:999px; padding:5px 6px !important; width:fit-content; margin:34px auto 10px;
+  border:1px solid var(--glass-border) !important; background: linear-gradient(180deg, var(--glass-tint-top), var(--glass-tint-bottom)) !important;
+  box-shadow: var(--glass-shadow), inset 0 1px 0 var(--glass-rim-top), inset 0 0 0 1px var(--glass-rim-hairline), inset 0 -1px 0 var(--glass-rim-bottom);
+  backdrop-filter: blur(3px) saturate(125%); -webkit-backdrop-filter: blur(3px) saturate(125%); }
+[data-testid="stTab"] { position:relative; border-radius:999px !important; padding:8px 20px !important; background:transparent !important; height:auto !important; border:none !important; }
+[data-testid="stTab"] p { color:var(--fc-faint) !important; font-weight:500; font-size:.88rem; transition: color .15s; }
+[data-testid="stTab"]:hover p { color:var(--fc-muted) !important; }
+[data-testid="stTab"][aria-selected="true"] p { color:var(--fc-fg) !important; font-weight:600; }
+[data-testid="stTab"][aria-selected="true"]::after { content:""; position:absolute; left:50%; bottom:3px; width:16px; height:2px; margin-left:-8px; border-radius:2px; background:linear-gradient(90deg,#ffd9b8,#c9d4ff); }
 .react-aria-SelectionIndicator, [data-baseweb="tab-highlight"], [data-baseweb="tab-border"] { display:none !important; }
 [data-orientation="horizontal"][data-rac]:has(> [role="tablist"]) { border-bottom:none !important; }
-[data-testid="stCode"], [data-testid="stCode"] pre { background:rgba(6,9,26,.55) !important; border-radius:14px !important; border:1px solid rgba(255,255,255,.14); }
+[data-testid="stCode"], [data-testid="stCode"] pre { background:rgba(0,0,0,.22) !important; border-radius:10px !important; }
 [data-testid="stCode"] code { font-family:'JetBrains Mono',monospace !important; font-size:.76rem !important; }
-.stRadio label, .stRadio p, .stToggle label, .stToggle p, .stCheckbox label, .stCheckbox p, .stSelectbox label, .stSelectbox p { color:#fff !important; }
-.fc-h2 { font-family:'Instrument Serif',serif; font-size:1.9rem; margin:34px 0 4px; }
-.fc-lead { color:rgba(255,255,255,.88); font-size:.98rem; line-height:1.6; max-width:760px; margin-bottom:14px; }
-.fc-flow { display:flex; align-items:stretch; gap:8px; flex-wrap:wrap; margin:14px 0 6px; }
-.fc-flow i { align-self:center; font-style:normal; color:rgba(255,255,255,.6); }
-.fc-fl { flex:1 1 150px; border-radius:18px; padding:14px 16px; background:linear-gradient(135deg,rgba(255,255,255,.22),rgba(255,255,255,.07)); border:1px solid rgba(255,255,255,.28); backdrop-filter:blur(22px); -webkit-backdrop-filter:blur(22px); box-shadow:inset 0 1px 0 rgba(255,255,255,.5); }
-.fc-fl b { display:block; font-size:.88rem; margin-bottom:3px; } .fc-fl span { font-size:.78rem; color:rgba(255,255,255,.8); line-height:1.4; display:block; }
-.fc-tbl { width:100%; border-collapse:separate; border-spacing:0; font-size:.85rem; border-radius:18px; overflow:hidden; background:rgba(12,22,19,.40); border:1px solid rgba(255,255,255,.2); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); }
-.fc-tbl th { text-align:left; font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.7); padding:10px 12px; background:rgba(255,255,255,.08); font-weight:600; }
-.fc-tbl td { padding:10px 12px; border-top:1px solid rgba(255,255,255,.1); vertical-align:top; color:rgba(255,255,255,.94); }
-.fc-tbl td.m { font-family:'JetBrains Mono',monospace; font-size:.76rem; } .fc-tbl td.c { white-space:nowrap; }
-.fc-tbl .tag { display:inline-block; font-family:'JetBrains Mono',monospace; font-size:.74rem; background:rgba(255,255,255,.12); border-radius:6px; padding:1px 7px; margin:1px 3px 1px 0; }
-.fc-bar { position:relative; height:22px; min-width:150px; background:rgba(255,255,255,.10); border-radius:999px; overflow:hidden; }
-.fc-bar i { position:absolute; left:0; top:0; bottom:0; background:linear-gradient(90deg,#6FD3A5,#9BE8BE); border-radius:999px; opacity:.85; }
-.fc-bar.a i { background:linear-gradient(90deg,#9AA0B5,#C5C9D8); }
-.fc-bar u { position:absolute; top:9px; height:4px; background:rgba(255,255,255,.95); border-radius:2px; opacity:.9; }
-.fc-bar span { position:absolute; left:10px; top:2px; font-size:.74rem; font-weight:600; color:#0E2A1C; mix-blend-mode:normal; text-shadow:0 0 6px rgba(255,255,255,.35); }
-.fc-stack { display:flex; height:22px; min-width:220px; border-radius:999px; overflow:hidden; background:rgba(255,255,255,.08); } .fc-stack i { display:block; height:100%; }
-.fc-legend { display:flex; flex-wrap:wrap; gap:6px 14px; font-size:.76rem; color:rgba(255,255,255,.85); margin:8px 0 4px; } .fc-legend b { display:inline-block; width:10px; height:10px; border-radius:3px; margin-right:6px; vertical-align:middle; }
-.fc-kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; margin:14px 0; }
-.fc-kpi { border-radius:20px; padding:16px 18px; background:linear-gradient(135deg,rgba(255,255,255,.24),rgba(255,255,255,.07)); border:1px solid rgba(255,255,255,.28); backdrop-filter:blur(22px); -webkit-backdrop-filter:blur(22px); box-shadow:inset 0 1px 0 rgba(255,255,255,.5); }
-.fc-kpi b { display:block; font-size:1.7rem; font-weight:500; letter-spacing:-.02em; } .fc-kpi span { font-size:.78rem; color:rgba(255,255,255,.82); }
-.fc-tl { display:flex; gap:14px; padding:14px 0; border-top:1px solid rgba(255,255,255,.14); } .fc-tl:first-child { border-top:none; }
-.fc-tl-n { flex:0 0 28px; height:28px; border-radius:50%; background:#fff; color:#12163a; font-weight:700; font-size:.8rem; display:flex; align-items:center; justify-content:center; }
-.fc-tl-b { flex:1; min-width:0; } .fc-tl-h { display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; align-items:center; font-size:.95rem; }
-.fc-tl-d { font-size:.84rem; color:rgba(255,255,255,.88); line-height:1.55; margin-top:6px; }
-.fc-tl-d .tag { font-family:'JetBrains Mono',monospace; font-size:.74rem; background:rgba(255,255,255,.12); border-radius:6px; padding:1px 7px; }
-.fc-note2 { font-size:.8rem; color:rgba(255,255,255,.75); line-height:1.5; margin-top:8px; }
-.fc-empty { border-radius:24px; padding:24px 26px; background:linear-gradient(135deg,rgba(255,255,255,.2),rgba(255,255,255,.06)); border:1px solid rgba(255,255,255,.26); backdrop-filter:blur(22px); -webkit-backdrop-filter:blur(22px); }
+.stRadio label, .stRadio p, .stToggle label, .stToggle p, .stCheckbox label, .stCheckbox p, .stSelectbox label, .stSelectbox p, [data-testid="stCaptionContainer"] p { color:var(--fc-muted) !important; }
+.fc-h2 { font-family:var(--fc-display); font-size:clamp(1.7rem,3.4vw,2.3rem); font-weight:600; letter-spacing:-.03em; line-height:1.1; margin:64px 0 10px; }
+.fc-lead { color:var(--fc-muted); font-size:1.02rem; line-height:1.65; max-width:760px; margin-bottom:16px; }
+.fc-flow { display:flex; align-items:stretch; gap:8px; flex-wrap:wrap; margin:16px 0 6px; }
+.fc-flow i { align-self:center; font-style:normal; color:var(--fc-faint); }
+.fc-fl { flex:1 1 150px; border-radius:var(--glass-radius); padding:14px 16px; }
+.fc-fl b { display:block; font-size:.86rem; font-weight:600; margin-bottom:4px; } .fc-fl span { font-size:.78rem; color:var(--fc-muted); line-height:1.45; display:block; }
+/* Tables carry dense text, so they take a heavier frost than the panels. */
+.fc-tbl { width:100%; border-collapse:separate; border-spacing:0; font-size:.85rem; border-radius:var(--glass-radius); overflow:hidden;
+  border:1px solid var(--glass-border); background: color-mix(in srgb, var(--glass-menu-surface) 55%, transparent);
+  box-shadow: inset 0 1px 0 var(--glass-rim-top), inset 0 0 0 1px var(--glass-rim-hairline);
+  backdrop-filter: blur(14px) saturate(130%); -webkit-backdrop-filter: blur(14px) saturate(130%); }
+.fc-tbl th, .fc-tbl td { border-left:none !important; border-right:none !important; border-bottom:none !important; }
+.fc-tbl th { text-align:left; font-size:.68rem; letter-spacing:.09em; text-transform:uppercase; color:var(--fc-faint); padding:12px 14px 10px; font-weight:600; }
+.fc-tbl td { padding:11px 14px; border-top:1px solid var(--fc-hair); vertical-align:top; color:var(--fc-fg); }
+.fc-tbl td.m { font-family:'JetBrains Mono',monospace; font-size:.76rem; } .fc-tbl td.c { white-space:nowrap; font-variant-numeric:tabular-nums; }
+.fc-tbl .tag, .fc-tl-d .tag, .fc-note2 .tag { display:inline-block; font-family:'JetBrains Mono',monospace; font-size:.74rem; color:var(--fc-accent); margin:1px 6px 1px 0; }
+.fc-bar { position:relative; height:20px; min-width:150px; background:rgba(255,255,255,.06); border-radius:6px; overflow:hidden; }
+.fc-bar i { position:absolute; left:0; top:0; bottom:0; background:linear-gradient(90deg,rgba(75,163,255,.55),rgba(75,163,255,.9)); border-radius:6px; }
+.fc-bar.a i { background:linear-gradient(90deg,rgba(233,236,242,.25),rgba(233,236,242,.4)); }
+.fc-bar u { position:absolute; top:9px; height:2px; background:rgba(255,255,255,.9); border-radius:1px; }
+.fc-bar span { position:absolute; left:9px; top:2px; font-size:.72rem; font-weight:600; color:#fff; font-variant-numeric:tabular-nums; text-shadow:0 1px 3px rgba(0,0,0,.5); }
+.fc-stack { display:flex; gap:2px; height:20px; min-width:220px; border-radius:6px; overflow:hidden; } .fc-stack i { display:block; height:100%; }
+.fc-legend { display:flex; flex-wrap:wrap; gap:6px 16px; font-size:.76rem; color:var(--fc-muted); margin:8px 0 10px; } .fc-legend b { display:inline-block; width:9px; height:9px; border-radius:2px; margin-right:6px; vertical-align:middle; }
+.fc-kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; margin:16px 0; }
+.fc-kpi { border-radius:var(--glass-radius-lg); padding:20px 22px; }
+.fc-kpi b { display:block; font-family:var(--fc-serif); font-style:italic; font-weight:400; font-size:2.4rem; line-height:1.05; font-variant-numeric:tabular-nums; } .fc-kpi span { font-size:.78rem; color:var(--fc-muted); }
+.fc-tl { display:flex; gap:16px; padding:14px 0; }
+.fc-tl-n { flex:0 0 26px; font-family:var(--fc-serif); font-style:italic; font-size:1.3rem; line-height:1; color:var(--fc-faint); padding-top:2px; }
+.fc-tl-b { flex:1; min-width:0; } .fc-tl-h { display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; align-items:center; font-size:.93rem; }
+.fc-tl-d { font-size:.84rem; color:var(--fc-muted); line-height:1.6; margin-top:6px; }
+.fc-note2 { font-size:.8rem; color:var(--fc-muted); line-height:1.6; margin-top:10px; }
+.fc-empty { border-radius:var(--glass-radius-lg); padding:24px 26px; }
 </style>"""
 
 
@@ -136,11 +145,11 @@ def render_method():
                 'and when it is wrong, is the number misread or made up? Every number the model gives is compared with the figure the '
                 'company itself filed with the SEC in machine-readable form, so no one has to judge answers by hand.</div>'
                 '<div class="fc-flow">'
-                '<div class="fc-fl"><b>1 &middot; SEC EDGAR</b><span>download the latest 10-K</span></div><i>&rarr;</i>'
-                '<div class="fc-fl"><b>2 &middot; Statement finder</b><span>locate the income statement and balance sheet</span></div><i>&rarr;</i>'
-                '<div class="fc-fl"><b>3 &middot; The model</b><span>extract four numbers, each with a quote</span></div><i>&rarr;</i>'
-                '<div class="fc-fl"><b>4 &middot; Verifier</b><span>look up the SEC XBRL answer key</span></div><i>&rarr;</i>'
-                '<div class="fc-fl"><b>5 &middot; Scoring</b><span>match, or what kind of error</span></div></div>',
+                '<div class="fc-fl fc-lg"><b>1 &middot; SEC EDGAR</b><span>download the latest 10-K</span></div><i>&rarr;</i>'
+                '<div class="fc-fl fc-lg"><b>2 &middot; Statement finder</b><span>locate the income statement and balance sheet</span></div><i>&rarr;</i>'
+                '<div class="fc-fl fc-lg"><b>3 &middot; The model</b><span>extract four numbers, each with a quote</span></div><i>&rarr;</i>'
+                '<div class="fc-fl fc-lg"><b>4 &middot; Verifier</b><span>look up the SEC XBRL answer key</span></div><i>&rarr;</i>'
+                '<div class="fc-fl fc-lg"><b>5 &middot; Scoring</b><span>match, or what kind of error</span></div></div>',
                 unsafe_allow_html=True)
 
     st.markdown('<div class="fc-h2">What we verify with</div>'
@@ -225,7 +234,7 @@ def render_method():
 def _bar(e, key, cls=""):
     pt, lo, hi = e[key]
     if pt is None:
-        return '<div class="fc-bar"><span style="color:#fff">n/a</span></div>'
+        return '<div class="fc-bar"><span>n/a</span></div>'
     whisk = f'<u style="left:{100 * lo:.1f}%;width:{max(100 * (hi - lo), 0.6):.1f}%"></u>' if lo is not None else ""
     ci = f" ({100 * lo:.0f}-{100 * hi:.0f})" if lo is not None else ""
     return f'<div class="fc-bar {cls}"><i style="width:{100 * pt:.1f}%"></i>{whisk}<span>{100 * pt:.0f}%{ci}</span></div>'
@@ -243,7 +252,7 @@ def _load_rows(stamp):
 def render_study():
     path = "results/study/summary_noamb.json" if st.session_state.get("clean_key") else "results/study/summary.json"
     if not os.path.exists("results/study/summary.json"):
-        st.markdown('<div class="fc-h2">Study results</div><div class="fc-empty"><b>No study results yet.</b><br>'
+        st.markdown('<div class="fc-h2">Study results</div><div class="fc-empty fc-lg"><b>No study results yet.</b><br>'
                     '<span class="fc-note2">Run these in your project folder, then reload this page. Each step is explained on the Method tab.</span></div>',
                     unsafe_allow_html=True)
         st.code("python study.py prepare\npython study.py estimate\npython study.py run --budget 5\npython analyze_study.py", language="bash")
@@ -264,7 +273,7 @@ def render_study():
           (_pct(best["accuracy"][0]), f"best accuracy (condition {best['cell']})"),
           (f"{audit['key_wrong']} of {audit['checked']}" if audit else "not yet", "SEC answer keys wrong in our hand check")]
     st.markdown('<div class="fc-h2">What the study found</div><div class="fc-kpis">' +
-                "".join(f'<div class="fc-kpi"><b>{esc(a)}</b><span>{esc(b)}</span></div>' for a, b in kp) + '</div>', unsafe_allow_html=True)
+                "".join(f'<div class="fc-kpi fc-lg"><b>{esc(a)}</b><span>{esc(b)}</span></div>' for a, b in kp) + '</div>', unsafe_allow_html=True)
 
     trs = ""
     for e in shown:
@@ -305,7 +314,7 @@ def render_study():
             for e in cond_cols:
                 v = e["by_group"].get(g)
                 a = 0 if v is None else 0.08 + 0.45 * v
-                tds += f"<td class='c' style='background:rgba(155,232,190,{a:.2f})'>{_pct(v)}</td>"
+                tds += f"<td class='c' style='background:rgba(79,209,161,{a:.2f})'>{_pct(v)}</td>"
             body += f"<tr><td>{esc(g)}</td>{tds}</tr>"
         st.markdown(f'<div class="fc-h2">By sector</div><table class="fc-tbl"><tr><th>Group</th>{head}</tr>{body}</table>', unsafe_allow_html=True)
 

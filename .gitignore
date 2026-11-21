@@ -9,4 +9,5 @@ __pycache__/
 .DS_Store
 .claude/
 .agents/
-.streamlit/
+.streamlit/*
+!.streamlit/config.toml
