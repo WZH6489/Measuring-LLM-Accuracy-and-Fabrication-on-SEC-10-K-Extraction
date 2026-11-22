@@ -8,6 +8,8 @@
 
 The project ships with **FilingCheck**, a Streamlit app: type a company and watch the model read its latest 10-K and check every number against the SEC. A separate **Study** page presents the method and results.
 
+📽 **[Presentation Slides](https://docs.google.com/presentation/d/1divSfITE-wAmH1aOVxVMiola7jt-2wkszGEeBeltQBM/edit?usp=sharing)** · 📄 **[Final Report](https://docs.google.com/document/d/1Mu42ck1ORVXcXztD8TKTjdiH-BiYJcWzOYDwvrkFJVw/edit?usp=sharing)**
+
 ---
 
 # 🎯 Research Overview
@@ -222,6 +224,13 @@ SEC EDGAR requires a descriptive `User-Agent` header with your name and email, a
 ---
 
 # 📚 Related Research
+
+Project documents:
+
+- [Presentation Slides](https://docs.google.com/presentation/d/1divSfITE-wAmH1aOVxVMiola7jt-2wkszGEeBeltQBM/edit?usp=sharing)
+- [Final Report](https://docs.google.com/document/d/1Mu42ck1ORVXcXztD8TKTjdiH-BiYJcWzOYDwvrkFJVw/edit?usp=sharing)
+
+Selected references:
 
 - Z. Chen et al., "FinQA: A Dataset of Numerical Reasoning over Financial Data," EMNLP, 2021.
 - F. Zhu et al., "TAT-QA: A Question Answering Benchmark on a Hybrid of Tabular and Textual Content in Finance," ACL, 2021.
